@@ -1,0 +1,11 @@
+.wrapper {
+    padding-right: 15%;
+    padding-left: 15%;
+    background-color: grey;
+    
+    @media screen and (max-width: 600px) {
+        background-color: red;
+        padding-right: 7%;
+        padding-left: 7%;
+    }
+}
