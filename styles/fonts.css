@@ -1,0 +1,24 @@
+@font-face {
+    font-family: 'RadioGrotesk';
+    src: url('/fonts/RadioGrotesk/RadioGrotesk-Regular.eot');
+    src: url('/fonts/RadioGrotesk/RadioGrotesk-Regular.eot?#iefix') format('embedded-opentype'),
+         url('/fonts/RadioGrotesk/RadioGrotesk-Regular.svg#RadioGrotesk-Regular') format('svg'),
+         url('/fonts/RadioGrotesk/RadioGrotesk-Regular.ttf') format('truetype'),
+         url('/fonts/RadioGrotesk/RadioGrotesk-Regular.woff') format('woff'),
+         url('/fonts/RadioGrotesk/RadioGrotesk-Regular.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+    font-display: auto;
+}
+
+@font-face {
+    font-family: 'Bifocals';
+    src: url('/fonts/Bifocals/Bifocals-Regular.eot');
+    src: url('/fonts/Bifocals/Bifocals-Regular.eot?#iefix') format('embedded-opentype'),
+         url('/fonts/Bifocals/Bifocals-Regular.ttf') format('truetype'),
+         url('/fonts/Bifocals/Bifocals-Regular.woff') format('woff'),
+         url('/fonts/Bifocals/Bifocals-Regular.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+    font-display: auto;
+}
