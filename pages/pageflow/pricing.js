@@ -1,18 +1,17 @@
-import Head from "next/head";
-import FantasiaWrapper from "../components/Wrapper/Wrapper";
-import { Container, Row, Col } from "react-grid-system";
+import Head from 'next/head';
+import FantasiaWrapper from '../../components/Wrapper/Wrapper';
+import { Container, Row, Col } from 'react-grid-system';
 
-export default function Home() {
+export default function PageflowPricing() {
   return (
     <div>
       <Head>
-        <title>Pageflow</title>
+        <title>Pageflow Pricing</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
-
+      
       <FantasiaWrapper>
-        <h1>KWS</h1>
-        <Container style={{padding:"0px"}}>
+        <Container>
           <Row gutterWidth={0}>
             <Col sm={6}>
               <p>One of two columns</p>
@@ -24,5 +23,5 @@ export default function Home() {
         </Container>
       </FantasiaWrapper>
     </div>
-  );
+  )
 }

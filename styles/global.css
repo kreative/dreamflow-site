@@ -1,9 +1,21 @@
-h1, h2, h3, h4, h5, h6 {
-    font-family: 'RadioGrotesk', serif !important;
+h1 {
+    font-family: 'RadioGrotesk', serif;
+    font-size: 3em;
+    padding-bottom: 20px;
+}
+
+h2 {
+    font-family: 'RadioGrotesk', serif;
+    font-size: 2.5em;
+}
+
+h3, h4, h5, h6 {
+    font-family: 'RadioGrotesk', serif;
 }
 
 p {
-    font-family: 'Bifocals', serif !important;
+    font-family: 'Bifocals', serif;
+    font-size: 1.3em;
 }
 
 .ui {
