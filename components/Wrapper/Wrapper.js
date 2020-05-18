@@ -1,15 +1,27 @@
 import React, { Component, Children } from "react";
-import styles from "./wrapper.module.css";
 
 class FantasiaWrapper extends Component {
   render() {
     return (
-      <div style={{
-        backgroundColor:this.props.bg,
-        paddingTop: this.props.paddingTop,
-        paddingBottom: this.props.paddingBottom
-      }} 
-      className={styles.wrapper}>{this.props.children}</div>
+      <div className="wrapper">
+        {this.props.children}
+        <style jsx>{`
+          .wrapper {
+            padding-right: 15%;
+            padding-left: 15%;
+            background-color: ${this.props.bg};
+            padding-top: ${this.props.paddingTop};
+            padding-bottom: ${this.props.paddingBottom};
+          }
+          
+          @media screen and (max-width: 600px) {
+              .wrapper {
+                  padding-right: 7%;
+                  padding-left: 7%;
+              }
+          }
+        `}</style>
+      </div>
     );
   }
 }

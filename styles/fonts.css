@@ -22,3 +22,27 @@
     font-style: normal;
     font-display: auto;
 }
+
+@font-face {
+    font-family: 'Romana';
+    src: url('/fonts/Romana/3AAC5B_0_0.eot');
+    src: url('/fonts/Romana/3AAC5B_0_0.eot?#iefix') format('embedded-opentype'),
+         url('/fonts/Romana/3AAC5B_0_0.ttf') format('truetype'),
+         url('/fonts/Romana/3AAC5B_0_0.woff') format('woff'),
+         url('/fonts/Romana/3AAC5B_0_0.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+    font-display: auto;
+}
+
+@font-face {
+    font-family: 'Romana';
+    src: url('/fonts/Romana/3AAC5B_1_0.eot');
+    src: url('/fonts/Romana/3AAC5B_1_0.eot?#iefix') format('embedded-opentype'),
+         url('/fonts/Romana/3AAC5B_1_0.ttf') format('truetype'),
+         url('/fonts/Romana/3AAC5B_1_0.woff') format('woff'),
+         url('/fonts/Romana/3AAC5B_1_0.woff2') format('woff2');
+    font-weight: bold;
+    font-style: normal;
+    font-display: auto;
+}

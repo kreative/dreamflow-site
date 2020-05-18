@@ -12,7 +12,7 @@ class FantasiaLineLabel extends Component {
                     }
                     .linelabel h5::before {
                         content: "";
-                        flex: 0.25;
+                        flex: 0.1;
                         border-bottom: 1px solid ${this.props.color};
                         margin: auto;
                         margin-right: 5px;

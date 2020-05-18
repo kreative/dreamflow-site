@@ -1,16 +1,18 @@
 h1 {
-    font-family: 'RadioGrotesk', serif;
+    font-family: 'Romana', serif;
     font-size: 3em;
-    padding-bottom: 20px;
+    font-weight: bold;
+    padding: 0;
 }
 
 h2 {
-    font-family: 'RadioGrotesk', serif;
-    font-size: 2.5em;
+    font-family: 'Romana', serif;
+    font-size: 2.7em;
+    font-weight: normal;
 }
 
 h3, h4, h5, h6 {
-    font-family: 'RadioGrotesk', serif;
+    font-family: 'Romana', serif;
 }
 
 p {
