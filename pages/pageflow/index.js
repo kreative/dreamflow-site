@@ -213,21 +213,27 @@ export default function PageflowHome() {
           </Row>
         </Container>
       </Wrapper>
-      <Wrapper bg="#1E1E1E">
+      <Wrapper bg="#1E1E1E" paddingBottom="150px" paddingTop="150px">
         <Container style={{padding:"0px"}}>
           <Row gutterWidth={0}>
             <Col sm={6} style={{color:"white"}}>
-              <LineLabel color="white">BRANDING BENEFITS</LineLabel>
-              <h2>If you're not on the internet, you don't exist.​</h2>
-              <p>80% of consumers research a business online before making a purchase. (Blue Corona)</p>
-              <p>83% of the small business owners with a website feel they have a competitive advantage on those without one. (GoDaddy Global Small Business Report)</p>
-              <p>Over 60% of small businesses without a website plan to get a website in the next year. (Clutch.co)</p>
+              <div className="benefits">
+                <LineLabel color="white">BRANDING BENEFITS</LineLabel>
+                <h2>If you're not on the internet, you don't exist.​</h2>
+                <p>80% of consumers research a business online before making a purchase. (Blue Corona)</p>
+                <p>83% of the small business owners with a website feel they have a competitive advantage on those without one. (GoDaddy Global Small Business Report)</p>
+                <p>Over 60% of small businesses without a website plan to get a website in the next year. (Clutch.co)</p>
+              </div>
             </Col>
-            <Col sm={6} style={{color:""}}>
-              <LineLabel color="">DESIGN BENEFITS</LineLabel>
-              <h2>Looking good matters, web design isn't a DIY thing.​</h2>
-              <p>75% of users admit to making judgments about a company’s credibility based on their website’s design. (Stanford University)</p>
-              <p>88% of online consumers are less likely to return to a site after a bad experience. (Sweor)</p>
+            <Col sm={6} className="benefits" style={{color:"#C8B5FD"}}>
+              <div className="benefits">
+                <LineLabel color="#C8B5FD">DESIGN BENEFITS</LineLabel>
+                <h2>Looking good matters, web design isn't a DIY thing.​</h2>
+                <p>75% of users admit to making judgments about a company’s credibility based on their website’s design. (Stanford University)</p>
+                <p>88% of online consumers are less likely to return to a site after a bad experience. (Sweor)</p>
+                <p>Every dollar invested in design brings 100 dollars in return. That’s an ROI of a whopping 9,900 percent. (Forester Research)</p>
+                <p>Only 16% of small business owners have a website that they’re proud of. (ChannelBiz UK Survey)</p>
+              </div>
             </Col>
           </Row>
         </Container>
@@ -247,6 +253,10 @@ export default function PageflowHome() {
           padding-left: 50px;
         }
 
+        .benefits {
+          padding-right: 35px;
+        }
+
         @media screen and (max-width: 600px) {
           .image1 {
             padding-left: 0px;
@@ -259,6 +269,11 @@ export default function PageflowHome() {
           .padded-text {
             padding-left: 0px;
             padding-top: 20px;
+          }
+
+          .benefits {
+            padding-right: 0px;
+            padding-bottom: 10px;
           }
         }
       `}</style>
