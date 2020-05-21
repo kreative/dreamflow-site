@@ -20,6 +20,7 @@ class FantasiaButton extends Component {
             color: ${this.props.textColor};
             padding: ${this.props.padding};
             box-sizing: box-border;
+            cursor: pointer;
             -moz-box-sizing: border-box;
             -webkit-box-sizing: border-box;
             font-family: 'Bifocals', serif;
