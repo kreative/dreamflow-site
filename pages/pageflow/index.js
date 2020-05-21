@@ -87,7 +87,7 @@ export default function PageflowHome() {
                 getting your business in front of new customers.
                 <br />
                 <br />
-                Our company decided to open up Pageflow was because we dealt
+                Our company decided to open up Pageflow because we dealt
                 with the same thing: an over-promising, under-delivering agency.
                 No part of their strategy included "sales" or "lead-generation",
                 it was always about making things look pretty or "modern" or
@@ -117,16 +117,25 @@ export default function PageflowHome() {
               </p>
             </Col>
             <Col sm={6}>
-              <img
-                className="image1"
-                src="https://kmg-site-assets.kaycdn.com/heart-eyes.gif"
-                alt="George Clooney Heart Eyes"
-              />
+              <span>
+                <img
+                  className="image1"
+                  src="https://kmg-site-assets.kaycdn.com/heart-eyes.gif"
+                  alt="George Clooney Heart Eyes"
+                />
+              </span>
             </Col>
           </Row>
         </Container>
       </Wrapper>
-      <Wave color="#F8F5F2">
+      <Wrapper bg="" paddingBottom="150px" paddingTop="150px">
+        <div style={{textAlign:"center"}}>
+          <LineLabel color="black">FEATURES</LineLabel>
+          <h2>Every single thing you need for online success</h2>
+          
+        </div>
+      </Wrapper>
+      <Wave color="white">
         <path className="wave-fill" d="M421.9,6.5c22.6-2.5,51.5,0.4,75.5,5.3c23.6,4.9,70.9,23.5,100.5,35.7c75.8,32.2,133.7,44.5,192.6,49.7
         c23.6,2.1,48.7,3.5,103.4-2.5c54.7-6,106.2-25.6,106.2-25.6V0H0v30.3c0,0,72,32.6,158.4,30.5c39.2-0.7,92.8-6.7,134-22.4
         c21.2-8.1,52.2-18.2,79.7-24.2C399.3,7.9,411.6,7.5,421.9,6.5z"></path>
@@ -160,7 +169,7 @@ export default function PageflowHome() {
                   "We were scared about spending money on a new website, but
                   Pageflow turned the cost into an investment."
                 </h1>
-                <p>Frank Rossi, Founder & Head of Marketing at B4TheLeague</p>
+                <p style={{fontSize:"1em"}}>Frank Rossi, Founder & Head of Marketing at B4TheLeague</p>
               </div>
             </Col>
           </Row>
@@ -245,7 +254,7 @@ export default function PageflowHome() {
         }
 
         .image2 {
-          width: 100;
+          width: 100%;
           padding-right: 75px;
         }
 
