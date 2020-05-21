@@ -130,9 +130,20 @@ export default function PageflowHome() {
       </Wrapper>
       <Wrapper bg="" paddingBottom="150px" paddingTop="150px">
         <div style={{textAlign:"center"}}>
-          <LineLabel color="black">FEATURES</LineLabel>
+          <LineLabel color="black">THE COMPLETE PACKAGE</LineLabel>
           <h2>Every single thing you need for online success</h2>
-          
+          <div className="squeezed-container">
+            <Container style={{padding:"0px"}}>
+              <Row gutterWidth={0}>
+                <Col sm={2}>Hello</Col>
+                <Col sm={2}>Hello</Col>
+                <Col sm={2}>Hello</Col>
+                <Col sm={2}>Hello</Col>
+                <Col sm={2}>Hello</Col>
+                <Col sm={2}>Hello</Col>
+              </Row>
+            </Container>
+          </div>
         </div>
       </Wrapper>
       <Wave color="white">
@@ -264,6 +275,12 @@ export default function PageflowHome() {
 
         .benefits {
           padding-right: 35px;
+        }
+
+        .squeezed-container {
+          padding-top: 25px;
+          width: 60%;
+          margin: 0 auto;
         }
 
         @media screen and (max-width: 600px) {
