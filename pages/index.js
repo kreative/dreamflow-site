@@ -1,5 +1,5 @@
 import Head from "next/head";
-import FantasiaWrapper from "../components/Wrapper/Wrapper";
+import Wrapper from "../components/Wrapper/Wrapper";
 import { Container, Row, Col } from "react-grid-system";
 
 export default function Home() {
@@ -10,7 +10,7 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <FantasiaWrapper>
+      <Wrapper>
         <h1>KWS</h1>
         <Container style={{padding:"0px"}}>
           <Row gutterWidth={0}>
@@ -22,7 +22,7 @@ export default function Home() {
             </Col>
           </Row>
         </Container>
-      </FantasiaWrapper>
+      </Wrapper>
     </div>
   );
 }
