@@ -342,8 +342,8 @@ export default function PageflowHome() {
             <Col sm={8}>
               <LineLabel>OUR PLEDGE</LineLabel>
               <h2>
-                Every package comes with a Dedicated Success Team, revisions,
-                SEO consultations, and a 14-Day Money Back Guarantee
+                Every customer recieves a  Dedicated Success Team, revisions,
+                SEO consultations, and a Satisfaction Guarantee.
               </h2>
               <div className={styles.buttonGroup}>
                 <Button

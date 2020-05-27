@@ -1,7 +1,9 @@
 import Head from 'next/head';
 import Wrapper from '../../components/Wrapper/Wrapper';
+import Button from '../../components/Button/Button';
 import LineLabel from '../../components/LineLabel/LineLabel';
 import PricingCard from '../../components/PricingCard/PricingCard';
+import AlertBlock from '../../components/AlertBlock/AlertBlock';
 import { Container, Row, Col } from 'react-grid-system';
 
 export default function PageflowPricing() {
@@ -10,7 +12,6 @@ export default function PageflowPricing() {
       <Head>
         <title>Pageflow Web Development Pricing | Kreative Dreamflow</title>
         <link rel="icon" href="/favicon.ico" />
-        <script src="https://kit.fontawesome.com/abadd7b058.js" crossorigin="anonymous"></script>
       </Head>
       
       <Wrapper bg="#ABFAFF" paddingTop="150px" paddingBottom="100px">
@@ -30,7 +31,7 @@ export default function PageflowPricing() {
             </Col>
             <Col sm={6}>
               <img
-                className="image1"
+                className="image image1"
                 src="https://kmg-site-assets.kaycdn.com/relax.gif"
                 alt="Relaxation GIF"
               />
@@ -39,32 +40,67 @@ export default function PageflowPricing() {
         </Container>
       </Wrapper>
       <Wrapper bg="white" paddingBottom="50px" paddingTop="50px">
-        <div className="signup-bonus">
-          <h3>Signup bonus</h3>
-        </div> 
+        <AlertBlock
+          bg="#F6F6F4"
+          headerColor="black"
+          labelColor="black"
+          label="SIGNUP BONUS !!!"
+          header="New customers get a free logo, business card design, and 100 premium business cards​"
+          align="center"
+        /> 
       </Wrapper>
-      <Wrapper bg="white" paddingBottom="100px" paddingTop="100px">
+      <Wrapper bg="white" paddingBottom="100px" paddingTop="0px">
         <Container style={{padding:"0px"}} fluid>
-          <Row gutterWidth={0}>
-            <Col sm={4}></Col>
+          <Row gutterWidth={15}>
+            <Col sm={4}>
+              <PricingCard
+                primary={false}
+                color="#7651E0"
+                name="Coffee Room"
+                price="$4999"
+                buttonText="Get Started"
+                buttonTextColor="#7651E0"
+                buttonRadius="3px"
+                buttonPadding="15px 50px"
+                buttonLink="/get-started"
+                image="https://kmg-site-assets.kaycdn.com/coffee_cup_ikon.jpg"
+                imageAlt="Coffe Cup Ikon by Kreative Fantasia Design"
+                includedItems={[
+                  "5 Pageflow Pages",
+                  "Mobile Responsive Site",
+                  "Site Security & SSL",
+                  "Web Analytics Setup",
+                  "SEO Setup through TopRank",
+                  "Content Management System",
+                  "Dynamic Forms",
+                  "Copywriting through Kopy",
+                  "Multilingual",
+                  "Payment Gateway Integration",
+                  "Custom Function Development",
+                  "We send you coffee when you join"
+                ]}
+                missingItems={[]}
+              />
+            </Col>
             <Col sm={4}>
               <PricingCard
                 primary={true}
                 color="#7651E0"
                 name="Deluxe"
                 price="$1999"
-                buttonText="Signup"
+                buttonText="Get Started"
                 buttonTextColor="white"
                 buttonRadius="3px"
-                buttonPadding="15px 40px"
+                buttonPadding="15px 50px"
+                buttonLink="/get-started"
                 image="https://kmg-site-assets.kaycdn.com/trophy_ikon.jpg"
                 imageAlt="Trophy Ikon by Kreative Fantasia Design"
                 includedItems={[
                   "5 Pageflow Pages",
                   "Mobile Responsive Site",
                   "Site Security & SSL",
-                  "SEO Setup through TopRank",
                   "Web Analytics Setup",
+                  "SEO Setup through TopRank",
                   "Content Management System",
                   "Dynamic Forms",
                   "Copywriting through Kopy",
@@ -77,18 +113,143 @@ export default function PageflowPricing() {
                 ]}
               />
             </Col>
-            <Col sm={4}></Col>
+            <Col sm={4}>
+              <PricingCard
+                primary={false}
+                color="#7651E0"
+                name="Deluxe"
+                price="$997"
+                buttonText="Get Started"
+                buttonTextColor="#7651E0"
+                buttonRadius="3px"
+                buttonPadding="15px 50px"
+                buttonLink="/get-started"
+                image="https://kmg-site-assets.kaycdn.com/art_tools_ikon.jpg"
+                imageAlt="Art Tools Ikon by Kreative Fantasia Design"
+                includedItems={[
+                  "5 Pageflow Pages",
+                  "Mobile Responsive Site",
+                  "Site Security & SSL",
+                  "Web Analytics Setup",
+                ]}
+                missingItems={[
+                  "SEO Setup through TopRank",
+                  "Content Management System",
+                  "Dynamic Forms",
+                  "Copywriting through Kopy",
+                  "Multilingual",
+                  "Payment Gateway Integration",
+                  "Custom Function Development",
+                  "We send you coffee when you join"
+                ]}
+              />
+            </Col>
           </Row>
         </Container>
       </Wrapper>
+      <Wrapper bg="#FFF2DF" paddingBottom="100px" paddingTop="100px">
+        <Container style={{ padding: "0px" }}>
+          <Row gutterWidth={0}>
+            <Col sm={3}>
+              <img
+                className="image"
+                src="https://kmg-site-assets.kaycdn.com/the-pageflow-pledge.png"
+                alt="The Pageflow Pledge Badge in Black"
+              />
+            </Col>
+            <Col
+              sm={9}
+              style={{
+                justifyContent: "center",
+                display: "flex",
+                flexDirection: "column",
+              }}
+            >
+              <div className="pageflow-pledge-content">
+                <LineLabel>OUR PLEDGE</LineLabel>
+                <h2>
+                  Every customer recieves a  Dedicated Success Team, revisions,
+                  SEO consultations, and a Satisfaction Guarantee.
+                </h2>
+              </div>
+            </Col>
+          </Row>
+        </Container>
+      </Wrapper>
+      <Wrapper bg="#6135DE" paddingBottom="150px" paddingTop="150px">
+        <Container style={{padding:"0px"}} fluid>
+          <Row gutterWidth={0}>
+            <Col sm={6}>
+              <img
+                className="image image2"
+                src=""
+                alt="Payment image"
+              />
+            </Col>
+            <Col sm={6}>
+              <LineLabel color="white">WEB DEVELOPMENT PAYMENT PLANS</LineLabel>
+              <h2 style={{color:"white"}}>Don't let cashflow get in between you and your future customers​</h2>
+              <p style={{color:"white"}}>We offer payment plans that help break down your costs between three, six, twelve months.</p>
+              <Button
+                fill="rgba(255, 255, 255, 0.17)"
+                textColor="white"
+                radius="3px"
+                border="1px solid white"
+                padding="15px 50px"
+              >
+                Get Started
+              </Button>
+            </Col>
+          </Row>
+        </Container>
+      </Wrapper>
+      <Wrapper bg="white" paddingBottom="150px" paddingTop="150px">
+        <div style={{textAlign:"center"}}>
+          <LineLabel color="black">WORK WITH PAGEFLOW</LineLabel>
+          <h2 style={{ fontWeight: "bold" }}>
+            Give your business an unfair advantage with Pageflow
+          </h2>
+          <p>It's simple, easy, and free to get started</p>
+          <Button
+            fill="black"
+            textColor="white"
+            radius="3px"
+            border="1px solid black"
+            padding="15px 50px"
+            raised={true}
+            grow={true}
+          >
+            Get Started
+          </Button>
+        </div>
+      </Wrapper>
       <style jsx>{`
-        .image1 {
+        .image {
           width: 100%;
+        }
+
+        .image1 {
           padding-left: 25px;
+        }
+
+        .image2 {
+          padding-right: 25px;
+        }
+
+        .pageflow-pledge-content {
+          padding-left: 50px;
         }
 
         @media screen and (max-width: 600px) {
           .image1 {
+            padding-left: 0px;
+          }
+
+          .image2 {
+            padding-right: 0px;
+          }
+
+          .pageflow-pledge-content {
             padding-left: 0px;
           }
         }

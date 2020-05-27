@@ -9,18 +9,19 @@ class FantasiaPricingCard extends Component {
     var pricingCardClass = classNames({
       "pricing-card": true,
       raised: this.props.raised,
-      primary: this.props.primary,
     });
 
     return (
       <div>
         <div className={pricingCardClass}>
-          <img src={this.props.image} alt={this.props.imageAlt} />
-          <h3>{this.props.name}</h3>
-          <h5>{this.props.price}</h5>
+          <div className="header">
+            <img src={this.props.image} alt={this.props.imageAlt} />
+            <h2>{this.props.name}</h2>
+            <p className="price">{this.props.price}</p>
+          </div>
           <div className="items">
             {this.props.includedItems.map((item) => (
-              <IncludedItem iconColor={this.props.color}>{item}</IncludedItem>
+              <IncludedItem textColor="black">{item}</IncludedItem>
             ))}
             {this.props.missingItems.map((item) => (
               <MissingItem>{item}</MissingItem>
@@ -31,6 +32,7 @@ class FantasiaPricingCard extends Component {
             border={
               this.props.primary ? "none" : `1px solid ${this.props.color}`
             }
+            link={this.props.buttonLink}
             textColor={this.props.buttonTextColor}
             radius={this.props.buttonRadius}
             padding={this.props.buttonPadding}
@@ -41,25 +43,36 @@ class FantasiaPricingCard extends Component {
           </Button>
         </div>
         <style jsx>{`
-          h3 {
+          h2 {
             color: ${this.props.primary ? this.props.color : "black"};
           }
 
           img {
             width: 30%;
-            text-align: center;
           }
 
           .pricing-card {
             border: ${this.props.primary
-              ? `1px solid ${this.props.color}`
-              : "#F2F2F2"};
+              ? `2px solid ${this.props.color}`
+              : "2px solid #E8E8E8"};
             border-radius: 6px;
-            padding: 35px 10px;
+            padding: 50px 25px;
           }
 
           .items {
             text-align: center;
+            margin-bottom: 35px;
+          }
+
+          .header {
+            text-align: center;
+            padding-bottom: 25px;
+          }
+
+          .price {
+            font-weight: bold;
+            font-size: 1.6em;
+            color: black;
           }
 
           .raised {
