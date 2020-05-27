@@ -19,6 +19,7 @@ class FantasiaButton extends Component {
             border-radius: ${this.props.radius};
             color: ${this.props.textColor};
             padding: ${this.props.padding};
+            width: ${this.props.width};
             box-sizing: box-border;
             cursor: pointer;
             -moz-box-sizing: border-box;

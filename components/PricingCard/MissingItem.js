@@ -14,7 +14,7 @@ class MissingItem extends Component {
                     }
 
                     .f-icon {
-                        color: ${this.props.color};
+                        color: #B8B8B8;
                     }
 
                     .missing-item {

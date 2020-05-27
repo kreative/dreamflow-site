@@ -1,12 +1,10 @@
 import React, { Component } from 'react';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faCheck } from '@fortawesome/free-solid-svg-icons'
 
 class IncludedItem extends Component {
     render() {
         return (
             <div className="included-item">
-                <FontAwesomeIcon className="f-icon" icon={faCheck} />
+                <i className="fas fa-check"></i>
                 <p>{this.props.children}</p>
                 <style jsx>{`
                     p {
@@ -14,7 +12,9 @@ class IncludedItem extends Component {
                     }
                     
                     .f-icon {
-                        color: ${this.props.color};
+                        color: ${this.props.iconColor};
+                        width: 10px;
+                        height: 10px;
                     }
 
                     .included-item {
