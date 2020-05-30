@@ -1,8 +1,9 @@
 import Head from "next/head";
 import Wrapper from "../components/Wrapper/Wrapper";
-import { Container, Row, Col } from "react-grid-system";
+import FAQs from "../components/FAQs/FAQs";
 
 export default function Home() {
+
   return (
     <div>
       <Head>
@@ -10,7 +11,11 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <Wrapper bg="" paddingTop="" paddingBottom="">
+      <Wrapper bg="#FFECD0" paddingTop="200px" paddingBottom="50px">
+        <h1>Frequently asked questions.</h1>
+      </Wrapper>
+      <Wrapper bg="white" paddingTop="100px" paddingBottom="100px">
+        <FAQs />
       </Wrapper>
     </div>
   );
