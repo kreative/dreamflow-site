@@ -16,9 +16,14 @@ class FAQ extends Component {
   };
 
   componentDidMount() {
-    fetch("http://centrifuge.iris.kreativekws.com/logs")
+    fetch("http://dreamflow-cms.kreativekws.com/api/faqs")
       .then((response) => response.json())
-      .then((data) => this.setState({ faqs: data.data.faqs }))
+      .then((data) => {
+        this.setState({
+          faqs: data.data.faqs,
+          productList: data.data.product_list
+        });
+      })
       .catch(console.log);
   }
 
@@ -28,29 +33,36 @@ class FAQ extends Component {
     return (
       <div>
         <Accordion>
-          {this.state.faqs.map((faq, index) => {
-            <div>
+          {this.state.faqs.map((faq, index) => (
+            <div className="section">
               <Accordion.Title
                 active={activeIndex === index}
-                index={0}
+                index={index}
                 onClick={this.handleClick}
               >
                 <Icon name="dropdown" />
-                <h2 className="question">{faq.question}</h2>
+                <span className="question">{faq.question}</span>
               </Accordion.Title>
               <Accordion.Content active={activeIndex === index}>
                 <p className="answer">{faq.answer}</p>
               </Accordion.Content>
-            </div>;
-          })}
+            </div>
+          ))}
         </Accordion>
         <style jsx>{`
-          .question {
+          .section {
+            margin-bottom: 25px;
+          }
 
+          .question {
+            font-size: 1.7em;
+            font-weight: normal;
+            font-family: 'Bifocals', serif;
+            margin-left: 10px;
           }
 
           .answer {
-            
+            margin-left: 30px;
           }
         `}</style>
       </div>
