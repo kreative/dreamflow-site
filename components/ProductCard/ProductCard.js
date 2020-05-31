@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import Button from "../Button/Button";
 
 class ProductCard extends Component {  
   render() {
@@ -15,7 +14,7 @@ class ProductCard extends Component {
         <style jsx>{`
           .card {
             border: 1.5px solid #EAEAEA;
-            padding: 40px 30px;
+            padding: 50px 40px;
             border-radius: 6px;
             text-align: left;
             height: 100%;

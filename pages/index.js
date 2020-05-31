@@ -1,4 +1,5 @@
 import Head from "next/head";
+import Navbar from "../components/Navbar/Navbar";
 import Wrapper from "../components/Wrapper/Wrapper";
 import Button from "../components/Button/Button";
 import LineLabel from "../components/LineLabel/LineLabel";
@@ -12,7 +13,10 @@ export default function Home() {
       <Head>
         <title>Kreative Dreamflow</title>
         <link rel="icon" href="/favicon.ico" />
+        <script type="text/javascript" src="https://kit.fontawesome.com/abadd7b058.js" crossorigin="anonymous"></script>
       </Head>
+
+      <Navbar/>
 
       <div className="splash">
         <Wrapper bg="rgba(0,0,0,0)" paddingTop="0px" paddingBottom="0px">
@@ -81,7 +85,7 @@ export default function Home() {
           <HeaderLine color="black" />
         </div>
         <Container style={{ padding: "0px" }} fluid>
-          <Row gutterWidth={15}>
+          <Row gutterWidth={25}>
             <Col sm={4}>
               <ProductCard
                 logo="/toprank-color.png"
@@ -107,7 +111,7 @@ export default function Home() {
               />
             </Col>
           </Row>
-          <Row gutterWidth={15} style={{paddingTop:"15px"}}>
+          <Row gutterWidth={25} style={{paddingTop:"25px"}}>
             <Col sm={4}>
               <ProductCard
                 logo="/toprank-color.png"
