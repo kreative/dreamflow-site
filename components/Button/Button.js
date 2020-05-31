@@ -27,7 +27,7 @@ class FantasiaButton extends Component {
             font-family: 'Bifocals', serif;
             font-weight: normal;
             font-size: 1.1em;
-            margin-right: 10px;
+            margin: ${this.props.margin};
             -webkit-box-flex: 1 1 auto;
             -moz-box-flex: 1 1 auto;
             -webkit-flex: 1 1 auto;
