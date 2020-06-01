@@ -1,5 +1,6 @@
 import Head from "next/head";
 import Wrapper from "../../components/Wrapper/Wrapper";
+import Footer from "../../components/Footer/Footer";
 import LineLabel from "../../components/LineLabel/LineLabel";
 import Button from "../../components/Button/Button";
 import Wave from "../../components/Wave/Wave";
@@ -443,6 +444,9 @@ export default function PageflowHome() {
           Get Started
         </Button>
       </Wrapper>
+
+      <Footer />
+      
       <style jsx>{`
         .image1 {
           width: 100%;

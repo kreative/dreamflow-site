@@ -21,7 +21,14 @@ export default function Home() {
 
       <div className="splash">
         <Wrapper bg="rgba(0,0,0,0)" paddingTop="0px" paddingBottom="0px">
-          <h1>Some sort of headline that describes exactly what we do that's inspiring and uplifiting and bigger than what it should be</h1>
+          <Container style={{padding:"0px"}} fluid>
+            <Row gutterWidth={0}>
+              <Col sm={8}>
+                <h1>Some sort of headline that describes exactly what we do that's inspiring and uplifiting and bigger than what it should be</h1>
+              </Col>
+
+            </Row>
+          </Container>
         </Wrapper>
       </div>
       <div className="gradient">

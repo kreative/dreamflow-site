@@ -1,5 +1,6 @@
 import Head from 'next/head';
 import Wrapper from '../../components/Wrapper/Wrapper';
+import Footer from '../../components/Footer/Footer';
 import Button from '../../components/Button/Button';
 import LineLabel from '../../components/LineLabel/LineLabel';
 import PricingCard from '../../components/PricingCard/PricingCard';
@@ -182,23 +183,30 @@ export default function PageflowPricing() {
             <Col sm={6}>
               <img
                 className="image image2"
-                src=""
+                src="https://kmg-site-assets.kaycdn.com/cashflow.gif"
                 alt="Payment image"
               />
             </Col>
-            <Col sm={6}>
-              <LineLabel color="white">WEB DEVELOPMENT PAYMENT PLANS</LineLabel>
-              <h2 style={{color:"white"}}>Don't let cashflow get in between you and your future customers​</h2>
-              <p style={{color:"white"}}>We offer payment plans that help break down your costs between three, six, twelve months.</p>
-              <Button
-                fill="rgba(255, 255, 255, 0.17)"
-                textColor="white"
-                radius="3px"
-                border="1px solid white"
-                padding="15px 50px"
-              >
-                Get Started
-              </Button>
+            <Col
+              sm={6}
+              style={{
+                justifyContent: "center",
+                display: "flex",
+                flexDirection: "column",
+              }}
+            >
+                <LineLabel color="white">WEB DEVELOPMENT PAYMENT PLANS</LineLabel>
+                <h2 style={{color:"white"}}>Don't let cashflow get in between you and your future customers​</h2>
+                <p style={{color:"white"}}>We offer payment plans that help break down your costs between three, six, twelve months.</p>
+                <Button
+                  fill="rgba(255, 255, 255, 0.17)"
+                  textColor="white"
+                  radius="3px"
+                  border="1px solid white"
+                  padding="15px 50px"
+                >
+                  Get Started
+                </Button>
             </Col>
           </Row>
         </Container>
@@ -223,6 +231,9 @@ export default function PageflowPricing() {
           </Button>
         </div>
       </Wrapper>
+
+      <Footer />
+
       <style jsx>{`
         .image {
           width: 100%;
@@ -233,7 +244,7 @@ export default function PageflowPricing() {
         }
 
         .image2 {
-          padding-right: 25px;
+          padding-right: 50px;
         }
 
         .pageflow-pledge-content {
