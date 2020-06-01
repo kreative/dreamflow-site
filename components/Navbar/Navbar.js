@@ -1,87 +1,49 @@
 import React, { Component } from "react";
 import Wrapper from "../Wrapper/Wrapper";
 
-class Navbar extends Component {
-  classToggle() {
-    const navs = document.querySelectorAll(".Navbar__Items");
-    navs.forEach((nav) => nav.classList.toggle("Navbar__ToggleShow"));
-  }
+class DreamflowNavbar extends Component {
 
   render() {
     return (
-      <Wrapper bg="" paddingTop="" paddingBottom="">
-        <div className="Navbar">
-          <div className="Navbar__Link Navbar__Link-brand">Website title</div>
-          <div
-            className="Navbar__Link Navbar__Link-toggle"
-            onClick={this.classToggle}
-          >
-            <i className="fas fa-bars"></i>
-          </div>
-          <nav className="Navbar__Items">
-            <div className="Navbar__Link">Longer Link</div>
-            <div className="Navbar__Link">Longer Link</div>
-            <div className="Navbar__Link">Link</div>
-          </nav>
-          <nav className="Navbar__Items Navbar__Items--right">
-            <div className="Navbar__Link">Link</div>
-            <div className="Navbar__Link">Link</div>
-          </nav>
-          <style jsx>{`
-            .Navbar {
-              background-color: #46acc2;
-              display: flex;
-              padding: 16px;
-              font-family: sans-serif;
-              color: white;
-            }
+      <div className="Navbar__Wrapper">
+       
+        <style jsx>{`
+          .Navbar__Wrapper {
+            background: rgba(255, 255, 255, 0.6);
+            position: fixed;
+            top: 0;
+            width: 100%;
+            overflow: hidden;
+            z-index: 1000;
+            backdrop-filter: blur(5px);
+          }
 
-            .Navbar__Link {
-              padding-right: 8px;
-            }
+          .Navbar {
+            display: flex;
+            font-family: sans-serif;
+            align-items: center;
+            padding: 20px 10%;
+          }
 
-            .Navbar__Items {
-              display: flex;
-            }
+          .left-col {
+            width: 50%;
+          }
 
-            .Navbar__Items--right {
-              margin-left: auto;
-            }
+          .right-col {
+            width: 50%;
+          }
 
-            .Navbar__Link-toggle {
-              display: none;
-            }
+          .links {
+            float: right;
+          }
 
-            @media only screen and (max-width: 768px) {
-              .Navbar__Items,
-              .Navbar {
-                flex-direction: column;
-              }
-
-              .Navbar__Items {
-                display: none;
-              }
-
-              .Navbar__Items--right {
-                margin-left: 0;
-              }
-
-              .Navbar__ToggleShow {
-                display: flex;
-              }
-
-              .Navbar__Link-toggle {
-                align-self: flex-end;
-                display: initial;
-                position: absolute;
-                cursor: pointer;
-              }
-            }
-          `}</style>
-        </div>
-      </Wrapper>
+          .logo {
+            width: 30%;
+          }
+        `}</style>
+      </div>
     );
   }
 }
 
-export default Navbar;
+export default DreamflowNavbar;

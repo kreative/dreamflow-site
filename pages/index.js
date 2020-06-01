@@ -1,5 +1,6 @@
 import Head from "next/head";
 import Navbar from "../components/Navbar/Navbar";
+import Footer from "../components/Footer/Footer";
 import Wrapper from "../components/Wrapper/Wrapper";
 import Button from "../components/Button/Button";
 import LineLabel from "../components/LineLabel/LineLabel";
@@ -20,24 +21,7 @@ export default function Home() {
 
       <div className="splash">
         <Wrapper bg="rgba(0,0,0,0)" paddingTop="0px" paddingBottom="0px">
-          <h1>Some sort of headline that describes exactly what we do</h1>
-          <p>
-            {" "}
-            Many desktop publishing packages and web page editors now use Lorem
-            Ipsum as their default model text, and a search for 'lorem ipsum'
-            will uncover many web sites still in their infancy.
-          </p>
-          <Button
-            fill="black"
-            textColor="white"
-            radius="3px"
-            border="1px solid black"
-            padding="15px 50px"
-            raised={false}
-            grow={true}
-          >
-            Get Started with Dreamflow
-          </Button>
+          <h1>Some sort of headline that describes exactly what we do that's inspiring and uplifiting and bigger than what it should be</h1>
         </Wrapper>
       </div>
       <div className="gradient">
@@ -139,9 +123,8 @@ export default function Home() {
           </Row>
         </Container>
       </Wrapper>
-      <Wrapper bg="#111111" paddingBottom="200px" paddingTop="200px">
 
-      </Wrapper>
+      <Footer />
 
       <style jsx>{`
         .left-padded {
@@ -151,11 +134,9 @@ export default function Home() {
         .splash {
           background-color: red;
           color: white;
-          text-align: center;
-          height: 90vh;
-          display: flex;
-          flex-direction: column;
-          justify-content: center;
+          text-align: left;
+          padding-top: 350px;
+          padding-bottom: 100px;
         }
 
         .gradient {
