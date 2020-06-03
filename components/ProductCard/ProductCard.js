@@ -9,6 +9,7 @@ class ProductCard extends Component {
           src={this.props.logo}
           alt={this.props.alt}
         />
+        <h4 className="header">{this.props.header}</h4>
         <p className="description">{this.props.description}</p>
         <p className="text">{this.props.text}</p>
         <style jsx>{`

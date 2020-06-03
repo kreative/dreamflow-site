@@ -5,6 +5,7 @@ import Button from "../../components/Button/Button";
 import LineLabel from "../../components/LineLabel/LineLabel";
 import IconBox from "../../components/IconBox/IconBox";
 import Wave from "../../components/Wave/Wave";
+import ProductCard from "../../components/ProductCard/ProductCard";
 import { Container, Row, Col } from "react-grid-system";
 
 export default function TopRank() {
@@ -76,6 +77,30 @@ export default function TopRank() {
           </Row>
         </Container>
       </Wrapper>
+      <div className="products-section">
+        <Wrapper bg="rgba(0,0,0,0)" paddingTop="150px" paddingBottom="150px">
+          <div 
+            style={{
+              textAlign:"center",
+              paddingBottom: "50px"
+            }}
+          >
+            <h2>Kopy Products</h2>
+          </div>
+          <Container style={{padding:"0px"}} fluid>
+            <Row gutterWidth={50}>
+              <Col sm={6}>
+                <ProductCard
+                  header=""
+                  description=""
+                  text=""
+                />
+              </Col>
+              <Col sm={6}></Col>
+            </Row>
+          </Container>
+        </Wrapper>
+      </div>
       <div className="process-section" style={{ backgroundColor: "#A1F3F3" }}>
         <Wrapper bg="rgba(0,0,0,0)" paddingBottom="100px" paddingTop="150px">
           <div className="process-header">

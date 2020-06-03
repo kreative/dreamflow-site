@@ -1,61 +1,54 @@
 import React, { Component } from 'react';
-import classNames from 'classnames';
 
 class FantasiaIconBox extends Component {
-    render() {
-        var iconBoxClass = classNames({
-            'iconbox': true,
-            'right-aligned': this.props.align === "right",
-            'left-aligned': this.props.align === "left",
-            'center-aligned': this.props.align === "center"
-        });
+  render() {
+    return (
+      <div>
+        <div className="icon-box">
+          <div className="icon">
+            <i className={this.props.src}></i>
+          </div>
+          <h5 className="header">{this.props.header}</h5>
+          <p className="text">{this.props.text}</p>
+        </div>
+        <style jsx>{`
+          .icon-box {
+            text-align: ${this.props.align};
+          }
 
-        return (
-            <div className={iconBoxClass}>
-                <div className="icon">{this.props.children}</div>
-                <div className="content">
-                    <h4>{this.props.header}</h4>
-                    <p>{this.props.text}</p>
-                </div>
-                <style jsx>{`
-                    .iconbox {
-                        width: 100%;
-                    }
+          .icon {
+            display: flex;
+            justify-content: ${this.props.iconAlign};
+          }
 
-                    .content {
-                        color: ${this.props.textColor};
-                    }
+          i {
+            display: flex;
+            font-size: ${this.props.size};
+            justify-content: center;
+            align-items: center;
+            color: ${this.props.color};
+            margin-bottom: 5px;
+            margin-top: 25px;
+            padding: ${this.props.padding};            
+            border-radius: ${this.props.radius};
+            background-color: ${this.props.bg};
+            border: ${this.props.border};
+            width: 2.5rem !important;
+            height: 2.5rem !important;
+          }
 
-                    .content h4 {
-                        font-weight: normal;
-                        font-family: 'Bifocals', serif;
-                    }
+          .header {
+            font-size: 1.6em;
+            font-family: 'Bifocals', serif;
+          }
 
-                    .left-aligned {
-                        text-align: left;
-                    }
-
-                    .right-aligned {
-                        text-align: right;
-                    }
-
-                    .center-aligned {
-                        text-align: center;
-                    }
-
-                    @media screen and (max-width: 600px) {
-                        .icon {
-
-                        }
-
-                        .content {
-
-                        }
-                    }
-                `}</style>
-            </div>
-        )
-    };
+          .text {
+            font-size: 1.3em;
+          }
+        `}</style>
+      </div>
+    );
+  };
 }
 
 export default FantasiaIconBox;
