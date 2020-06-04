@@ -31,7 +31,7 @@ export default function Home() {
           </Container>
         </Wrapper>
       </div>
-      <div className="gradient">
+      <div>
         <Wrapper bg="rgba(0,0,0,0)" paddingTop="150px" paddingBottom="150px">
           <Container style={{ padding: "0px" }} fluid>
             <Row gutterWidth={0}>
@@ -139,7 +139,7 @@ export default function Home() {
         }
 
         .splash {
-          background-color: red;
+          background-color: black;
           color: white;
           text-align: left;
           padding-top: 350px;

@@ -15,6 +15,7 @@ class FantasiaLineLabel extends Component {
                         font-size: 1em;
                         font-weight: normal;
                         display: inline;
+                        letter-spacing: 5%;
                     }
                 `}</style>
             </div>
