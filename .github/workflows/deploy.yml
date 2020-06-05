@@ -17,7 +17,8 @@ jobs:
       uses: actions/setup-node@v1
       with:
         node-version: 12.x
-    - run: npm run build
+    - run: yarn install --frozen-lockfile
+    - run: yarn build
 
   deploy:
     name: "Deploy to Netlify"
