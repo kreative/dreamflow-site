@@ -1,11 +1,11 @@
-import Head from 'next/head';
-import Wrapper from '../../components/Wrapper/Wrapper';
-import Footer from '../../components/Footer/Footer';
-import Button from '../../components/Button/Button';
-import LineLabel from '../../components/LineLabel/LineLabel';
-import PricingCard from '../../components/PricingCard/PricingCard';
-import AlertBlock from '../../components/AlertBlock/AlertBlock';
-import { Container, Row, Col } from 'react-grid-system';
+import Head from "next/head";
+import Wrapper from "../../components/Wrapper/Wrapper";
+import Footer from "../../components/Footer/Footer";
+import Button from "../../components/Button/Button";
+import LineLabel from "../../components/LineLabel/LineLabel";
+import PricingCard from "../../components/PricingCard/PricingCard";
+import AlertBlock from "../../components/AlertBlock/AlertBlock";
+import { Container, Row, Col } from "react-grid-system";
 
 export default function PageflowPricing() {
   return (
@@ -13,12 +13,17 @@ export default function PageflowPricing() {
       <Head>
         <title>Pageflow Web Development Pricing | Kreative Dreamflow</title>
         <link rel="icon" href="/favicon.ico" />
+        <script
+          type="text/javascript"
+          src="https://kit.fontawesome.com/abadd7b058.js"
+          crossorigin="anonymous"
+        ></script>
       </Head>
-      
-      <Wrapper bg="#ABFAFF" paddingTop="150px" paddingBottom="100px">
-        <Container style={{padding: "0px"}} fluid>
+
+      <Wrapper bg="#E7DFFF" paddingTop="150px" paddingBottom="100px">
+        <Container style={{ padding: "0px" }} fluid>
           <Row gutterWidth={0}>
-            <Col 
+            <Col
               sm={6}
               style={{
                 justifyContent: "center",
@@ -28,7 +33,10 @@ export default function PageflowPricing() {
             >
               <LineLabel color="black">WEB DEVELOPMENT PRICING</LineLabel>
               <h1>Flexible web design pricing without the hidden fees</h1>
-              <p>We make sure that what we quote is what you pay. So you can relax.</p>
+              <p>
+                We make sure that what we quote is what you pay. So you can
+                relax.
+              </p>
             </Col>
             <Col sm={6}>
               <img
@@ -48,10 +56,10 @@ export default function PageflowPricing() {
           label="SIGNUP BONUS !!!"
           header="New customers get a free logo, business card design, and 100 premium business cards​"
           align="center"
-        /> 
+        />
       </Wrapper>
       <Wrapper bg="white" paddingBottom="100px" paddingTop="0px">
-        <Container style={{padding:"0px"}} fluid>
+        <Container style={{ padding: "0px" }} fluid>
           <Row gutterWidth={15}>
             <Col sm={4}>
               <PricingCard
@@ -78,7 +86,7 @@ export default function PageflowPricing() {
                   "Multilingual",
                   "Payment Gateway Integration",
                   "Custom Function Development",
-                  "We send you coffee when you join"
+                  "We send you coffee when you join",
                 ]}
                 missingItems={[]}
               />
@@ -110,7 +118,7 @@ export default function PageflowPricing() {
                   "Multilingual",
                   "Payment Gateway Integration",
                   "Custom Function Development",
-                  "We send you coffee when you join"
+                  "We send you coffee when you join",
                 ]}
               />
             </Col>
@@ -141,7 +149,7 @@ export default function PageflowPricing() {
                   "Multilingual",
                   "Payment Gateway Integration",
                   "Custom Function Development",
-                  "We send you coffee when you join"
+                  "We send you coffee when you join",
                 ]}
               />
             </Col>
@@ -169,7 +177,7 @@ export default function PageflowPricing() {
               <div className="pageflow-pledge-content">
                 <LineLabel>OUR PLEDGE</LineLabel>
                 <h2>
-                  Every customer recieves a  Dedicated Success Team, revisions,
+                  Every customer recieves a Dedicated Success Team, revisions,
                   SEO consultations, and a Satisfaction Guarantee.
                 </h2>
               </div>
@@ -178,7 +186,7 @@ export default function PageflowPricing() {
         </Container>
       </Wrapper>
       <Wrapper bg="#6135DE" paddingBottom="150px" paddingTop="150px">
-        <Container style={{padding:"0px"}} fluid>
+        <Container style={{ padding: "0px" }} fluid>
           <Row gutterWidth={0}>
             <Col sm={6}>
               <img
@@ -195,41 +203,56 @@ export default function PageflowPricing() {
                 flexDirection: "column",
               }}
             >
-                <LineLabel color="white">WEB DEVELOPMENT PAYMENT PLANS</LineLabel>
-                <h2 style={{color:"white"}}>Don't let cashflow get in between you and your future customers​</h2>
-                <p style={{color:"white"}}>We offer payment plans that help break down your costs between three, six, twelve months.</p>
-                <Button
-                  fill="rgba(255, 255, 255, 0.17)"
-                  textColor="white"
-                  radius="3px"
-                  border="1px solid white"
-                  padding="15px 50px"
-                >
-                  Get Started
-                </Button>
+              <LineLabel color="white">WEB DEVELOPMENT PAYMENT PLANS</LineLabel>
+              <h2 style={{ color: "white" }}>
+                Don't let cashflow get in between you and your future customers​
+              </h2>
+              <p style={{ color: "white" }}>
+                We offer payment plans that help break down your costs between
+                three, six, twelve months.
+              </p>
+              <Button
+                fill="rgba(255, 255, 255, 0.17)"
+                textColor="white"
+                radius="3px"
+                border="1px solid white"
+                padding="15px 50px"
+              >
+                Get Started
+              </Button>
             </Col>
           </Row>
         </Container>
       </Wrapper>
       <Wrapper bg="white" paddingBottom="150px" paddingTop="150px">
-        <div style={{textAlign:"center"}}>
-          <LineLabel color="black">WORK WITH PAGEFLOW</LineLabel>
-          <h2 style={{ fontWeight: "bold" }}>
-            Give your business an unfair advantage with Pageflow
-          </h2>
-          <p>It's simple, easy, and free to get started</p>
-          <Button
-            fill="black"
-            textColor="white"
-            radius="3px"
-            border="1px solid black"
-            padding="15px 50px"
-            raised={true}
-            grow={true}
-          >
-            Get Started
-          </Button>
-        </div>
+        <Container style={{ padding: "0px" }} fluid>
+          <Row gutterWidth={0}>
+            <Col sm={6}>
+              <LineLabel color="black">ANY QUESTIONS?</LineLabel>
+              <h2 style={{ fontWeight: "bold" }}>
+                Our Support Team is here for any concern you have
+              </h2>
+              <Button
+                fill="black"
+                textColor="white"
+                radius="3px"
+                border="1px solid black"
+                padding="15px 50px"
+                raised={true}
+                grow={true}
+              >
+                Contact Support
+              </Button>
+            </Col>
+            <Col sm={6}>
+              <img
+                className="image image1"
+                src="https://kmg-site-assets.kaycdn.com/support.gif"
+                alt=""
+              />
+            </Col>
+          </Row>
+        </Container>
       </Wrapper>
 
       <Footer />
@@ -266,5 +289,5 @@ export default function PageflowPricing() {
         }
       `}</style>
     </div>
-  )
+  );
 }

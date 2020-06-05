@@ -7,7 +7,6 @@ import IconBox from "../../components/IconBox/IconBox";
 import Wave from "../../components/Wave/Wave";
 import { Container, Row, Col } from "react-grid-system";
 import { faPencilRuler } from "@fortawesome/free-solid-svg-icons";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 export default function TopRank() {
   return (
@@ -78,8 +77,15 @@ export default function TopRank() {
           </Row>
         </Container>
       </Wrapper>
-      <div className="process-section" style={{ backgroundColor: "#A1F3F3" }}>
-        <Wrapper bg="rgba(0,0,0,0)" paddingBottom="100px" paddingTop="150px">
+      <Wave color="white">
+        <path
+          className="wave-fill"
+          d="M421.9,6.5c22.6-2.5,51.5,0.4,75.5,5.3c23.6,4.9,70.9,23.5,100.5,35.7c75.8,32.2,133.7,44.5,192.6,49.7
+        c23.6,2.1,48.7,3.5,103.4-2.5c54.7-6,106.2-25.6,106.2-25.6V0H0v30.3c0,0,72,32.6,158.4,30.5c39.2-0.7,92.8-6.7,134-22.4
+        c21.2-8.1,52.2-18.2,79.7-24.2C399.3,7.9,411.6,7.5,421.9,6.5z"
+        ></path>
+      </Wave>
+        <Wrapper bg="#7FE8AB" paddingBottom="100px" paddingTop="200px">
           <div className="process-header">
             <LineLabel color="black">THE TOPRANK PROCESS</LineLabel>
             <h2>Headline talking about our superior and effecient process.</h2>
@@ -90,54 +96,41 @@ export default function TopRank() {
                 <Col sm={4}>
                   <IconBox
                     icon={faPencilRuler}
+                    iconColor="black"
                     header="First Step"
                     text="Explanation about the first step that makes sense to the reader."
                     align="left"
                     iconAlign="flex-start"
-                    size="3rem"
-                    padding="4rem"
-                    radius="50%"
-                    bg="rgba(255,255,255,0.32)"
-                    color="black"
-                    border="2px solid"
+                    size="3x"
                   />
                 </Col>
                 <Col sm={4}>
                   <IconBox
-                    src="fas fa-pencil-ruler"
+                    icon={faPencilRuler}
+                    iconColor="black"
                     header="First Step"
                     text="Explanation about the first step that makes sense to the reader."
                     align="left"
                     iconAlign="flex-start"
-                    size="3rem"
-                    padding="4rem"
-                    radius="50%"
-                    bg="rgba(255,255,255,0.32)"
-                    color="black"
-                    border="2px solid"
+                    size="3x"
                   />
                 </Col>
                 <Col sm={4}>
                   <IconBox
-                    src="fas fa-pencil-ruler"
+                    icon={faPencilRuler}
+                    iconColor="black"
                     header="First Step"
                     text="Explanation about the first step that makes sense to the reader."
                     align="left"
                     iconAlign="flex-start"
-                    size="3rem"
-                    padding="4rem"
-                    radius="50%"
-                    bg="rgba(255,255,255,0.32)"
-                    color="black"
-                    border="2px solid"
+                    size="3x"
                   />
                 </Col>
               </Row>
             </Container>
           </div>
         </Wrapper>
-      </div>
-      <Wave color="#A1F3F3">
+      <Wave color="#7FE8AB">
         <path
           className="wave-fill"
           d="M421.9,6.5c22.6-2.5,51.5,0.4,75.5,5.3c23.6,4.9,70.9,23.5,100.5,35.7c75.8,32.2,133.7,44.5,192.6,49.7

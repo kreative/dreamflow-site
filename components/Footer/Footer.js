@@ -81,6 +81,10 @@ class Footer extends Component {
           </Wrapper>
         </div>
         <style jsx>{`
+          .Footer__CTA {
+            border-top: 1.5px solid #E3E3E3;
+          }
+
           .CTA__Text:hover {
             text-decoration: underline;
             cursor: pointer;

@@ -8,17 +8,23 @@ class ProductCard extends Component {
       "hvr-float": true,
       "raised": this.props.raised
     });
+
+    var logoClass = classNames({
+      "logo": true,
+      "hidden": this.props.hideImage
+    });
     
     return (
       <div className={cardClass}>
         <img
-          className="logo"
+          className={logoClass}
           src={this.props.logo}
           alt={this.props.alt}
         />
         <h4 className="header">{this.props.header}</h4>
         <p className="description">{this.props.description}</p>
         <p className="text">{this.props.text}</p>
+        <div>{this.props.button}</div>
         <style jsx>{`
           .card {
             background-color: ${this.props.bg};
@@ -37,6 +43,12 @@ class ProductCard extends Component {
             width: 100%;
           }
 
+          .header {
+            margin-top: -10px;
+            font-weight: bold;
+            font-size: 2em;
+          }
+
           .description {
             margin-top: -10px;
             font-weight: normal;
@@ -49,6 +61,10 @@ class ProductCard extends Component {
             color: #343434;
             font-size: 1.4em;
             font-family: 'Bifocals', serif;
+          }
+
+          .hidden {
+            display: none;
           }
 
           .raised {

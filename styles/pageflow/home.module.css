@@ -1,0 +1,66 @@
+.image {
+  width: 100%;
+}
+
+.image1 {
+  width: 100%;
+  padding-left: 75px;
+}
+
+.image2 {
+  width: 100%;
+  padding-right: 75px;
+}
+
+.padded_text {
+  padding-left: 50px;
+}
+
+.benefits {
+  padding-right: 35px;
+}
+
+.squeezed_container {
+  padding-top: 25px;
+  width: 60%;
+  margin: 0 auto;
+}
+
+.solution_image_wrapper {
+  z-index: 10;
+}
+
+.solution_content {
+  margin-right: -100px;
+  padding: 100px 175px 100px 100px;
+  background-color: #C8B5FD;
+  border-radius: 3px;
+}
+
+.feature_text {
+
+}
+
+.feature_image {
+  
+}
+
+@media screen and (max-width: 600px) {
+  .image1 {
+    padding-left: 0px;
+  }
+
+  .image2 {
+    padding-right: 0px;
+  }
+
+  .padded-text {
+    padding-left: 0px;
+    padding-top: 20px;
+  }
+
+  .benefits {
+    padding-right: 0px;
+    padding-bottom: 10px;
+  }
+}

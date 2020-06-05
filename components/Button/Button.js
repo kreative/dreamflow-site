@@ -34,6 +34,11 @@ class FantasiaButton extends Component {
             -ms-flex: 1 1 auto;
             flex: 1 1 auto;
           }
+
+          .f-btn:hover {
+            background-color: ${this.props.hoverColor};
+            border: ${this.props.hoverBorder};
+          }
           
           .raised {
             -webkit-box-shadow: 0px 7px 28px 5px rgba(166,166,166,0.7);

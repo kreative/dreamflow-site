@@ -87,10 +87,12 @@ class ContactCard extends Component {
                 </div>
                 <Button
                   type="submit"
-                  fill="#001AFF"
+                  fill="black"
+                  hoverColor="#53504E"
                   textColor="white"
                   radius="3px"
-                  border="1px solid #001AFF"
+                  border="1px solid black"
+                  hoverBorder="1px solid #53504E"
                   padding="15px 50px"
                   width="100%"
                 >

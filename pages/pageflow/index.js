@@ -6,7 +6,8 @@ import Button from "../../components/Button/Button";
 import Wave from "../../components/Wave/Wave";
 import IconBox from "../../components/IconBox/IconBox";
 import { Container, Row, Col } from "react-grid-system";
-import styles from "../../styles/buttonGroup.module.css";
+import { faPencilRuler } from "@fortawesome/free-solid-svg-icons";
+import styles from "../../styles/pageflow/home.module.css";
 
 export default function PageflowHome() {
   return (
@@ -14,6 +15,11 @@ export default function PageflowHome() {
       <Head>
         <title>Pageflow</title>
         <link rel="icon" href="/favicon.ico" />
+        <script
+          type="text/javascript"
+          src="https://kit.fontawesome.com/abadd7b058.js"
+          crossorigin="anonymous"
+        ></script>
       </Head>
 
       <Wrapper bg="#C8B5FD" paddingBottom="100px" paddingTop="100px">
@@ -38,32 +44,21 @@ export default function PageflowHome() {
                 Pageflow, we make your website into a sales-making machine,
                 bringing you leads 24/7.
               </p>
-              <div className={styles.buttonGroup}>
-                <Button
-                  fill="black"
-                  textColor="white"
-                  radius="3px"
-                  border="1px solid black"
-                  padding="15px 50px"
-                  raised={true}
-                  grow={true}
-                >
-                  View Pricing
-                </Button>
-                <Button
-                  fill="rgba(12, 12, 12, 0.05)"
-                  textColor="black"
-                  radius="3px"
-                  border="1px solid black"
-                  padding="15px 50px"
-                >
-                  Contact Us
-                </Button>
-              </div>
+              <Button
+                fill="black"
+                textColor="white"
+                radius="3px"
+                border="1px solid black"
+                padding="15px 50px"
+                raised={true}
+                grow={true}
+              >
+                View Pricing
+              </Button>
             </Col>
             <Col sm={6} style={{ textAlign: "right" }}>
               <img
-                className="image1"
+                className={styles.image1}
                 src="http://kmg-site-assets.kaycdn.com/fall.gif"
                 alt="falling gif"
               />
@@ -79,7 +74,7 @@ export default function PageflowHome() {
               <h2>Every other solution wastes your time - and money​</h2>
             </Col>
             <Col sm={6}>
-              <p className="padded-text">
+              <p className={styles.padded_text}>
                 We get it. Agencies, freelancers, and even DIY solutions like
                 Wix or Squarespace suck. Either it's too expensive, or too slow,
                 or too unreliable. Even worse, you go with one of these
@@ -98,33 +93,50 @@ export default function PageflowHome() {
           </Row>
         </Container>
       </Wrapper>
-      <Wrapper bg="#F8F5F2" paddingTop="150px" paddingBottom="150px">
-        <Container style={{ padding: "0px" }}>
+      <Wrapper bg="#E7DFFF" paddingTop="150px" paddingBottom="150px">
+        <Container style={{ padding: "0px" }} fluid>
           <Row gutterWidth={0}>
-            <Col sm={6}>
-              <LineLabel color="black">THE SOLUTION</LineLabel>
-              <h2>
-                Pageflow delivers a website that sells and looks better than
-                your compeition​
-              </h2>
-              <p>
-                Investing in a website just to have it float around in space
-                doesn't do your business any good. Pageflow does things
-                differently by removing all the red-tape and rubbish and using
-                digital psychology and our in-house talent with more than a
-                decade of experience to bring you beautiful design with useful,
-                sales-driven features that give your company an edge over your
-                competitors.
-              </p>
+            <Col sm={8}>
+              <div className={styles.solution_content}>
+                <LineLabel color="black">THE SOLUTION</LineLabel>
+                <h2>
+                  Pageflow delivers a website that sells and looks better than
+                  your compeition​
+                </h2>
+                <p>
+                  We get it. Agencies, freelancers, and even DIY solutions like
+                  Wix or Squarespace suck. Either it's too expensive, or too
+                  slow, or too unreliable. Even worse, you go with one of these
+                  providers, and in a year or two.
+                </p>
+                <Button
+                  fill="white"
+                  textColor="black"
+                  radius="3px"
+                  border="1px solid white"
+                  padding="15px 50px"
+                  raised={false}
+                  grow={true}
+                >
+                  View Pricing
+                </Button>
+              </div>
             </Col>
-            <Col sm={6}>
-              <span>
+            <Col
+              sm={4}
+              style={{
+                justifyContent: "center",
+                display: "flex",
+                flexDirection: "column",
+              }}
+            >
+              <div className={styles.solution_image_wrapper}>
                 <img
-                  className="image1"
-                  src="https://kmg-site-assets.kaycdn.com/heart-eyes.gif"
-                  alt="George Clooney Heart Eyes"
+                  className={styles.image}
+                  src="https://kmg-site-assets.kaycdn.com/heart-eyes-daffy.gif"
+                  alt="Angry Panda"
                 />
-              </span>
+              </div>
             </Col>
           </Row>
         </Container>
@@ -133,50 +145,32 @@ export default function PageflowHome() {
         <div style={{ textAlign: "center" }}>
           <LineLabel color="black">THE COMPLETE PACKAGE</LineLabel>
           <h2>Every single thing you need for online success</h2>
-          <div className="squeezed-container">
+          <div className={styles.squeezed_container}>
             <Container style={{ padding: "0px" }}>
-              <Row gutterWidth={0}>
+              <Row gutterWidth={10}>
                 <Col sm={2}>
-                  <IconBox
-                    color="black"
-                    align="center"
-                    header="Something"
-                  ></IconBox>
+                  <img className={styles.feature_image} src="" alt="" />
+                  <p className={styles.feature_text}>Something</p>
                 </Col>
                 <Col sm={2}>
-                  <IconBox
-                    color="black"
-                    align="center"
-                    header="Something"
-                  ></IconBox>
+                  <img className={styles.feature_image} src="" alt="" />
+                  <p className={styles.feature_text}>Something</p>
                 </Col>
                 <Col sm={2}>
-                  <IconBox
-                    color="black"
-                    align="center"
-                    header="Something"
-                  ></IconBox>
+                  <img className={styles.feature_image} src="" alt="" />
+                  <p className={styles.feature_text}>Something</p>
                 </Col>
                 <Col sm={2}>
-                  <IconBox
-                    color="black"
-                    align="center"
-                    header="Something"
-                  ></IconBox>
+                  <img className={styles.feature_image} src="" alt="" />
+                  <p className={styles.feature_text}>Something</p>
                 </Col>
                 <Col sm={2}>
-                  <IconBox
-                    color="black"
-                    align="center"
-                    header="Something"
-                  ></IconBox>
+                  <img className={styles.feature_image} src="" alt="" />
+                  <p className={styles.feature_text}>Something</p>
                 </Col>
                 <Col sm={2}>
-                  <IconBox
-                    color="black"
-                    align="center"
-                    header="Something"
-                  ></IconBox>
+                  <img className={styles.feature_image} src="" alt="" />
+                  <p className={styles.feature_text}>Something</p>
                 </Col>
               </Row>
             </Container>
@@ -191,12 +185,12 @@ export default function PageflowHome() {
         c21.2-8.1,52.2-18.2,79.7-24.2C399.3,7.9,411.6,7.5,421.9,6.5z"
         ></path>
       </Wave>
-      <Wrapper bg="#1D60E1" paddingBottom="150px" paddingTop="250px">
+      <Wrapper bg="#6135DE" paddingBottom="150px" paddingTop="250px">
         <Container style={{ padding: "0px" }}>
           <Row gutterWidth={0}>
             <Col sm={6}>
               <img
-                className="image2"
+                className={styles.image2}
                 src="https://kmg-site-assets.kaycdn.com/plant-growing.gif"
                 alt="Growing Plant Animation"
               />
@@ -228,7 +222,7 @@ export default function PageflowHome() {
           </Row>
         </Container>
       </Wrapper>
-      <Wave color="#1D60E1">
+      <Wave color="#6135DE">
         <path
           d="M421.9,6.5c22.6-2.5,51.5,0.4,75.5,5.3c23.6,4.9,70.9,23.5,100.5,35.7c75.8,32.2,133.7,44.5,192.6,49.7
         c23.6,2.1,48.7,3.5,103.4-2.5c54.7-6,106.2-25.6,106.2-25.6V0H0v30.3c0,0,72,32.6,158.4,30.5c39.2-0.7,92.8-6.7,134-22.4
@@ -236,49 +230,50 @@ export default function PageflowHome() {
         ></path>
       </Wave>
       <Wrapper bg="white" paddingTop="250px" paddingBottom="150px">
-        <Container style={{ padding: "0px" }}>
-          <Row gutterWidth={0}>
-            <Col
-              sm={6}
-              style={{
-                justifyContent: "center",
-                display: "flex",
-                flexDirection: "column",
-              }}
-            >
-              <LineLabel color="black">HOW IT WORKS</LineLabel>
-              <h2>
-                You're a part of every step, without having to do the work
-              </h2>
-              <p>
-                We’ve perfected the Pageflow Design and Development Process
-                (DevDesign) to only require a few hours of your time each week,
-                so you can get back to running your business.
-              </p>
-              <div className={styles.buttonGroup}>
-                <Button
-                  fill="black"
-                  textColor="white"
-                  radius="3px"
-                  border="1px solid black"
-                  padding="15px 50px"
-                  raised={true}
-                  grow={true}
-                >
-                  View Pricing
-                </Button>
-                <Button
-                  fill="rgba(12, 12, 12, 0.05)"
-                  textColor="black"
-                  radius="3px"
-                  border="1px solid black"
-                  padding="15px 50px"
-                >
-                  Contact Us
-                </Button>
-              </div>
+        <div style={{ paddingBottom: "75px" }}>
+          <LineLabel color="black">HOW IT WORKS</LineLabel>
+          <h2>You're a part of every step, without having to do the work</h2>
+          <p>
+            We’ve perfected the Pageflow Design and Development Process
+            (DevDesign) to only require a few hours of your time each week, so
+            you can get back to running your business.
+          </p>
+        </div>
+        <Container style={{ padding: "0px" }} fluid>
+          <Row gutterWidth={25}>
+            <Col sm={4}>
+              <IconBox
+                icon={faPencilRuler}
+                iconColor="black"
+                header="First Step"
+                text="Explanation about the first step that makes sense to the reader."
+                align="left"
+                iconAlign="flex-start"
+                size="3x"
+              />
             </Col>
-            <Col sm={6}></Col>
+            <Col sm={4}>
+              <IconBox
+                icon={faPencilRuler}
+                iconColor="black"
+                header="First Step"
+                text="Explanation about the first step that makes sense to the reader."
+                align="left"
+                iconAlign="flex-start"
+                size="3x"
+              />
+            </Col>
+            <Col sm={4}>
+              <IconBox
+                icon={faPencilRuler}
+                iconColor="black"
+                header="First Step"
+                text="Explanation about the first step that makes sense to the reader."
+                align="left"
+                iconAlign="flex-start"
+                size="3x"
+              />
+            </Col>
           </Row>
         </Container>
       </Wrapper>
@@ -286,7 +281,7 @@ export default function PageflowHome() {
         <Container style={{ padding: "0px" }}>
           <Row gutterWidth={0}>
             <Col sm={6} style={{ color: "white" }}>
-              <div className="benefits">
+              <div className={styles.benefits}>
                 <LineLabel color="white">BRANDING BENEFITS</LineLabel>
                 <h2>If you're not on the internet, you don't exist.​</h2>
                 <p>
@@ -304,8 +299,12 @@ export default function PageflowHome() {
                 </p>
               </div>
             </Col>
-            <Col sm={6} className="benefits" style={{ color: "#C8B5FD" }}>
-              <div className="benefits">
+            <Col
+              sm={6}
+              className={styles.benefits}
+              style={{ color: "#C8B5FD" }}
+            >
+              <div className={styles.benefits}>
                 <LineLabel color="#C8B5FD">DESIGN BENEFITS</LineLabel>
                 <h2>Looking good matters, web design isn't a DIY thing.​</h2>
                 <p>
@@ -335,7 +334,7 @@ export default function PageflowHome() {
           <Row gutterWidth={0}>
             <Col sm={4}>
               <img
-                className="image2"
+                className={styles.image2}
                 src="https://kmg-site-assets.kaycdn.com/the-pageflow-pledge.png"
                 alt="The Pageflow Pledge Badge in Black"
               />
@@ -343,31 +342,20 @@ export default function PageflowHome() {
             <Col sm={8}>
               <LineLabel>OUR PLEDGE</LineLabel>
               <h2>
-                Every customer recieves a  Dedicated Success Team, revisions,
-                SEO consultations, and a Satisfaction Guarantee.
+                Every customer recieves a Dedicated Success Team, revisions, SEO
+                consultations, and a Satisfaction Guarantee.
               </h2>
-              <div className={styles.buttonGroup}>
-                <Button
-                  fill="black"
-                  textColor="white"
-                  radius="3px"
-                  border="1px solid black"
-                  padding="15px 50px"
-                  raised={true}
-                  grow={true}
-                >
-                  View Pricing
-                </Button>
-                <Button
-                  fill="rgba(12, 12, 12, 0.05)"
-                  textColor="black"
-                  radius="3px"
-                  border="1px solid black"
-                  padding="15px 50px"
-                >
-                  Contact Us
-                </Button>
-              </div>
+              <Button
+                fill="black"
+                textColor="white"
+                radius="3px"
+                border="1px solid black"
+                padding="15px 50px"
+                raised={true}
+                grow={true}
+              >
+                View Pricing
+              </Button>
             </Col>
           </Row>
         </Container>
@@ -411,7 +399,7 @@ export default function PageflowHome() {
             </Col>
             <Col sm={6}>
               <img
-                className="image1"
+                className={styles.image1}
                 src="https://kmg-site-assets.kaycdn.com/chicago.jpg"
                 alt="Downtown chicago"
               />
@@ -426,7 +414,7 @@ export default function PageflowHome() {
         c21.2-8.1,52.2-18.2,79.7-24.2C399.3,7.9,411.6,7.5,421.9,6.5z"
         ></path>
       </Wave>
-      <Wrapper bg="#ABFAFF" paddingBottom="150px" paddingTop="250px">
+      <Wrapper bg="white" paddingBottom="150px" paddingTop="250px">
         <LineLabel color="black">WORK WITH PAGEFLOW</LineLabel>
         <h2 style={{ fontWeight: "bold" }}>
           Give your business an unfair advantage with Pageflow
@@ -444,54 +432,7 @@ export default function PageflowHome() {
           Get Started
         </Button>
       </Wrapper>
-
       <Footer />
-      
-      <style jsx>{`
-        .image1 {
-          width: 100%;
-          padding-left: 75px;
-        }
-
-        .image2 {
-          width: 100%;
-          padding-right: 75px;
-        }
-
-        .padded-text {
-          padding-left: 50px;
-        }
-
-        .benefits {
-          padding-right: 35px;
-        }
-
-        .squeezed-container {
-          padding-top: 25px;
-          width: 60%;
-          margin: 0 auto;
-        }
-
-        @media screen and (max-width: 600px) {
-          .image1 {
-            padding-left: 0px;
-          }
-
-          .image2 {
-            padding-right: 0px;
-          }
-
-          .padded-text {
-            padding-left: 0px;
-            padding-top: 20px;
-          }
-
-          .benefits {
-            padding-right: 0px;
-            padding-bottom: 10px;
-          }
-        }
-      `}</style>
     </div>
   );
 }
