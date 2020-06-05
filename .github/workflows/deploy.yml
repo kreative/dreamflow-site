@@ -2,7 +2,7 @@ name: CI-CD
 
 on:
   push:
-    branches: [ ]
+    branches: [ master ]
   pull_request:
     branches: [ master ]
 
@@ -17,9 +17,9 @@ jobs:
       with:
         node-version: 12.x
     - run: |
-        yarn install --frozen-lockfile
-        yarn build
-        yarn export
+        npm install
+        npm run build
+        npm run export
     - name: Publish Site
       uses: nwtgck/actions-netlify@v1.1
       with:
