@@ -1,114 +1,79 @@
 import React, { Component } from "react";
 import Button from "../Button/Button";
-import { Formik } from "formik";
 
 class ContactCard extends Component {
-  handleSubmit(values, actions) {
-    // process information
-    console.log(values);
-    actions.setSubmitting(false);
-    return;
-  }
-
-  validateData(values) {}
-
   render() {
     return (
       <div>
         <div className="contact-card">
-          <Formik
-            initialValues={{
-              name: "",
-              email: "",
-              phone: "",
-              company: "",
-              website: "",
-              notes: "",
-            }}
-            validate={this.validateData}
-            onSubmit={this.handleSubmit}
-          >
-            {(props) => (
-              <form className="f-form" onSubmit={props.handleSubmit}>
-                <div className="f-field">
-                  <input
-                    className="ss"
-                    type="text"
-                    onChange={props.handleChange}
-                    onBlur={props.handleBlur}
-                    value={props.values.name}
-                    name="name"
-                    placeholder="Name"
-                  />
-                </div>
-                <div className="f-field">
-                  <input
-                    className="ss"
-                    type="text"
-                    onChange={props.handleChange}
-                    onBlur={props.handleBlur}
-                    value={props.values.email}
-                    name="email"
-                    placeholder="Email"
-                  />
-                </div>
-                <div className="f-field">
-                  <input
-                    className="ss"
-                    type="text"
-                    onChange={props.handleChange}
-                    onBlur={props.handleBlur}
-                    value={props.values.phone}
-                    name="phone"
-                    placeholder="Phone"
-                  />
-                </div>
-                <div className="f-field">
-                  <input
-                    className="ss"
-                    type="text"
-                    onChange={props.handleChange}
-                    onBlur={props.handleBlur}
-                    value={props.values.phone}
-                    name="company"
-                    placeholder="Company"
-                  />
-                </div>
-                <div className="f-field">
-                  <input
-                    className="ss"
-                    type="text"
-                    onChange={props.handleChange}
-                    onBlur={props.handleBlur}
-                    value={props.values.phone}
-                    name="website"
-                    placeholder="Website"
-                  />
-                </div>
-                <Button
-                  type="submit"
-                  fill="black"
-                  hoverColor="#53504E"
-                  textColor="white"
-                  radius="3px"
-                  border="1px solid black"
-                  hoverBorder="1px solid #53504E"
-                  padding="15px 50px"
-                  width="100%"
-                >
-                  {this.props.buttonText}
-                </Button>
-              </form>
-            )}
-          </Formik>
+          <form name={this.props.name} action="/success" method="POST" className="f-form" data-netlify="true">
+            <div className="f-field">
+              <input
+                className="ss"
+                type="text"
+                name="name"
+                id="name_input"
+                placeholder="Name"
+              />
+            </div>
+            <div className="f-field">
+              <input
+                className="ss"
+                type="text"
+                name="email"
+                id="email_input"
+                placeholder="Email"
+              />
+            </div>
+            <div className="f-field">
+              <input
+                className="ss"
+                type="text"
+                name="phone"
+                id="phone_input"
+                placeholder="Phone"
+              />
+            </div>
+            <div className="f-field">
+              <input
+                className="ss"
+                type="text"
+                name="company"
+                id="company_input"
+                placeholder="Company"
+              />
+            </div>
+            <div className="f-field">
+              <input
+                className="ss"
+                type="text"
+                name="website"
+                id="website_field"
+                placeholder="Website"
+              />
+            </div>
+            <Button
+              type="submit"
+              fill="black"
+              hoverColor="#53504E"
+              textColor="white"
+              radius="3px"
+              border="1px solid black"
+              hoverBorder="1px solid #53504E"
+              padding="15px 50px"
+              width="100%"
+            >
+              {this.props.buttonText}
+            </Button>
+          </form>
         </div>
         <style jsx>{`
           .f-form {
             padding: 40px;
             background-color: white;
-            -webkit-box-shadow: 3px 6px 19px 0px rgba(232,232,232,1);
-            -moz-box-shadow: 3px 6px 19px 0px rgba(232,232,232,1);
-            box-shadow: 3px 6px 19px 0px rgba(232,232,232,1);
+            -webkit-box-shadow: 3px 6px 19px 0px rgba(232, 232, 232, 1);
+            -moz-box-shadow: 3px 6px 19px 0px rgba(232, 232, 232, 1);
+            box-shadow: 3px 6px 19px 0px rgba(232, 232, 232, 1);
             border-radius: 6px;
           }
 

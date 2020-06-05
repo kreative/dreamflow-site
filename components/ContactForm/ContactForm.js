@@ -1,129 +1,93 @@
 import React, { Component } from "react";
 import Button from "../Button/Button";
 import { Container, Row, Col } from "react-grid-system";
-import { Formik } from "formik";
 
 class ContactForm extends Component {
-  handleSubmit(values, actions) {
-    // process information
-    console.log(values);
-    actions.setSubmitting(false);
-    return;
-  }
-
-  validateData(values) {}
-
   render() {
     return (
       <div>
         <div className="contact-form">
-          <Formik
-            initialValues={{
-              name: "",
-              email: "",
-              phone: "",
-              topic: "",
-              company: "",
-              website: "",
-              notes: "",
-            }}
-            validate={this.validateData}
-            onSubmit={this.handleSubmit}
-          >
-            {(props) => (
-              <form className="f-form" onSubmit={props.handleSubmit}>
-                <Container style={{ padding: "0px" }}>
-                  <Row gutterWidth={15}>
-                    <Col sm={6}>
-                      <div className="f-field">
-                        <input
-                          className="ss"
-                          type="text"
-                          onChange={props.handleChange}
-                          onBlur={props.handleBlur}
-                          value={props.values.name}
-                          name="name"
-                          placeholder="Name"
-                        />
-                      </div>
-                    </Col>
-                    <Col sm={6}>
-                      <div className="f-field">
-                        <input
-                          className="ss"
-                          type="text"
-                          onChange={props.handleChange}
-                          onBlur={props.handleBlur}
-                          value={props.values.email}
-                          name="email"
-                          placeholder="Email"
-                        />
-                      </div>
-                    </Col>
-                  </Row>
-                  <Row gutterWidth={15}>
-                    <Col sm={6}>
-                      <div className="f-field">
-                        <input
-                          className="ss"
-                          type="text"
-                          onChange={props.handleChange}
-                          onBlur={props.handleBlur}
-                          value={props.values.phone}
-                          name="phone"
-                          placeholder="Phone"
-                        />
-                      </div>
-                    </Col>
-                    <Col sm={6}>
-                    <div className="f-field">
-                  <input
-                    className="ss"
-                    type="text"
-                    onChange={props.handleChange}
-                    onBlur={props.handleBlur}
-                    value={props.values.phone}
-                    name="company"
-                    placeholder="Company"
-                  />
-                </div>
-                    </Col>
-                  </Row>
-                </Container>
-                <div className="f-field">
-                  <input
-                    className="ss"
-                    type="text"
-                    onChange={props.handleChange}
-                    onBlur={props.handleBlur}
-                    value={props.values.phone}
-                    name="website"
-                    placeholder="Website"
-                  />
-                </div>
-                <div className="f-field">
-                  <textarea
-                    className="ss"
-                    onChange={props.handleChange}
-                    onBlur={props.handleBlur}
-                    value={props.values.phone}
-                    name="message"
-                    placeholder="Message"
-                  ></textarea>
-                </div>
-                <Button
-                  type="submit"
-                  fill="#001AFF"
-                  textColor="white"
-                  radius="3px"
-                  border="1px solid #001AFF"
-                  padding="15px 50px"
-                >
-                  Get in touch
-                </Button>
-              </form>
-            )}
-          </Formik>
+          <form className="f-form" action="/success" name="contact-form" data-netlify="true">
+            <Container style={{ padding: "0px" }}>
+              <Row gutterWidth={15}>
+                <Col sm={6}>
+                  <div className="f-field">
+                    <input
+                      className="ss"
+                      type="text"
+                      name="name"
+                      id="name_field"
+                      placeholder="Name"
+                    />
+                  </div>
+                </Col>
+                <Col sm={6}>
+                  <div className="f-field">
+                    <input
+                      className="ss"
+                      type="text"
+                      name="email"
+                      id="email_field"
+                      placeholder="Email"
+                    />
+                  </div>
+                </Col>
+              </Row>
+              <Row gutterWidth={15}>
+                <Col sm={6}>
+                  <div className="f-field">
+                    <input
+                      className="ss"
+                      type="text"
+                      name="phone"
+                      id="phone_field"
+                      placeholder="Phone"
+                    />
+                  </div>
+                </Col>
+                <Col sm={6}>
+                  <div className="f-field">
+                    <input
+                      className="ss"
+                      type="text"
+                      name="company"
+                      id="company_field"
+                      placeholder="Company"
+                    />
+                  </div>
+                </Col>
+              </Row>
+            </Container>
+            <div className="f-field">
+              <input
+                className="ss"
+                type="text"
+                name="website"
+                id="website_field"
+                placeholder="Website"
+              />
+            </div>
+            <div className="f-field">
+              <textarea
+                className="ss"
+                name="message"
+                id="message_field"
+                placeholder="Message"
+              ></textarea>
+            </div>
+            <Button
+              type="submit"
+              fill="#001AFF"
+              hoverColor="#004893"
+              textColor="white"
+              radius="3px"
+              border="1px solid #001AFF"
+              hoverBorder="1px solid #004893"
+              padding="15px 50px"
+            >
+              Get in touch
+            </Button>
+          </form>
         </div>
         <style jsx>{`
           .ss {

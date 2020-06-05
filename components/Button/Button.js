@@ -1,17 +1,19 @@
-import React, { Component } from 'react';
-import classNames from 'classnames';
+import React, { Component } from "react";
+import classNames from "classnames";
 
 class FantasiaButton extends Component {
   render() {
     var buttonClass = classNames({
-      'f-btn': true,
-      'grow': this.props.grow,
-      'raised': this.props.raised,
+      "f-btn": true,
+      grow: this.props.grow,
+      raised: this.props.raised,
     });
-    
+
     return (
       <div>
-        <button className={buttonClass}>{this.props.children}</button>
+        <button type={this.props.type} className={buttonClass}>
+          {this.props.children}
+        </button>
         <style jsx>{`
           .f-btn {
             background-color: ${this.props.fill};
@@ -24,7 +26,7 @@ class FantasiaButton extends Component {
             cursor: pointer;
             -moz-box-sizing: border-box;
             -webkit-box-sizing: border-box;
-            font-family: 'Bifocals', serif;
+            font-family: "Bifocals", serif;
             font-weight: normal;
             font-size: 1.1em;
             margin: ${this.props.margin};
@@ -36,20 +38,21 @@ class FantasiaButton extends Component {
           }
 
           .f-btn:hover {
+            color: ${this.props.hoverTextColor};
             background-color: ${this.props.hoverColor};
             border: ${this.props.hoverBorder};
           }
-          
+
           .raised {
-            -webkit-box-shadow: 0px 7px 28px 5px rgba(166,166,166,0.7);
-            -moz-box-shadow: 0px 7px 28px 5px rgba(166,166,166,0.7);
-            box-shadow: 0px 7px 28px 5px rgba(166,166,166,0.7);
+            -webkit-box-shadow: 0px 7px 28px 5px rgba(166, 166, 166, 0.7);
+            -moz-box-shadow: 0px 7px 28px 5px rgba(166, 166, 166, 0.7);
+            box-shadow: 0px 7px 28px 5px rgba(166, 166, 166, 0.7);
           }
-          
+
           .grow {
-            transition: all .2s ease-in-out;
+            transition: all 0.2s ease-in-out;
           }
-          
+
           .grow:hover {
             transform: scale(1.1);
           }
