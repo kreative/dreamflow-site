@@ -3,7 +3,6 @@ import { Accordion, Icon } from "semantic-ui-react";
 
 class FAQ extends Component {
   state = {
-    faqs: [],
     activeIndex: 0,
   };
 
@@ -15,25 +14,13 @@ class FAQ extends Component {
     this.setState({ activeIndex: newIndex });
   };
 
-  componentDidMount() {
-    fetch("http://dreamflow-cms.kreativekws.com/api/faqs")
-      .then((response) => response.json())
-      .then((data) => {
-        this.setState({
-          faqs: data.data.faqs,
-          productList: data.data.product_list
-        });
-      })
-      .catch(console.log);
-  }
-
   render() {
     const { activeIndex } = this.state;
 
     return (
       <div>
         <Accordion>
-          {this.state.faqs.map((faq, index) => (
+          {this.props.faqs.map((faq, index) => (
             <div className="section">
               <Accordion.Title
                 active={activeIndex === index}
@@ -57,7 +44,7 @@ class FAQ extends Component {
           .question {
             font-size: 1.7em;
             font-weight: normal;
-            font-family: 'Bifocals', serif;
+            font-family: "Bifocals", serif;
             margin-left: 10px;
           }
 
