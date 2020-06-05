@@ -92,12 +92,13 @@ export default function Kopy() {
             <Row gutterWidth={25}>
               <Col sm={6}>
                 <ProductCard
+                  logo=""
+                  alt=""
                   bg="white"
                   border="1.5px solid #E3E3E3"
                   header="Something"
                   description="Something"
                   text="Something something something"
-                  hideImage={true}
                   button={
                     <Button
                       fill="#1C5592"
@@ -118,12 +119,13 @@ export default function Kopy() {
               </Col>
               <Col sm={6}>
                 <ProductCard
+                  logo=""
+                  alt=""
                   bg="white"
                   border="1.5px solid #E3E3E3"
                   header="Something"
                   description="Something"
                   text="Something something something"
-                  hideImage={true}
                   button={
                     <Button
                       fill="#1C5592"
