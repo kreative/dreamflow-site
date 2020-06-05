@@ -7,10 +7,9 @@ on:
     branches: [ master ]
 
 jobs:
-  build:
-    name: "Build Dreamflow Site"
+  deploy:
+    name: "Build and deploy to Netlify"
     runs-on: ubuntu-latest
-
     steps:
     - uses: actions/checkout@v2
     - name: Build Source
@@ -21,13 +20,6 @@ jobs:
         yarn install --frozen-lockfile
         yarn build
         yarn export
-
-  deploy:
-    name: "Deploy to Netlify"
-    runs-on: ubuntu-latest
-
-    steps:
-    - uses: actions/checkout@v2
     - name: Publish Site
       uses: netlify/actions/cli@master
       with:
