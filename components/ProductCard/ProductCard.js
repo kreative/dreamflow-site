@@ -1,9 +1,16 @@
 import React, { Component } from 'react';
+import classNames from 'classnames';
 
 class ProductCard extends Component {  
   render() {
+    var cardClass = classNames({
+      "card": true,
+      "hvr-float": true,
+      "raised": this.props.raised
+    });
+    
     return (
-      <div className="card hvr-float">
+      <div className={cardClass}>
         <img
           className="logo"
           src={this.props.logo}
@@ -14,8 +21,9 @@ class ProductCard extends Component {
         <p className="text">{this.props.text}</p>
         <style jsx>{`
           .card {
-            border: 1.5px solid #EAEAEA;
-            padding: 50px 40px;
+            background-color: ${this.props.bg};
+            border: ${this.props.border};
+            padding: 50px 35px;
             border-radius: 6px;
             text-align: left;
             height: 100%;
@@ -30,16 +38,23 @@ class ProductCard extends Component {
           }
 
           .description {
-            margin-top: 10px;
+            margin-top: -10px;
             font-weight: normal;
             font-family: 'Bifocals', serif;
             color: #888888;
+            font-size: 1.1em;
           }
 
           .text {
             color: #343434;
             font-size: 1.4em;
             font-family: 'Bifocals', serif;
+          }
+
+          .raised {
+            -webkit-box-shadow: 0px 7px 28px 5px rgba(166,166,166,0.9);
+            -moz-box-shadow: 0px 7px 28px 5px rgba(166,166,166,0.9);
+            box-shadow: 0px 7px 28px 5px rgba(166,166,166,0.9);
           }
 
           .hvr-float {

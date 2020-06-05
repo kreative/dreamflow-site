@@ -76,23 +76,17 @@ class ContactForm extends Component {
                       </div>
                     </Col>
                     <Col sm={6}>
-                      <div className="f-field">
-                        <select
-                          className="ss"
-                          onChange={props.handleChange}
-                          onBlur={props.handleBlur}
-                          value={props.values.topic}
-                          name="topic"
-                          placeholder="I'm interested in..."
-                        >
-                          <option value="default">I'm interested in...</option>
-                          <option value="working_with_kmp">
-                            Working with KMP
-                          </option>
-                          <option value="learning_more">Learning more</option>
-                          <option value="something_else">Something else</option>
-                        </select>
-                      </div>
+                    <div className="f-field">
+                  <input
+                    className="ss"
+                    type="text"
+                    onChange={props.handleChange}
+                    onBlur={props.handleBlur}
+                    value={props.values.phone}
+                    name="company"
+                    placeholder="Company"
+                  />
+                </div>
                     </Col>
                   </Row>
                 </Container>
@@ -103,31 +97,19 @@ class ContactForm extends Component {
                     onChange={props.handleChange}
                     onBlur={props.handleBlur}
                     value={props.values.phone}
-                    name="company"
-                    placeholder="company"
-                  />
-                </div>
-                <div className="f-field">
-                  <input
-                    className="ss"
-                    type="text"
-                    onChange={props.handleChange}
-                    onBlur={props.handleBlur}
-                    value={props.values.phone}
                     name="website"
-                    placeholder="website"
+                    placeholder="Website"
                   />
                 </div>
                 <div className="f-field">
-                  <input
+                  <textarea
                     className="ss"
-                    type="text"
                     onChange={props.handleChange}
                     onBlur={props.handleBlur}
                     value={props.values.phone}
-                    name="notes"
-                    placeholder="notes"
-                  />
+                    name="message"
+                    placeholder="Message"
+                  ></textarea>
                 </div>
                 <Button
                   type="submit"

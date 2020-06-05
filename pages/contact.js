@@ -1,4 +1,5 @@
 import Head from 'next/head';
+import Footer from "../components/Footer/Footer";
 import Wrapper from "../components/Wrapper/Wrapper";
 import { Container, Row, Col } from "react-grid-system";
 import ContactForm from '../components/ContactForm/ContactForm';
@@ -7,8 +8,13 @@ export default function Contact() {
     return(
         <div>
             <Head>
-                <title>Contact Us</title>
+                <title>Contact Dreamflow</title>
                 <link rel="icon" href="/favicon.ico" />
+                <script
+                    type="text/javascript"
+                    src="https://kit.fontawesome.com/abadd7b058.js"
+                    crossorigin="anonymous"
+                ></script>
             </Head>
 
             <Wrapper bg="white" paddingTop="150px" paddingBottom="200px">
@@ -48,6 +54,7 @@ export default function Contact() {
                     </Row>
                 </Container>
             </Wrapper>
+            <Footer />
             <style jsx>{`
                 .contact-form-section {
                     padding-right: 75px;

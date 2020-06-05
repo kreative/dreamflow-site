@@ -1,23 +1,34 @@
 import React, { Component } from "react";
 import Wrapper from "../Wrapper/Wrapper";
+import LineLabel from "../LineLabel/LineLabel";
 import Button from "../Button/Button";
 import { Container, Row, Col } from "react-grid-system";
+import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 class Footer extends Component {
   render() {
     return (
       <div className="Footer">
-        <div className="Footer__Support">
-          <Wrapper bg="rgba(0,0,0,0)" paddingBottom="20px" paddingTop="20px">
-            <p>Have questions? Call our support team 24/7 at (480) 505-5050</p>
+        <div className="Footer__CTA">
+          <Wrapper bg="white" paddingTop="150px" paddingBottom="150px">
+            <div style={{ textAlign: "center" }}>
+              <LineLabel color="black">WORK WITH DREAMFLOW</LineLabel>
+              <h1 className="CTA__Text">
+                Give your business an unfair advantage{" "}
+                <FontAwesomeIcon icon={faArrowRight} />
+              </h1>
+            </div>
           </Wrapper>
         </div>
-        {/* <div className="Support__Pointer">
-          <svg height="40" viewBox="0 0 80 74" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M41 74L41 -9.53674e-07H80L41 74Z" fill="black"/>
-            <path d="M41 74L41 -9.53674e-07H0L41 74Z" fill="black"/>
-          </svg>
-        </div> */}
+        <div className="Footer__Support">
+          <Wrapper bg="rgba(0,0,0,0)" paddingBottom="20px" paddingTop="20px">
+            <p>
+              Have questions? Call our support team 24/7 at{" "}
+              <a href="tel:#">(480) 505-5050</a>
+            </p>
+          </Wrapper>
+        </div>
         <div className="Footer__Nav">
           <Wrapper bg="rgba(0,0,0,0)" paddingTop="100px" paddingBottom="100px">
             <Container style={{ padding: "0px" }} fluid>
@@ -46,15 +57,23 @@ class Footer extends Component {
         </div>
         <div className="Footer__Base">
           <Wrapper bg="rgba(0,0,0,0)" paddingTop="15px" paddingBottom="15px">
-            <Container style={{padding:"0px"}} fluid>
+            <Container style={{ padding: "0px" }} fluid>
               <Row gutterWidth={0}>
                 <Col sm={6}>
-                  <div className="Base__Left">Kreative, LLC. Radical Starts Here.</div>
+                  <div className="Base__Left">
+                    <a href="https://kreative.im">
+                      Kreative, LLC. Radical Starts Here.
+                    </a>
+                  </div>
                 </Col>
                 <Col sm={6}>
                   <div className="Base__Right">
-                    <span>Privacy Policy</span>
-                    <span>Terms & Conditions</span>
+                    <span>
+                      <a href="#">Privacy Policy</a>
+                    </span>
+                    <span>
+                      <a href="#">Terms & Conditions</a>
+                    </span>
                   </div>
                 </Col>
               </Row>
@@ -62,13 +81,21 @@ class Footer extends Component {
           </Wrapper>
         </div>
         <style jsx>{`
-          .Footer {
+          .CTA__Text:hover {
+            text-decoration: underline;
+            cursor: pointer;
+            color: #001aff;
           }
 
           .Footer__Support {
             background-color: black;
             color: white;
             text-align: center;
+          }
+
+          .Footer__Support a {
+            text-decoration: none;
+            color: white;
           }
 
           .Support__Pointer {
@@ -79,7 +106,7 @@ class Footer extends Component {
           }
 
           .Footer__Nav {
-            background-color: #F8F5F2;
+            background-color: #f8f5f2;
             color: black;
             text-align: center;
           }
@@ -87,9 +114,21 @@ class Footer extends Component {
           .Footer__Base {
             text-align: right;
             font-family: monospace;
-            background-color: #1E1E1E;
+            background-color: #1e1e1e;
             color: #949494;
             font-size: 0.9em;
+          }
+
+          .Footer__Base a {
+            text-decoration: none;
+            color: #949494;
+          }
+
+          .Footer__Base a:hover,
+          .Footer__Support a:hover {
+            cursor: pointer;
+            color: #93c8ff;
+            text-decoration: underline;
           }
 
           .Base__Right {

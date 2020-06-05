@@ -7,6 +7,9 @@ import LineLabel from "../components/LineLabel/LineLabel";
 import HeaderLine from "../components/HeaderLine/HeaderLine";
 import ProductCard from "../components/ProductCard/ProductCard";
 import { Container, Row, Col } from "react-grid-system";
+import { faTimes, faArrowDown } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import styles from "../styles/home.module.css";
 
 export default function Home() {
   return (
@@ -14,162 +17,235 @@ export default function Home() {
       <Head>
         <title>Kreative Dreamflow</title>
         <link rel="icon" href="/favicon.ico" />
-        <script type="text/javascript" src="https://kit.fontawesome.com/abadd7b058.js" crossorigin="anonymous"></script>
+        <script
+          type="text/javascript"
+          src="https://kit.fontawesome.com/abadd7b058.js"
+          crossorigin="anonymous"
+        ></script>
       </Head>
 
-      <Navbar/>
+      <Navbar />
 
-      <div className="splash">
+      <div className={styles.splash}>
         <Wrapper bg="rgba(0,0,0,0)" paddingTop="0px" paddingBottom="0px">
-          <Container style={{padding:"0px"}} fluid>
-            <Row gutterWidth={0}>
-              <Col sm={8}>
-                <h1>Some sort of headline that describes exactly what we do that's inspiring and uplifiting and bigger than what it should be</h1>
-              </Col>
-
-            </Row>
-          </Container>
+          <h1>
+            Some sort of headline that describes exactly what we do that's
+            inspiring and uplifiting and bigger than what it should be
+          </h1>
         </Wrapper>
       </div>
-      <div>
-        <Wrapper bg="rgba(0,0,0,0)" paddingTop="150px" paddingBottom="150px">
+        <Wrapper bg="white" paddingTop="150px" paddingBottom="150px">
           <Container style={{ padding: "0px" }} fluid>
             <Row gutterWidth={0}>
-              <Col sm={6}>
-                <LineLabel color="black">THE PROBLEM</LineLabel>
-                <h2>Most solutions waste your time - and your money.</h2>
-                <p className="external-link">
-                  <a href="/why-dreamflow">Learn more about Why Dreamflow?</a>
-                </p>
+              <Col
+                sm={4}
+                style={{
+                  justifyContent: "center",
+                  display: "flex",
+                  flexDirection: "column",
+                }}
+              >
+                <div className={styles.problem_image_wrapper}>
+                  <img
+                    className={styles.image}
+                    src="https://kmg-site-assets.kaycdn.com/panda-angry.gif"
+                    alt="Angry Panda smashing computer GIF"
+                  />
+                </div>
               </Col>
-              <Col sm={6}>
-                <div className="left-padded">
+              <Col sm={8}>
+                <div className={styles.problem_content}>
+                  <LineLabel color="black">THE PROBLEM</LineLabel>
+                  <h2>Most solutions waste your time and your money.</h2>
                   <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                    do eiusmod tempor incididunt ut labore et dolore magna
-                    aliqua. Facilisi etiam dignissim diam quis enim lobortis.
-                    Habitasse platea dictumst vestibulum rhoncus est
-                    pellentesque elit ullamcorper dignissim. Massa sed elementum
-                    tempus egestas sed sed risus pretium quam. Donec pretium
-                    vulputate sapien nec sagittis aliquam malesuada. Tincidunt
-                    praesent semper feugiat nibh.
+                    We get it. Agencies, freelancers, and even DIY solutions
+                    like Wix or Squarespace suck. Either it's too expensive, or
+                    too slow, or too unreliable. Even worse, you go with one of
+                    these providers, and in a year or two.
                   </p>
-                  <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                    do eiusmod tempor incididunt ut labore et dolore magna
-                    aliqua. Facilisi etiam dignissim diam quis enim lobortis.
-                    Habitasse platea dictumst vestibulum rhoncus est
-                    pellentesque elit ullamcorper dignissim. Massa sed elementum
-                    tempus egestas sed sed risus pretium quam. Donec pretium
-                    vulputate sapien nec sagittis aliquam malesuada. Tincidunt
-                    praesent semper feugiat nibh.
-                  </p>
+                  <div className={styles.problem_reason}>
+                    <FontAwesomeIcon icon={faTimes} size="md" />
+                    <span className={styles.problem_reason_text}>
+                      Something
+                    </span>
+                  </div>
+                  <div className={styles.problem_reason}>
+                    <FontAwesomeIcon icon={faTimes} size="md" />
+                    <span className={styles.problem_reason_text}>
+                      Something
+                    </span>
+                  </div>
+                  <div className={styles.problem_reason}>
+                    <FontAwesomeIcon icon={faTimes} size="md" />
+                    <span className={styles.problem_reason_text}>
+                      Something
+                    </span>
+                  </div>
                 </div>
               </Col>
             </Row>
           </Container>
         </Wrapper>
-      </div>
-      <Wrapper bg="white" paddingTop="100px" paddingBottom="150px">
-        <div className="header" style={{paddingBottom:"35px"}}>
-          <h2 style={{ textAlign: "center" }}>Our Products</h2>
-          <HeaderLine color="black" />
-        </div>
-        <Container style={{ padding: "0px" }} fluid>
-          <Row gutterWidth={25}>
-            <Col sm={4}>
-              <ProductCard
-                logo="/toprank-color.png"
-                alt="Kreative TopRank logo in Green"
-                description="Managed SEO for everyone"
-                text=""
-              />
-            </Col>
-            <Col sm={4}>
-              <ProductCard
-                logo="/pageflow-color.png"
-                alt="Kreative Pageflow logo in Purple"
-                description="Web design and development"
-                text="Our sales focused approach turns a potential website cost into an investment."
-              />
-            </Col>
-            <Col sm={4}>
-              <ProductCard
-                logo="/pageflow-color.png"
-                alt="Kreative Pageflow logo in Purple"
-                description="Web design and development"
-                text="Our sales focused approach turns a potential website cost into an investment."
-              />
-            </Col>
-          </Row>
-          <Row gutterWidth={25} style={{paddingTop:"25px"}}>
-            <Col sm={4}>
-              <ProductCard
-                logo="/toprank-color.png"
-                alt="Kreative TopRank logo in Green"
-                description="Managed SEO for everyone"
-                text=""
-              />
-            </Col>
-            <Col sm={4}>
-              <ProductCard
-                logo="/pageflow-color.png"
-                alt="Kreative Pageflow logo in Purple"
-                description="Web design and development"
-                text="Our sales focused approach turns a potential website cost into an investment."
-              />
-            </Col>
-            <Col sm={4}>
-              <ProductCard
-                logo="/pageflow-color.png"
-                alt="Kreative Pageflow logo in Purple"
-                description="Web design and development"
-                text="Our sales focused approach turns a potential website cost into an investment."
-              />
-            </Col>
-          </Row>
-        </Container>
-      </Wrapper>
-
+        <Wrapper bg="#F6F6F4" paddingTop="150px" paddingBottom="150px">
+          <Container style={{ padding: "0px" }} fluid>
+            <Row gutterWidth={0}>
+              <Col sm={8}>
+                <div className={styles.solution_content}>
+                  <LineLabel color="black">THE SOLUTION</LineLabel>
+                  <h2>Dreamflow solves everything, including everything.</h2>
+                  <p>
+                    We get it. Agencies, freelancers, and even DIY solutions
+                    like Wix or Squarespace suck. Either it's too expensive, or
+                    too slow, or too unreliable. Even worse, you go with one of
+                    these providers, and in a year or two.
+                  </p>
+                  <Button
+                    fill="white"
+                    textColor="black"
+                    radius="3px"
+                    border="1px solid white"
+                    padding="15px 50px"
+                    raised={false}
+                    grow={true}
+                  >
+                    View Pricing
+                  </Button>
+                </div>
+              </Col>
+              <Col
+                sm={4}
+                style={{
+                  justifyContent: "center",
+                  display: "flex",
+                  flexDirection: "column",
+                }}
+              >
+                <div className={styles.solution_image_wrapper}>
+                  <img
+                    className={styles.image}
+                    src="https://kmg-site-assets.kaycdn.com/relaxing-brain.gif"
+                    alt="Angry Panda smashing computer GIF"
+                  />
+                </div>
+              </Col>
+            </Row>
+          </Container>
+        </Wrapper>
+      <Wrapper bg="white" paddingTop="150px" paddingBottom="150px">
+          <Container style={{ padding: "0px" }} fluid>
+            <Row gutterWidth={0}>
+              <Col
+                sm={4}
+                style={{
+                  justifyContent: "center",
+                  display: "flex",
+                  flexDirection: "column",
+                }}
+              >
+                <div className={styles.problem_image_wrapper}>
+                  <img
+                    className={styles.image}
+                    src="https://kmg-site-assets.kaycdn.com/burning-money.gif"
+                    alt="Angry Panda smashing computer GIF"
+                  />
+                </div>
+              </Col>
+              <Col sm={8}>
+                <div className={styles.understanding_content}>
+                  <LineLabel color="black">THE PROBLEM</LineLabel>
+                  <h2>We get it. Online marketing can feel like burning money.</h2>
+                  <p>
+                    We get it. Agencies, freelancers, and even DIY solutions
+                    like Wix or Squarespace suck. Either it's too expensive, or
+                    too slow, or too unreliable. Even worse, you go with one of
+                    these providers, and in a year or two.
+                  </p>
+                  <div className={styles.problem_reason}>
+                    <FontAwesomeIcon icon={faTimes} size="md" />
+                    <span className={styles.problem_reason_text}>
+                      Something
+                    </span>
+                  </div>
+                  <div className={styles.problem_reason}>
+                    <FontAwesomeIcon icon={faTimes} size="md" />
+                    <span className={styles.problem_reason_text}>
+                      Something
+                    </span>
+                  </div>
+                  <div className={styles.problem_reason}>
+                    <FontAwesomeIcon icon={faTimes} size="md" />
+                    <span className={styles.problem_reason_text}>
+                      Something
+                    </span>
+                  </div>
+                </div>
+              </Col>
+            </Row>
+          </Container>
+        </Wrapper>
+        <Wrapper bg="#004893" paddingBottom="100px" paddingTop="100px">
+          <div style={{textAlign:"center", color:"white"}}>
+          <LineLabel color="white">HINT HINT:</LineLabel>
+          <p className={styles.explainer}>Tell them how its not their fault and that its because they're just not working with us yet.</p>
+          <FontAwesomeIcon icon={faArrowDown} size="3x" />
+          <h2>Say how working with us solve all of their problems</h2>
+          </div>
+        </Wrapper>
+        <Wrapper bg="#F8F5F2" paddingBottom="200px" paddingTop="200px">
+          <div style={{ textAlign: "center" }}>
+            <h1>
+              "Testimonial about{" "}
+              <span className={styles.highlight}>
+                how great we were and how they would work with us again
+              </span>{" "}
+              at any cost because thats how good Dreamflow is at what Dreamflow
+              does."
+            </h1>
+            <p>Bob Dylan, Acme Corporation</p>
+          </div>
+        </Wrapper>
+        <Wrapper bg="white" paddingTop="150px" paddingBottom="150px">
+          <div className={styles.header} style={{ paddingBottom: "35px" }}>
+            <h2 style={{ textAlign: "center" }}>Our Products</h2>
+            <HeaderLine color="black" />
+          </div>
+          <Container style={{ padding: "0px" }} fluid>
+            <Row gutterWidth={25}>
+              <Col sm={4}>
+                <ProductCard
+                  bg="white"
+                  border="1.5px solid #E3E3E3"
+                  raised={true}
+                  logo="/toprank-color.png"
+                  alt="Kreative TopRank logo in Green"
+                  description="Managed SEO for everyone"
+                  text=""
+                />
+              </Col>
+              <Col sm={4}>
+                <ProductCard
+                  bg="white"
+                  border="1.5px solid #E3E3E3"
+                  logo="/pageflow-color.png"
+                  alt="Kreative Pageflow logo in Purple"
+                  description="Web design and development"
+                  text="Our sales focused approach turns a potential website cost into an investment."
+                />
+              </Col>
+              <Col sm={4}>
+                <ProductCard
+                  bg="white"
+                  border="1.5px solid #E3E3E3"
+                  logo="/pageflow-color.png"
+                  alt="Kreative Pageflow logo in Purple"
+                  description="Web design and development"
+                  text="Our sales focused approach turns a potential website cost into an investment."
+                />
+              </Col>
+            </Row>
+          </Container>
+        </Wrapper>
       <Footer />
-
-      <style jsx>{`
-        .left-padded {
-          padding-left: 50px;
-        }
-
-        .splash {
-          background-color: black;
-          color: white;
-          text-align: left;
-          padding-top: 350px;
-          padding-bottom: 100px;
-        }
-
-        .gradient {
-          background: rgb(255, 236, 208);
-          background: linear-gradient(
-            180deg,
-            rgba(255, 236, 208, 1) 0%,
-            rgba(255, 255, 255, 1) 100%
-          );
-        }
-
-        .external-link {
-          color: #0019ff;
-          text-decoration: none;
-        }
-
-        .external-link:hover {
-          text-decoration: underline;
-        }
-
-        @media screen and (max-width: 600px) {
-          .left-padded {
-            padding-left: 0px;
-          }
-        }
-      `}</style>
     </div>
   );
 }
