@@ -2,7 +2,7 @@ name: CI-CD
 
 on:
   push:
-    branches: []
+    branches: [ ]
   pull_request:
     branches: [ master ]
 
@@ -21,9 +21,13 @@ jobs:
         yarn build
         yarn export
     - name: Publish Site
-      uses: netlify/actions/cli@master
+      uses: nwtgck/actions-netlify@v1.1
       with:
-        args: deploy --dir=${{ github.workspace }}/out
+        publish-dir: './out'
+        deploy-message: "Deploy from GitHub Actions"
+        enable-pull-request-comment: false
+        enable-commit-comment: true
+        overwrites-pull-request-comment: true
       env:
         NETLIFY_SITE_ID: ${{ secrets.NETLIFY_SITE_ID }}
         NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}

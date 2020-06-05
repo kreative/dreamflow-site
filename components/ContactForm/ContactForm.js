@@ -8,6 +8,7 @@ class ContactForm extends Component {
       <div>
         <div className="contact-form">
           <form className="f-form" action="/success" name="contact-form" data-netlify="true">
+            <input type="hidden" name="form-name" value="contact" />
             <Container style={{ padding: "0px" }}>
               <Row gutterWidth={15}>
                 <Col sm={6}>
