@@ -19,6 +19,7 @@ jobs:
         node-version: 12.x
     - run: yarn install --frozen-lockfile
     - run: yarn build
+    - run: yarn export
 
   deploy:
     name: "Deploy to Netlify"
