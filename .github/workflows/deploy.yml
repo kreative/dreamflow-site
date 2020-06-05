@@ -15,7 +15,6 @@ jobs:
     - uses: actions/checkout@v2
     - name: Build Source
       uses: actions/setup-node@v1
-      working-directory: build
       with:
         node-version: 12.x
     - run: |
@@ -31,7 +30,6 @@ jobs:
     - uses: actions/checkout@v2
     - name: Publish Site
       uses: netlify/actions/cli@master
-      working-directory: build
       with:
         args: deploy --dir=${{ GITHUB_WORSPACE }}/out
       env:
