@@ -13,7 +13,7 @@ class FantasiaLineLabel extends Component {
                     .linelabel h5 {
                         font-family: monospace;
                         font-size: 1em;
-                        font-weight: normal;
+                        font-weight: bold;
                         display: inline;
                         letter-spacing: 4px;
                     }

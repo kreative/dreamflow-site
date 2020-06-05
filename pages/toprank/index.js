@@ -6,6 +6,8 @@ import LineLabel from "../../components/LineLabel/LineLabel";
 import IconBox from "../../components/IconBox/IconBox";
 import Wave from "../../components/Wave/Wave";
 import { Container, Row, Col } from "react-grid-system";
+import { faPencilRuler } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 export default function TopRank() {
   return (
@@ -61,7 +63,7 @@ export default function TopRank() {
                 flexDirection: "column",
               }}
             >
-              <LineLabel color="blac">Why SEO?</LineLabel>
+              <LineLabel color="blac">WHY SEO?</LineLabel>
               <h2>
                 A statement that inspires business owners to add SEO to their
                 strategy
@@ -87,7 +89,7 @@ export default function TopRank() {
               <Row gutterWidth={100}>
                 <Col sm={4}>
                   <IconBox
-                    src="fas fa-ruler"
+                    icon={faPencilRuler}
                     header="First Step"
                     text="Explanation about the first step that makes sense to the reader."
                     align="left"

@@ -1,7 +1,6 @@
 import Head from "next/head";
 import Footer from "../components/Footer/Footer";
 import Wrapper from "../components/Wrapper/Wrapper";
-import JotformEmbed from 'react-jotform-embed';
 
 export default function GetStarted() {
   return (
@@ -19,7 +18,9 @@ export default function GetStarted() {
         <h1>Get Started with Dreamflow</h1>
         <p>Fill out the form below and our team will get back to you the next business day!</p>
       </Wrapper>
-      <JotformEmbed src="https://form.jotform.com/jsform/201558355345154" />
+      <Wrapper bg="white" paddingBottom="100px" paddingTop="100px">
+        
+      </Wrapper>
       <Footer />
       <style jsx>{``}</style>
     </div>

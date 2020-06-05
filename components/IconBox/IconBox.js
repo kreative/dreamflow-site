@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 class FantasiaIconBox extends Component {
   render() {
@@ -6,7 +7,7 @@ class FantasiaIconBox extends Component {
       <div>
         <div className="icon-box">
           <div className="icon">
-            <i className={this.props.src}></i>
+            <FontAwesomeIcon icon={this.props.icon} />
           </div>
           <h5 className="header">{this.props.header}</h5>
           <p className="text">{this.props.text}</p>
