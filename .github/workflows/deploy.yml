@@ -18,7 +18,7 @@ jobs:
       working-directory: build
       with:
         node-version: 12.x
-      run: |
+    - run: |
         yarn install --frozen-lockfile
         yarn build
         yarn export
