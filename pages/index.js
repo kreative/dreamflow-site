@@ -29,8 +29,7 @@ export default function Home() {
       <div className={styles.splash}>
         <Wrapper bg="rgba(0,0,0,0)" paddingTop="0px" paddingBottom="0px">
           <h1>
-            Some sort of headline that describes exactly what we do that's
-            inspiring and uplifiting and bigger than what it should be
+            Dreamflow makes the dream flow.
           </h1>
         </Wrapper>
       </div>
