@@ -15,6 +15,7 @@ class ContactCard extends Component {
                 name="name"
                 id="name_input"
                 placeholder="Name"
+                required
               />
             </div>
             <div className="f-field">
@@ -24,6 +25,7 @@ class ContactCard extends Component {
                 name="email"
                 id="email_input"
                 placeholder="Email"
+                required
               />
             </div>
             <div className="f-field">
@@ -33,6 +35,7 @@ class ContactCard extends Component {
                 name="phone"
                 id="phone_input"
                 placeholder="Phone"
+                required
               />
             </div>
             <div className="f-field">
@@ -42,6 +45,7 @@ class ContactCard extends Component {
                 name="company"
                 id="company_input"
                 placeholder="Company"
+                required
               />
             </div>
             <div className="f-field">
@@ -51,6 +55,7 @@ class ContactCard extends Component {
                 name="website"
                 id="website_field"
                 placeholder="Website"
+                required
               />
             </div>
             <Button

@@ -30,6 +30,7 @@ class ContactForm extends Component {
                       name="email"
                       id="email_field"
                       placeholder="Email"
+                      required
                     />
                   </div>
                 </Col>
@@ -74,6 +75,7 @@ class ContactForm extends Component {
                 name="message"
                 id="message_field"
                 placeholder="Message"
+                required
               ></textarea>
             </div>
             <Button
