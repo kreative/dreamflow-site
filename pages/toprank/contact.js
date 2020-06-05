@@ -32,7 +32,7 @@ export default function ContactTopRank() {
             </Col>
             <Col sm={4}>
               <div className="contactcard-wrapper">
-                <ContactCard buttonText="Contact TopRank" />
+                <ContactCard buttonText="Contact TopRank" name="contact-toprank" />
               </div>
             </Col>
           </Row>

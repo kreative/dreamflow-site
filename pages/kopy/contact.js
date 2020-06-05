@@ -31,7 +31,7 @@ export default function ContactKopy() {
             </Col>
             <Col sm={4}>
               <div className="contactcard-wrapper">
-                <ContactCard buttonText="Contact Kopy" />
+                <ContactCard buttonText="Contact Kopy" name="contact-kopy" />
               </div>
             </Col>
           </Row>

@@ -7,6 +7,7 @@ class ContactCard extends Component {
       <div>
         <div className="contact-card">
           <form name={this.props.name} action="/success" method="POST" className="f-form" data-netlify="true">
+            <input type="hidden" name="form-name" value={this.props.name} />
             <div className="f-field">
               <input
                 className="ss"
