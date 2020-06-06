@@ -82,7 +82,14 @@ export default function Home() {
       <Wrapper bg="#F6F6F4" paddingTop="150px" paddingBottom="150px">
         <Container style={{ padding: "0px" }} fluid>
           <Row gutterWidth={0}>
-            <Col sm={8}>
+            <Col
+              sm={8}
+              style={{
+                justifyContent: "center",
+                display: "flex",
+                flexDirection: "column",
+              }}
+            >
               <div className={styles.solution_content}>
                 <LineLabel color="black">THE SOLUTION</LineLabel>
                 <h2>Dreamflow solves everything, including everything.</h2>
@@ -143,7 +150,14 @@ export default function Home() {
                 />
               </div>
             </Col>
-            <Col sm={8}>
+            <Col
+              sm={8}
+              style={{
+                justifyContent: "center",
+                display: "flex",
+                flexDirection: "column",
+              }}
+            >
               <div className={styles.understanding_content}>
                 <LineLabel color="black">THE PROBLEM</LineLabel>
                 <h2>
@@ -201,6 +215,7 @@ export default function Home() {
           <h2 style={{ textAlign: "center" }}>Our Products</h2>
           <HeaderLine color="black" />
         </div>
+        <div className={styles.squeezed_container}>
         <Container style={{ padding: "0px" }} fluid>
           <Row gutterWidth={25}>
             <Col sm={4}>
@@ -236,6 +251,7 @@ export default function Home() {
             </Col>
           </Row>
         </Container>
+        </div>
       </Wrapper>
       <Footer />
     </div>

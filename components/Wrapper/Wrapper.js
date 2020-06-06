@@ -7,8 +7,8 @@ class FantasiaWrapper extends Component {
         {this.props.children}
         <style jsx>{`
           .wrapper {
-            padding-right: 15%;
-            padding-left: 15%;
+            padding-right: 10%;
+            padding-left: 10%;
             background-color: ${this.props.bg};
             padding-top: ${this.props.paddingTop};
             padding-bottom: ${this.props.paddingBottom};
