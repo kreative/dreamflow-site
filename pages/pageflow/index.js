@@ -22,7 +22,7 @@ export default function PageflowHome() {
         ></script>
       </Head>
 
-      <Wrapper bg="#C8B5FD" paddingBottom="100px" paddingTop="100px">
+      <Wrapper bg="#C8B5FD" paddingBottom="100px" paddingTop="200px">
         <Container style={{ padding: "0px" }}>
           <Row gutterWidth={0}>
             <Col
@@ -96,7 +96,14 @@ export default function PageflowHome() {
       <Wrapper bg="#E7DFFF" paddingTop="150px" paddingBottom="150px">
         <Container style={{ padding: "0px" }} fluid>
           <Row gutterWidth={0}>
-            <Col sm={8}>
+            <Col
+              sm={8}
+              style={{
+                justifyContent: "center",
+                display: "flex",
+                flexDirection: "column",
+              }}
+            >
               <div className={styles.solution_content}>
                 <LineLabel color="black">THE SOLUTION</LineLabel>
                 <h2>
@@ -147,30 +154,30 @@ export default function PageflowHome() {
           <h2>Every single thing you need for online success</h2>
           <div className={styles.squeezed_container}>
             <Container style={{ padding: "0px" }}>
-              <Row gutterWidth={10}>
+              <Row gutterWidth={25}>
                 <Col sm={2}>
-                  <img className={styles.feature_image} src="" alt="" />
-                  <p className={styles.feature_text}>Something</p>
+                  <img className={styles.feature_image} src="https://kmg-site-assets.kaycdn.com/pageflow-analytics-ikon@3x.png" alt="Pageflow Analytics Ikon" />
+                  <p className={styles.feature_text}>Analytics & Data Tracking</p>
                 </Col>
                 <Col sm={2}>
-                  <img className={styles.feature_image} src="" alt="" />
-                  <p className={styles.feature_text}>Something</p>
+                  <img className={styles.feature_image} src="https://kmg-site-assets.kaycdn.com/pageflow-medal-ikon@3x.png" alt="Pageflow Medal Ikon" />
+                  <p className={styles.feature_text}>Dedicated Success Team</p>
                 </Col>
                 <Col sm={2}>
-                  <img className={styles.feature_image} src="" alt="" />
-                  <p className={styles.feature_text}>Something</p>
+                  <img className={styles.feature_image} src="https://kmg-site-assets.kaycdn.com/pageflow-newspaper-ikon@3x.png" alt="Pageflow Newspaper Ikon" />
+                  <p className={styles.feature_text}>Blog & CMS</p>
                 </Col>
                 <Col sm={2}>
-                  <img className={styles.feature_image} src="" alt="" />
-                  <p className={styles.feature_text}>Something</p>
+                  <img className={styles.feature_image} src="https://kmg-site-assets.kaycdn.com/pageflow-search-ikon@3x.png" alt="Pageflow Search Ikon" />
+                  <p className={styles.feature_text}>Search Engine Optimized</p>
                 </Col>
                 <Col sm={2}>
-                  <img className={styles.feature_image} src="" alt="" />
-                  <p className={styles.feature_text}>Something</p>
+                  <img className={styles.feature_image} src="https://kmg-site-assets.kaycdn.com/pageflow-security-ikon@3x.png" alt="Pageflow Security Ikon" />
+                  <p className={styles.feature_text}>Site Security & SSL</p>
                 </Col>
                 <Col sm={2}>
-                  <img className={styles.feature_image} src="" alt="" />
-                  <p className={styles.feature_text}>Something</p>
+                  <img className={styles.feature_image} src="https://kmg-site-assets.kaycdn.com/pageflow-wallet-ikon@3x.png" alt="Pageflow Wallet Ikon" />
+                  <p className={styles.feature_text}>Ecommerce & Online Payments</p>
                 </Col>
               </Row>
             </Container>
@@ -240,7 +247,7 @@ export default function PageflowHome() {
           </p>
         </div>
         <Container style={{ padding: "0px" }} fluid>
-          <Row gutterWidth={25}>
+          <Row gutterWidth={50}>
             <Col sm={4}>
               <IconBox
                 icon={faPencilRuler}
