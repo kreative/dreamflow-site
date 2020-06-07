@@ -226,6 +226,7 @@ export default function Kopy() {
               <h2>Some sort of inspiring call to action</h2>
               <div style={{ marginTop: "35px" }}>
                 <Button
+                  href="/kopy/contact"
                   fill="black"
                   textColor="white"
                   radius="3px"

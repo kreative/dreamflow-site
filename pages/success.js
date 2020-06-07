@@ -19,6 +19,7 @@ const SuccessPage = () => {
       <Wrapper bg="#7FE8AB" paddingTop="300px" paddingBottom="100px">
         <h1>The form has been successfully sent!</h1>
         <Button
+          href="/"
           fill="black"
           hoverColor="#53504E"
           textColor="white"

@@ -44,7 +44,7 @@ class FAQ extends Component {
           .question {
             font-size: 1.7em;
             font-weight: normal;
-            font-family: "Bifocals", serif;
+            font-family: "RadioGrotesk", serif;
             margin-left: 10px;
           }
 

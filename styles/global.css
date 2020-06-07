@@ -1,25 +1,25 @@
 h1 {
-    font-family: 'Romana', serif;
+    font-family: 'MonumentExtended', serif;
     font-size: 3em;
     font-weight: bold;
     padding: 0;
 }
 
 h2 {
-    font-family: 'Romana', serif;
+    font-family: 'MonumentExtended', serif;
     font-size: 2.7em;
     font-weight: normal;
 }
 
 h3, h4, h5, h6 {
-    font-family: 'Romana', serif;
+    font-family: 'MonumentExtended', serif;
 }
 
 p {
-    font-family: 'Bifocals', serif;
+    font-family: 'RadioGrotesk', serif;
     font-size: 1.3em;
 }
 
 .ui {
-    font-family: 'Bifocals' !important;
+    font-family: 'RadioGrotesk' !important;
 }

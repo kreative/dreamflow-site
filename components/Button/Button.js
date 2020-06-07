@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import Link from "next/link";
 import classNames from "classnames";
 
 class FantasiaButton extends Component {
@@ -12,9 +13,16 @@ class FantasiaButton extends Component {
     return (
       <div>
         <button type={this.props.type} className={buttonClass}>
-          {this.props.children}
+          <Link href={this.props.href || "#"}>
+            <a>{this.props.children}</a>
+          </Link>
         </button>
         <style jsx>{`
+          a {
+            color: ${this.props.textColor};
+            text-decoration: none;
+          }
+
           .f-btn {
             background-color: ${this.props.fill};
             border: ${this.props.border};
@@ -26,7 +34,7 @@ class FantasiaButton extends Component {
             cursor: pointer;
             -moz-box-sizing: border-box;
             -webkit-box-sizing: border-box;
-            font-family: "Bifocals", serif;
+            font-family: "RadioGrotesk", serif;
             font-weight: normal;
             font-size: 1.1em;
             margin: ${this.props.margin};

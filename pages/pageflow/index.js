@@ -46,6 +46,7 @@ export default function PageflowHome() {
                 bringing you leads 24/7.
               </p>
               <Button
+                href="/pageflow/pricing"
                 fill="black"
                 textColor="white"
                 radius="3px"
@@ -125,6 +126,7 @@ export default function PageflowHome() {
                   providers, and in a year or two.
                 </p>
                 <Button
+                  href="/pageflow/pricing"
                   fill="white"
                   textColor="black"
                   radius="3px"
@@ -387,6 +389,7 @@ export default function PageflowHome() {
                 consultations, and a Satisfaction Guarantee.
               </h2>
               <Button
+                href="/pageflow/pricing"
                 fill="black"
                 textColor="white"
                 radius="3px"
@@ -456,6 +459,7 @@ export default function PageflowHome() {
         </h2>
         <p>It's simple, easy, and free to get started</p>
         <Button
+          href="/get-started"
           fill="black"
           textColor="white"
           radius="3px"

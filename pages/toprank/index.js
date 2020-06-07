@@ -147,6 +147,7 @@ export default function TopRank() {
               <h2>Some sort of inspiring call to action</h2>
               <div style={{ marginTop: "35px" }}>
                 <Button
+                  href="/toprank/contact"
                   fill="black"
                   textColor="white"
                   radius="3px"

@@ -13,6 +13,7 @@ const NotFoundPage = () => {
           <h1>Page not found</h1>
           <p>The page you're looking for can't be found. Enjoy these Shibus instead :)</p>
           <Button 
+            href="/"
             fill="white"
             textColor="black"
             radius="3px"

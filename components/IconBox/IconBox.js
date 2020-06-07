@@ -28,7 +28,7 @@ class FantasiaIconBox extends Component {
 
           .header {
             font-size: 1.6em;
-            font-family: "Bifocals", serif;
+            font-family: "RadioGrotesk", serif;
             color: ${this.props.headerColor};
           }
 

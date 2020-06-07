@@ -213,6 +213,7 @@ export default function PageflowPricing() {
                 three, six, twelve months.
               </p>
               <Button
+                href="/get-starte"
                 fill="rgba(255, 255, 255, 0.17)"
                 textColor="white"
                 radius="3px"
@@ -234,6 +235,7 @@ export default function PageflowPricing() {
                 Our Support Team is here for any concern you have
               </h2>
               <Button
+                href="/contact"
                 fill="black"
                 textColor="white"
                 radius="3px"

@@ -101,6 +101,7 @@ export default function Home() {
                   providers, and in a year or two.
                 </p>
                 <Button
+                  href="/get-started"
                   fill="white"
                   textColor="black"
                   radius="3px"
@@ -109,7 +110,7 @@ export default function Home() {
                   raised={false}
                   grow={true}
                 >
-                  View Pricing
+                  Get Started
                 </Button>
               </div>
             </Col>
