@@ -6,6 +6,16 @@ import Button from "../components/Button/Button";
 const SuccessPage = () => {
   return (
     <div>
+      <Head>
+        <title>Success! | Kreative Dreamflow</title>
+        <link rel="icon" href="/favicon.ico" />
+        <script
+          type="text/javascript"
+          src="https://kit.fontawesome.com/abadd7b058.js"
+          crossorigin="anonymous"
+        ></script>
+        <meta content="width=device-width, initial-scale=1" name="viewport" />
+      </Head>
       <Wrapper bg="#7FE8AB" paddingTop="300px" paddingBottom="100px">
         <h1>The form has been successfully sent!</h1>
         <Button

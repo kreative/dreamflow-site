@@ -1,0 +1,51 @@
+.contact_form_section {
+  padding-right: 75px;
+  border-right: 2px solid #C5C5C5;
+}
+
+.contact_details {
+  padding-left: 75px;
+  word-wrap: break-word;
+}
+
+.contact_detail {
+  padding-bottom: 35px;
+}
+
+.contact_label {
+  color: #4A4A4A;
+  font-size: 1.5em;
+  margin-bottom: -1px;
+}
+
+.contact_info {
+  color: #0019FF;
+  font-size: 1.6em;
+}
+
+.faq_link {
+  font-size: 1em;
+}
+
+.faq_link a {
+  color: #0019FF;
+}
+
+.faq_header {
+  padding-top: 25px;
+  margin-bottom: -1px;
+}
+
+@media screen and (max-width: 767px) {
+  .contact_form_section {
+      padding-right: 0px;
+      border-right: none;
+      padding-bottom: 75px;
+      border-bottom: 2px solid #C5C5C5;
+  }
+
+  .contact_details {
+      padding-left: 0px;
+      padding-top: 75px;
+  }   
+}

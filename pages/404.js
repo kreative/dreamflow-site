@@ -1,8 +1,13 @@
+import Head from "next/head";
 import Button from "../components/Button/Button";
 
 const NotFoundPage = () => {
   return (
     <div>
+      <Head>
+        <meta content="width=device-width, initial-scale=1" name="viewport" />
+      </Head>
+
       <div className="body">
         <div className="not_found_contents">
           <h1>Page not found</h1>

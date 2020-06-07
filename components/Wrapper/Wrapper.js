@@ -13,12 +13,19 @@ class FantasiaWrapper extends Component {
             padding-top: ${this.props.paddingTop};
             padding-bottom: ${this.props.paddingBottom};
           }
-          
-          @media screen and (max-width: 600px) {
-              .wrapper {
-                  padding-right: 7%;
-                  padding-left: 7%;
-              }
+
+          @media screen and (min-width: 1200px) {
+            .wrapper {
+              padding-right: 15%;
+              padding-left: 15%;
+            }
+          }
+
+          @media screen and (min-width: 1600px) {
+            .wrapper {
+              padding-right: 20%;
+              padding-left: 20%;
+            }
           }
         `}</style>
       </div>

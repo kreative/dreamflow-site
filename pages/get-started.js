@@ -15,6 +15,7 @@ export default function GetStarted() {
           src="https://kit.fontawesome.com/abadd7b058.js"
           crossorigin="anonymous"
         ></script>
+        <meta content="width=device-width, initial-scale=1" name="viewport" />
       </Head>
       <Wrapper bg="#E7F2FD" paddingTop="300px" paddingBottom="100px">
         <h1>Get Started with Dreamflow</h1>
@@ -34,233 +35,249 @@ export default function GetStarted() {
             <input type="hidden" name="form-name" value="get-started-form" />
             <Container style={{ padding: "0px" }}>
               <Row gutterWidth={25}>
-                <Col sm={6}>
-                  <h2>Contact Details</h2>
+                <Col md={4} lg={6}>
+                  <h2 className="title">Contact Details</h2>
                 </Col>
-                <Col sm={6}>
-                  <div className="f-field">
-                    <label htmlFor="name_field" className="f-label">
-                      Name
-                    </label>
-                    <input
-                      className="ss"
-                      type="text"
-                      name="name"
-                      id="name_field"
-                      placeholder="John Doe"
-                      required
-                    />
-                  </div>
-                  <Row gutterWidth={15}>
-                    <Col sm={6}>
-                      <div className="f-field">
-                        <label htmlFor="email_field" className="f-label">
-                          Email
-                        </label>
-                        <input
-                          className="ss"
-                          type="text"
-                          name="email"
-                          id="email_field"
-                          placeholder="john@example.com"
-                          required
-                        />
-                      </div>
-                    </Col>
-                    <Col sm={6}>
-                      <div className="f-field">
-                        <label htmlFor="phone_field" className="f-label">
-                          Phone
-                        </label>
-                        <input
-                          className="ss"
-                          type="tel"
-                          name="phone"
-                          id="phone_field"
-                          placeholder="(555)5555555"
-                          required
-                        />
-                      </div>
-                    </Col>
-                  </Row>
-                  <div className="f-field">
-                    <label htmlFor="company_field" className="f-label">
-                      Company
-                    </label>
-                    <input
-                      className="ss"
-                      type="text"
-                      name="company"
-                      id="company_field"
-                      placeholder="Acme, Corp."
-                      required
-                    />
-                  </div>
-                  <div className="f-field">
-                    <label htmlFor="website_field" className="f-label">
-                      Website
-                    </label>
-                    <input
-                      className="ss"
-                      type="text"
-                      name="website"
-                      id="website_field"
-                      placeholder="acme.com"
-                    />
-                  </div>
-                  <div className="f-field">
-                    <label
-                      htmlFor="company_description_field"
-                      className="f-label"
-                    >
-                      What does your business do?
-                    </label>
-                    <textarea
-                      className="ss"
-                      name="company_description"
-                      id="company_description_field"
-                      placeholder="Our business does ..."
-                      rows="5"
-                      required
-                    ></textarea>
+                <Col md={8} lg={6}>
+                  <div className="form-part">
+                    <div className="f-field">
+                      <label htmlFor="name_field" className="f-label">
+                        Name
+                      </label>
+                      <input
+                        className="ss"
+                        type="text"
+                        name="name"
+                        id="name_field"
+                        placeholder="John Doe"
+                        required
+                      />
+                    </div>
+                    <Row gutterWidth={15}>
+                      <Col sm={6}>
+                        <div className="f-field">
+                          <label htmlFor="email_field" className="f-label">
+                            Email
+                          </label>
+                          <input
+                            className="ss"
+                            type="text"
+                            name="email"
+                            id="email_field"
+                            placeholder="john@example.com"
+                            required
+                          />
+                        </div>
+                      </Col>
+                      <Col sm={6}>
+                        <div className="f-field">
+                          <label htmlFor="phone_field" className="f-label">
+                            Phone
+                          </label>
+                          <input
+                            className="ss"
+                            type="tel"
+                            name="phone"
+                            id="phone_field"
+                            placeholder="(555)5555555"
+                            required
+                          />
+                        </div>
+                      </Col>
+                    </Row>
+                    <div className="f-field">
+                      <label htmlFor="company_field" className="f-label">
+                        Company
+                      </label>
+                      <input
+                        className="ss"
+                        type="text"
+                        name="company"
+                        id="company_field"
+                        placeholder="Acme, Corp."
+                        required
+                      />
+                    </div>
+                    <div className="f-field">
+                      <label htmlFor="website_field" className="f-label">
+                        Website
+                      </label>
+                      <input
+                        className="ss"
+                        type="text"
+                        name="website"
+                        id="website_field"
+                        placeholder="acme.com"
+                      />
+                    </div>
+                    <div className="f-field">
+                      <label
+                        htmlFor="company_description_field"
+                        className="f-label"
+                      >
+                        What does your business do?
+                      </label>
+                      <textarea
+                        className="ss"
+                        name="company_description"
+                        id="company_description_field"
+                        placeholder="Our business does ..."
+                        rows="5"
+                        required
+                      ></textarea>
+                    </div>
                   </div>
                 </Col>
               </Row>
               <Row gutterWidth={25}>
-                <Col sm={6}>
-                  <h2>Project Details</h2>
+                <Col  md={4} lg={6}>
+                  <h2 className="title">Project Details</h2>
                 </Col>
-                <Col sm={6}>
-                  <p className="f-label2">
-                    What products are you interested in using?
-                  </p>
-                  <div className="f-checkbox-group">
-                    <div className="f-checkbox">
-                      <input
-                        type="checkbox"
-                        id="pageflow"
-                        name="products"
-                        value="pageflow"
-                      />
-                      <label htmlFor="pageflow">Pageflow</label>
+                <Col md={8} lg={6}>
+                  <div className="form-part">
+                    <p className="f-label2">
+                      What products are you interested in using?
+                    </p>
+                    <div className="f-checkbox-group">
+                      <div className="f-checkbox">
+                        <input
+                          type="checkbox"
+                          id="pageflow"
+                          name="products"
+                          value="pageflow"
+                        />
+                        <label htmlFor="pageflow">Pageflow</label>
+                      </div>
+                      <div className="f-checkbox">
+                        <input
+                          type="checkbox"
+                          id="toprank"
+                          name="products"
+                          value="toprank"
+                        />
+                        <label htmlFor="toprank">TopRank</label>
+                      </div>
+                      <div className="f-checkbox">
+                        <input
+                          type="checkbox"
+                          id="sitecare"
+                          name="products"
+                          value="sitecare"
+                        />
+                        <label htmlFor="sitecare">SiteCare</label>
+                      </div>
+                      <div className="f-checkbox">
+                        <input
+                          type="checkbox"
+                          id="kopy"
+                          name="products"
+                          value="kopy"
+                        />
+                        <label htmlFor="kopy">Kopy</label>
+                      </div>
+                      <div className="f-checkbox">
+                        <input
+                          type="checkbox"
+                          id="kanvas"
+                          name="products"
+                          value="kanvas"
+                        />
+                        <label htmlFor="kanvas">Kanvas</label>
+                      </div>
+                      <div className="f-checkbox">
+                        <input
+                          type="checkbox"
+                          id="postage"
+                          name="products"
+                          value="postage"
+                        />
+                        <label htmlFor="postage">Postage</label>
+                      </div>
                     </div>
-                    <div className="f-checkbox">
-                      <input
-                        type="checkbox"
-                        id="toprank"
-                        name="products"
-                        value="toprank"
-                      />
-                      <label htmlFor="toprank">TopRank</label>
+                    <div className="f-field">
+                      <label
+                        htmlFor="project_description_field"
+                        className="f-label"
+                      >
+                        Could you provide a brief synopsis of what you're
+                        looking for?
+                      </label>
+                      <textarea
+                        className="ss"
+                        name="project_description"
+                        id="project_description_field"
+                        placeholder="We are looking for ..."
+                        rows="5"
+                        required
+                      ></textarea>
                     </div>
-                    <div className="f-checkbox">
-                      <input
-                        type="checkbox"
-                        id="sitecare"
-                        name="products"
-                        value="sitecare"
-                      />
-                      <label htmlFor="sitecare">SiteCare</label>
+                    <p className="f-label2">What is your estimated budget?</p>
+                    <div className="f-checkbox-group">
+                      <div className="f-checkbox">
+                        <input
+                          type="radio"
+                          id="budget_one"
+                          name="budget"
+                          value="budget_one"
+                        />
+                        <label htmlFor="budget_one">$0 - $1,000</label>
+                      </div>
+                      <div className="f-checkbox">
+                        <input
+                          type="radio"
+                          id="budget_two"
+                          name="budget"
+                          value="budget_two"
+                        />
+                        <label htmlFor="budget_two">$1,000 - $2,500</label>
+                      </div>
+                      <div className="f-checkbox">
+                        <input
+                          type="radio"
+                          id="budget_three"
+                          name="budget"
+                          value="budget_three"
+                        />
+                        <label htmlFor="budget_three">$2,500 - $5,000</label>
+                      </div>
+                      <div className="f-checkbox">
+                        <input
+                          type="radio"
+                          id="budget_four"
+                          name="budget"
+                          value="budget_four"
+                        />
+                        <label htmlFor="budget_four">$5,000 - $10,000</label>
+                      </div>
                     </div>
-                    <div className="f-checkbox">
-                      <input
-                        type="checkbox"
-                        id="kopy"
-                        name="products"
-                        value="kopy"
-                      />
-                      <label htmlFor="kopy">Kopy</label>
+                    <div className="f-field">
+                      <label htmlFor="notes_field" className="f-label">
+                        Do you have anything else you'd like us to know?
+                      </label>
+                      <textarea
+                        className="ss"
+                        name="notes"
+                        id="notes_field"
+                        placeholder="Notes ..."
+                        rows="5"
+                        required
+                      ></textarea>
                     </div>
-                    <div className="f-checkbox">
-                      <input
-                        type="checkbox"
-                        id="kanvas"
-                        name="products"
-                        value="kanvas"
-                      />
-                      <label htmlFor="kanvas">Kanvas</label>
+                    <div style={{paddingTop:"25px"}}>
+                      <Button
+                        type="submit"
+                        fill="#001AFF"
+                        hoverColor="#004893"
+                        textColor="white"
+                        radius="3px"
+                        border="1px solid #001AFF"
+                        hoverBorder="1px solid #004893"
+                        padding="15px 50px"
+                        grow={true}
+                      >
+                        Submit & Get Started
+                      </Button>
                     </div>
-                    <div className="f-checkbox">
-                      <input
-                        type="checkbox"
-                        id="postage"
-                        name="products"
-                        value="postage"
-                      />
-                      <label htmlFor="postage">Postage</label>
-                    </div>
-                  </div>
-                  <div className="f-field">
-                    <label
-                      htmlFor="project_description_field"
-                      className="f-label"
-                    >
-                      Could you provide a brief synopsis of what you're looking
-                      for?
-                    </label>
-                    <textarea
-                      className="ss"
-                      name="project_description"
-                      id="project_description_field"
-                      placeholder="We are looking for ..."
-                      rows="5"
-                      required
-                    ></textarea>
-                  </div>
-                  <p className="f-label2">What is your estimated budget?</p>
-                  <div className="f-checkbox-group">
-                    <div className="f-checkbox">
-                      <input
-                        type="radio"
-                        id="budget_one"
-                        name="budget"
-                        value="budget_one"
-                      />
-                      <label htmlFor="budget_one">$0 - $1,000</label>
-                    </div>
-                    <div className="f-checkbox">
-                      <input
-                        type="radio"
-                        id="budget_two"
-                        name="budget"
-                        value="budget_two"
-                      />
-                      <label htmlFor="budget_two">$1,000 - $2,500</label>
-                    </div>
-                    <div className="f-checkbox">
-                      <input
-                        type="radio"
-                        id="budget_three"
-                        name="budget"
-                        value="budget_three"
-                      />
-                      <label htmlFor="budget_three">$2,500 - $5,000</label>
-                    </div>
-                    <div className="f-checkbox">
-                      <input
-                        type="radio"
-                        id="budget_four"
-                        name="budget"
-                        value="budget_four"
-                      />
-                      <label htmlFor="budget_four">$5,000 - $10,000</label>
-                    </div>
-                  </div>
-                  <div className="f-field">
-                    <label
-                      htmlFor="notes_field"
-                      className="f-label"
-                    >
-                      Do you have anything else you'd like us to know?
-                    </label>
-                    <textarea
-                      className="ss"
-                      name="notes"
-                      id="notes_field"
-                      placeholder="Notes ..."
-                      rows="5"
-                      required
-                    ></textarea>
                   </div>
                 </Col>
               </Row>
@@ -284,6 +301,14 @@ export default function GetStarted() {
           font-weight: normal;
           font-size: 1em;
           width: 100%;
+        }
+
+        .title {
+          padding-bottom: 50px;
+        }
+
+        .form-part {
+          margin-bottom: 75px;
         }
 
         .f-label {

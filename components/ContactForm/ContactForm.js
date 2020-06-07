@@ -7,11 +7,16 @@ class ContactForm extends Component {
     return (
       <div>
         <div className="contact-form">
-          <form className="f-form" action="/success" name="contact-form" data-netlify="true">
+          <form
+            className="f-form"
+            action="/success"
+            name="contact-form"
+            data-netlify="true"
+          >
             <input type="hidden" name="form-name" value="contact-form" />
-            <Container style={{ padding: "0px" }}>
+            <Container style={{ padding: "0px" }} fluid>
               <Row gutterWidth={15}>
-                <Col sm={6}>
+                <Col xs={6}>
                   <div className="f-field">
                     <input
                       className="ss"
@@ -22,7 +27,7 @@ class ContactForm extends Component {
                     />
                   </div>
                 </Col>
-                <Col sm={6}>
+                <Col xs={6}>
                   <div className="f-field">
                     <input
                       className="ss"
@@ -36,7 +41,7 @@ class ContactForm extends Component {
                 </Col>
               </Row>
               <Row gutterWidth={15}>
-                <Col sm={6}>
+                <Col xs={6}>
                   <div className="f-field">
                     <input
                       className="ss"
@@ -47,7 +52,7 @@ class ContactForm extends Component {
                     />
                   </div>
                 </Col>
-                <Col sm={6}>
+                <Col xs={6}>
                   <div className="f-field">
                     <input
                       className="ss"

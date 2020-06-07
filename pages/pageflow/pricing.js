@@ -18,6 +18,7 @@ export default function PageflowPricing() {
           src="https://kit.fontawesome.com/abadd7b058.js"
           crossorigin="anonymous"
         ></script>
+        <meta content="width=device-width, initial-scale=1" name="viewport" />
       </Head>
 
       <Wrapper bg="#E7DFFF" paddingTop="150px" paddingBottom="100px">
@@ -263,7 +264,7 @@ export default function PageflowPricing() {
         }
 
         .image1 {
-          padding-left: 25px;
+          padding-left: 75px;
         }
 
         .image2 {

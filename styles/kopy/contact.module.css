@@ -1,0 +1,24 @@
+.header_wrapper {
+  padding-right: 100px;
+}
+
+.contactcard_wrapper {
+  margin-bottom: -250px;
+}
+
+.spacer {
+  height: 50vh;
+}
+
+@media screen and (max-width: 991px) {
+  .header_wrapper {
+    padding-right: 50px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .header_wrapper {
+    padding-right: 0px;
+    padding-bottom: 50px;
+  }
+}

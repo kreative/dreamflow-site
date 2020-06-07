@@ -8,18 +8,20 @@ import Wave from "../../components/Wave/Wave";
 import ProductCard from "../../components/ProductCard/ProductCard";
 import { Container, Row, Col } from "react-grid-system";
 import { faPencilRuler } from "@fortawesome/free-solid-svg-icons";
+import styles from "../../styles/kopy/home.module.css";
 
 export default function Kopy() {
   return (
     <div>
       <Head>
-        <title>Get in touch | Kopy | Dreamflow</title>
+        <title>Kopy | Kreative Dreamflow</title>
         <link rel="icon" href="/favicon.ico" />
         <script
           type="text/javascript"
           src="https://kit.fontawesome.com/abadd7b058.js"
           crossorigin="anonymous"
         ></script>
+        <meta content="width=device-width, initial-scale=1" name="viewport" />
       </Head>
 
       <div className="splash" style={{ backgroundColor: "#D1E8FF" }}>
@@ -27,12 +29,7 @@ export default function Kopy() {
           <Container style={{ padding: "0px" }} fluid>
             <Row gutterWidth={0}>
               <Col
-                sm={9}
-                style={{
-                  justifyContent: "flex-end",
-                  display: "flex",
-                  flexDirection: "column",
-                }}
+                md={9}
               >
                 <LineLabel color="black">WELCOME TO TOPRANK</LineLabel>
                 <h1>
@@ -50,7 +47,7 @@ export default function Kopy() {
           <Row gutterWidth={0}>
             <Col sm={6}>
               <img
-                className="image image1"
+                className={styles.why_image}
                 src="https://kmg-site-assets.kaycdn.com/searching.gif"
                 alt="GIF of someone looking around and searching"
               />
@@ -63,7 +60,7 @@ export default function Kopy() {
                 flexDirection: "column",
               }}
             >
-              <LineLabel color="blac">Why SEO?</LineLabel>
+              <LineLabel color="blac">WHY KOPY?</LineLabel>
               <h2>
                 A statement that inspires business owners to add SEO to their
                 strategy
@@ -83,14 +80,13 @@ export default function Kopy() {
           <div
             style={{
               textAlign: "center",
-              paddingBottom: "50px",
             }}
           >
             <h2>Kopy Products</h2>
           </div>
           <Container style={{ padding: "0px" }} fluid>
             <Row gutterWidth={25}>
-              <Col sm={6}>
+              <Col md={6} className={styles.kopy_product}>
                 <ProductCard
                   logo=""
                   alt=""
@@ -117,7 +113,7 @@ export default function Kopy() {
                   }
                 />
               </Col>
-              <Col sm={6}>
+              <Col md={6} className={styles.kopy_product}>
                 <ProductCard
                   logo=""
                   alt=""
@@ -163,10 +159,9 @@ export default function Kopy() {
             Headline talking about our superior and effecient process.
           </h2>
         </div>
-        <div className="process-wrapper">
           <Container style={{ padding: "0px" }} fluid>
             <Row gutterWidth={100}>
-              <Col sm={4}>
+              <Col md={4} className={styles.iconbox}>
                 <IconBox
                   icon={faPencilRuler}
                   iconColor="white"
@@ -179,7 +174,7 @@ export default function Kopy() {
                   size="3x"
                 />
               </Col>
-              <Col sm={4}>
+              <Col md={4} className={styles.iconbox}>
                 <IconBox
                   icon={faPencilRuler}
                   iconColor="white"
@@ -192,7 +187,7 @@ export default function Kopy() {
                   size="3x"
                 />
               </Col>
-              <Col sm={4}>
+              <Col md={4} className={styles.iconbox}>
                 <IconBox
                   icon={faPencilRuler}
                   iconColor="white"
@@ -207,7 +202,6 @@ export default function Kopy() {
               </Col>
             </Row>
           </Container>
-        </div>
       </Wrapper>
       <Wave color="#338EEE">
         <path
@@ -246,7 +240,7 @@ export default function Kopy() {
             </Col>
             <Col sm={6} style={{ textAlign: "right" }}>
               <img
-                className="image2"
+                className={styles.cta_image}
                 src="https://kmg-site-assets.kaycdn.com/rocket-launch.gif"
                 alt="GIF of a rocket ship launching into outer space"
               />
@@ -256,30 +250,6 @@ export default function Kopy() {
       </Wrapper>
 
       <Footer />
-
-      <style jsx>{`
-        .image {
-          width: 100%;
-        }
-
-        .image1 {
-          padding-right: 50px;
-        }
-
-        .image2 {
-          width: 70%;
-        }
-
-        .process-wrapper {
-          padding-top: 50px;
-        }
-
-        @media and screen (max-width: 600px) {
-          .image1 {
-            padding-right: 0px;
-          }
-        }
-      `}</style>
     </div>
   );
 }

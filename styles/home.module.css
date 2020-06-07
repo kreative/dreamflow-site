@@ -56,10 +56,60 @@
   padding-bottom: 100px;
 }
 
-.squeezed_container {
-  padding: 0px 15%;
+@media screen and (max-width: 991px) {
+  .problem_image_wrapper,
+  .solution_image_wrapper {
+    text-align: right;
+    padding-right: 50px;
+  }
+
+  .problem_image_wrapper img,
+  .solution_image_wrapper img {
+    width: 45%;
+  }
+
+  .problem_content {
+    margin-left: 0px;
+    padding: 100px;
+  }
+
+  .solution_content {
+    margin-right: 0px;
+    padding: 100px;
+  }
+
+  .problem_image_wrapper {
+    margin-bottom: -80px;
+  }
+
+  .solution_image_wrapper {
+    margin-top: -80px;
+  }
+
+  .understanding_content {
+    margin-left: 0px;
+    padding: 100px;
+  }
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 576px) {
+  .problem_image_wrapper,
+  .solution_image_wrapper {
+    padding-right: 0px;
+    text-align: center;
+  }
   
+  .problem_image_wrapper img,
+  .solution_image_wrapper img {
+    width: 80%;
+  }
+  
+  .problem_content,
+  .understanding_content {
+    padding: 100px 50px 50px 50px;
+  }
+
+  .solution_content {
+    padding: 50px 50px 100px 50px;
+  }
 }

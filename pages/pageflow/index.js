@@ -20,13 +20,14 @@ export default function PageflowHome() {
           src="https://kit.fontawesome.com/abadd7b058.js"
           crossorigin="anonymous"
         ></script>
+        <meta content="width=device-width, initial-scale=1" name="viewport" />
       </Head>
 
       <Wrapper bg="#C8B5FD" paddingBottom="100px" paddingTop="200px">
         <Container style={{ padding: "0px" }}>
           <Row gutterWidth={0}>
             <Col
-              sm={6}
+              md={6}
               style={{
                 justifyContent: "center",
                 display: "flex",
@@ -56,7 +57,14 @@ export default function PageflowHome() {
                 View Pricing
               </Button>
             </Col>
-            <Col sm={6} style={{ textAlign: "right" }}>
+            <Col
+              md={6}
+              style={{
+                justifyContent: "center",
+                display: "flex",
+                flexDirection: "column",
+              }}
+            >
               <img
                 className={styles.image1}
                 src="http://kmg-site-assets.kaycdn.com/fall.gif"
@@ -70,10 +78,10 @@ export default function PageflowHome() {
         <Container style={{ padding: "0px" }}>
           <LineLabel color="black">THE PROBLEM</LineLabel>
           <Row gutterWidth={0} style={{ marginTop: "20px" }}>
-            <Col sm={6}>
+            <Col md={6}>
               <h2>Every other solution wastes your time - and money​</h2>
             </Col>
-            <Col sm={6}>
+            <Col md={6}>
               <p className={styles.padded_text}>
                 We get it. Agencies, freelancers, and even DIY solutions like
                 Wix or Squarespace suck. Either it's too expensive, or too slow,
@@ -97,7 +105,7 @@ export default function PageflowHome() {
         <Container style={{ padding: "0px" }} fluid>
           <Row gutterWidth={0}>
             <Col
-              sm={8}
+              lg={8}
               style={{
                 justifyContent: "center",
                 display: "flex",
@@ -130,7 +138,7 @@ export default function PageflowHome() {
               </div>
             </Col>
             <Col
-              sm={4}
+              lg={4}
               style={{
                 justifyContent: "center",
                 display: "flex",
@@ -155,29 +163,59 @@ export default function PageflowHome() {
           <div className={styles.squeezed_container}>
             <Container style={{ padding: "0px" }}>
               <Row gutterWidth={25}>
-                <Col sm={2}>
-                  <img className={styles.feature_image} src="https://kmg-site-assets.kaycdn.com/pageflow-analytics-ikon@3x.png" alt="Pageflow Analytics Ikon" />
-                  <p className={styles.feature_text}>Analytics & Data Tracking</p>
+                <Col xs={6} sm={4} lg={2}>
+                  <img
+                    className={styles.feature_image}
+                    src="https://kmg-site-assets.kaycdn.com/pageflow-analytics-ikon@3x.png"
+                    alt="Pageflow Analytics Ikon"
+                  />
+                  <p className={styles.feature_text}>
+                    Analytics & Data Tracking
+                  </p>
                 </Col>
-                <Col sm={2}>
-                  <img className={styles.feature_image} src="https://kmg-site-assets.kaycdn.com/pageflow-medal-ikon@3x.png" alt="Pageflow Medal Ikon" />
+                <Col xs={6} sm={4} lg={2}>
+                  <img
+                    className={styles.feature_image}
+                    src="https://kmg-site-assets.kaycdn.com/pageflow-medal-ikon@3x.png"
+                    alt="Pageflow Medal Ikon"
+                  />
                   <p className={styles.feature_text}>Dedicated Success Team</p>
                 </Col>
-                <Col sm={2}>
-                  <img className={styles.feature_image} src="https://kmg-site-assets.kaycdn.com/pageflow-newspaper-ikon@3x.png" alt="Pageflow Newspaper Ikon" />
+                <Col xs={6} sm={4} lg={2}>
+                  <img
+                    className={styles.feature_image}
+                    src="https://kmg-site-assets.kaycdn.com/pageflow-newspaper-ikon@3x.png"
+                    alt="Pageflow Newspaper Ikon"
+                  />
                   <p className={styles.feature_text}>Blog & CMS</p>
                 </Col>
-                <Col sm={2}>
-                  <img className={styles.feature_image} src="https://kmg-site-assets.kaycdn.com/pageflow-search-ikon@3x.png" alt="Pageflow Search Ikon" />
-                  <p className={styles.feature_text}>Search Engine Optimized</p>
+                <Col xs={6} sm={4} lg={2}>
+                  <img
+                    className={styles.feature_image}
+                    src="https://kmg-site-assets.kaycdn.com/pageflow-search-ikon@3x.png"
+                    alt="Pageflow Search Ikon"
+                  />
+                  <p className={styles.feature_text}>
+                    Search Engine Optimization
+                  </p>
                 </Col>
-                <Col sm={2}>
-                  <img className={styles.feature_image} src="https://kmg-site-assets.kaycdn.com/pageflow-security-ikon@3x.png" alt="Pageflow Security Ikon" />
+                <Col xs={6} sm={4} lg={2}>
+                  <img
+                    className={styles.feature_image}
+                    src="https://kmg-site-assets.kaycdn.com/pageflow-security-ikon@3x.png"
+                    alt="Pageflow Security Ikon"
+                  />
                   <p className={styles.feature_text}>Site Security & SSL</p>
                 </Col>
-                <Col sm={2}>
-                  <img className={styles.feature_image} src="https://kmg-site-assets.kaycdn.com/pageflow-wallet-ikon@3x.png" alt="Pageflow Wallet Ikon" />
-                  <p className={styles.feature_text}>Ecommerce & Online Payments</p>
+                <Col xs={6} sm={4} lg={2}>
+                  <img
+                    className={styles.feature_image}
+                    src="https://kmg-site-assets.kaycdn.com/pageflow-wallet-ikon@3x.png"
+                    alt="Pageflow Wallet Ikon"
+                  />
+                  <p className={styles.feature_text}>
+                    Ecommerce & Online Payments
+                  </p>
                 </Col>
               </Row>
             </Container>
@@ -195,7 +233,7 @@ export default function PageflowHome() {
       <Wrapper bg="#6135DE" paddingBottom="150px" paddingTop="250px">
         <Container style={{ padding: "0px" }}>
           <Row gutterWidth={0}>
-            <Col sm={6}>
+            <Col md={6}>
               <img
                 className={styles.image2}
                 src="https://kmg-site-assets.kaycdn.com/plant-growing.gif"
@@ -203,7 +241,7 @@ export default function PageflowHome() {
               />
             </Col>
             <Col
-              sm={6}
+              md={6}
               style={{
                 justifyContent: "center",
                 display: "flex",
@@ -211,17 +249,11 @@ export default function PageflowHome() {
               }}
             >
               <div style={{ color: "white" }}>
-                <h1
-                  style={{
-                    lineHeight: "1.2em",
-                    fontSize: "4em",
-                    fontWeight: "normal",
-                  }}
-                >
+                <h1 className={styles.testimonial_text}>
                   "We were scared about spending money on a new website, but
                   Pageflow turned the cost into an investment."
                 </h1>
-                <p style={{ fontSize: "1em" }}>
+                <p className={styles.testimonial_customer}>
                   Frank Rossi, Founder & Head of Marketing at B4TheLeague
                 </p>
               </div>
@@ -237,7 +269,7 @@ export default function PageflowHome() {
         ></path>
       </Wave>
       <Wrapper bg="white" paddingTop="250px" paddingBottom="150px">
-        <div style={{ paddingBottom: "75px" }}>
+        <div>
           <LineLabel color="black">HOW IT WORKS</LineLabel>
           <h2>You're a part of every step, without having to do the work</h2>
           <p>
@@ -248,7 +280,7 @@ export default function PageflowHome() {
         </div>
         <Container style={{ padding: "0px" }} fluid>
           <Row gutterWidth={50}>
-            <Col sm={4}>
+            <Col md={4} className={styles.iconbox}>
               <IconBox
                 icon={faPencilRuler}
                 iconColor="black"
@@ -259,7 +291,7 @@ export default function PageflowHome() {
                 size="3x"
               />
             </Col>
-            <Col sm={4}>
+            <Col md={4} className={styles.iconbox}>
               <IconBox
                 icon={faPencilRuler}
                 iconColor="black"
@@ -270,7 +302,7 @@ export default function PageflowHome() {
                 size="3x"
               />
             </Col>
-            <Col sm={4}>
+            <Col md={4} className={styles.iconbox}>
               <IconBox
                 icon={faPencilRuler}
                 iconColor="black"
@@ -286,9 +318,9 @@ export default function PageflowHome() {
       </Wrapper>
       <Wrapper bg="#1E1E1E" paddingBottom="150px" paddingTop="150px">
         <Container style={{ padding: "0px" }}>
-          <Row gutterWidth={0}>
-            <Col sm={6} style={{ color: "white" }}>
-              <div className={styles.benefits}>
+          <Row gutterWidth={50}>
+            <Col md={6} style={{ color: "white" }}>
+              <div>
                 <LineLabel color="white">BRANDING BENEFITS</LineLabel>
                 <h2>If you're not on the internet, you don't exist.​</h2>
                 <p>
@@ -307,11 +339,11 @@ export default function PageflowHome() {
               </div>
             </Col>
             <Col
-              sm={6}
-              className={styles.benefits}
+              md={6}
+              className={styles.design_benefits}
               style={{ color: "#C8B5FD" }}
             >
-              <div className={styles.benefits}>
+              <div>
                 <LineLabel color="#C8B5FD">DESIGN BENEFITS</LineLabel>
                 <h2>Looking good matters, web design isn't a DIY thing.​</h2>
                 <p>
@@ -340,13 +372,15 @@ export default function PageflowHome() {
         <Container style={{ padding: "0px" }}>
           <Row gutterWidth={0}>
             <Col sm={4}>
-              <img
-                className={styles.image2}
-                src="https://kmg-site-assets.kaycdn.com/the-pageflow-pledge.png"
-                alt="The Pageflow Pledge Badge in Black"
-              />
+              <div className={styles.pledge_badge_wrapper}>
+                <img
+                  className={styles.pledge_badge}
+                  src="https://kmg-site-assets.kaycdn.com/the-pageflow-pledge.png"
+                  alt="The Pageflow Pledge Badge in Black"
+                />
+              </div>
             </Col>
-            <Col sm={8}>
+            <Col sm={8} className={styles.pledge_content}>
               <LineLabel>OUR PLEDGE</LineLabel>
               <h2>
                 Every customer recieves a Dedicated Success Team, revisions, SEO
@@ -387,19 +421,13 @@ export default function PageflowHome() {
               }}
             >
               <div>
-                <h1
-                  style={{
-                    lineHeight: "1.2em",
-                    fontSize: "4em",
-                    fontWeight: "normal",
-                  }}
-                >
+                <h1 className={styles.testimonial_text}>
                   "Even though we worked with their Chicago team remotely, they
                   never kept us out of the loop and always responded when we
                   reached out. None of our past designers delivered this kind of
                   service!"
                 </h1>
-                <p style={{ fontSize: "1em" }}>
+                <p className={styles.testimonial_customer}>
                   Byron Stanger, Founder at Phoenix Media
                 </p>
               </div>

@@ -22,6 +22,7 @@ export default function Home() {
           src="https://kit.fontawesome.com/abadd7b058.js"
           crossorigin="anonymous"
         ></script>
+        <meta content="width=device-width, initial-scale=1" name="viewport" />
       </Head>
 
       <Navbar />
@@ -37,7 +38,7 @@ export default function Home() {
         <Container style={{ padding: "0px" }} fluid>
           <Row gutterWidth={0}>
             <Col
-              sm={4}
+              lg={4}
               style={{
                 justifyContent: "center",
                 display: "flex",
@@ -52,7 +53,7 @@ export default function Home() {
                 />
               </div>
             </Col>
-            <Col sm={8}>
+            <Col lg={8}>
               <div className={styles.problem_content}>
                 <LineLabel color="black">THE PROBLEM</LineLabel>
                 <h2>Most solutions waste your time and your money.</h2>
@@ -83,7 +84,7 @@ export default function Home() {
         <Container style={{ padding: "0px" }} fluid>
           <Row gutterWidth={0}>
             <Col
-              sm={8}
+              lg={8}
               style={{
                 justifyContent: "center",
                 display: "flex",
@@ -113,7 +114,7 @@ export default function Home() {
               </div>
             </Col>
             <Col
-              sm={4}
+              lg={4}
               style={{
                 justifyContent: "center",
                 display: "flex",
@@ -135,7 +136,7 @@ export default function Home() {
         <Container style={{ padding: "0px" }} fluid>
           <Row gutterWidth={0}>
             <Col
-              sm={4}
+              lg={4}
               style={{
                 justifyContent: "center",
                 display: "flex",
@@ -151,7 +152,7 @@ export default function Home() {
               </div>
             </Col>
             <Col
-              sm={8}
+              lg={8}
               style={{
                 justifyContent: "center",
                 display: "flex",
@@ -215,10 +216,9 @@ export default function Home() {
           <h2 style={{ textAlign: "center" }}>Our Products</h2>
           <HeaderLine color="black" />
         </div>
-        <div className={styles.squeezed_container}>
         <Container style={{ padding: "0px" }} fluid>
           <Row gutterWidth={25}>
-            <Col sm={4}>
+            <Col sm={4} xxl={3}>
               <ProductCard
                 bg="white"
                 border="1.5px solid #E3E3E3"
@@ -229,7 +229,7 @@ export default function Home() {
                 text=""
               />
             </Col>
-            <Col sm={4}>
+            <Col sm={4} xxl={3}>
               <ProductCard
                 bg="white"
                 border="1.5px solid #E3E3E3"
@@ -239,7 +239,7 @@ export default function Home() {
                 text="Our sales focused approach turns a potential website cost into an investment."
               />
             </Col>
-            <Col sm={4}>
+            <Col sm={4} xxl={3}>
               <ProductCard
                 bg="white"
                 border="1.5px solid #E3E3E3"
@@ -251,7 +251,6 @@ export default function Home() {
             </Col>
           </Row>
         </Container>
-        </div>
       </Wrapper>
       <Footer />
     </div>
