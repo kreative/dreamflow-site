@@ -15,10 +15,24 @@ export default function Home() {
   return (
     <div>
       <Head>
-        <title>Kreative Dreamflow</title>
-        <link rel="apple-touch-icon" sizes="180x180" href="/favicons/general/apple-touch-icon.png"></link>
-        <link rel="icon" type="image/png" sizes="32x32" href="/favicons/general/favicon-32x32.png"></link>
-        <link rel="icon" type="image/png" sizes="16x16" href="/favicons/general/favicon-16x16.png"></link>
+        <title>Welcome | Kreative Dreamflow</title>
+        <link
+          rel="apple-touch-icon"
+          sizes="180x180"
+          href="/favicons/general/apple-touch-icon.png"
+        ></link>
+        <link
+          rel="icon"
+          type="image/png"
+          sizes="32x32"
+          href="/favicons/general/favicon-32x32.png"
+        ></link>
+        <link
+          rel="icon"
+          type="image/png"
+          sizes="16x16"
+          href="/favicons/general/favicon-16x16.png"
+        ></link>
         <link rel="manifest" href="/favicons/general/site.webmanifest"></link>
         <script
           type="text/javascript"
@@ -32,9 +46,7 @@ export default function Home() {
 
       <div className={styles.splash}>
         <Wrapper bg="rgba(0,0,0,0)" paddingTop="0px" paddingBottom="0px">
-          <h1>
-            Dreamflow makes the dream flow.
-          </h1>
+          <h1>Supercharge your marketing and business with Dreamflow.</h1>
         </Wrapper>
       </div>
       <Wrapper bg="white" paddingTop="150px" paddingBottom="150px">
@@ -59,24 +71,54 @@ export default function Home() {
             <Col lg={8}>
               <div className={styles.problem_content}>
                 <LineLabel color="black">THE PROBLEM</LineLabel>
-                <h2>Most solutions waste your time and your money.</h2>
+                <h2>Finding new customers online doesn't have to be so hard</h2>
                 <p>
-                  We get it. Agencies, freelancers, and even DIY solutions like
-                  Wix or Squarespace suck. Either it's too expensive, or too
-                  slow, or too unreliable. Even worse, you go with one of these
-                  providers, and in a year or two.
+                  Your businesses responsibility is to your customers and
+                  employees. Your current customers love your products and
+                  services, but when you don't see your website bringing in new
+                  leads, sales, and customers, you're left scratching your head
+                  why?
                 </p>
+
+                <ul className={styles.reasons_list}>
+                  <li>
+                    <span className={styles.problem_reason_text}>
+                      Nobody is booking a call, meeting, or consultation.
+                    </span>
+                  </li>
+                  <li>
+                    <span className={styles.problem_reason_text}>
+                      Your website doesn't stand out from the other billion
+                      already on the internet.
+                    </span>
+                  </li>
+                  <li>
+                    <span className={styles.problem_reason_text}>
+                      You're stuck wondering whether expanding your business
+                      online will ever be a reality for you.
+                    </span>
+                  </li>
+                </ul>
+
                 <div className={styles.problem_reason}>
-                  <FontAwesomeIcon icon={faTimes} size="md" />
-                  <span className={styles.problem_reason_text}>Something</span>
+                  <FontAwesomeIcon icon={faTimes} size="sm" />
+                  <span className={styles.problem_reason_text}>
+                    Nobody is booking a call, meeting, or consultation.
+                  </span>
                 </div>
                 <div className={styles.problem_reason}>
-                  <FontAwesomeIcon icon={faTimes} size="md" />
-                  <span className={styles.problem_reason_text}>Something</span>
+                  <FontAwesomeIcon icon={faTimes} size="sm" />
+                  <span className={styles.problem_reason_text}>
+                    Your website doesn't stand out from the other billion
+                    already on the internet.
+                  </span>
                 </div>
                 <div className={styles.problem_reason}>
-                  <FontAwesomeIcon icon={faTimes} size="md" />
-                  <span className={styles.problem_reason_text}>Something</span>
+                  <FontAwesomeIcon icon={faTimes} size="sm" />
+                  <span className={styles.problem_reason_text}>
+                    You're stuck wondering whether expanding your business
+                    online will ever be a reality for you.
+                  </span>
                 </div>
               </div>
             </Col>
@@ -96,12 +138,17 @@ export default function Home() {
             >
               <div className={styles.solution_content}>
                 <LineLabel color="black">THE SOLUTION</LineLabel>
-                <h2>Dreamflow solves everything, including everything.</h2>
+                <h2>Dreamflow turns those hopes into reality.</h2>
                 <p>
-                  We get it. Agencies, freelancers, and even DIY solutions like
-                  Wix or Squarespace suck. Either it's too expensive, or too
-                  slow, or too unreliable. Even worse, you go with one of these
-                  providers, and in a year or two.
+                  Our websites and digital marketing solutions help get
+                  businesses like yours the RESULTS they need to grow online.
+                  <br />
+                  Dreamflow is here to help your business find new customers to
+                  fall in love with your products and services. And with our
+                  customer-centric design and transparent pricing, doing that
+                  becomes easier than ever.
+                  <br />
+                  Find out you can work with Dreamflow
                 </p>
                 <Button
                   href="/get-started"
@@ -164,27 +211,41 @@ export default function Home() {
               }}
             >
               <div className={styles.understanding_content}>
-                <LineLabel color="black">THE PROBLEM</LineLabel>
+                <LineLabel color="black">DON'T STRESS</LineLabel>
                 <h2>
                   We get it. Online marketing can feel like burning money.
                 </h2>
-                <p>
-                  We get it. Agencies, freelancers, and even DIY solutions like
-                  Wix or Squarespace suck. Either it's too expensive, or too
-                  slow, or too unreliable. Even worse, you go with one of these
-                  providers, and in a year or two.
-                </p>
+                <p>We here it all the time from our clients...</p>
                 <div className={styles.problem_reason}>
-                  <FontAwesomeIcon icon={faTimes} size="md" />
-                  <span className={styles.problem_reason_text}>Something</span>
+                  <FontAwesomeIcon icon={faTimes} size="sm" />
+                  <span className={styles.problem_reason_text}>
+                    You scrape together a DIY website, looking to save money,
+                    but no one is finding your website online. And when people
+                    do, no one is downloading your free offers, let alone
+                    booking a meeting with you.
+                  </span>
                 </div>
                 <div className={styles.problem_reason}>
-                  <FontAwesomeIcon icon={faTimes} size="md" />
-                  <span className={styles.problem_reason_text}>Something</span>
+                  <FontAwesomeIcon icon={faTimes} size="sm" />
+                  <span className={styles.problem_reason_text}>
+                    You spend hours every week searching Google for answers to
+                    tech problems, only to pay some new developer to fix them.
+                  </span>
                 </div>
                 <div className={styles.problem_reason}>
-                  <FontAwesomeIcon icon={faTimes} size="md" />
-                  <span className={styles.problem_reason_text}>Something</span>
+                  <FontAwesomeIcon icon={faTimes} size="sm" />
+                  <span className={styles.problem_reason_text}>
+                    You want to implement new features, like ecommerce, online
+                    bookings, popup offers, email newsletter signups... but
+                    don't have the time to do it yourself.
+                  </span>
+                </div>
+                <div className={styles.problem_reason}>
+                  <FontAwesomeIcon icon={faTimes} size="sm" />
+                  <span className={styles.problem_reason_text}>
+                    You decide to finally look for an outside agency to help,
+                    but quit your search when you hear their prices.
+                  </span>
                 </div>
               </div>
             </Col>
