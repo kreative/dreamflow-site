@@ -3,17 +3,17 @@
 }
 
 .highlight {
-  background-color: #FFF2DF;
+  background-color: #FAFF1C;
+}
+
+.testimonial_text {
+  font-size: 3em;
 }
 
 .explainer {
   font-size: 1.8em;
-  font-family: 'RadioGrotesk', serif;
+  font-family: "RadioGrotesk", serif;
   padding-top: 25px;
-}
-
-.reasons_list {
-  
 }
 
 .problem_image_wrapper,
@@ -21,35 +21,34 @@
   z-index: 10;
 }
 
+.reason {
+  padding-top: 20px;
+}
+
 .problem_content {
   margin-left: -100px;
   padding: 100px 100px 100px 175px;
-  background-color: #F9D5D5;
+  background-color: #f9d5d5;
   border-radius: 3px;
 }
 
 .solution_content {
   margin-right: -100px;
   padding: 100px 175px 100px 100px;
-  background-color: #DEFAE9;
+  background-color: #defae9;
   border-radius: 3px;
 }
 
 .understanding_content {
   margin-left: -100px;
   padding: 100px 100px 100px 175px;
-  background-color: #E7F2FD;
+  background-color: #e7f2fd;
   border-radius: 3px;
 }
 
-.problem_reason {
-  margin-top: 20px;
-}
-
 .problem_reason_text {
-  margin-left: 10px;
-  font-size: 1.2em;
-  font-family: 'RadioGrotesk', serif;
+  font-size: 1.4em;
+  font-family: "RadioGrotesk", serif;
 }
 
 .splash {
@@ -102,12 +101,12 @@
     padding-right: 0px;
     text-align: center;
   }
-  
+
   .problem_image_wrapper img,
   .solution_image_wrapper img {
     width: 80%;
   }
-  
+
   .problem_content,
   .understanding_content {
     padding: 100px 50px 50px 50px;

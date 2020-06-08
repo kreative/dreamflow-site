@@ -4,7 +4,6 @@ import Footer from "../components/Footer/Footer";
 import Wrapper from "../components/Wrapper/Wrapper";
 import Button from "../components/Button/Button";
 import LineLabel from "../components/LineLabel/LineLabel";
-import HeaderLine from "../components/HeaderLine/HeaderLine";
 import ProductCard from "../components/ProductCard/ProductCard";
 import { Container, Row, Col } from "react-grid-system";
 import { faTimes, faArrowDown } from "@fortawesome/free-solid-svg-icons";
@@ -80,46 +79,41 @@ export default function Home() {
                   why?
                 </p>
 
-                <ul className={styles.reasons_list}>
-                  <li>
-                    <span className={styles.problem_reason_text}>
-                      Nobody is booking a call, meeting, or consultation.
-                    </span>
-                  </li>
-                  <li>
-                    <span className={styles.problem_reason_text}>
-                      Your website doesn't stand out from the other billion
-                      already on the internet.
-                    </span>
-                  </li>
-                  <li>
-                    <span className={styles.problem_reason_text}>
-                      You're stuck wondering whether expanding your business
-                      online will ever be a reality for you.
-                    </span>
-                  </li>
-                </ul>
-
-                <div className={styles.problem_reason}>
-                  <FontAwesomeIcon icon={faTimes} size="sm" />
-                  <span className={styles.problem_reason_text}>
-                    Nobody is booking a call, meeting, or consultation.
-                  </span>
-                </div>
-                <div className={styles.problem_reason}>
-                  <FontAwesomeIcon icon={faTimes} size="sm" />
-                  <span className={styles.problem_reason_text}>
-                    Your website doesn't stand out from the other billion
-                    already on the internet.
-                  </span>
-                </div>
-                <div className={styles.problem_reason}>
-                  <FontAwesomeIcon icon={faTimes} size="sm" />
-                  <span className={styles.problem_reason_text}>
-                    You're stuck wondering whether expanding your business
-                    online will ever be a reality for you.
-                  </span>
-                </div>
+                <Container style={{ padding: "0px" }} fluid>
+                  <Row gutterWidth={10} className={styles.reason}>
+                    <Col xs={1} style={{ textAlign: "center" }}>
+                      <FontAwesomeIcon icon={faTimes} />
+                    </Col>
+                    <Col xs={11}>
+                      <span className={styles.problem_reason_text}>
+                        You built your website to find new customers, but nobody
+                        is booking a call, meeting, or consultation.
+                      </span>
+                    </Col>
+                  </Row>
+                  <Row gutterWidth={10} className={styles.reason}>
+                    <Col xs={1} style={{ textAlign: "center" }}>
+                      <FontAwesomeIcon icon={faTimes} />
+                    </Col>
+                    <Col xs={11}>
+                      <span className={styles.problem_reason_text}>
+                        Your website doesn't stand out from the other billion
+                        already on the internet.
+                      </span>
+                    </Col>
+                  </Row>
+                  <Row gutterWidth={10} className={styles.reason}>
+                    <Col xs={1} style={{ textAlign: "center" }}>
+                      <FontAwesomeIcon icon={faTimes} />
+                    </Col>
+                    <Col xs={11}>
+                      <span className={styles.problem_reason_text}>
+                        You're stuck wondering whether expanding your business
+                        online will ever be a reality for you.
+                      </span>
+                    </Col>
+                  </Row>
+                </Container>
               </div>
             </Col>
           </Row>
@@ -143,10 +137,12 @@ export default function Home() {
                   Our websites and digital marketing solutions help get
                   businesses like yours the RESULTS they need to grow online.
                   <br />
+                  <br />
                   Dreamflow is here to help your business find new customers to
                   fall in love with your products and services. And with our
                   customer-centric design and transparent pricing, doing that
                   becomes easier than ever.
+                  <br />
                   <br />
                   Find out you can work with Dreamflow
                 </p>
@@ -216,37 +212,57 @@ export default function Home() {
                   We get it. Online marketing can feel like burning money.
                 </h2>
                 <p>We here it all the time from our clients...</p>
-                <div className={styles.problem_reason}>
-                  <FontAwesomeIcon icon={faTimes} size="sm" />
-                  <span className={styles.problem_reason_text}>
-                    You scrape together a DIY website, looking to save money,
-                    but no one is finding your website online. And when people
-                    do, no one is downloading your free offers, let alone
-                    booking a meeting with you.
-                  </span>
-                </div>
-                <div className={styles.problem_reason}>
-                  <FontAwesomeIcon icon={faTimes} size="sm" />
-                  <span className={styles.problem_reason_text}>
-                    You spend hours every week searching Google for answers to
-                    tech problems, only to pay some new developer to fix them.
-                  </span>
-                </div>
-                <div className={styles.problem_reason}>
-                  <FontAwesomeIcon icon={faTimes} size="sm" />
-                  <span className={styles.problem_reason_text}>
-                    You want to implement new features, like ecommerce, online
-                    bookings, popup offers, email newsletter signups... but
-                    don't have the time to do it yourself.
-                  </span>
-                </div>
-                <div className={styles.problem_reason}>
-                  <FontAwesomeIcon icon={faTimes} size="sm" />
-                  <span className={styles.problem_reason_text}>
-                    You decide to finally look for an outside agency to help,
-                    but quit your search when you hear their prices.
-                  </span>
-                </div>
+
+                <Container style={{ padding: "0px" }} fluid>
+                  <Row gutterWidth={10} className={styles.reason}>
+                    <Col xs={1} style={{ textAlign: "center" }}>
+                      <FontAwesomeIcon icon={faTimes} size="sm" />
+                    </Col>
+                    <Col xs={11}>
+                      <span className={styles.problem_reason_text}>
+                        You scrape together a DIY website, looking to save
+                        money, but no one is finding your website online. And
+                        when people do, no one is downloading your free offers,
+                        let alone booking a meeting with you.
+                      </span>
+                    </Col>
+                  </Row>
+                  <Row gutterWidth={10} className={styles.reason}>
+                    <Col xs={1} style={{ textAlign: "center" }}>
+                      <FontAwesomeIcon icon={faTimes} size="sm" />
+                    </Col>
+                    <Col xs={11}>
+                      <span className={styles.problem_reason_text}>
+                        You spend hours every week searching Google for answers
+                        to tech problems, only to pay some new developer to fix
+                        them.
+                      </span>
+                    </Col>
+                  </Row>
+                  <Row gutterWidth={10} className={styles.reason}>
+                    <Col xs={1} style={{ textAlign: "center" }}>
+                      <FontAwesomeIcon icon={faTimes} size="sm" />
+                    </Col>
+                    <Col xs={11}>
+                      <span className={styles.problem_reason_text}>
+                        You want to implement new features, like ecommerce,
+                        online bookings, popup offers, email newsletter
+                        signups... but don't have the time to do it yourself.
+                      </span>
+                    </Col>
+                  </Row>
+                  <Row gutterWidth={10} className={styles.reason}>
+                    <Col xs={1} style={{ textAlign: "center" }}>
+                      <FontAwesomeIcon icon={faTimes} size="sm" />
+                    </Col>
+                    <Col xs={11}>
+                      <span className={styles.problem_reason_text}>
+                        You decide to finally look for an outside agency to
+                        help, but quit your search when you hear their prices.
+                      </span>
+                    </Col>
+                  </Row>
+                </Container>
               </div>
             </Col>
           </Row>
@@ -256,62 +272,115 @@ export default function Home() {
         <div style={{ textAlign: "center", color: "white" }}>
           <LineLabel color="white">HINT HINT:</LineLabel>
           <p className={styles.explainer}>
-            Tell them how its not their fault and that its because they're just
-            not working with us yet.
+            It's not your fault, running a business is hard enough. Trying to conquer online marketing on top of that is a recipe for disaster.
           </p>
           <FontAwesomeIcon icon={faArrowDown} size="3x" />
-          <h2>Say how working with us solve all of their problems</h2>
+          <h3>You just need a solution that knows how to naviagte the digital marketing world.</h3>
+          <h3>Dreamflow is that solution.</h3>
         </div>
       </Wrapper>
       <Wrapper bg="#F8F5F2" paddingBottom="200px" paddingTop="200px">
         <div style={{ textAlign: "center" }}>
-          <h1>
-            "Testimonial about{" "}
+          <p className={styles.testimonial_text}>
+            "The team over at Dreamflow wasted no time in working with us and getting our website off the ground. They listened to all our concerns and put together{" "}
             <span className={styles.highlight}>
-              how great we were and how they would work with us again
+               a website that perfectly represented our business.
             </span>{" "}
-            at any cost because thats how good Dreamflow is at what Dreamflow
-            does."
-          </h1>
-          <p>Bob Dylan, Acme Corporation</p>
+            We would work with them again, anytime."
+          </p>
+          <p>Frank Rossi, B4TheLeague</p>
         </div>
       </Wrapper>
       <Wrapper bg="white" paddingTop="150px" paddingBottom="150px">
         <div className={styles.header} style={{ paddingBottom: "35px" }}>
-          <h2 style={{ textAlign: "center" }}>Our Products</h2>
-          <HeaderLine color="black" />
+          <h2 style={{ textAlign: "center" }}>Dreamflow Products</h2>
         </div>
         <Container style={{ padding: "0px" }} fluid>
           <Row gutterWidth={25}>
             <Col sm={4} xxl={3}>
               <ProductCard
                 bg="white"
+                align="center"
                 border="1.5px solid #E3E3E3"
                 raised={true}
-                logo="/toprank-color.png"
+                logo="https://kmg-site-assets.kaycdn.com/toprank-color.png"
                 alt="Kreative TopRank logo in Green"
-                description="Managed SEO for everyone"
-                text=""
+                description="Search engine optimization"
+                text="With TopRank, we garuntee higher search rankings for your website or your money back."
+                button={
+                  <Button
+                    href="/toprank"
+                    fill="#176A3A"
+                    textColor="white"
+                    hoverColor="#53AF7A"
+                    radius="3px"
+                    border="1px solid #176A3A"
+                    hoverBorder="1px solid #53AF7A"
+                    padding="15px 50px"
+                    raised={false}
+                    grow={false}
+                    width="100%"
+                  >
+                    See TopRank
+                  </Button>
+                }
               />
             </Col>
             <Col sm={4} xxl={3}>
               <ProductCard
                 bg="white"
+                align="center"
                 border="1.5px solid #E3E3E3"
-                logo="/pageflow-color.png"
+                logo="https://kmg-site-assets.kaycdn.com/pageflow-color.png"
                 alt="Kreative Pageflow logo in Purple"
-                description="Web design and development"
-                text="Our sales focused approach turns a potential website cost into an investment."
+                description="Website design"
+                text="Our sales focused approach turns a potential website cost into an investment that makes you money."
+                button={
+                  <Button
+                    href="/pageflow"
+                    fill="#6135DE"
+                    textColor="white"
+                    hoverColor="#7651E0"
+                    radius="3px"
+                    border="1px solid #6135DE"
+                    hoverBorder="1px solid #7651E0"
+                    padding="15px 50px"
+                    raised={false}
+                    grow={false}
+                    width="100%"
+                  >
+                    See Pageflow
+                  </Button>
+                }
               />
             </Col>
             <Col sm={4} xxl={3}>
               <ProductCard
                 bg="white"
+                align="center"
                 border="1.5px solid #E3E3E3"
-                logo="/pageflow-color.png"
+                logo="https://kmg-site-assets.kaycdn.com/kopy-color@4x.png"
+                logoWidth="80%"
                 alt="Kreative Pageflow logo in Purple"
-                description="Web design and development"
-                text="Our sales focused approach turns a potential website cost into an investment."
+                description="Copywriting"
+                text="Affordable and attention grabbing copywriting for your blog posts or webpages."
+                button={
+                  <Button
+                    href="/kopy"
+                    fill="#1C5592"
+                    textColor="white"
+                    hoverColor="#338EEE"
+                    radius="3px"
+                    border="1px solid #1C5592"
+                    hoverBorder="1px solid #338EEE"
+                    padding="15px 50px"
+                    raised={false}
+                    grow={false}
+                    width="100%"
+                  >
+                    See Kopy
+                  </Button>
+                }
               />
             </Col>
           </Row>

@@ -6,17 +6,35 @@ import Button from "../../components/Button/Button";
 import Wave from "../../components/Wave/Wave";
 import IconBox from "../../components/IconBox/IconBox";
 import { Container, Row, Col } from "react-grid-system";
-import { faPencilRuler } from "@fortawesome/free-solid-svg-icons";
+import {
+  faComments,
+  faPencilRuler,
+  faSpaceShuttle,
+} from "@fortawesome/free-solid-svg-icons";
 import styles from "../../styles/pageflow/home.module.css";
 
 export default function PageflowHome() {
   return (
     <div>
       <Head>
-        <title>Pageflow</title>
-        <link rel="apple-touch-icon" sizes="180x180" href="/favicons/pageflow/apple-touch-icon.png"></link>
-        <link rel="icon" type="image/png" sizes="32x32" href="/favicons/pageflow/favicon-32x32.png"></link>
-        <link rel="icon" type="image/png" sizes="16x16" href="/favicons/pageflow/favicon-16x16.png"></link>
+        <title>Pageflow | Kreative Dreamflow</title>
+        <link
+          rel="apple-touch-icon"
+          sizes="180x180"
+          href="/favicons/pageflow/apple-touch-icon.png"
+        ></link>
+        <link
+          rel="icon"
+          type="image/png"
+          sizes="32x32"
+          href="/favicons/pageflow/favicon-32x32.png"
+        ></link>
+        <link
+          rel="icon"
+          type="image/png"
+          sizes="16x16"
+          href="/favicons/pageflow/favicon-16x16.png"
+        ></link>
         <link rel="manifest" href="/favicons/pageflow/site.webmanifest"></link>
         <script
           type="text/javascript"
@@ -123,10 +141,8 @@ export default function PageflowHome() {
                   your compeition​
                 </h2>
                 <p>
-                  We get it. Agencies, freelancers, and even DIY solutions like
-                  Wix or Squarespace suck. Either it's too expensive, or too
-                  slow, or too unreliable. Even worse, you go with one of these
-                  providers, and in a year or two.
+                  We combine the best of marketing and sales to help you grow
+                  your business online.
                 </p>
                 <Button
                   href="/pageflow/pricing"
@@ -255,11 +271,12 @@ export default function PageflowHome() {
             >
               <div style={{ color: "white" }}>
                 <h1 className={styles.testimonial_text}>
-                  "We were scared about spending money on a new website, but
-                  Pageflow turned the cost into an investment."
+                  "Even though we worked with their Chicago team remotely, they
+                  never kept us out of the loop and always responded when we
+                  reached out. They turned our website cost into an investment."
                 </h1>
                 <p className={styles.testimonial_customer}>
-                  Frank Rossi, Founder & Head of Marketing at B4TheLeague
+                  Byron Stanger, Founder at Phoenix Media
                 </p>
               </div>
             </Col>
@@ -287,10 +304,12 @@ export default function PageflowHome() {
           <Row gutterWidth={50}>
             <Col md={4} className={styles.iconbox}>
               <IconBox
-                icon={faPencilRuler}
+                icon={faComments}
                 iconColor="black"
-                header="First Step"
-                text="Explanation about the first step that makes sense to the reader."
+                header="Strategy Session"
+                text={`Every project begins with a Strategy Session to understand your goals, 
+                      needs, and how we can deliver the sales-making machine to grow your 
+                      business.`}
                 align="left"
                 iconAlign="flex-start"
                 size="3x"
@@ -300,8 +319,10 @@ export default function PageflowHome() {
               <IconBox
                 icon={faPencilRuler}
                 iconColor="black"
-                header="First Step"
-                text="Explanation about the first step that makes sense to the reader."
+                header="Design & Development"
+                text={`The next step involves our expert team of designers, developers, 
+                      copywriters, and graphic designers, who build the first version 
+                      of your future website within a few weeks.`}
                 align="left"
                 iconAlign="flex-start"
                 size="3x"
@@ -309,10 +330,11 @@ export default function PageflowHome() {
             </Col>
             <Col md={4} className={styles.iconbox}>
               <IconBox
-                icon={faPencilRuler}
+                icon={faSpaceShuttle}
                 iconColor="black"
-                header="First Step"
-                text="Explanation about the first step that makes sense to the reader."
+                header="Launch"
+                text={`Once the website is built to your satisfaction, we make the website
+                      public and open to the internet, ready for you to find new customers`}
                 align="left"
                 iconAlign="flex-start"
                 size="3x"
@@ -407,54 +429,6 @@ export default function PageflowHome() {
           </Row>
         </Container>
       </Wrapper>
-      <Wave color="#FFF2DF">
-        <path
-          className="wave-fill"
-          d="M421.9,6.5c22.6-2.5,51.5,0.4,75.5,5.3c23.6,4.9,70.9,23.5,100.5,35.7c75.8,32.2,133.7,44.5,192.6,49.7
-        c23.6,2.1,48.7,3.5,103.4-2.5c54.7-6,106.2-25.6,106.2-25.6V0H0v30.3c0,0,72,32.6,158.4,30.5c39.2-0.7,92.8-6.7,134-22.4
-        c21.2-8.1,52.2-18.2,79.7-24.2C399.3,7.9,411.6,7.5,421.9,6.5z"
-        ></path>
-      </Wave>
-      <Wrapper bg="#F6F6F4" paddingBottom="150px" paddingTop="250px">
-        <Container style={{ padding: "0px" }}>
-          <Row gutterWidth={0}>
-            <Col
-              sm={6}
-              style={{
-                justifyContent: "center",
-                display: "flex",
-                flexDirection: "column",
-              }}
-            >
-              <div>
-                <h1 className={styles.testimonial_text}>
-                  "Even though we worked with their Chicago team remotely, they
-                  never kept us out of the loop and always responded when we
-                  reached out. None of our past designers delivered this kind of
-                  service!"
-                </h1>
-                <p className={styles.testimonial_customer}>
-                  Byron Stanger, Founder at Phoenix Media
-                </p>
-              </div>
-            </Col>
-            <Col sm={6}>
-              <img
-                className={styles.image1}
-                src="https://kmg-site-assets.kaycdn.com/chicago.jpg"
-                alt="Downtown chicago"
-              />
-            </Col>
-          </Row>
-        </Container>
-      </Wrapper>
-      <Wave color="#F6F6F4">
-        <path
-          d="M421.9,6.5c22.6-2.5,51.5,0.4,75.5,5.3c23.6,4.9,70.9,23.5,100.5,35.7c75.8,32.2,133.7,44.5,192.6,49.7
-        c23.6,2.1,48.7,3.5,103.4-2.5c54.7-6,106.2-25.6,106.2-25.6V0H0v30.3c0,0,72,32.6,158.4,30.5c39.2-0.7,92.8-6.7,134-22.4
-        c21.2-8.1,52.2-18.2,79.7-24.2C399.3,7.9,411.6,7.5,421.9,6.5z"
-        ></path>
-      </Wave>
       <Wrapper bg="white" paddingBottom="150px" paddingTop="250px">
         <LineLabel color="black">WORK WITH PAGEFLOW</LineLabel>
         <h2 style={{ fontWeight: "bold" }}>

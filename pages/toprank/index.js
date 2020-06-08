@@ -6,17 +6,31 @@ import LineLabel from "../../components/LineLabel/LineLabel";
 import IconBox from "../../components/IconBox/IconBox";
 import Wave from "../../components/Wave/Wave";
 import { Container, Row, Col } from "react-grid-system";
-import { faPencilRuler } from "@fortawesome/free-solid-svg-icons";
+import { faComment, faLaptopCode, faMedal } from "@fortawesome/free-solid-svg-icons";
 import styles from "../../styles/toprank/home.module.css";
 
 export default function TopRank() {
   return (
     <div>
       <Head>
-        <title>Get in touch | TopRank | Dreamflow</title>
-        <link rel="apple-touch-icon" sizes="180x180" href="/favicons/general/apple-touch-icon.png"></link>
-        <link rel="icon" type="image/png" sizes="32x32" href="/favicons/general/favicon-32x32.png"></link>
-        <link rel="icon" type="image/png" sizes="16x16" href="/favicons/general/favicon-16x16.png"></link>
+        <title>TopRank | Kreative Dreamflow</title>
+        <link
+          rel="apple-touch-icon"
+          sizes="180x180"
+          href="/favicons/general/apple-touch-icon.png"
+        ></link>
+        <link
+          rel="icon"
+          type="image/png"
+          sizes="32x32"
+          href="/favicons/general/favicon-32x32.png"
+        ></link>
+        <link
+          rel="icon"
+          type="image/png"
+          sizes="16x16"
+          href="/favicons/general/favicon-16x16.png"
+        ></link>
         <link rel="manifest" href="/favicons/general/site.webmanifest"></link>
         <script
           type="text/javascript"
@@ -30,14 +44,9 @@ export default function TopRank() {
         <Wrapper bg="rgba(0,0,0,0)" paddingTop="300px" paddingBottom="100px">
           <Container style={{ padding: "0px" }} fluid>
             <Row gutterWidth={0}>
-              <Col
-                md={9}
-              >
+              <Col md={9}>
                 <LineLabel color="black">WELCOME TO TOPRANK</LineLabel>
-                <h1>
-                  Some sort of headline that mentions our amazing SEO product
-                  that is TopRank
-                </h1>
+                <h1>Higher search engine rankings, or your money back.</h1>
               </Col>
             </Row>
           </Container>
@@ -63,14 +72,16 @@ export default function TopRank() {
             >
               <LineLabel color="blac">WHY SEO?</LineLabel>
               <h2>
-                A statement that inspires business owners to add SEO to their
-                strategy
+                Build authority and make it easier for your future customers to
+                find your
               </h2>
               <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-                enim ad minim veniam, quis nostrud exercitation ullamco laboris
-                nisi ut aliquip ex ea commodo consequat.
+                Search Engine Optimization, or SEO, is the practice of optimzing
+                a website to rank higher in search engines like Google. By
+                getting to the top of the first page, you gain traffic to your
+                website without having to spend money on services like Google
+                Ads. By using TopRank, you can potentially save thousands in
+                search engine advertising costs.
               </p>
             </Col>
           </Row>
@@ -84,49 +95,53 @@ export default function TopRank() {
         c21.2-8.1,52.2-18.2,79.7-24.2C399.3,7.9,411.6,7.5,421.9,6.5z"
         ></path>
       </Wave>
-        <Wrapper bg="#7FE8AB" paddingBottom="100px" paddingTop="200px">
-          <div className="process-header">
-            <LineLabel color="black">THE TOPRANK PROCESS</LineLabel>
-            <h2>Headline talking about our superior and effecient process.</h2>
-          </div>
-            <Container style={{ padding: "0px" }} fluid>
-              <Row gutterWidth={100}>
-                <Col md={4} className={styles.iconbox}>
-                  <IconBox
-                    icon={faPencilRuler}
-                    iconColor="black"
-                    header="First Step"
-                    text="Explanation about the first step that makes sense to the reader."
-                    align="left"
-                    iconAlign="flex-start"
-                    size="3x"
-                  />
-                </Col>
-                <Col md={4} className={styles.iconbox}>
-                  <IconBox
-                    icon={faPencilRuler}
-                    iconColor="black"
-                    header="First Step"
-                    text="Explanation about the first step that makes sense to the reader."
-                    align="left"
-                    iconAlign="flex-start"
-                    size="3x"
-                  />
-                </Col>
-                <Col md={4} className={styles.iconbox}>
-                  <IconBox
-                    icon={faPencilRuler}
-                    iconColor="black"
-                    header="First Step"
-                    text="Explanation about the first step that makes sense to the reader."
-                    align="left"
-                    iconAlign="flex-start"
-                    size="3x"
-                  />
-                </Col>
-              </Row>
-            </Container>
-        </Wrapper>
+      <Wrapper bg="#7FE8AB" paddingBottom="150px" paddingTop="250px">
+        <div className="process-header">
+          <LineLabel color="black">THE TOPRANK PROCESS</LineLabel>
+          <h2>We take care of everything</h2>
+        </div>
+        <Container style={{ padding: "0px" }} fluid>
+          <Row gutterWidth={100}>
+            <Col md={4} className={styles.iconbox}>
+              <IconBox
+                icon={faComment}
+                iconColor="black"
+                header="Strategy Session"
+                text={`Our team works with you to figure out what keywords to rank for, 
+                      what locations to target, and how to get the most value out of TopRank`}
+                align="left"
+                iconAlign="flex-start"
+                size="3x"
+              />
+            </Col>
+            <Col md={4} className={styles.iconbox}>
+              <IconBox
+                icon={faLaptopCode}
+                iconColor="black"
+                header="Site Optimization"
+                text={`The TopRank team then works to optimize your website,
+                      keeping you in the loop every step`}
+                align="left"
+                iconAlign="flex-start"
+                size="3x"
+              />
+            </Col>
+            <Col md={4} className={styles.iconbox}>
+              <IconBox
+                icon={faMedal}
+                iconColor="black"
+                header="Ranking"
+                text={`After a few weeks to a few months of work from the TopRank team,
+                      you'll start seeing your website rankings go up and new traffic
+                      coming in!`}
+                align="left"
+                iconAlign="flex-start"
+                size="3x"
+              />
+            </Col>
+          </Row>
+        </Container>
+      </Wrapper>
       <Wave color="#7FE8AB">
         <path
           className="wave-fill"
@@ -146,8 +161,8 @@ export default function TopRank() {
                 flexDirection: "column",
               }}
             >
-              <LineLabel color="black">GET STARTED</LineLabel>
-              <h2>Some sort of inspiring call to action</h2>
+              <LineLabel color="black">TAKE ACTION</LineLabel>
+              <h2>Don't waste more money paying for traffic</h2>
               <div style={{ marginTop: "35px" }}>
                 <Button
                   href="/toprank/contact"

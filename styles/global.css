@@ -11,7 +11,13 @@ h2 {
     font-weight: normal;
 }
 
-h3, h4, h5, h6 {
+h3 {
+    font-family: 'MonumentExtended', serif;
+    font-size: 2em;
+    font-weight: normal;
+}
+
+h4, h5, h6 {
     font-family: 'MonumentExtended', serif;
 }
 

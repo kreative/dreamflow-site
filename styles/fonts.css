@@ -12,6 +12,19 @@
 }
 
 @font-face {
+    font-family: 'RadioGrotesk';
+    src: url('/fonts/RadioGrotesk/Bold/RadioGrotesk-Bold.eot');
+    src: url('/fonts/RadioGrotesk/Bold/RadioGrotesk-Bold.eot?#iefix') format('embedded-opentype'),
+         url('/fonts/RadioGrotesk/Bold/RadioGrotesk-Bold.svg#RadioGrotesk-Bold') format('svg'),
+         url('/fonts/RadioGrotesk/Bold/RadioGrotesk-Bold.ttf') format('truetype'),
+         url('/fonts/RadioGrotesk/Bold/RadioGrotesk-Bold.woff') format('woff'),
+         url('/fonts/RadioGrotesk/Bold/RadioGrotesk-Bold.woff2') format('woff2');
+    font-weight: bold;
+    font-style: normal;
+    font-display: auto;
+}
+
+@font-face {
     font-family: 'MonumentExtended';
     src: url('/fonts/MonumentExtended/Bold/MonumentExtended-Bold.eot');
     src: url('/fonts/MonumentExtended/Bold/MonumentExtended-Bold.eot#iefix') format('embedded-opentype'),

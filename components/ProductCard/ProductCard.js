@@ -16,31 +16,33 @@ class ProductCard extends Component {
     
     return (
       <div className={cardClass}>
-        <img
-          className={logoClass}
-          src={this.props.logo}
-          alt={this.props.alt}
-        />
-        <h4 className="header">{this.props.header}</h4>
-        <p className="description">{this.props.description}</p>
-        <p className="text">{this.props.text}</p>
-        <div>{this.props.button}</div>
+        <div className="content">
+          <img
+            className={logoClass}
+            src={this.props.logo}
+            alt={this.props.alt}
+          />
+          <h4 className="header">{this.props.header}</h4>
+          <p className="description">{this.props.description}</p>
+          <p className="text">{this.props.text}</p>
+        </div>
+        <div className="button-container">{this.props.button}</div>
         <style jsx>{`
           .card {
             background-color: ${this.props.bg};
             border: ${this.props.border};
-            padding: 50px 35px;
+            padding: 40px 25px;
             border-radius: 6px;
-            text-align: left;
+            text-align: ${this.props.align};
             height: 100%;
-          }
-
-          .card:hover {
-            cursor: pointer;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
           }
 
           .logo {
-            width: 100%;
+            width: ${this.props.logoWidth || "100%"};
+            margin: 0 auto;
           }
 
           .header {
@@ -50,17 +52,25 @@ class ProductCard extends Component {
           }
 
           .description {
-            margin-top: -10px;
+            margin-top: 10px;
             font-weight: normal;
             font-family: 'RadioGrotesk', serif;
             color: #888888;
-            font-size: 1.1em;
+            font-size: 1.2em;
           }
 
           .text {
             color: #343434;
             font-size: 1.4em;
             font-family: 'RadioGrotesk', serif;
+            line-height: 1.1em;
+          }
+
+          .button-container {
+            margin-top: 25px;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
           }
 
           .hidden {

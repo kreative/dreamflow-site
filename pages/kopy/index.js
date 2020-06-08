@@ -7,7 +7,7 @@ import IconBox from "../../components/IconBox/IconBox";
 import Wave from "../../components/Wave/Wave";
 import ProductCard from "../../components/ProductCard/ProductCard";
 import { Container, Row, Col } from "react-grid-system";
-import { faPencilRuler } from "@fortawesome/free-solid-svg-icons";
+import { faPencilAlt, faEnvelopeOpenText, faEnvelope } from "@fortawesome/free-solid-svg-icons";
 import styles from "../../styles/kopy/home.module.css";
 
 export default function Kopy() {
@@ -15,9 +15,23 @@ export default function Kopy() {
     <div>
       <Head>
         <title>Kopy | Kreative Dreamflow</title>
-        <link rel="apple-touch-icon" sizes="180x180" href="/favicons/general/apple-touch-icon.png"></link>
-        <link rel="icon" type="image/png" sizes="32x32" href="/favicons/general/favicon-32x32.png"></link>
-        <link rel="icon" type="image/png" sizes="16x16" href="/favicons/general/favicon-16x16.png"></link>
+        <link
+          rel="apple-touch-icon"
+          sizes="180x180"
+          href="/favicons/general/apple-touch-icon.png"
+        ></link>
+        <link
+          rel="icon"
+          type="image/png"
+          sizes="32x32"
+          href="/favicons/general/favicon-32x32.png"
+        ></link>
+        <link
+          rel="icon"
+          type="image/png"
+          sizes="16x16"
+          href="/favicons/general/favicon-16x16.png"
+        ></link>
         <link rel="manifest" href="/favicons/general/site.webmanifest"></link>
         <script
           type="text/javascript"
@@ -31,14 +45,9 @@ export default function Kopy() {
         <Wrapper bg="rgba(0,0,0,0)" paddingTop="300px" paddingBottom="100px">
           <Container style={{ padding: "0px" }} fluid>
             <Row gutterWidth={0}>
-              <Col
-                md={9}
-              >
-                <LineLabel color="black">WELCOME TO TOPRANK</LineLabel>
-                <h1>
-                  Some sort of headline that mentions our amazing SEO product
-                  that is Kopy
-                </h1>
+              <Col md={9}>
+                <LineLabel color="black">WELCOME TO Kopy</LineLabel>
+                <h1>Affordable copywriting you can count on</h1>
               </Col>
               <Col sm={3}></Col>
             </Row>
@@ -51,7 +60,7 @@ export default function Kopy() {
             <Col sm={6}>
               <img
                 className={styles.why_image}
-                src="https://kmg-site-assets.kaycdn.com/searching.gif"
+                src="https://kmg-site-assets.kaycdn.com/pondering.gif"
                 alt="GIF of someone looking around and searching"
               />
             </Col>
@@ -65,14 +74,14 @@ export default function Kopy() {
             >
               <LineLabel color="blac">WHY KOPY?</LineLabel>
               <h2>
-                A statement that inspires business owners to add SEO to their
-                strategy
+                Stop wasting your time trying to come up with the perfect word.
+                Let Kopy do that for you.
               </h2>
               <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-                enim ad minim veniam, quis nostrud exercitation ullamco laboris
-                nisi ut aliquip ex ea commodo consequat.
+                Get back to doing what you do best - providing fantasic products
+                and services to your customers. When you use Kopy, you can say
+                goodbye to countless hours staring at a blank screen, and say
+                hello to compelling copywriting that sells.
               </p>
             </Col>
           </Row>
@@ -91,13 +100,11 @@ export default function Kopy() {
             <Row gutterWidth={25}>
               <Col md={6} className={styles.kopy_product}>
                 <ProductCard
-                  logo=""
-                  alt=""
                   bg="white"
                   border="1.5px solid #E3E3E3"
-                  header="Something"
-                  description="Something"
-                  text="Something something something"
+                  header="Kopy Blog Posts"
+                  text={`Extensive blog post writing service for whatever topic your heart desires. 
+                        Blog posts come with revisions and are professionally written by the Kopy team.`}
                   button={
                     <Button
                       fill="#1C5592"
@@ -111,20 +118,21 @@ export default function Kopy() {
                       grow={false}
                       width="100%"
                     >
-                      Get started with this Product
+                      Get started with Blog Posts
                     </Button>
                   }
                 />
               </Col>
               <Col md={6} className={styles.kopy_product}>
                 <ProductCard
-                  logo=""
-                  alt=""
                   bg="white"
                   border="1.5px solid #E3E3E3"
-                  header="Something"
-                  description="Something"
-                  text="Something something something"
+                  header="Kopy Webpages"
+                  text={`Transform your website into a powerful sales tool,
+                        overnight with Kopy Webpages. Our team uses proven sales 
+                        copy techniques to enhance your copy. Kopy Webpages is
+                        perfect for landing pages and sales oriented business
+                        pages.`}
                   button={
                     <Button
                       fill="#1C5592"
@@ -138,7 +146,7 @@ export default function Kopy() {
                       grow={false}
                       width="100%"
                     >
-                      Get started with this Product
+                      Get started with Webpages
                     </Button>
                   }
                 />
@@ -157,54 +165,51 @@ export default function Kopy() {
       </Wave>
       <Wrapper bg="#338EEE" paddingBottom="100px" paddingTop="200px">
         <div className="process-header">
-          <LineLabel color="white">THE TOPRANK PROCESS</LineLabel>
+          <LineLabel color="white">THE KOPY PROCESS</LineLabel>
           <h2 style={{ color: "white" }}>
-            Headline talking about our superior and effecient process.
+            Kopy takes care of everything. You just tell us what to write.
           </h2>
         </div>
-          <Container style={{ padding: "0px" }} fluid>
-            <Row gutterWidth={100}>
-              <Col md={4} className={styles.iconbox}>
-                <IconBox
-                  icon={faPencilRuler}
-                  iconColor="white"
-                  headerColor="white"
-                  textColor="white"
-                  header="First Step"
-                  text="Explanation about the first step that makes sense to the reader."
-                  align="left"
-                  iconAlign="flex-start"
-                  size="3x"
-                />
-              </Col>
-              <Col md={4} className={styles.iconbox}>
-                <IconBox
-                  icon={faPencilRuler}
-                  iconColor="white"
-                  header="First Step"
-                  text="Explanation about the first step that makes sense to the reader."
-                  headerColor="white"
-                  textColor="white"
-                  align="left"
-                  iconAlign="flex-start"
-                  size="3x"
-                />
-              </Col>
-              <Col md={4} className={styles.iconbox}>
-                <IconBox
-                  icon={faPencilRuler}
-                  iconColor="white"
-                  headerColor="white"
-                  textColor="white"
-                  header="First Step"
-                  text="Explanation about the first step that makes sense to the reader."
-                  align="left"
-                  iconAlign="flex-start"
-                  size="3x"
-                />
-              </Col>
-            </Row>
-          </Container>
+        <Container style={{ padding: "0px" }} fluid>
+          <Row gutterWidth={100}>
+            <Col md={4} className={styles.iconbox}>
+              <IconBox
+                icon={faEnvelopeOpenText}
+                iconColor="white"
+                headerColor="white"
+                textColor="white"
+                header="You send an inquiry outlining what you need from Kopy"
+                align="left"
+                iconAlign="flex-start"
+                size="3x"
+              />
+            </Col>
+            <Col md={4} className={styles.iconbox}>
+              <IconBox
+                icon={faPencilAlt}
+                iconColor="white"
+                header="Our team goes hard at work to write your blog post or webpage"
+                headerColor="white"
+                textColor="white"
+                align="left"
+                iconAlign="flex-start"
+                size="3x"
+              />
+            </Col>
+            <Col md={4} className={styles.iconbox}>
+              <IconBox
+                icon={faEnvelope}
+                iconColor="white"
+                headerColor="white"
+                textColor="white"
+                header="You get the finished product in your inbox"
+                align="left"
+                iconAlign="flex-start"
+                size="3x"
+              />
+            </Col>
+          </Row>
+        </Container>
       </Wrapper>
       <Wave color="#338EEE">
         <path
@@ -225,8 +230,8 @@ export default function Kopy() {
                 flexDirection: "column",
               }}
             >
-              <LineLabel color="black">GET STARTED</LineLabel>
-              <h2>Some sort of inspiring call to action</h2>
+              <LineLabel color="black">TAKE ACTION</LineLabel>
+              <h2>Up your copywriting game today with Kopy</h2>
               <div style={{ marginTop: "35px" }}>
                 <Button
                   href="/kopy/contact"
@@ -245,7 +250,7 @@ export default function Kopy() {
             <Col sm={6} style={{ textAlign: "right" }}>
               <img
                 className={styles.cta_image}
-                src="https://kmg-site-assets.kaycdn.com/rocket-launch.gif"
+                src="https://kmg-site-assets.kaycdn.com/piling-up.gif"
                 alt="GIF of a rocket ship launching into outer space"
               />
             </Col>

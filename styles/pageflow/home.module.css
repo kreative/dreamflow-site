@@ -42,6 +42,7 @@
 }
 
 .testimonial_text {
+  font-family: 'RadioGrotesk', serif;
   line-height: 1.2em;
   font-size: 4em;
   font-weight: normal;
