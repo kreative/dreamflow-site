@@ -1,4 +1,5 @@
 import Head from "next/head";
+import Navabr from "../components/Navbar/Navbar";
 import Footer from "../components/Footer/Footer";
 import Wrapper from "../components/Wrapper/Wrapper";
 import FAQs from "../components/FAQs/FAQs";
@@ -20,7 +21,7 @@ const FAQsPage = ({ faqs }) => {
         ></script>
         <meta content="width=device-width, initial-scale=1" name="viewport" />
       </Head>
-
+      <Navabr />
       <Wrapper bg="#FFECD0" paddingTop="250px" paddingBottom="50px">
         <h1>Frequently asked questions.</h1>
       </Wrapper>

@@ -1,3 +1,4 @@
+import Link from "next/link";
 import React, { Component } from "react";
 import Wrapper from "../Wrapper/Wrapper";
 import { Container, Row, Col } from "react-grid-system";
@@ -19,7 +20,11 @@ class DreamflowNavbar extends Component {
             <Container style={{ padding: "0px" }} fluid>
               <Row nogutter>
                 <Col>
-                  <p>Hello</p>
+                  <img
+                    className="logo"
+                    src="https://kmg-site-assets.kaycdn.com/kreative-dreamflow-black.png"
+                    alt="Kreative Dreamflow Logo in all black"
+                  />
                 </Col>
                 <Col
                   style={{
@@ -59,11 +64,10 @@ class DreamflowNavbar extends Component {
           </Wrapper>
         </div>
         <div className="overlay" id="__overlay">
-        <Wrapper bg="rgab(0,0,0,0)" paddingTop="15px" paddingBottom="15px">
+          <Wrapper bg="rgab(0,0,0,0)" paddingTop="15px" paddingBottom="15px">
             <Container style={{ padding: "0px", color: "white" }} fluid>
               <Row nogutter>
                 <Col>
-                  <p>Hello</p>
                 </Col>
                 <Col
                   style={{
@@ -75,27 +79,19 @@ class DreamflowNavbar extends Component {
                   }}
                 >
                   <svg
-                    className="toggle"
-                    viewBox="0 0 154 62"
+                    className="close-toggle"
+                    aria-hidden="true"
+                    focusable="false"
+                    data-prefix="fas"
+                    data-icon="times"
+                    class="svg-inline--fa fa-times fa-w-11"
+                    role="img"
                     xmlns="http://www.w3.org/2000/svg"
-                    onClick={this.closeMenu}
+                    viewBox="0 0 352 512"
                     fill="white"
+                    onClick={this.closeMenu}
                   >
-                    <rect width="154" height="11.7297" rx="5" />
-                    <rect
-                      x="37.6047"
-                      y="25.1351"
-                      width="116.395"
-                      height="11.7297"
-                      rx="5"
-                    />
-                    <rect
-                      x="82.3721"
-                      y="50.2703"
-                      width="71.6279"
-                      height="11.7297"
-                      rx="5"
-                    />
+                    <path d="M242.72 256l100.07-100.07c12.28-12.28 12.28-32.19 0-44.48l-22.24-22.24c-12.28-12.28-32.19-12.28-44.48 0L176 189.28 75.93 89.21c-12.28-12.28-32.19-12.28-44.48 0L9.21 111.45c-12.28 12.28-12.28 32.19 0 44.48L109.28 256 9.21 356.07c-12.28 12.28-12.28 32.19 0 44.48l22.24 22.24c12.28 12.28 32.2 12.28 44.48 0L176 322.72l100.07 100.07c12.28 12.28 32.2 12.28 44.48 0l22.24-22.24c12.28-12.28 12.28-32.19 0-44.48L242.72 256z"></path>
                   </svg>
                 </Col>
               </Row>
@@ -104,21 +100,29 @@ class DreamflowNavbar extends Component {
           <div className="overlay-content">
             <div className="menu-content">
               <Wrapper>
-                <Container style={{padding:"0px"}} fluid>
-                  <Row gutterWidth={50}>
-                    <Col sm={6}>
-                      <div>
-                        <a href="#">About</a>
-                        <a href="#">Services</a>
-                        <a href="#">Clients</a>
-                        <a href="#">Contact</a>
-                      </div>
-                    </Col>
-                    <Col sm={6}>
-
-                    </Col>
-                  </Row>
-                </Container>
+                <div>
+                  <Link href="/">
+                    <a className="link">Home</a>
+                  </Link>
+                  <Link href="/pageflow">
+                    <a className="link">Pageflow</a>
+                  </Link>
+                  <Link href="/toprank">
+                    <a className="link">TopRank</a>
+                  </Link>
+                  <Link href="/kopy">
+                    <a className="link">Kopy</a>
+                  </Link>
+                  <Link href="/contact">
+                    <a className="link">Contact</a>
+                  </Link>
+                  <Link href="/faqs">
+                    <a className="link">FAQs</a>
+                  </Link>
+                  <Link href="/get-started">
+                    <a className="get-started-link link">Get Started</a>
+                  </Link>
+                </div>
               </Wrapper>
             </div>
           </div>
@@ -143,10 +147,16 @@ class DreamflowNavbar extends Component {
 
           .toggle {
             width: 30px;
+            cursor: pointer;
+          }
+
+          .close-toggle {
+            width: 15px;
+            cursor: pointer;
           }
 
           .logo {
-            width: 30%;
+            width: 40%;
           }
 
           .overlay {
@@ -176,12 +186,22 @@ class DreamflowNavbar extends Component {
             width: 100%;
           }
 
-          .menu-content a {
-            padding: 8px;
+          .link {
+            font-family: "Romana", serif;
+            padding-bottom: 1em;
             text-decoration: none;
-            font-size: 36px;
-            color: #818181;
+            font-size: 3em;
+            color: white;
             display: block;
+          }
+
+          .link:hover {
+            text-decoration: underline;
+            color: #93c8ff;
+          }
+
+          .get-started-link {
+            color: #338eee;
           }
         `}</style>
       </div>

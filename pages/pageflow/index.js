@@ -1,5 +1,6 @@
 import Head from "next/head";
 import Wrapper from "../../components/Wrapper/Wrapper";
+import Navbar from "../../components/Navbar/Navbar";
 import Footer from "../../components/Footer/Footer";
 import LineLabel from "../../components/LineLabel/LineLabel";
 import Button from "../../components/Button/Button";
@@ -43,7 +44,7 @@ export default function PageflowHome() {
         ></script>
         <meta content="width=device-width, initial-scale=1" name="viewport" />
       </Head>
-
+      <Navbar />
       <Wrapper bg="#C8B5FD" paddingBottom="100px" paddingTop="200px">
         <Container style={{ padding: "0px" }}>
           <Row gutterWidth={0}>

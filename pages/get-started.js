@@ -1,4 +1,5 @@
 import Head from "next/head";
+import Navbar from "../components/Navbar/Navbar";
 import Footer from "../components/Footer/Footer";
 import Wrapper from "../components/Wrapper/Wrapper";
 import Button from "../components/Button/Button";
@@ -20,6 +21,7 @@ export default function GetStarted() {
         ></script>
         <meta content="width=device-width, initial-scale=1" name="viewport" />
       </Head>
+      <Navbar />
       <Wrapper bg="#E7F2FD" paddingTop="300px" paddingBottom="100px">
         <h1>Get Started with Dreamflow</h1>
         <p>
