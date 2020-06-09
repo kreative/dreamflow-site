@@ -35,10 +35,13 @@ class Footer extends Component {
               <Row gutterWidth={25}>
                 <Col sm={3}></Col>
                 <Col sm={6}>
-                  <h2 style={{ paddingBottom: "25px" }}>
-                    Some sort of inspiring slogan.
-                  </h2>
+                  <img
+                    className="logo"
+                    src="https://kmg-site-assets.kaycdn.com/kreative-dreamflow-black.png"
+                    alt="Kreative Dreamflow logo in all black"
+                  />
                   <Button
+                    href="/get-started"
                     fill="white"
                     textColor="black"
                     radius="3px"
@@ -81,6 +84,11 @@ class Footer extends Component {
           </Wrapper>
         </div>
         <style jsx>{`
+          .logo {
+            width: 60%;
+            padding-bottom: 25px;
+          }
+          
           .Footer__CTA {
             border-top: 1.5px solid #E3E3E3;
           }
@@ -147,7 +155,11 @@ class Footer extends Component {
             text-align: left;
           }
 
-          @screen media and (max-width: 600px) {
+          @media screen and (max-width: 575px) {
+            .logo {
+              width: 80%;
+            }
+            
             .Base__Left,
             .Base__Right {
               text-align: center;
