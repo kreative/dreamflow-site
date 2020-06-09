@@ -203,6 +203,22 @@ class DreamflowNavbar extends Component {
           .get-started-link {
             color: #93C8FF;
           }
+
+          @media screen and (max-width: 767px) {
+            .logo {
+              width: 60%;
+            }
+          }
+
+          @media screen and (max-width: 575px) {
+            .logo {
+              width: 100%;
+            }
+
+            .toggle {
+              width: 25px;
+            }
+          }
         `}</style>
       </div>
     );
