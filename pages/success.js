@@ -1,4 +1,4 @@
-import Head from "next/link";
+import Head from "next/head";
 import Wrapper from "../components/Wrapper/Wrapper";
 import Footer from "../components/Footer/Footer";
 import Button from "../components/Button/Button";
