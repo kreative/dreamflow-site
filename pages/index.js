@@ -41,7 +41,7 @@ export default function Home() {
         <meta content="width=device-width, initial-scale=1" name="viewport" />
       </Head>
 
-      <Navbar />
+      <Navbar scrollColor="rgba(0,0,0,0.6)" />
 
       <div className={styles.splash}>
         <Wrapper bg="rgba(0,0,0,0)" paddingTop="0px" paddingBottom="0px">

@@ -10,7 +10,6 @@ class FAQ extends Component {
     const { index } = titleProps;
     const { activeIndex } = this.state;
     const newIndex = activeIndex === index ? -1 : index;
-
     this.setState({ activeIndex: newIndex });
   };
 
@@ -28,6 +27,7 @@ class FAQ extends Component {
                 onClick={this.handleClick}
               >
                 <Icon name="dropdown" />
+                {/* <span className="question">{faq.product === "General" ? "" : `${faq.product} - `}</span> */}
                 <span className="question">{faq.question}</span>
               </Accordion.Title>
               <Accordion.Content active={activeIndex === index}>
@@ -38,7 +38,7 @@ class FAQ extends Component {
         </Accordion>
         <style jsx>{`
           .section {
-            margin-bottom: 25px;
+            margin-bottom: 50px;
           }
 
           .question {

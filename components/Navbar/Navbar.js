@@ -4,6 +4,20 @@ import Wrapper from "../Wrapper/Wrapper";
 import { Container, Row, Col } from "react-grid-system";
 
 class DreamflowNavbar extends Component {
+  state = {
+    navBackground: this.props.scrollColor,
+  };
+
+  componentDidMount() {
+    document.addEventListener("scroll", () => {
+      const backgroundcolor =
+        window.scrollY < 200
+          ? this.props.scrollColor
+          : "rgba(255, 255, 255, 0.6)";
+      this.setState({ navBackground: backgroundcolor });
+    });
+  }
+
   openMenu() {
     document.getElementById("__overlay").style.display = "block";
   }
@@ -67,8 +81,7 @@ class DreamflowNavbar extends Component {
           <Wrapper bg="rgab(0,0,0,0)" paddingTop="15px" paddingBottom="15px">
             <Container style={{ padding: "0px", color: "white" }} fluid>
               <Row nogutter>
-                <Col>
-                </Col>
+                <Col></Col>
                 <Col
                   style={{
                     textAlign: "right",
@@ -129,7 +142,7 @@ class DreamflowNavbar extends Component {
         </div>
         <style jsx>{`
           .Navbar__Wrapper {
-            background: rgba(255, 255, 255, 0.6);
+            background: ${this.state.navBackground};
             position: fixed;
             top: 0;
             width: 100%;
@@ -197,11 +210,11 @@ class DreamflowNavbar extends Component {
 
           .link:hover {
             text-decoration: underline;
-            color: #338EEE;
+            color: #338eee;
           }
 
           .get-started-link {
-            color: #93C8FF;
+            color: #93c8ff;
           }
 
           @media screen and (max-width: 767px) {
