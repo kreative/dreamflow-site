@@ -62,7 +62,7 @@ export default function Kopy() {
               <img
                 className={styles.why_image}
                 src="https://kmg-site-assets.kaycdn.com/pondering.gif"
-                alt="GIF of someone looking around and searching"
+                alt="GIF of someone pondering about what to write"
               />
             </Col>
             <Col
@@ -252,7 +252,7 @@ export default function Kopy() {
               <img
                 className={styles.cta_image}
                 src="https://kmg-site-assets.kaycdn.com/piling-up.gif"
-                alt="GIF of a rocket ship launching into outer space"
+                alt="GIF of books and writing piling up"
               />
             </Col>
           </Row>
