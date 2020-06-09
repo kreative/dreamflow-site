@@ -281,13 +281,13 @@ export default function Home() {
       </Wrapper>
       <Wrapper bg="#F8F5F2" paddingBottom="200px" paddingTop="200px">
         <div style={{ textAlign: "center" }}>
-          <p className={styles.testimonial_text}>
+          <h1 className={styles.testimonial_text}>
             "The team over at Dreamflow wasted no time in working with us and getting our website off the ground. They listened to all our concerns and put together{" "}
             <span className={styles.highlight}>
                a website that perfectly represented our business.
             </span>{" "}
             We would work with them again, anytime."
-          </p>
+          </h1>
           <p>Frank Rossi, B4TheLeague</p>
         </div>
       </Wrapper>

@@ -25,57 +25,6 @@
 }
 
 @font-face {
-    font-family: 'MonumentExtended';
-    src: url('/fonts/MonumentExtended/Bold/MonumentExtended-Bold.eot');
-    src: url('/fonts/MonumentExtended/Bold/MonumentExtended-Bold.eot#iefix') format('embedded-opentype'),
-         url('/fonts/MonumentExtended/Bold/MonumentExtended-Bold.svg#MonumentExtended-Bold') format('svg'),
-         url('/fonts/MonumentExtended/Bold/MonumentExtended-Bold.ttf') format('truetype'),
-         url('/fonts/MonumentExtended/Bold/MonumentExtended-Bold.woff') format('woff'),
-         url('/fonts/MonumentExtended/Bold/MonumentExtended-Bold.woff2') format('woff2');
-    font-weight: bold;
-    font-style: normal;
-    font-display: auto;
-}
-
-@font-face {
-    font-family: 'MonumentExtended';
-    src: url('/fonts/MonumentExtended/Regular/MonumentExtended-Regular.eot');
-    src: url('/fonts/MonumentExtended/Regular/MonumentExtended-Regular.eot#iefix') format('embedded-opentype'),
-         url('/fonts/MonumentExtended/Regular/MonumentExtended-Regular.svg#MonumentExtended-Regular') format('svg'),
-         url('/fonts/MonumentExtended/Regular/MonumentExtended-Regular.ttf') format('truetype'),
-         url('/fonts/MonumentExtended/Regular/MonumentExtended-Regular.woff') format('woff'),
-         url('/fonts/MonumentExtended/Regular/MonumentExtended-Regular.woff2') format('woff2');
-    font-weight: normal;
-    font-style: normal;
-    font-display: auto;
-}
-
-@font-face {
-    font-family: 'MonumentExtended';
-    src: url('/fonts/MonumentExtended/Ultrabold/MonumentExtended-Ultrabold.eot');
-    src: url('/fonts/MonumentExtended/Ultrabold/MonumentExtended-Ultrabold.eot#iefix') format('embedded-opentype'),
-         url('/fonts/MonumentExtended/Ultrabold/MonumentExtended-Ultrabold.svg#MonumentExtended-Ultrabold') format('svg'),
-         url('/fonts/MonumentExtended/Ultrabold/MonumentExtended-Ultrabold.ttf') format('truetype'),
-         url('/fonts/MonumentExtended/Ultrabold/MonumentExtended-Ultrabold.woff') format('woff'),
-         url('/fonts/MonumentExtended/Ultrabold/MonumentExtended-Ultrabold.woff2') format('woff2');
-    font-weight: 900;
-    font-style: normal;
-    font-display: auto;
-}
-
-@font-face {
-    font-family: 'Bifocals';
-    src: url('/fonts/Bifocals/Bifocals-Regular.eot');
-    src: url('/fonts/Bifocals/Bifocals-Regular.eot?#iefix') format('embedded-opentype'),
-         url('/fonts/Bifocals/Bifocals-Regular.ttf') format('truetype'),
-         url('/fonts/Bifocals/Bifocals-Regular.woff') format('woff'),
-         url('/fonts/Bifocals/Bifocals-Regular.woff2') format('woff2');
-    font-weight: normal;
-    font-style: normal;
-    font-display: auto;
-}
-
-@font-face {
     font-family: 'Romana';
     src: url('/fonts/Romana/3AAC5B_0_0.eot');
     src: url('/fonts/Romana/3AAC5B_0_0.eot?#iefix') format('embedded-opentype'),

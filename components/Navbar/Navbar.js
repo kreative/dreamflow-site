@@ -103,12 +103,23 @@ class DreamflowNavbar extends Component {
           </Wrapper>
           <div className="overlay-content">
             <div className="menu-content">
-              <div>
-                <a href="#">About</a>
-                <a href="#">Services</a>
-                <a href="#">Clients</a>
-                <a href="#">Contact</a>
-              </div>
+              <Wrapper>
+                <Container style={{padding:"0px"}} fluid>
+                  <Row gutterWidth={50}>
+                    <Col sm={6}>
+                      <div>
+                        <a href="#">About</a>
+                        <a href="#">Services</a>
+                        <a href="#">Clients</a>
+                        <a href="#">Contact</a>
+                      </div>
+                    </Col>
+                    <Col sm={6}>
+
+                    </Col>
+                  </Row>
+                </Container>
+              </Wrapper>
             </div>
           </div>
         </div>
@@ -147,7 +158,7 @@ class DreamflowNavbar extends Component {
             left: 0;
             top: 0;
             background-color: rgb(0, 0, 0);
-            background-color: rgba(0, 0, 0, 0.98);
+            background-color: rgba(0, 0, 0, 1);
             overflow-x: hidden;
             backdrop-filter: blur(5px);
           }
@@ -162,6 +173,7 @@ class DreamflowNavbar extends Component {
 
           .menu-content {
             text-align: center;
+            width: 100%;
           }
 
           .menu-content a {
@@ -170,7 +182,6 @@ class DreamflowNavbar extends Component {
             font-size: 36px;
             color: #818181;
             display: block;
-            transition: 0.3s;
           }
         `}</style>
       </div>
