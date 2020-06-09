@@ -88,7 +88,7 @@ class DreamflowNavbar extends Component {
                     role="img"
                     xmlns="http://www.w3.org/2000/svg"
                     viewBox="0 0 352 512"
-                    fill="white"
+                    fill="black"
                     onClick={this.closeMenu}
                   >
                     <path d="M242.72 256l100.07-100.07c12.28-12.28 12.28-32.19 0-44.48l-22.24-22.24c-12.28-12.28-32.19-12.28-44.48 0L176 189.28 75.93 89.21c-12.28-12.28-32.19-12.28-44.48 0L9.21 111.45c-12.28 12.28-12.28 32.19 0 44.48L109.28 256 9.21 356.07c-12.28 12.28-12.28 32.19 0 44.48l22.24 22.24c12.28 12.28 32.2 12.28 44.48 0L176 322.72l100.07 100.07c12.28 12.28 32.2 12.28 44.48 0l22.24-22.24c12.28-12.28 12.28-32.19 0-44.48L242.72 256z"></path>
@@ -167,8 +167,8 @@ class DreamflowNavbar extends Component {
             z-index: 2000;
             left: 0;
             top: 0;
-            background-color: rgb(0, 0, 0);
-            background-color: rgba(0, 0, 0, 1);
+            background-color: white;
+            background-color: rgba(255, 255, 255, 1);
             overflow-x: hidden;
             backdrop-filter: blur(5px);
           }
@@ -191,17 +191,17 @@ class DreamflowNavbar extends Component {
             padding-bottom: 1em;
             text-decoration: none;
             font-size: 3em;
-            color: white;
+            color: black;
             display: block;
           }
 
           .link:hover {
             text-decoration: underline;
-            color: #93c8ff;
+            color: #338EEE;
           }
 
           .get-started-link {
-            color: #338eee;
+            color: #93C8FF;
           }
         `}</style>
       </div>
