@@ -3,8 +3,12 @@ import Wrapper from "../Wrapper/Wrapper";
 import { Container, Row, Col } from "react-grid-system";
 
 class DreamflowNavbar extends Component {
-  handleToggle() {
-    document.getElementById("__overlay").style.width = "100%";
+  openMenu() {
+    document.getElementById("__overlay").style.display = "block";
+  }
+
+  closeMenu() {
+    document.getElementById("__overlay").style.display = "none";
   }
 
   render() {
@@ -30,16 +34,16 @@ class DreamflowNavbar extends Component {
                     className="toggle"
                     viewBox="0 0 154 62"
                     xmlns="http://www.w3.org/2000/svg"
-                    onClick={this.handleToggle}
+                    onClick={this.openMenu}
+                    fill="black"
                   >
-                    <rect width="154" height="11.7297" rx="5" fill="black" />
+                    <rect width="154" height="11.7297" rx="5" />
                     <rect
                       x="37.6047"
                       y="25.1351"
                       width="116.395"
                       height="11.7297"
                       rx="5"
-                      fill="black"
                     />
                     <rect
                       x="82.3721"
@@ -47,7 +51,6 @@ class DreamflowNavbar extends Component {
                       width="71.6279"
                       height="11.7297"
                       rx="5"
-                      fill="black"
                     />
                   </svg>
                 </Col>
@@ -56,11 +59,57 @@ class DreamflowNavbar extends Component {
           </Wrapper>
         </div>
         <div className="overlay" id="__overlay">
+        <Wrapper bg="rgab(0,0,0,0)" paddingTop="15px" paddingBottom="15px">
+            <Container style={{ padding: "0px", color: "white" }} fluid>
+              <Row nogutter>
+                <Col>
+                  <p>Hello</p>
+                </Col>
+                <Col
+                  style={{
+                    textAlign: "right",
+                    display: "flex",
+                    flexDirection: "column",
+                    justifyContent: "center",
+                    alignItems: "flex-end",
+                  }}
+                >
+                  <svg
+                    className="toggle"
+                    viewBox="0 0 154 62"
+                    xmlns="http://www.w3.org/2000/svg"
+                    onClick={this.closeMenu}
+                    fill="white"
+                  >
+                    <rect width="154" height="11.7297" rx="5" />
+                    <rect
+                      x="37.6047"
+                      y="25.1351"
+                      width="116.395"
+                      height="11.7297"
+                      rx="5"
+                    />
+                    <rect
+                      x="82.3721"
+                      y="50.2703"
+                      width="71.6279"
+                      height="11.7297"
+                      rx="5"
+                    />
+                  </svg>
+                </Col>
+              </Row>
+            </Container>
+          </Wrapper>
           <div className="overlay-content">
-            <a href="#">About</a>
-            <a href="#">Services</a>
-            <a href="#">Clients</a>
-            <a href="#">Contact</a>
+            <div className="menu-content">
+              <div>
+                <a href="#">About</a>
+                <a href="#">Services</a>
+                <a href="#">Clients</a>
+                <a href="#">Contact</a>
+              </div>
+            </div>
           </div>
         </div>
         <style jsx>{`
@@ -90,27 +139,32 @@ class DreamflowNavbar extends Component {
           }
 
           .overlay {
+            display: none;
             height: 100%;
-            width: 0;
-            position: fixed; /* Stay in place */
-            z-index: 2000; /* Sit on top */
+            width: 100%;
+            position: fixed;
+            z-index: 2000;
             left: 0;
             top: 0;
-            background-color: rgb(0, 0, 0); /* Black fallback color */
-            background-color: rgba(0, 0, 0, 0.9); /* Black w/opacity */
-            overflow-x: hidden; /* Disable horizontal scroll */
-            transition: 0.5s; /* 0.5 second transition effect to slide in or slide down the overlay (height or width, depending on reveal) */
+            background-color: rgb(0, 0, 0);
+            background-color: rgba(0, 0, 0, 0.98);
+            overflow-x: hidden;
+            backdrop-filter: blur(5px);
           }
 
           .overlay-content {
-            position: relative;
-            top: 50%;
             width: 100%;
-            text-align: center;
-            margin-top: 30px;
+            height: 90%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
           }
 
-          .overlay a {
+          .menu-content {
+            text-align: center;
+          }
+
+          .menu-content a {
             padding: 8px;
             text-decoration: none;
             font-size: 36px;
