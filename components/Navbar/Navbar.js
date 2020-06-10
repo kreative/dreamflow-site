@@ -146,7 +146,7 @@ class DreamflowNavbar extends Component {
           }
 
           .logo {
-            width: 30%;
+            width: 27%;
           }
 
           .overlay {
