@@ -1,4 +1,5 @@
 import Head from "next/head";
+import Navbar from "../components/Navbar/Navbar";
 import Footer from "../components/Footer/Footer";
 import Wrapper from "../components/Wrapper/Wrapper";
 import { Container, Row, Col } from "react-grid-system";
@@ -21,7 +22,7 @@ export default function Contact() {
         ></script>
         <meta content="width=device-width, initial-scale=1" name="viewport" />
       </Head>
-
+      <Navbar />
       <Wrapper bg="white" paddingTop="150px" paddingBottom="200px">
         <h1 style={{ paddingBottom: "35px" }}>Contact Us</h1>
         <Container fluid style={{ padding: "0px" }}>

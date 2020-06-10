@@ -1,5 +1,6 @@
 import Head from "next/head";
 import Wrapper from "../../components/Wrapper/Wrapper";
+import Navbar from "../../components/Navbar/Navbar";
 import Footer from "../../components/Footer/Footer";
 import LineLabel from "../../components/LineLabel/LineLabel";
 import Button from "../../components/Button/Button";
@@ -43,7 +44,7 @@ export default function PageflowHome() {
         ></script>
         <meta content="width=device-width, initial-scale=1" name="viewport" />
       </Head>
-
+      <Navbar />
       <Wrapper bg="#C8B5FD" paddingBottom="100px" paddingTop="200px">
         <Container style={{ padding: "0px" }}>
           <Row gutterWidth={0}>
@@ -90,7 +91,7 @@ export default function PageflowHome() {
               <img
                 className={styles.image1}
                 src="http://kmg-site-assets.kaycdn.com/fall.gif"
-                alt="falling gif"
+                alt="GIF of a person falling of the toilet"
               />
             </Col>
           </Row>
@@ -170,7 +171,7 @@ export default function PageflowHome() {
                 <img
                   className={styles.image}
                   src="https://kmg-site-assets.kaycdn.com/heart-eyes-daffy.gif"
-                  alt="Angry Panda"
+                  alt="GIF of Daffy Duck looking with heart eyes"
                 />
               </div>
             </Col>
@@ -198,7 +199,7 @@ export default function PageflowHome() {
                   <img
                     className={styles.feature_image}
                     src="https://kmg-site-assets.kaycdn.com/pageflow-medal-ikon@3x.png"
-                    alt="Pageflow Medal Ikon"
+                    alt="Kreative Pageflow Medal Ikon"
                   />
                   <p className={styles.feature_text}>Dedicated Success Team</p>
                 </Col>
@@ -206,7 +207,7 @@ export default function PageflowHome() {
                   <img
                     className={styles.feature_image}
                     src="https://kmg-site-assets.kaycdn.com/pageflow-newspaper-ikon@3x.png"
-                    alt="Pageflow Newspaper Ikon"
+                    alt="Kreative Pageflow Newspaper Ikon"
                   />
                   <p className={styles.feature_text}>Blog & CMS</p>
                 </Col>
@@ -214,7 +215,7 @@ export default function PageflowHome() {
                   <img
                     className={styles.feature_image}
                     src="https://kmg-site-assets.kaycdn.com/pageflow-search-ikon@3x.png"
-                    alt="Pageflow Search Ikon"
+                    alt="Kreative Pageflow Search Ikon"
                   />
                   <p className={styles.feature_text}>
                     Search Engine Optimization
@@ -224,7 +225,7 @@ export default function PageflowHome() {
                   <img
                     className={styles.feature_image}
                     src="https://kmg-site-assets.kaycdn.com/pageflow-security-ikon@3x.png"
-                    alt="Pageflow Security Ikon"
+                    alt="Kreative Pageflow Security Ikon"
                   />
                   <p className={styles.feature_text}>Site Security & SSL</p>
                 </Col>
@@ -232,7 +233,7 @@ export default function PageflowHome() {
                   <img
                     className={styles.feature_image}
                     src="https://kmg-site-assets.kaycdn.com/pageflow-wallet-ikon@3x.png"
-                    alt="Pageflow Wallet Ikon"
+                    alt="Kreative Pageflow Wallet Ikon"
                   />
                   <p className={styles.feature_text}>
                     Ecommerce & Online Payments
@@ -258,7 +259,7 @@ export default function PageflowHome() {
               <img
                 className={styles.image2}
                 src="https://kmg-site-assets.kaycdn.com/plant-growing.gif"
-                alt="Growing Plant Animation"
+                alt="Growing Plant Animated GIF"
               />
             </Col>
             <Col

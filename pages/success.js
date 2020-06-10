@@ -1,4 +1,5 @@
 import Head from "next/head";
+import Navbar from "../components/Navbar/Navbar";
 import Wrapper from "../components/Wrapper/Wrapper";
 import Footer from "../components/Footer/Footer";
 import Button from "../components/Button/Button";
@@ -19,6 +20,7 @@ const SuccessPage = () => {
         ></script>
         <meta content="width=device-width, initial-scale=1" name="viewport" />
       </Head>
+      <Navbar />
       <Wrapper bg="#7FE8AB" paddingTop="300px" paddingBottom="100px">
         <h1>The form has been successfully sent!</h1>
       </Wrapper>

@@ -41,7 +41,7 @@ export default function Home() {
         <meta content="width=device-width, initial-scale=1" name="viewport" />
       </Head>
 
-      <Navbar />
+      <Navbar scrollColor="rgba(0,0,0,0.6)" />
 
       <div className={styles.splash}>
         <Wrapper bg="rgba(0,0,0,0)" paddingTop="0px" paddingBottom="0px">
@@ -172,7 +172,7 @@ export default function Home() {
                 <img
                   className={styles.image}
                   src="https://kmg-site-assets.kaycdn.com/relaxing-brain.gif"
-                  alt="Angry Panda smashing computer GIF"
+                  alt="Relaxing brain GIF"
                 />
               </div>
             </Col>
@@ -194,7 +194,7 @@ export default function Home() {
                 <img
                   className={styles.image}
                   src="https://kmg-site-assets.kaycdn.com/burning-money.gif"
-                  alt="Angry Panda smashing computer GIF"
+                  alt="Money burning by a butler GIF"
                 />
               </div>
             </Col>
@@ -361,7 +361,7 @@ export default function Home() {
                 border="1.5px solid #E3E3E3"
                 logo="https://kmg-site-assets.kaycdn.com/kopy-color@4x.png"
                 logoWidth="80%"
-                alt="Kreative Pageflow logo in Purple"
+                alt="Kreative Kopy logo in Navy Blue"
                 description="Copywriting"
                 text="Affordable and attention grabbing copywriting for your blog posts or webpages."
                 button={

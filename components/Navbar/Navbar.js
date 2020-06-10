@@ -1,8 +1,23 @@
+import Link from "next/link";
 import React, { Component } from "react";
 import Wrapper from "../Wrapper/Wrapper";
 import { Container, Row, Col } from "react-grid-system";
 
 class DreamflowNavbar extends Component {
+  state = {
+    navBackground: this.props.scrollColor,
+  };
+
+  componentDidMount() {
+    document.addEventListener("scroll", () => {
+      const backgroundcolor =
+        window.scrollY < 200
+          ? this.props.scrollColor
+          : "rgba(255, 255, 255, 0.6)";
+      this.setState({ navBackground: backgroundcolor });
+    });
+  }
+
   openMenu() {
     document.getElementById("__overlay").style.display = "block";
   }
@@ -19,7 +34,11 @@ class DreamflowNavbar extends Component {
             <Container style={{ padding: "0px" }} fluid>
               <Row nogutter>
                 <Col>
-                  <p>Hello</p>
+                  <img
+                    className="logo"
+                    src="https://kmg-site-assets.kaycdn.com/kreative-dreamflow-black.png"
+                    alt="Kreative Dreamflow Logo in all black"
+                  />
                 </Col>
                 <Col
                   style={{
@@ -59,12 +78,10 @@ class DreamflowNavbar extends Component {
           </Wrapper>
         </div>
         <div className="overlay" id="__overlay">
-        <Wrapper bg="rgab(0,0,0,0)" paddingTop="15px" paddingBottom="15px">
+          <Wrapper bg="rgab(0,0,0,0)" paddingTop="15px" paddingBottom="15px">
             <Container style={{ padding: "0px", color: "white" }} fluid>
               <Row nogutter>
-                <Col>
-                  <p>Hello</p>
-                </Col>
+                <Col></Col>
                 <Col
                   style={{
                     textAlign: "right",
@@ -75,27 +92,19 @@ class DreamflowNavbar extends Component {
                   }}
                 >
                   <svg
-                    className="toggle"
-                    viewBox="0 0 154 62"
+                    className="close-toggle"
+                    aria-hidden="true"
+                    focusable="false"
+                    data-prefix="fas"
+                    data-icon="times"
+                    class="svg-inline--fa fa-times fa-w-11"
+                    role="img"
                     xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 352 512"
+                    fill="black"
                     onClick={this.closeMenu}
-                    fill="white"
                   >
-                    <rect width="154" height="11.7297" rx="5" />
-                    <rect
-                      x="37.6047"
-                      y="25.1351"
-                      width="116.395"
-                      height="11.7297"
-                      rx="5"
-                    />
-                    <rect
-                      x="82.3721"
-                      y="50.2703"
-                      width="71.6279"
-                      height="11.7297"
-                      rx="5"
-                    />
+                    <path d="M242.72 256l100.07-100.07c12.28-12.28 12.28-32.19 0-44.48l-22.24-22.24c-12.28-12.28-32.19-12.28-44.48 0L176 189.28 75.93 89.21c-12.28-12.28-32.19-12.28-44.48 0L9.21 111.45c-12.28 12.28-12.28 32.19 0 44.48L109.28 256 9.21 356.07c-12.28 12.28-12.28 32.19 0 44.48l22.24 22.24c12.28 12.28 32.2 12.28 44.48 0L176 322.72l100.07 100.07c12.28 12.28 32.2 12.28 44.48 0l22.24-22.24c12.28-12.28 12.28-32.19 0-44.48L242.72 256z"></path>
                   </svg>
                 </Col>
               </Row>
@@ -104,28 +113,36 @@ class DreamflowNavbar extends Component {
           <div className="overlay-content">
             <div className="menu-content">
               <Wrapper>
-                <Container style={{padding:"0px"}} fluid>
-                  <Row gutterWidth={50}>
-                    <Col sm={6}>
-                      <div>
-                        <a href="#">About</a>
-                        <a href="#">Services</a>
-                        <a href="#">Clients</a>
-                        <a href="#">Contact</a>
-                      </div>
-                    </Col>
-                    <Col sm={6}>
-
-                    </Col>
-                  </Row>
-                </Container>
+                <div>
+                  <Link href="/">
+                    <a className="link">Home</a>
+                  </Link>
+                  <Link href="/pageflow">
+                    <a className="link">Pageflow</a>
+                  </Link>
+                  <Link href="/toprank">
+                    <a className="link">TopRank</a>
+                  </Link>
+                  <Link href="/kopy">
+                    <a className="link">Kopy</a>
+                  </Link>
+                  <Link href="/contact">
+                    <a className="link">Contact</a>
+                  </Link>
+                  <Link href="/faqs">
+                    <a className="link">FAQs</a>
+                  </Link>
+                  <Link href="/get-started">
+                    <a className="get-started-link link">Get Started</a>
+                  </Link>
+                </div>
               </Wrapper>
             </div>
           </div>
         </div>
         <style jsx>{`
           .Navbar__Wrapper {
-            background: rgba(255, 255, 255, 0.6);
+            background: ${this.state.navBackground};
             position: fixed;
             top: 0;
             width: 100%;
@@ -143,10 +160,20 @@ class DreamflowNavbar extends Component {
 
           .toggle {
             width: 30px;
+            cursor: pointer;
+          }
+
+          .close-toggle {
+            width: 15px;
+            cursor: pointer;
           }
 
           .logo {
-            width: 27%;
+<<<<<<< HEAD
+            width: 40%;
+=======
+            width: 40%;
+>>>>>>> b42a0ae13d6a972e96a65f900b4fc1da28065385
           }
 
           .overlay {
@@ -157,8 +184,8 @@ class DreamflowNavbar extends Component {
             z-index: 2000;
             left: 0;
             top: 0;
-            background-color: rgb(0, 0, 0);
-            background-color: rgba(0, 0, 0, 1);
+            background-color: white;
+            background-color: rgba(255, 255, 255, 1);
             overflow-x: hidden;
             backdrop-filter: blur(5px);
           }
@@ -176,12 +203,38 @@ class DreamflowNavbar extends Component {
             width: 100%;
           }
 
-          .menu-content a {
-            padding: 8px;
+          .link {
+            font-family: "Romana", serif;
+            padding-bottom: 1em;
             text-decoration: none;
-            font-size: 36px;
-            color: #818181;
+            font-size: 3em;
+            color: black;
             display: block;
+          }
+
+          .link:hover {
+            text-decoration: underline;
+            color: #338eee;
+          }
+
+          .get-started-link {
+            color: #93c8ff;
+          }
+
+          @media screen and (max-width: 767px) {
+            .logo {
+              width: 60%;
+            }
+          }
+
+          @media screen and (max-width: 575px) {
+            .logo {
+              width: 100%;
+            }
+
+            .toggle {
+              width: 25px;
+            }
           }
         `}</style>
       </div>

@@ -1,5 +1,6 @@
 import Head from "next/head";
 import Wrapper from "../../components/Wrapper/Wrapper";
+import Navbar from "../../components/Navbar/Navbar";
 import Footer from "../../components/Footer/Footer";
 import Button from "../../components/Button/Button";
 import LineLabel from "../../components/LineLabel/LineLabel";
@@ -40,7 +41,7 @@ export default function Kopy() {
         ></script>
         <meta content="width=device-width, initial-scale=1" name="viewport" />
       </Head>
-
+      <Navbar />
       <div className="splash" style={{ backgroundColor: "#D1E8FF" }}>
         <Wrapper bg="rgba(0,0,0,0)" paddingTop="300px" paddingBottom="100px">
           <Container style={{ padding: "0px" }} fluid>
@@ -61,7 +62,7 @@ export default function Kopy() {
               <img
                 className={styles.why_image}
                 src="https://kmg-site-assets.kaycdn.com/pondering.gif"
-                alt="GIF of someone looking around and searching"
+                alt="GIF of someone pondering about what to write"
               />
             </Col>
             <Col
@@ -251,7 +252,7 @@ export default function Kopy() {
               <img
                 className={styles.cta_image}
                 src="https://kmg-site-assets.kaycdn.com/piling-up.gif"
-                alt="GIF of a rocket ship launching into outer space"
+                alt="GIF of books and writing piling up"
               />
             </Col>
           </Row>
