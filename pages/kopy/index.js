@@ -59,11 +59,22 @@ export default function Kopy() {
         <Container style={{ padding: "0px" }} fluid>
           <Row gutterWidth={0}>
             <Col sm={6}>
-              <img
+              <video
                 className={styles.why_image}
-                src="https://kmg-site-assets.kaycdn.com/pondering.gif"
-                alt="GIF of someone pondering about what to write"
-              />
+                autoPlay
+                loop
+                muted
+                playsInline
+              >
+                <source
+                  src="https://kmg-site-assets.kaycdn.com/pondering.webm"
+                  type="video/webm"
+                />
+                <source
+                  src="https://kmg-site-assets.kaycdn.com/pondering.mp4"
+                  type="video/mp4"
+                />
+              </video>
             </Col>
             <Col
               sm={6}
@@ -249,11 +260,22 @@ export default function Kopy() {
               </div>
             </Col>
             <Col sm={6} style={{ textAlign: "right" }}>
-              <img
+              <video
                 className={styles.cta_image}
-                src="https://kmg-site-assets.kaycdn.com/piling-up.gif"
-                alt="GIF of books and writing piling up"
-              />
+                autoPlay
+                loop
+                muted
+                playsInline
+              >
+                <source
+                  src="https://kmg-site-assets.kaycdn.com/piling-up.webm"
+                  type="video/webm"
+                />
+                <source
+                  src="https://kmg-site-assets.kaycdn.com/piling-up.mp4"
+                  type="video/mp4"
+                />
+              </video>
             </Col>
           </Row>
         </Container>

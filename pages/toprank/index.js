@@ -7,7 +7,11 @@ import LineLabel from "../../components/LineLabel/LineLabel";
 import IconBox from "../../components/IconBox/IconBox";
 import Wave from "../../components/Wave/Wave";
 import { Container, Row, Col } from "react-grid-system";
-import { faComment, faLaptopCode, faMedal } from "@fortawesome/free-solid-svg-icons";
+import {
+  faComment,
+  faLaptopCode,
+  faMedal,
+} from "@fortawesome/free-solid-svg-icons";
 import styles from "../../styles/toprank/home.module.css";
 
 export default function TopRank() {
@@ -57,11 +61,22 @@ export default function TopRank() {
         <Container style={{ padding: "0px" }} fluid>
           <Row gutterWidth={0}>
             <Col md={6}>
-              <img
+              <video
                 className={styles.why_image}
-                src="https://kmg-site-assets.kaycdn.com/searching.gif"
-                alt="GIF of someone looking around and searching"
-              />
+                autoPlay
+                loop
+                muted
+                playsInline
+              >
+                <source
+                  src="https://kmg-site-assets.kaycdn.com/searching.webm"
+                  type="video/webm"
+                />
+                <source
+                  src="https://kmg-site-assets.kaycdn.com/searching.mp4"
+                  type="video/mp4"
+                />
+              </video>
             </Col>
             <Col
               md={6}
@@ -180,11 +195,22 @@ export default function TopRank() {
               </div>
             </Col>
             <Col sm={6} className={styles.cta_image_wrapper}>
-              <img
+              <video
                 className={styles.cta_image}
-                src="https://kmg-site-assets.kaycdn.com/rocket-launch.gif"
-                alt="GIF of a rocket ship launching into outer space"
-              />
+                autoPlay
+                loop
+                muted
+                playsInline
+              >
+                <source
+                  src="https://kmg-site-assets.kaycdn.com/rocket-launch.webm"
+                  type="video/webm"
+                />
+                <source
+                  src="https://kmg-site-assets.kaycdn.com/rocket-launch.mp4"
+                  type="video/mp4"
+                />
+              </video>
             </Col>
           </Row>
         </Container>

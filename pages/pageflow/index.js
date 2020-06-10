@@ -88,11 +88,16 @@ export default function PageflowHome() {
                 flexDirection: "column",
               }}
             >
-              <img
-                className={styles.image1}
-                src="http://kmg-site-assets.kaycdn.com/fall.gif"
-                alt="GIF of a person falling of the toilet"
-              />
+              <video className={styles.image1} autoPlay loop muted playsInline>
+                <source
+                  src="https://kmg-site-assets.kaycdn.com/new-fall.webm"
+                  type="video/webm"
+                />
+                <source
+                  src="https://kmg-site-assets.kaycdn.com/new-fall.mp4"
+                  type="video/mp4"
+                />
+              </video>
             </Col>
           </Row>
         </Container>
@@ -168,11 +173,16 @@ export default function PageflowHome() {
               }}
             >
               <div className={styles.solution_image_wrapper}>
-                <img
-                  className={styles.image}
-                  src="https://kmg-site-assets.kaycdn.com/heart-eyes-daffy.gif"
-                  alt="GIF of Daffy Duck looking with heart eyes"
-                />
+                <video className={styles.image} autoPlay loop muted playsInline>
+                  <source
+                    src="https://kmg-site-assets.kaycdn.com/new-heart-eyes-daffy.webm"
+                    type="video/webm"
+                  />
+                  <source
+                    src="https://kmg-site-assets.kaycdn.com/new-heart-eyes-daffy.mp4"
+                    type="video/mp4"
+                  />
+                </video>
               </div>
             </Col>
           </Row>
@@ -255,12 +265,24 @@ export default function PageflowHome() {
       <Wrapper bg="#6135DE" paddingBottom="150px" paddingTop="250px">
         <Container style={{ padding: "0px" }}>
           <Row gutterWidth={0}>
-            <Col md={6}>
-              <img
-                className={styles.image2}
-                src="https://kmg-site-assets.kaycdn.com/plant-growing.gif"
-                alt="Growing Plant Animated GIF"
-              />
+            <Col
+              md={6}
+              style={{
+                justifyContent: "center",
+                display: "flex",
+                flexDirection: "column",
+              }}
+            >
+              <video className={styles.image2} autoPlay loop muted playsInline>
+                <source
+                  src="https://kmg-site-assets.kaycdn.com/new-plant-growing.webm"
+                  type="video/webm"
+                />
+                <source
+                  src="https://kmg-site-assets.kaycdn.com/new-plant-growing.mp4"
+                  type="video/mp4"
+                />
+              </video>
             </Col>
             <Col
               md={6}
@@ -432,10 +454,9 @@ export default function PageflowHome() {
       </Wrapper>
       <Wrapper bg="white" paddingBottom="150px" paddingTop="250px">
         <LineLabel color="black">WORK WITH PAGEFLOW</LineLabel>
-        <h2 style={{ fontWeight: "bold" }}>
-          Give your business an unfair advantage with Pageflow
+        <h2 style={{ fontWeight: "bold", paddingBottom: "25px" }}>
+          It's simple, easy, and free to get started
         </h2>
-        <p>It's simple, easy, and free to get started</p>
         <Button
           href="/get-started"
           fill="black"

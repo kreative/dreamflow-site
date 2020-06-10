@@ -42,7 +42,9 @@ export default function Home() {
       </Head>
       <Navbar />
       <Wrapper bg="#F6F6F4" paddingTop="400px" paddingBottom="100px">
-        <h1 style={{textAlign:"center"}}>Supercharge your marketing and business with Dreamflow.</h1>
+        <h1 style={{ textAlign: "center" }}>
+          Supercharge your marketing and business with Dreamflow.
+        </h1>
       </Wrapper>
       <Wrapper bg="white" paddingTop="150px" paddingBottom="150px">
         <Container style={{ padding: "0px" }} fluid>
@@ -56,11 +58,16 @@ export default function Home() {
               }}
             >
               <div className={styles.problem_image_wrapper}>
-                <img
-                  className={styles.image}
-                  src="https://kmg-site-assets.kaycdn.com/panda-angry.gif"
-                  alt="Angry Panda smashing computer GIF"
-                />
+                <video className={styles.image} autoPlay loop muted playsInline>
+                  <source
+                    src="https://kmg-site-assets.kaycdn.com/panda-angry.webm"
+                    type="video/webm"
+                  />
+                  <source
+                    src="https://kmg-site-assets.kaycdn.com/panda-angry.mp4"
+                    type="video/mp4"
+                  />
+                </video>
               </div>
             </Col>
             <Col lg={8}>
@@ -165,11 +172,16 @@ export default function Home() {
               }}
             >
               <div className={styles.solution_image_wrapper}>
-                <img
-                  className={styles.image}
-                  src="https://kmg-site-assets.kaycdn.com/relaxing-brain.gif"
-                  alt="Relaxing brain GIF"
-                />
+                <video className={styles.image} autoPlay loop muted playsInline>
+                  <source
+                    src="https://kmg-site-assets.kaycdn.com/relaxing-brain.webm"
+                    type="video/webm"
+                  />
+                  <source
+                    src="https://kmg-site-assets.kaycdn.com/relaxing-brain.mp4"
+                    type="video/mp4"
+                  />
+                </video>
               </div>
             </Col>
           </Row>
@@ -187,11 +199,16 @@ export default function Home() {
               }}
             >
               <div className={styles.problem_image_wrapper}>
-                <img
-                  className={styles.image}
-                  src="https://kmg-site-assets.kaycdn.com/burning-money.gif"
-                  alt="Money burning by a butler GIF"
-                />
+                <video className={styles.image} autoPlay loop muted playsInline>
+                  <source
+                    src="https://kmg-site-assets.kaycdn.com/burning-money.webm"
+                    type="video/webm"
+                  />
+                  <source
+                    src="https://kmg-site-assets.kaycdn.com/burning-money.mp4"
+                    type="video/mp4"
+                  />
+                </video>
               </div>
             </Col>
             <Col

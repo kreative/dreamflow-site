@@ -13,9 +13,23 @@ export default function PageflowPricing() {
     <div>
       <Head>
         <title>Pageflow Web Development Pricing | Kreative Dreamflow</title>
-        <link rel="apple-touch-icon" sizes="180x180" href="/favicons/pageflow/apple-touch-icon.png"></link>
-        <link rel="icon" type="image/png" sizes="32x32" href="/favicons/pageflow/favicon-32x32.png"></link>
-        <link rel="icon" type="image/png" sizes="16x16" href="/favicons/pageflow/favicon-16x16.png"></link>
+        <link
+          rel="apple-touch-icon"
+          sizes="180x180"
+          href="/favicons/pageflow/apple-touch-icon.png"
+        ></link>
+        <link
+          rel="icon"
+          type="image/png"
+          sizes="32x32"
+          href="/favicons/pageflow/favicon-32x32.png"
+        ></link>
+        <link
+          rel="icon"
+          type="image/png"
+          sizes="16x16"
+          href="/favicons/pageflow/favicon-16x16.png"
+        ></link>
         <link rel="manifest" href="/favicons/pageflow/site.webmanifest"></link>
         <script
           type="text/javascript"
@@ -44,11 +58,16 @@ export default function PageflowPricing() {
               </p>
             </Col>
             <Col sm={6}>
-              <img
-                className="image image1"
-                src="https://kmg-site-assets.kaycdn.com/relax.gif"
-                alt="Relaxation GIF"
-              />
+              <video className="image image1" autoPlay loop muted playsInline>
+                <source
+                  src="https://kmg-site-assets.kaycdn.com/relax.webm"
+                  type="video/webm"
+                />
+                <source
+                  src="https://kmg-site-assets.kaycdn.com/relax.mp4"
+                  type="video/mp4"
+                />
+              </video>
             </Col>
           </Row>
         </Container>
@@ -194,11 +213,16 @@ export default function PageflowPricing() {
         <Container style={{ padding: "0px" }} fluid>
           <Row gutterWidth={0}>
             <Col sm={6}>
-              <img
-                className="image image2"
-                src="https://kmg-site-assets.kaycdn.com/cashflow.gif"
-                alt="Payment image"
-              />
+              <video className="image image2" autoPlay loop muted playsInline>
+                <source
+                  src="https://kmg-site-assets.kaycdn.com/cashflow.webm"
+                  type="video/webm"
+                />
+                <source
+                  src="https://kmg-site-assets.kaycdn.com/cashflow.mp4"
+                  type="video/mp4"
+                />
+              </video>
             </Col>
             <Col
               sm={6}
@@ -252,11 +276,16 @@ export default function PageflowPricing() {
               </Button>
             </Col>
             <Col sm={6}>
-              <img
-                className="image image1"
-                src="https://kmg-site-assets.kaycdn.com/support.gif"
-                alt=""
-              />
+              <video className="image image1" autoPlay loop muted playsInline>
+                <source
+                  src="https://kmg-site-assets.kaycdn.com/support.webm"
+                  type="video/webm"
+                />
+                <source
+                  src="https://kmg-site-assets.kaycdn.com/support.mp4"
+                  type="video/mp4"
+                />
+              </video>
             </Col>
           </Row>
         </Container>
