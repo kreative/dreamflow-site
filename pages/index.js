@@ -40,14 +40,10 @@ export default function Home() {
         ></script>
         <meta content="width=device-width, initial-scale=1" name="viewport" />
       </Head>
-
-      <Navbar scrollColor="rgba(0,0,0,0.6)" />
-
-      <div className={styles.splash}>
-        <Wrapper bg="rgba(0,0,0,0)" paddingTop="0px" paddingBottom="0px">
-          <h1>Supercharge your marketing and business with Dreamflow.</h1>
-        </Wrapper>
-      </div>
+      <Navbar />
+      <Wrapper bg="#F6F6F4" paddingTop="400px" paddingBottom="100px">
+        <h1 style={{textAlign:"center"}}>Supercharge your marketing and business with Dreamflow.</h1>
+      </Wrapper>
       <Wrapper bg="white" paddingTop="150px" paddingBottom="150px">
         <Container style={{ padding: "0px" }} fluid>
           <Row gutterWidth={0}>
@@ -272,19 +268,25 @@ export default function Home() {
         <div style={{ textAlign: "center", color: "white" }}>
           <LineLabel color="white">HINT HINT:</LineLabel>
           <p className={styles.explainer}>
-            It's not your fault, running a business is hard enough. Trying to conquer online marketing on top of that is a recipe for disaster.
+            It's not your fault, running a business is hard enough. Trying to
+            conquer online marketing on top of that is a recipe for disaster.
           </p>
           <FontAwesomeIcon icon={faArrowDown} size="3x" />
-          <h3>You just need a solution that knows how to naviagte the digital marketing world.</h3>
+          <h3>
+            You just need a solution that knows how to naviagte the digital
+            marketing world.
+          </h3>
           <h3>Dreamflow is that solution.</h3>
         </div>
       </Wrapper>
       <Wrapper bg="#F8F5F2" paddingBottom="200px" paddingTop="200px">
         <div style={{ textAlign: "center" }}>
           <h1 className={styles.testimonial_text}>
-            "The team over at Dreamflow wasted no time in working with us and getting our website off the ground. They listened to all our concerns and put together{" "}
+            "The team over at Dreamflow wasted no time in working with us and
+            getting our website off the ground. They listened to all our
+            concerns and put together{" "}
             <span className={styles.highlight}>
-               a website that perfectly represented our business.
+              a website that perfectly represented our business.
             </span>{" "}
             We would work with them again, anytime."
           </h1>
