@@ -148,7 +148,7 @@ export default function GetStarted() {
                         <input
                           type="checkbox"
                           id="pageflow"
-                          name="products"
+                          name="pageflow"
                           value="pageflow"
                         />
                         <label htmlFor="pageflow">Pageflow</label>
@@ -157,7 +157,7 @@ export default function GetStarted() {
                         <input
                           type="checkbox"
                           id="toprank"
-                          name="products"
+                          name="toprank"
                           value="toprank"
                         />
                         <label htmlFor="toprank">TopRank</label>
@@ -166,7 +166,7 @@ export default function GetStarted() {
                         <input
                           type="checkbox"
                           id="sitecare"
-                          name="products"
+                          name="sitecare"
                           value="sitecare"
                         />
                         <label htmlFor="sitecare">SiteCare</label>
@@ -175,7 +175,7 @@ export default function GetStarted() {
                         <input
                           type="checkbox"
                           id="kopy"
-                          name="products"
+                          name="kopy"
                           value="kopy"
                         />
                         <label htmlFor="kopy">Kopy</label>
@@ -184,7 +184,7 @@ export default function GetStarted() {
                         <input
                           type="checkbox"
                           id="kanvas"
-                          name="products"
+                          name="kanvas"
                           value="kanvas"
                         />
                         <label htmlFor="kanvas">Kanvas</label>
@@ -193,7 +193,7 @@ export default function GetStarted() {
                         <input
                           type="checkbox"
                           id="postage"
-                          name="products"
+                          name="postage"
                           value="postage"
                         />
                         <label htmlFor="postage">Postage</label>
