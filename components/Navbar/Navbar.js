@@ -34,11 +34,13 @@ class DreamflowNavbar extends Component {
             <Container style={{ padding: "0px" }} fluid>
               <Row nogutter>
                 <Col>
-                  <img
-                    className="logo"
-                    src="https://kmg-site-assets.kaycdn.com/kreative-dreamflow-black.png"
-                    alt="Kreative Dreamflow Logo in all black"
-                  />
+                  <a href="/">
+                    <img
+                      className="logo"
+                      src="https://kmg-site-assets.kaycdn.com/kreative-dreamflow-black.png"
+                      alt="Kreative Dreamflow Logo in all black"
+                    />
+                  </a>
                 </Col>
                 <Col
                   style={{
