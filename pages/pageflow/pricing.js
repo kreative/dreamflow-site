@@ -186,7 +186,7 @@ export default function PageflowPricing() {
             <Col sm={3}>
               <img
                 className="image"
-                src="https://kmg-site-assets.kaycdn.com/the-pageflow-pledge.png"
+                src="https://kmg-site-assets.kaycdn.com/the-pageflow-pledge-badge.webp"
                 alt="The Pageflow Pledge Badge in Black"
               />
             </Col>
