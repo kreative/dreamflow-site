@@ -4,8 +4,12 @@ import Footer from "../components/Footer/Footer";
 import Wrapper from "../components/Wrapper/Wrapper";
 import FAQs from "../components/FAQs/FAQs";
 import styles from "../styles/faqs.module.css";
+import {
+  generalFAQs,
+  pageflowFAQs
+} from "../utils/faqLists";
 
-const FAQsPage = ({ faqs }) => {
+const FAQsPage = () => {
   return (
     <div>
       <Head>
@@ -39,22 +43,17 @@ const FAQsPage = ({ faqs }) => {
       <Wrapper bg="#FFECD0" paddingTop="250px" paddingBottom="50px">
         <h1>Frequently asked questions.</h1>
       </Wrapper>
-      <Wrapper bg="white" paddingTop="100px" paddingBottom="100px">
+      <Wrapper bg="white" paddingTop="50px" paddingBottom="100px">
         <div className={styles.faqs_wrapper}>
-          <FAQs faqs={faqs} />
+          <h3 className={styles.label}>General</h3>
+          <FAQs faqs={generalFAQs} />
+          <h3 className={styles.label}>Pageflow</h3>
+          <FAQs faqs={pageflowFAQs} />
         </div>
       </Wrapper>
       <Footer />
     </div>
   );
-};
-
-export const getStaticProps = async () => {
-  const res = await fetch("http://dreamflow-cms.kreativekws.com/api/faqs");
-  const data = await res.json();
-  return {
-    props: { faqs: data.data.faqs },
-  };
 };
 
 export default FAQsPage;

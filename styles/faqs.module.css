@@ -2,6 +2,10 @@
   margin-left: 100px;
 }
 
+.label {
+  padding-top: 50px;
+}
+
 @media screen and (max-width: 767px) {
   .faqs_wrapper {
     margin-left: 0px;
