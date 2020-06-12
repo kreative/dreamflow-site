@@ -55,7 +55,7 @@ class ProductCard extends Component {
             margin-top: 10px;
             font-weight: normal;
             font-family: 'RadioGrotesk', serif;
-            color: #888888;
+            color: #666666;
             font-size: 1.2em;
           }
 
