@@ -1,6 +1,13 @@
 ---
-title: FAQ
-description: "Frequently Asked Questions"
+title: "Frequently asked questions"
+description: "You might need to know this"
+cover_image_src: "https://kmg-site-assets.kaycdn.com/chicago.jpg"
+cover_image_alt: "Chicago Image"
+author: "Armaan Gupta"
+publish_date: "2/2/2020"
+color: "blue"
+title_color: "white"
+description_color: "lightgrey"
 ---
 
 ## What keyboard do you use?

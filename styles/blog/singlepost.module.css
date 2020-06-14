@@ -1,0 +1,19 @@
+.content_wrapper {
+  padding: 0px 17%;
+}
+
+.description {
+  font-family: 'RadioGrotesk', serif;
+  font-weight: normal;
+}
+
+.cover_image {
+  width: 100%;
+  padding-bottom: 50px;
+}
+
+@media screen and (max-width: 575px) {
+  .content_wrapper {
+    padding: 0;
+  }
+}

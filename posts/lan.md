@@ -1,9 +1,14 @@
 ---
-title: How to access localhost from inside a Docker Container in Linux
+title: "How to access localhost from inside a Docker Container in Linux"
 description: "Steps to access allow a docker container to access stuff on the host"
+cover_image_src: "https://kmg-site-assets.kaycdn.com/chicago.jpg"
+cover_image_alt: "Chicago Image"
+author: "Armaan Gupta"
+publish_date: "2/2/2020"
+color: "blue"
+title_color: "white"
+description_color: "lightgrey"
 ---
-
-# Quid flebile in ipse innocuae domito et
 
 ## Moturaque alitibus nubibus
 

@@ -7,6 +7,7 @@ import marked from "marked";
 import Wrapper from "../../components/Wrapper/Wrapper";
 import Navbar from "../../components/Navbar/Navbar";
 import Footer from "../../components/Footer/Footer";
+import styles from "../../styles/blog/singlepost.module.css";
 
 const BlogPost = ({ contents, data }) => {
   return (
@@ -14,7 +15,30 @@ const BlogPost = ({ contents, data }) => {
       <Head>
         <title>{data.title} | Blog | Kreative Dreamflow</title>
       </Head>
-      <div dangerouslySetInnerHTML={{ __html: contents }} />
+      <Navbar />
+      <Wrapper bg={data.color} paddingTop="200px" paddingBottom="100px">
+        <div className={styles.content_wrapper}>
+          <h1
+            style={{ color: data.title_color }}
+            className={styles.title}
+          >{data.title}</h1>
+          <h3
+            style={{ color: data.description_color }}
+            className={styles.description}
+          >{data.description}</h3>
+        </div>
+      </Wrapper>
+      <Wrapper bg="white" paddingTop="100px" paddingBottom="100px">
+        <div className={styles.content_wrapper}>
+          <img
+            className={styles.cover_image}
+            src={data.cover_image_src}
+            alt={data.cover_image_alt}
+          />
+          <div dangerouslySetInnerHTML={{ __html: contents }} />
+        </div>
+      </Wrapper>
+      <Footer />
     </div>
   );
 };
