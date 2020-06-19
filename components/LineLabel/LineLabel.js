@@ -8,10 +8,11 @@ class FantasiaLineLabel extends Component {
                 <style jsx>{`
                     .linelabel {
                         color: ${this.props.color};
+                        text-transform: uppercase;
                     }
 
                     .linelabel h5 {
-                        font-family: monospace;
+                        font-family: 'DM Mono', monospace;
                         font-size: 1em;
                         font-weight: bold;
                         display: inline;

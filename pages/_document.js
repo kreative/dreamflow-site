@@ -14,6 +14,7 @@ export default class DreamflowDocument extends Document {
               })(window,document,'script','dataLayer','GTM-58HJ6FL');
             `,
           }}></script>
+          <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&display=swap" rel="stylesheet"></link>
         </Head>
         <body>
           <noscript dangerouslySetInnerHTML={{

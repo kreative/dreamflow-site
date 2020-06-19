@@ -149,7 +149,7 @@ class DreamflowNavbar extends Component {
             width: 100%;
             overflow: hidden;
             z-index: 1000;
-            backdrop-filter: blur(5px);
+            backdrop-filter: blur(10px);
           }
 
           .Navbar {
@@ -184,7 +184,7 @@ class DreamflowNavbar extends Component {
             background-color: white;
             background-color: rgba(255, 255, 255, 1);
             overflow-x: hidden;
-            backdrop-filter: blur(5px);
+            backdrop-filter: blur(10px);
           }
 
           .overlay-content {
