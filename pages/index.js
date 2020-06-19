@@ -147,7 +147,7 @@ export default function Home() {
                   becomes easier than ever.
                   <br />
                   <br />
-                  Find out you can work with Dreamflow
+                  Find out how you can work with Dreamflow
                 </p>
                 <Button
                   href="/get-started"

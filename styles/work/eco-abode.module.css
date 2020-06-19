@@ -3,6 +3,10 @@
   align-items: center;
 }
 
+.larger_h1 {
+  font-size: 3.5em;
+}
+
 .larger_p {
   font-size: 1.7em;
 }
@@ -23,4 +27,24 @@
 .project_video {
   height: 70vh;
   background-color: red;
+}
+
+.image {
+  width: 100%;
+}
+
+.image_group p {
+  padding: 25px 50px 50px 50px;
+  text-align: center;
+}
+
+.testimonial_section {
+  padding-left: 15%;
+  padding-right: 15%;
+}
+
+.testimonial_section p {
+  padding-top: 45px;
+  font-family: 'DM Mono', monospace;
+  font-size: 0.9em;
 }
