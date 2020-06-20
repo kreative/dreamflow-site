@@ -16,6 +16,7 @@ import {
   faWallet,
   faMoneyBillWave,
   faExternalLinkAlt,
+  faArrowsAlt,
 } from "@fortawesome/free-solid-svg-icons";
 import styles from "../../styles/work/eco-abode.module.css";
 
@@ -55,7 +56,7 @@ const EcoAbodeCaseStudy = () => {
           <div>
             <LineLabel color="#32746D">Eco Abode</LineLabel>
             <h1 style={{ paddingBottom: "100px" }}>
-              A rental property management company creating the simplest
+              A rental property management company creating the easiest
               experience for new home owners
             </h1>
             <FontAwesomeIcon icon={faArrowDown} size="1x" />
@@ -67,8 +68,8 @@ const EcoAbodeCaseStudy = () => {
           layers={[
             {
               image:
-                "https://images.unsplash.com/photo-1592410811000-80b57d6f18ab?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1717&q=80",
-              amount: 0.7,
+                "https://kmg-site-assets.kaycdn.com/clients/eco-abode/house-generic.jpg",
+              amount: 0.4,
             },
           ]}
           style={{
@@ -76,7 +77,7 @@ const EcoAbodeCaseStudy = () => {
           }}
         />
       </ParallaxProvider>
-      <Wrapper bg="white" paddingTop="250px" paddingBottom="250px">
+      <Wrapper bg="#EEF8F7" paddingTop="200px" paddingBottom="200px">
         <Container style={{ padding: "0px" }} fluid>
           <Row gutterWidth={20}>
             <Col sm={12} md={4}>
@@ -84,10 +85,18 @@ const EcoAbodeCaseStudy = () => {
             </Col>
             <Col sm={12} md={8}>
               <p className={styles.larger_p} style={{ paddingBottom: "20px" }}>
-                Lorem Ipsum is simply dummy text of the printing and typesetting
-                industry. Lorem Ipsum has been the industry's standard dummy
-                text ever since the 1500s, when an unknown printer took a galley
-                of type and scrambled it to make a type specimen book.
+                Eco Abode is a rental property management business started in
+                2019. When starting, they were focused on client experience and
+                generating leads in their community; a website was the last
+                thing on their mind. They put together a small, one-page website
+                to get started with nothing more than a contact page. However,
+                when the COVID19 pandemic hit, they realized they needed to
+                shift their marketing strategy online and build a new website
+                that can correctly represent their brand and help generate new
+                customers. After doing some research on their own and talking to
+                other marketing agencies in the area, they landed on Kreative
+                Dreamflow for our customer-centric design, transparent pricing,
+                and affordable rates.
               </p>
               <a className={styles.link} href="https://ecoabodellc.com">
                 <span style={{ marginRight: "10px" }}>View Project</span>
@@ -97,46 +106,41 @@ const EcoAbodeCaseStudy = () => {
           </Row>
         </Container>
       </Wrapper>
-      <Wrapper bg="#EEF8F7" paddingTop="200px" paddingBottom="200px">
-        <div className={styles.project_video}></div>
-      </Wrapper>
-      <Wrapper bg="" paddingTop="200px" paddingBottom="200px">
-        <Container style={{ padding: "0px" }} fluid>
-          <Row gutterWidth={0}>
-            <Col sm={9}>
-              <LineLabel color="#32746D">BEFORE DREAMFLOW</LineLabel>
-              <h2 className={styles.larger_h1}>
-                Explain how bad the website was
-              </h2>
-              <p className={styles.larger_p} style={{ paddingBottom: "200px" }}>
-                Lorem Ipsum is simply dummy text of the printing and typesetting
-                industry. Lorem Ipsum has been the industry's standard dummy
-                text ever since the 1500s, when an unknown printer took a galley
-                of type and scrambled it to make a type specimen book.
-              </p>
-            </Col>
-            <Col sm={3}></Col>
-          </Row>
-        </Container>
+      <Wrapper bg="white" paddingTop="200px" paddingBottom="200px">
+        <LineLabel color="#32746D">BEFORE DREAMFLOW</LineLabel>
+        <h2 className={styles.larger_h1} style={{ paddingBottom: "50px" }}>
+          Without the right digital marketing partner by their side, Eco Abode's
+          original website made it much harder for them to succeed online.
+        </h2>
         <Container style={{ padding: "0px" }} fluid>
           <Row gutterWidth={0}>
             <Col sm={6}>
-              <img className={styles.image} src="" alt="" />
+              <img
+                className={styles.image}
+                src="https://kmg-site-assets.kaycdn.com/clients/eco-abode/old-homepage.png"
+                alt="Original Eco Abode website homepage"
+              />
             </Col>
             <Col sm={6} style={{ paddingTop: "100px" }}>
               <div className={styles.image_group}>
-                <p>
-                  There are many variations of passages of Lorem Ipsum
-                  available, but the majority have suffered alteration in some
-                  form.
+                <p className={styles.larger_p}>
+                  Their website lacked a moden style/theme, more than one page,
+                  and useful, sales-driven copywriting. These problems are all
+                  too common amongst websites in general, not just in the real
+                  estate space.
                 </p>
               </div>
               <div className={styles.image_group}>
-                <img className={styles.image} src="" alt="" />
-                <p>
-                  There are many variations of passages of Lorem Ipsum
-                  available, but the majority have suffered alteration in some
-                  form.
+                <img
+                  className={styles.image}
+                  src="https://kmg-site-assets.kaycdn.com/clients/eco-abode/ecoabode-logo-old-large-black.webp"
+                  alt="Original Eco Abode logo in Black"
+                />
+                <p className={styles.larger_p}>
+                  The original logo lacked originality. Not only that, but
+                  because their logo is only text, it's difficult for new
+                  customers to know what Eco Abode does or what industry they're
+                  in.
                 </p>
               </div>
             </Col>
@@ -151,12 +155,141 @@ const EcoAbodeCaseStudy = () => {
             style={{ color: "#32746D" }}
           />
           <h2 style={{ paddingTop: "50px" }}>
-            Contrary to popular belief, Lorem Ipsum is not simply random text.
-            It has roots in a piece of classical Latin literature from 45 BC,
-            making it over 2000 years old.
+            We knew we needed a new website and brand, but couldn't figure out
+            exactly what was missing. We were scared that if we didn't know
+            exactly what we needed, an agency would be a waste of money
+            <br />
+            <br />
+            But the team at Dreamflow didn't need much information to get
+            started. They knew what worked and what our market wanted extremely
+            well.
           </h2>
           <p>Pankaj Gupta, Founder of Eco Abode</p>
         </div>
+      </Wrapper>
+      <Wrapper bg="white" paddingTop="150px" paddingBottom="150px">
+        <Container style={{ padding: "0px" }} fluid>
+          <Row gutterWidth={20}>
+            <Col sm={12} md={4}>
+              <LineLabel color="#32746D">PHASE 1</LineLabel>
+              <h2 style={{ paddingBottom: "50px" }}>Research</h2>
+            </Col>
+            <Col sm={12} md={8}>
+              <p className={styles.larger_p} style={{ paddingBottom: "20px" }}>
+                Our first step was in doing some research into the local
+                competition. Learning about what other businesses lacked on
+                their websites, gave us an edge in making Eco Abode's website
+                stand out and look like they belong in the year 2020.
+              </p>
+              <p className={styles.larger_p} style={{ paddingBottom: "20px" }}>
+                Eco Abode mentioned that they wanted to convey professionalism
+                and high service quality through their website. So we also
+                researched websites for businesses in different industries, but
+                with similar brand elements, like investment banking.
+              </p>
+            </Col>
+          </Row>
+        </Container>
+      </Wrapper>
+      <Wrapper bg="#F8FBF9" paddingTop="150px" paddingBottom="150px">
+        <Container style={{ padding: "0px" }} fluid>
+          <Row gutterWidth={50}>
+            <Col sm={12} md={6}>
+              <LineLabel color="#32746D">PHASE 2</LineLabel>
+              <h2 style={{ paddingBottom: "50px" }}>Branding</h2>
+              <p className={styles.larger_p} style={{ paddingBottom: "20px" }}>
+                To create a new brand for Eco Abode, we took the best parts of
+                our research and paired them with Eco Abode's own input on what
+                they wanted to represent to their customers. Since a main part
+                of their brand is high service quality, we focused on creating a
+                higher end look for their new logo. We used the popular, Josefin
+                Sans, typeface to avoid the text of the logo from looking cheap
+                and paired it with the drawing of the house to symbolize that
+                Eco Abode deals with real estate.
+              </p>
+              <p className={styles.larger_p} style={{ paddingBottom: "20px" }}>
+                Originally their website only had a few main colors like green
+                and grey. We picked new shades and styles of green and picked
+                gradients to expand Eco Abode's color pallete, allowing our team
+                to make their website less "one-colored" and more vibrant.
+              </p>
+            </Col>
+            <Col
+              sm={12}
+              md={6}
+              style={{
+                justifyContent: "center",
+                display: "flex",
+                flexDirection: "column",
+              }}
+            >
+              <div className={styles.image_group}>
+                <img
+                  className={styles.image}
+                  src="https://kmg-site-assets.kaycdn.com/clients/eco-abode/ecoabode-logo-new-black-framed.png"
+                  alt="New Eco Abode logo black framed"
+                />
+                <p>New Logo in Black</p>
+              </div>
+              <div className={styles.image_group}>
+                <img
+                  className={styles.image}
+                  src="https://kmg-site-assets.kaycdn.com/clients/eco-abode/ecoabode-logo-new-white-framed.png"
+                  alt="New Eco Abode logo black framed"
+                />
+                <p>New Logo in White</p>
+              </div>
+            </Col>
+          </Row>
+        </Container>
+      </Wrapper>
+      <Wrapper bg="white" paddingTop="150px" paddingBottom="150px">
+        <Container style={{ padding: "0px" }} fluid>
+          <Row gutterWidth={20}>
+            <Col sm={12} md={6}>
+              <LineLabel color="#32746D">PHASE 3</LineLabel>
+              <h2 style={{ paddingBottom: "50px" }}>Prototyping</h2>
+              <p className={styles.larger_p} style={{ paddingBottom: "20px" }}>
+                Once we were done, we took the best parts of our research and
+                newly created brand to create a Hand Drawn Wireframe (HDW) for
+                what the new website should look like. Unlike other agencies, we
+                chose to spend less time with prototyping and more time on
+                actual development. We use our HDW as a starting point, but not
+                the finished product.
+              </p>
+              <p className={styles.larger_p} style={{ paddingBottom: "20px" }}>
+                This approach allows us to finish projects faster, costing our
+                clients, like Eco Abode in this case, a lot less. We're also
+                able to get our clients a look at their finished website sooner
+                than later, giving them even more flexibility and choice for the
+                finished product.
+              </p>
+            </Col>
+            <Col sm={12} md={6}>
+              <img className="" src="" alt="" />
+            </Col>
+          </Row>
+        </Container>
+      </Wrapper>
+      <Wrapper bg="#FFF9F1" paddingTop="150px" paddingBottom="150px">
+        <Container style={{ padding: "0px" }} fluid>
+          <Row gutterWidth={20}>
+            <Col sm={12} md={4}>
+              <LineLabel color="#32746D">PHASE 4</LineLabel>
+              <h2 style={{ paddingBottom: "50px" }}>Development</h2>
+            </Col>
+            <Col sm={12} md={8}>
+              <p className={styles.larger_p} style={{ paddingBottom: "20px" }}>
+                The final phase our this project is where we take all the
+                research and prototyping and create a finished product. Our team
+                leveraged Wordpress for Eco Abode, as that would be the most
+                cost effective option. However, we did not use any prebuilt or
+                paid themes, all designing was done from scratch. Eco Abode's
+                priority was in standing out from the rest of the marketplace.
+              </p>
+            </Col>
+          </Row>
+        </Container>
       </Wrapper>
       <ParallaxProvider>
         <ParallaxBanner
@@ -164,7 +297,7 @@ const EcoAbodeCaseStudy = () => {
             {
               image:
                 "https://images.unsplash.com/photo-1592410811000-80b57d6f18ab?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1717&q=80",
-              amount: 0.7,
+              amount: 0.8,
             },
           ]}
           style={{
@@ -172,24 +305,9 @@ const EcoAbodeCaseStudy = () => {
           }}
         />
       </ParallaxProvider>
-      <Wrapper bg="" paddingTop="200px" paddingBottom="200px">
-        <Container style={{ padding: "0px" }} fluid>
-          <Row gutterWidth={0}>
-            <Col sm={9}>
-              <LineLabel color="#32746D">AFTER DREAMFLOW</LineLabel>
-              <h2 className={styles.larger_h1}>
-                Explain how we did the greatest possible job ever
-              </h2>
-              <p className={styles.larger_p} style={{ paddingBottom: "200px" }}>
-                Lorem Ipsum is simply dummy text of the printing and typesetting
-                industry. Lorem Ipsum has been the industry's standard dummy
-                text ever since the 1500s, when an unknown printer took a galley
-                of type and scrambled it to make a type specimen book.
-              </p>
-            </Col>
-            <Col sm={3}></Col>
-          </Row>
-        </Container>
+      <Wrapper bg="#F8FBF9" paddingTop="200px" paddingBottom="200px">
+        <LineLabel color="#32746D">AFTER DREAMFLOW</LineLabel>
+        <h2 className={styles.larger_h1}>Every inch, improved.</h2>
         <Container style={{ padding: "0px" }} fluid>
           <Row gutterWidth={0}>
             <Col sm={6} style={{ paddingTop: "100px" }}>
@@ -247,20 +365,6 @@ const EcoAbodeCaseStudy = () => {
           </Row>
         </Container>
       </Wrapper>
-      <ParallaxProvider>
-        <ParallaxBanner
-          layers={[
-            {
-              image:
-                "https://images.unsplash.com/photo-1592410811000-80b57d6f18ab?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1717&q=80",
-              amount: 0.7,
-            },
-          ]}
-          style={{
-            height: "700px",
-          }}
-        />
-      </ParallaxProvider>
       <Wrapper bg="white" paddingBottom="200px" paddingTop="200px">
         <LineLabel color="#32746D">Products Used</LineLabel>
         <h2 style={{ paddingBottom: "50px" }}>
@@ -278,7 +382,7 @@ const EcoAbodeCaseStudy = () => {
                 logo="https://kmg-site-assets.kaycdn.com/toprank-color.webp"
                 alt="Kreative TopRank logo in Green"
                 description="Search engine optimization"
-                text="With TopRank, we garuntee higher search rankings for your website or your money back."
+                text="Eco Abode used TopRank to optimize their newly built website for higher search rankings."
                 button={
                   <Button
                     href="/toprank"
@@ -306,7 +410,7 @@ const EcoAbodeCaseStudy = () => {
                 logo="https://kmg-site-assets.kaycdn.com/pageflow-color.webp"
                 alt="Kreative Pageflow logo in Purple"
                 description="Website design"
-                text="Our sales focused approach turns a potential website cost into an investment that makes you money."
+                text="Pageflow was the main service used by Eco Abode to launch their new website and brand."
                 button={
                   <Button
                     href="/pageflow"
@@ -335,7 +439,7 @@ const EcoAbodeCaseStudy = () => {
                 logoWidth="80%"
                 alt="Kreative Kopy logo in Navy Blue"
                 description="Copywriting"
-                text="Affordable and attention grabbing copywriting for your blog posts or webpages."
+                text="Eco Abode used Kopy to get professional, sales-driven copywriting for their newly built website without having to do it themselves"
                 button={
                   <Button
                     href="/kopy"
@@ -367,38 +471,45 @@ const EcoAbodeCaseStudy = () => {
         </div>
         <Container style={{ padding: "0px" }} fluid>
           <Row gutterWidth={100}>
-            <Col md={4}>
+            <Col md={6} lg={3}>
               <IconBox
                 icon={faCalendarCheck}
-                iconColor="black"
-                header="Strategy Session"
-                text={`Our team works with you to figure out what keywords to rank for, 
-                      what locations to target, and how to get the most value out of TopRank`}
+                iconColor="#104F55"
+                header="Website Created in 13 Days"
+                text={`Eco Abode wanted to move fast to start catering to potential customers online. Working with Dreamflow got them up and running in under 2 weeks.`}
                 align="center"
                 iconAlign="center"
                 size="4x"
               />
             </Col>
-            <Col md={4} className={styles.iconbox}>
+            <Col md={6} lg={3} className={styles.iconbox}>
               <IconBox
                 icon={faWallet}
-                iconColor="black"
-                header="Site Optimization"
-                text={`The TopRank team then works to optimize your website,
-                      keeping you in the loop every step`}
+                iconColor="#104F55"
+                header="$1500 Total Cost"
+                text={`Every step of our process was optimized to reduce costs giving Eco Abode a record low project cost. $1500 for a website, logo, and SEO setup is less than what most large agencies charge.`}
                 align="center"
                 iconAlign="center"
                 size="4x"
               />
             </Col>
-            <Col md={4} className={styles.iconbox}>
+            <Col md={6} lg={3} className={styles.iconbox}>
               <IconBox
                 icon={faMoneyBillWave}
-                iconColor="black"
-                header="Ranking"
-                text={`After a few weeks to a few months of work from the TopRank team,
-                      you'll start seeing your website rankings go up and new traffic
-                      coming in!`}
+                iconColor="#104F55"
+                header="10% Increase in Leadflow"
+                text={`Our help with design not only revamped their image, but helped with actual sales. As a result of our work, they got more incoming phone calls`}
+                align="center"
+                iconAlign="center"
+                size="4x"
+              />
+            </Col>
+            <Col md={6} lg={3} className={styles.iconbox}>
+              <IconBox
+                icon={faArrowsAlt}
+                iconColor="#104F55"
+                header="4 Products in one"
+                text={`The best part about working with an all-in-one solution like Dreamflow is that Eco Abode got everything they needed with one single partner, saving them time and money.`}
                 align="center"
                 iconAlign="center"
                 size="4x"

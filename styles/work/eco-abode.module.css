@@ -9,6 +9,7 @@
 
 .larger_p {
   font-size: 1.7em;
+  line-height: 1.7;
 }
 
 .link {
@@ -33,14 +34,18 @@
   width: 100%;
 }
 
-.image_group p {
-  padding: 25px 50px 50px 50px;
+.image_group {
+  padding: 25px 30px 30px 30px;
   text-align: center;
 }
 
+.image_group img {
+  padding-bottom: 25px;
+}
+
 .testimonial_section {
-  padding-left: 15%;
-  padding-right: 15%;
+  padding-left: 5%;
+  padding-right: 5%;
 }
 
 .testimonial_section p {
