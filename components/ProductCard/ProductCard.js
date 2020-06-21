@@ -1,19 +1,19 @@
-import React, { Component } from 'react';
-import classNames from 'classnames';
+import React, { Component } from "react";
+import classNames from "classnames";
 
-class ProductCard extends Component {  
+class ProductCard extends Component {
   render() {
     var cardClass = classNames({
-      "card": true,
+      card: true,
       "hvr-float": true,
-      "raised": this.props.raised
+      raised: this.props.raised,
     });
 
     var logoClass = classNames({
-      "logo": true,
-      "hidden": this.props.hideImage
+      logo: true,
+      hidden: this.props.hideImage,
     });
-    
+
     return (
       <div className={cardClass}>
         <div className="content">
@@ -54,7 +54,7 @@ class ProductCard extends Component {
           .description {
             margin-top: 10px;
             font-weight: normal;
-            font-family: 'RadioGrotesk', serif;
+            font-family: "RadioGrotesk", serif;
             color: #666666;
             font-size: 1.2em;
           }
@@ -62,7 +62,7 @@ class ProductCard extends Component {
           .text {
             color: #343434;
             font-size: 1.4em;
-            font-family: 'RadioGrotesk', serif;
+            font-family: "RadioGrotesk", serif;
             line-height: 1.1em;
           }
 
@@ -78,9 +78,9 @@ class ProductCard extends Component {
           }
 
           .raised {
-            -webkit-box-shadow: 0px 7px 28px 5px rgba(166,166,166,0.9);
-            -moz-box-shadow: 0px 7px 28px 5px rgba(166,166,166,0.9);
-            box-shadow: 0px 7px 28px 5px rgba(166,166,166,0.9);
+            -webkit-box-shadow: 0px 7px 28px 5px rgba(166, 166, 166, 0.9);
+            -moz-box-shadow: 0px 7px 28px 5px rgba(166, 166, 166, 0.9);
+            box-shadow: 0px 7px 28px 5px rgba(166, 166, 166, 0.9);
           }
 
           .hvr-float {
@@ -95,14 +95,16 @@ class ProductCard extends Component {
             transition-timing-function: ease-out;
           }
 
-          .hvr-float:hover, .hvr-float:focus, .hvr-float:active {
+          .hvr-float:hover,
+          .hvr-float:focus,
+          .hvr-float:active {
             -webkit-transform: translateY(-8px);
             transform: translateY(-8px);
           }
         `}</style>
       </div>
     );
-  };
+  }
 }
 
 export default ProductCard;

@@ -34,13 +34,21 @@
   width: 100%;
 }
 
+.elevated_image {
+  width: 100%;
+  -webkit-box-shadow: 2px 6px 16px 4px rgba(153,153,153,0.28);
+  -moz-box-shadow: 2px 6px 16px 4px rgba(153,153,153,0.28);
+  box-shadow: 2px 6px 16px 4px rgba(153,153,153,0.28);
+  margin-bottom: 25px;
+}
+
 .image_group {
   padding: 25px 30px 30px 30px;
   text-align: center;
 }
 
 .image_group img {
-  padding-bottom: 25px;
+  margin-bottom: 25px;
 }
 
 .testimonial_section {

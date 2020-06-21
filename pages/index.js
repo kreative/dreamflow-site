@@ -316,7 +316,7 @@ export default function Home() {
         </div>
         <Container style={{ padding: "0px" }} fluid>
           <Row gutterWidth={25}>
-            <Col sm={4} xxl={3}>
+            <Col sm={6} md={4} xxl={3} style={{ marginBottom: "25px" }}>
               <ProductCard
                 bg="white"
                 align="center"
@@ -340,12 +340,12 @@ export default function Home() {
                     grow={false}
                     width="100%"
                   >
-                    See TopRank
+                    Learn more
                   </Button>
                 }
               />
             </Col>
-            <Col sm={4} xxl={3}>
+            <Col sm={6} md={4} xxl={3} style={{ marginBottom: "25px" }}>
               <ProductCard
                 bg="white"
                 align="center"
@@ -368,12 +368,12 @@ export default function Home() {
                     grow={false}
                     width="100%"
                   >
-                    See Pageflow
+                    Learn more
                   </Button>
                 }
               />
             </Col>
-            <Col sm={4} xxl={3}>
+            <Col sm={6} md={4} xxl={3} style={{ marginBottom: "25px" }}>
               <ProductCard
                 bg="white"
                 align="center"
@@ -397,7 +397,7 @@ export default function Home() {
                     grow={false}
                     width="100%"
                   >
-                    See Kopy
+                    Learn more
                   </Button>
                 }
               />

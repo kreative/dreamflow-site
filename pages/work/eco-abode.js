@@ -227,7 +227,7 @@ const EcoAbodeCaseStudy = () => {
                 <img
                   className={styles.image}
                   src="https://kmg-site-assets.kaycdn.com/clients/eco-abode/ecoabode-logo-new-black-framed.png"
-                  alt="New Eco Abode logo black framed"
+                  alt="New Eco Abode logo in black framed"
                 />
                 <p>New Logo in Black</p>
               </div>
@@ -235,9 +235,17 @@ const EcoAbodeCaseStudy = () => {
                 <img
                   className={styles.image}
                   src="https://kmg-site-assets.kaycdn.com/clients/eco-abode/ecoabode-logo-new-white-framed.png"
-                  alt="New Eco Abode logo black framed"
+                  alt="New Eco Abode logo in white framed"
                 />
                 <p>New Logo in White</p>
+              </div>
+              <div className={styles.image_group}>
+                <img
+                  className={styles.image}
+                  src="https://kmg-site-assets.kaycdn.com/clients/eco-abode/ecoabode-logo-square-black-framed.png"
+                  alt="New Eco Abode logo square in black framed"
+                />
+                <p>New Square Logo in Black</p>
               </div>
             </Col>
           </Row>
@@ -265,8 +273,26 @@ const EcoAbodeCaseStudy = () => {
                 finished product.
               </p>
             </Col>
-            <Col sm={12} md={6}>
-              <img className="" src="" alt="" />
+            <Col
+              sm={12}
+              md={6}
+              style={{
+                justifyContent: "center",
+                display: "flex",
+                flexDirection: "column",
+              }}
+            >
+              <div className={styles.image_group}>
+                <img
+                  className={styles.image}
+                  src="https://kmg-site-assets.kaycdn.com/clients/eco-abode/scan2.jpg"
+                  alt="Hand drawn wireframe of Eco Abode"
+                  style={{ transform: "rotate(180deg)" }}
+                />
+                <p style={{ paddingTop: "25px" }}>
+                  Hand drawn wireframes of various Eco Abode webpages
+                </p>
+              </div>
             </Col>
           </Row>
         </Container>
@@ -291,76 +317,57 @@ const EcoAbodeCaseStudy = () => {
           </Row>
         </Container>
       </Wrapper>
-      <ParallaxProvider>
-        <ParallaxBanner
-          layers={[
-            {
-              image:
-                "https://images.unsplash.com/photo-1592410811000-80b57d6f18ab?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1717&q=80",
-              amount: 0.8,
-            },
-          ]}
-          style={{
-            height: "700px",
-          }}
-        />
-      </ParallaxProvider>
       <Wrapper bg="#F8FBF9" paddingTop="200px" paddingBottom="200px">
-        <LineLabel color="#32746D">AFTER DREAMFLOW</LineLabel>
-        <h2 className={styles.larger_h1}>Every inch, improved.</h2>
+        <div style={{textAlign:"center"}}>
+          <LineLabel color="#32746D">AFTER DREAMFLOW</LineLabel>
+          <h2 
+            className={styles.larger_h1}
+            style={{ paddingBottom: "50px" }}
+          >
+            Every inch, improved.
+          </h2>
+        </div>
         <Container style={{ padding: "0px" }} fluid>
-          <Row gutterWidth={0}>
-            <Col sm={6} style={{ paddingTop: "100px" }}>
-              <div className={styles.image_group}>
-                <img className={styles.image} src="" alt="" />
-                <p>
-                  There are many variations of passages of Lorem Ipsum
-                  available, but the majority have suffered alteration in some
-                  form.
-                </p>
-              </div>
-              <div className={styles.image_group}>
-                <img className={styles.image} src="" alt="" />
-                <p>
-                  There are many variations of passages of Lorem Ipsum
-                  available, but the majority have suffered alteration in some
-                  form.
-                </p>
-              </div>
-              <div className={styles.image_group}>
-                <img className={styles.image} src="" alt="" />
-                <p>
-                  There are many variations of passages of Lorem Ipsum
-                  available, but the majority have suffered alteration in some
-                  form.
-                </p>
-              </div>
+          <Row gutterWidth={25}>
+            <Col sm={6}>
+              <img
+                className={styles.elevated_image}
+                src="https://kmg-site-assets.kaycdn.com/clients/eco-abode/ecoabode-homepage-services-cols.png"
+                alt="Eco Abode services on homepage"
+              />
+              <img
+                className={styles.elevated_image}
+                src="https://kmg-site-assets.kaycdn.com/clients/eco-abode/ecoabode-aboutpage-stuff.png"
+                alt="Eco Abode stuff on about page"
+              />
+              <img
+                className={styles.elevated_image}
+                src="https://kmg-site-assets.kaycdn.com/clients/eco-abode/ecoabode-aboutpage-hero.png"
+                alt="Eco Abode hero section on about page"
+              />
             </Col>
             <Col sm={6}>
-              <div className={styles.image_group}>
-                <img className={styles.image} src="" alt="" />
-                <p>
-                  There are many variations of passages of Lorem Ipsum
-                  available, but the majority have suffered alteration in some
-                  form.
-                </p>
-              </div>
-              <div className={styles.image_group}>
-                <img className={styles.image} src="" alt="" />
-                <p>
-                  There are many variations of passages of Lorem Ipsum
-                  available, but the majority have suffered alteration in some
-                  form.
-                </p>
-              </div>
-              <div className={styles.image_group}>
-                <img className={styles.image} src="" alt="" />
-                <p>
-                  There are many variations of passages of Lorem Ipsum
-                  available, but the majority have suffered alteration in some
-                  form.
-                </p>
-              </div>
+              <img
+                className={styles.elevated_image}
+                src="https://kmg-site-assets.kaycdn.com/clients/eco-abode/ecoabode-contact-box.png"
+                alt="Eco Abode contact box on contact page"
+              />
+              
+              <img
+                className={styles.elevated_image}
+                src="https://kmg-site-assets.kaycdn.com/clients/eco-abode/ecoabode-homepage-section.png"
+                alt="Eco Abode section on homepage"
+              />
+              <img
+                className={styles.elevated_image}
+                src="https://kmg-site-assets.kaycdn.com/clients/eco-abode/ecoabode-homepage-contact.png"
+                alt=""
+              />
+              <img
+                className={styles.elevated_image}
+                src="https://kmg-site-assets.kaycdn.com/clients/eco-abode/ecoabode-servicespage-stuff.png"
+                alt="Eco ABode stuff on services page"
+              />
             </Col>
           </Row>
         </Container>
@@ -373,7 +380,7 @@ const EcoAbodeCaseStudy = () => {
         </h2>
         <Container style={{ padding: "0px" }} fluid>
           <Row gutterWidth={25}>
-            <Col sm={4} xxl={3}>
+            <Col sm={6} md={4} xxl={3} style={{marginBottom:"25px"}}>
               <ProductCard
                 bg="white"
                 align="center"
@@ -397,12 +404,12 @@ const EcoAbodeCaseStudy = () => {
                     grow={false}
                     width="100%"
                   >
-                    See TopRank
+                    Learn more
                   </Button>
                 }
               />
             </Col>
-            <Col sm={4} xxl={3}>
+            <Col sm={6} md={4} xxl={3} style={{marginBottom:"25px"}}>
               <ProductCard
                 bg="white"
                 align="center"
@@ -425,12 +432,12 @@ const EcoAbodeCaseStudy = () => {
                     grow={false}
                     width="100%"
                   >
-                    See Pageflow
+                    Learn more
                   </Button>
                 }
               />
             </Col>
-            <Col sm={4} xxl={3}>
+            <Col sm={6} md={4} xxl={3} style={{marginBottom:"25px"}}>
               <ProductCard
                 bg="white"
                 align="center"
@@ -524,12 +531,13 @@ const EcoAbodeCaseStudy = () => {
             layers={[
               {
                 image:
-                  "https://images.unsplash.com/photo-1592410811000-80b57d6f18ab?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1717&q=80",
-                amount: 1,
+                  "https://kmg-site-assets.kaycdn.com/clients/eco-abode/ecoabode-compilation.png",
+                amount: 0.5,
+                expanded: false,
               },
             ]}
             style={{
-              height: "500px",
+              height: "700px",
             }}
           />
         </ParallaxProvider>
