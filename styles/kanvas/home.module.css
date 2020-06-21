@@ -1,0 +1,31 @@
+.why_image {
+  width: 100%;
+  padding-right: 50px;
+}
+
+.cta_image_wrapper {
+  text-align: right;
+}
+
+.cta_image {
+  width: 100%;
+  padding-left: 25px;
+}
+
+.iconbox {
+  margin-top: 75px;
+}
+
+@media screen and (max-width: 767px) {
+  .why_image {
+    padding-right: 0px;
+    padding-bottom: 50px;
+  }
+}
+
+@media screen and (max-width: 575px) {
+  .cta_image {
+    padding-left: 0px;
+    padding-top: 50px;
+  }
+}
