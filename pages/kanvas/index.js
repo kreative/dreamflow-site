@@ -4,15 +4,10 @@ import Navbar from "../../components/Navbar/Navbar";
 import Footer from "../../components/Footer/Footer";
 import Button from "../../components/Button/Button";
 import LineLabel from "../../components/LineLabel/LineLabel";
-import IconBox from "../../components/IconBox/IconBox";
+import { ParallaxBanner, ParallaxProvider } from "react-scroll-parallax";
 import Wave from "../../components/Wave/Wave";
 import ProductCard from "../../components/ProductCard/ProductCard";
 import { Container, Row, Col } from "react-grid-system";
-import {
-  faComment,
-  faLaptopCode,
-  faMedal,
-} from "@fortawesome/free-solid-svg-icons";
 import styles from "../../styles/kanvas/home.module.css";
 
 export default function Kanvas() {
@@ -46,19 +41,17 @@ export default function Kanvas() {
         <meta content="width=device-width, initial-scale=1" name="viewport" />
       </Head>
       <Navbar />
-      <div className="splash" style={{ backgroundColor: "#E5FFF0" }}>
-        <Wrapper bg="rgba(0,0,0,0)" paddingTop="300px" paddingBottom="100px">
-          <Container style={{ padding: "0px" }} fluid>
-            <Row gutterWidth={0}>
-              <Col md={9}>
-                <LineLabel color="black">WELCOME TO KANVAS</LineLabel>
-                <h1>Affordable graphic design, on demand.</h1>
-              </Col>
-            </Row>
-          </Container>
-        </Wrapper>
-      </div>
-      <Wrapper bg="white" paddingBottom="150px" paddingTop="150px">
+      <Wrapper bg="#A7FAEB" paddingTop="300px" paddingBottom="100px">
+        <Container style={{ padding: "0px" }} fluid>
+          <Row gutterWidth={0}>
+            <Col md={9}>
+              <LineLabel color="black">WELCOME TO KANVAS</LineLabel>
+              <h1>Affordable graphic design, on demand.</h1>
+            </Col>
+          </Row>
+        </Container>
+      </Wrapper>
+      <Wrapper bg="#F2FFFD" paddingBottom="150px" paddingTop="150px">
         <Container style={{ padding: "0px" }} fluid>
           <Row gutterWidth={0}>
             <Col md={6}>
@@ -70,11 +63,11 @@ export default function Kanvas() {
                 playsInline
               >
                 <source
-                  src="https://kmg-site-assets.kaycdn.com/scribble-drawing.webm"
+                  src="https://kmg-site-assets.kaycdn.com/sribble-drawing.webm"
                   type="video/webm"
                 />
                 <source
-                  src="https://kmg-site-assets.kaycdn.com/scribble-drawing.mp4"
+                  src="https://kmg-site-assets.kaycdn.com/sribble-drawing.mp4"
                   type="video/mp4"
                 />
               </video>
@@ -89,16 +82,10 @@ export default function Kanvas() {
             >
               <LineLabel color="blac">WHY KANVAS?</LineLabel>
               <h2>
-                Build authority and make it easier for your future customers to
-                find your
+                Design is hard. Don't let it stop you from making your ideas a reality.
               </h2>
               <p>
-                Search Engine Optimization, or SEO, is the practice of optimzing
-                a website to rank higher in search engines like Google. By
-                getting to the top of the first page, you gain traffic to your
-                website without having to spend money on services like Google
-                Ads. By using TopRank, you can potentially save thousands in
-                search engine advertising costs.
+                By using Kanvas, it's like having your own full time design team on standby. As more and more companies adopt graphic design into their product strategy, consumer demand for aesthetic and beautiful websites, apps, presentations, etc will grow. This will leave many companies behind. With Kanvas, you won't be one of them!
               </p>
             </Col>
           </Row>
@@ -119,59 +106,54 @@ export default function Kanvas() {
               textAlign: "center",
             }}
           >
-            <h2>Kopy Products</h2>
+            <h2>Kanvas Products</h2>
           </div>
           <Container style={{ padding: "0px" }} fluid>
             <Row gutterWidth={25}>
-              <Col md={6} className={styles.kopy_product}>
+              <Col md={6} className={styles.kanvas_product}>
                 <ProductCard
                   bg="white"
                   border="1.5px solid #E3E3E3"
-                  header="Kopy Blog Posts"
-                  text={`Extensive blog post writing service for whatever topic your heart desires. 
-                        Blog posts come with revisions and are professionally written by the Kopy team.`}
+                  header="Kreative Kanvas Logos"
+                  text={`Get a custom designed, original logo for your business, organization, or brand. Our team works directly with you to put together a logo you'll truly love.`}
                   button={
                     <Button
-                      fill="#1C5592"
+                      fill="#029E82"
                       textColor="white"
-                      hoverColor="#338EEE"
+                      hoverColor="#00DAB3"
                       radius="3px"
-                      border="1px solid #1C5592"
-                      hoverBorder="1px solid #338EEE"
+                      border="1px solid #029E82"
+                      hoverBorder="1px solid #00DAB3"
                       padding="20px 50px"
                       raised={false}
                       grow={false}
                       width="100%"
                     >
-                      Get started with Blog Posts
+                      Get started with Logos
                     </Button>
                   }
                 />
               </Col>
-              <Col md={6} className={styles.kopy_product}>
+              <Col md={6} className={styles.kanvas_product}>
                 <ProductCard
                   bg="white"
                   border="1.5px solid #E3E3E3"
-                  header="Kopy Webpages"
-                  text={`Transform your website into a powerful sales tool,
-                        overnight with Kopy Webpages. Our team uses proven sales 
-                        copy techniques to enhance your copy. Kopy Webpages is
-                        perfect for landing pages and sales oriented business
-                        pages.`}
+                  header="Kreative Kanvas Graphics"
+                  text={`Order graphic designs to use for your next website, app, or presentations. You get to keep full rights to the source files and turn around times are quick!`}
                   button={
                     <Button
-                      fill="#1C5592"
+                      fill="#029E82"
                       textColor="white"
-                      hoverColor="#338EEE"
+                      hoverColor="#00DAB3"
                       radius="3px"
-                      border="1px solid #1C5592"
-                      hoverBorder="1px solid #338EEE"
+                      border="1px solid #029E82"
+                      hoverBorder="1px solid #00DAB3"
                       padding="20px 50px"
                       raised={false}
                       grow={false}
                       width="100%"
                     >
-                      Get started with Webpages
+                      Get started with Graphics
                     </Button>
                   }
                 />
@@ -180,111 +162,42 @@ export default function Kanvas() {
           </Container>
         </Wrapper>
       </div>
-      <Wrapper bg="#7FE8AB" paddingBottom="150px" paddingTop="250px">
-        <div className="process-header">
-          <LineLabel color="black">THE TOPRANK PROCESS</LineLabel>
-          <h2>We take care of everything</h2>
-        </div>
-        <Container style={{ padding: "0px" }} fluid>
-          <Row gutterWidth={100}>
-            <Col md={4} className={styles.iconbox}>
-              <IconBox
-                icon={faComment}
-                iconColor="black"
-                header="Strategy Session"
-                text={`Our team works with you to figure out what keywords to rank for, 
-                      what locations to target, and how to get the most value out of TopRank`}
-                align="left"
-                iconAlign="flex-start"
-                size="3x"
-              />
-            </Col>
-            <Col md={4} className={styles.iconbox}>
-              <IconBox
-                icon={faLaptopCode}
-                iconColor="black"
-                header="Site Optimization"
-                text={`The TopRank team then works to optimize your website,
-                      keeping you in the loop every step`}
-                align="left"
-                iconAlign="flex-start"
-                size="3x"
-              />
-            </Col>
-            <Col md={4} className={styles.iconbox}>
-              <IconBox
-                icon={faMedal}
-                iconColor="black"
-                header="Ranking"
-                text={`After a few weeks to a few months of work from the TopRank team,
-                      you'll start seeing your website rankings go up and new traffic
-                      coming in!`}
-                align="left"
-                iconAlign="flex-start"
-                size="3x"
-              />
-            </Col>
-          </Row>
-        </Container>
+      <Wrapper bg="#FFF9F1" paddingBottom="100px" paddingTop="100px">
+        <ParallaxProvider>
+          <ParallaxBanner
+            layers={[
+              {
+                image: "https://kmg-site-assets.kaycdn.com/artsy.jpg",
+                amount: 0.4,
+                expanded: false,
+              },
+            ]}
+            style={{
+              height: "700px",
+            }}
+          />
+        </ParallaxProvider>
       </Wrapper>
-      <Wave color="#7FE8AB">
-        <path
-          className="wave-fill"
-          d="M421.9,6.5c22.6-2.5,51.5,0.4,75.5,5.3c23.6,4.9,70.9,23.5,100.5,35.7c75.8,32.2,133.7,44.5,192.6,49.7
-        c23.6,2.1,48.7,3.5,103.4-2.5c54.7-6,106.2-25.6,106.2-25.6V0H0v30.3c0,0,72,32.6,158.4,30.5c39.2-0.7,92.8-6.7,134-22.4
-        c21.2-8.1,52.2-18.2,79.7-24.2C399.3,7.9,411.6,7.5,421.9,6.5z"
-        ></path>
-      </Wave>
       <Wrapper bg="white" paddingTop="250px" paddingBottom="150px">
-        <Container style={{ padding: "0px" }} fluid>
-          <Row gutterWidth={0}>
-            <Col
-              sm={6}
-              style={{
-                justifyContent: "center",
-                display: "flex",
-                flexDirection: "column",
-              }}
+        <div style={{textAlign:"center"}}>
+          <LineLabel color="black">START NOW</LineLabel>
+          <h2>Don't waste your money hiring your own designers</h2>
+          <div style={{ marginTop: "35px" }}>
+            <Button
+              href="/kanvas/contact"
+              fill="black"
+              textColor="white"
+              radius="3px"
+              border="1px solid black"
+              padding="15px 50px"
+              raised={true}
+              grow={true}
             >
-              <LineLabel color="black">TAKE ACTION</LineLabel>
-              <h2>Don't waste more money paying for traffic</h2>
-              <div style={{ marginTop: "35px" }}>
-                <Button
-                  href="/toprank/contact"
-                  fill="black"
-                  textColor="white"
-                  radius="3px"
-                  border="1px solid black"
-                  padding="15px 50px"
-                  raised={true}
-                  grow={true}
-                >
-                  Get started with TopRank
-                </Button>
-              </div>
-            </Col>
-            <Col sm={6} className={styles.cta_image_wrapper}>
-              <video
-                className={styles.cta_image}
-                autoPlay
-                loop
-                muted
-                playsInline
-              >
-                <source
-                  src="https://kmg-site-assets.kaycdn.com/rocket-launch.webm"
-                  type="video/webm"
-                />
-                <source
-                  src="https://kmg-site-assets.kaycdn.com/rocket-launch.mp4"
-                  type="video/mp4"
-                />
-              </video>
-            </Col>
-          </Row>
-        </Container>
+              Get started
+            </Button>
+          </div>
+        </div>
       </Wrapper>
-
       <Footer />
     </div>
   );

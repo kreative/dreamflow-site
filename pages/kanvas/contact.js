@@ -5,13 +5,13 @@ import Footer from "../../components/Footer/Footer";
 import LineLabel from "../../components/LineLabel/LineLabel";
 import ContactCard from "../../components/ContactCard/ContactCard";
 import { Container, Row, Col } from "react-grid-system";
-import styles from "../../styles/toprank/contact.module.css";
+import styles from "../../styles/kanvas/contact.module.css";
 
-export default function ContactTopRank() {
+export default function ContactKanvas() {
   return (
     <div>
       <Head>
-        <title>Get in touch | TopRank | Dreamflow</title>
+        <title>Get in touch | Kanvas | Dreamflow</title>
         <link rel="apple-touch-icon" sizes="180x180" href="/favicons/general/apple-touch-icon.png"></link>
         <link rel="icon" type="image/png" sizes="32x32" href="/favicons/general/favicon-32x32.png"></link>
         <link rel="icon" type="image/png" sizes="16x16" href="/favicons/general/favicon-16x16.png"></link>
@@ -24,7 +24,7 @@ export default function ContactTopRank() {
         <meta content="width=device-width, initial-scale=1" name="viewport" />
       </Head>
       <Navbar />
-      <Wrapper bg="#ABEEC7" paddingTop="200px" paddingBottom="50px">
+      <Wrapper bg="#A7FAEB" paddingTop="200px" paddingBottom="50px">
         <Container style={{ padding: "0px" }} fluid>
           <Row gutterWidth={0}>
             <Col md={6} lg={8}>
@@ -37,7 +37,7 @@ export default function ContactTopRank() {
             </Col>
             <Col md={6} lg={4}>
               <div className={styles.contactcard_wrapper}>
-                <ContactCard buttonText="Contact TopRank" name="contact-toprank" />
+                <ContactCard buttonText="Contact Kanvas" name="contact-kanvas" />
               </div>
             </Col>
           </Row>

@@ -318,12 +318,9 @@ const EcoAbodeCaseStudy = () => {
         </Container>
       </Wrapper>
       <Wrapper bg="#F8FBF9" paddingTop="200px" paddingBottom="200px">
-        <div style={{textAlign:"center"}}>
+        <div style={{ textAlign: "center" }}>
           <LineLabel color="#32746D">AFTER DREAMFLOW</LineLabel>
-          <h2 
-            className={styles.larger_h1}
-            style={{ paddingBottom: "50px" }}
-          >
+          <h2 className={styles.larger_h1} style={{ paddingBottom: "50px" }}>
             Every inch, improved.
           </h2>
         </div>
@@ -352,7 +349,7 @@ const EcoAbodeCaseStudy = () => {
                 src="https://kmg-site-assets.kaycdn.com/clients/eco-abode/ecoabode-contact-box.png"
                 alt="Eco Abode contact box on contact page"
               />
-              
+
               <img
                 className={styles.elevated_image}
                 src="https://kmg-site-assets.kaycdn.com/clients/eco-abode/ecoabode-homepage-section.png"
@@ -380,7 +377,7 @@ const EcoAbodeCaseStudy = () => {
         </h2>
         <Container style={{ padding: "0px" }} fluid>
           <Row gutterWidth={25}>
-            <Col sm={6} md={4} xxl={3} style={{marginBottom:"25px"}}>
+            <Col sm={6} md={4} xxl={3} style={{ marginBottom: "25px" }}>
               <ProductCard
                 bg="white"
                 align="center"
@@ -409,7 +406,7 @@ const EcoAbodeCaseStudy = () => {
                 }
               />
             </Col>
-            <Col sm={6} md={4} xxl={3} style={{marginBottom:"25px"}}>
+            <Col sm={6} md={4} xxl={3} style={{ marginBottom: "25px" }}>
               <ProductCard
                 bg="white"
                 align="center"
@@ -437,7 +434,7 @@ const EcoAbodeCaseStudy = () => {
                 }
               />
             </Col>
-            <Col sm={6} md={4} xxl={3} style={{marginBottom:"25px"}}>
+            <Col sm={6} md={4} xxl={3} style={{ marginBottom: "25px" }}>
               <ProductCard
                 bg="white"
                 align="center"
@@ -462,6 +459,35 @@ const EcoAbodeCaseStudy = () => {
                     width="100%"
                   >
                     See Kopy
+                  </Button>
+                }
+              />
+            </Col>
+            <Col sm={6} md={4} xxl={3} style={{ marginBottom: "25px" }}>
+              <ProductCard
+                bg="white"
+                align="center"
+                border="1.5px solid #E3E3E3"
+                logo="https://kmg-site-assets.kaycdn.com/kreative-kanvas-logo-color.webp"
+                logoWidth="100%"
+                alt="Kreative Kanvas logo in Neon Green"
+                description="Graphic Design"
+                text="Have a full time design team on standby, without breaking the bank."
+                button={
+                  <Button
+                    href="/kanvas"
+                    fill="#029E82"
+                    textColor="white"
+                    hoverColor="#00DAB3"
+                    radius="3px"
+                    border="1px solid #029E82"
+                    hoverBorder="1px solid #00DAB3"
+                    padding="15px 50px"
+                    raised={false}
+                    grow={false}
+                    width="100%"
+                  >
+                    Learn more
                   </Button>
                 }
               />

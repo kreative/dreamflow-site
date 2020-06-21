@@ -402,6 +402,35 @@ export default function Home() {
                 }
               />
             </Col>
+            <Col sm={6} md={4} xxl={3} style={{ marginBottom: "25px" }}>
+              <ProductCard
+                bg="white"
+                align="center"
+                border="1.5px solid #E3E3E3"
+                logo="https://kmg-site-assets.kaycdn.com/kreative-kanvas-logo-color.webp"
+                logoWidth="100%"
+                alt="Kreative Kanvas logo in Neon Green"
+                description="Graphic Design"
+                text="Have a full time design team on standby, without breaking the bank."
+                button={
+                  <Button
+                    href="/kanvas"
+                    fill="#029E82"
+                    textColor="white"
+                    hoverColor="#00DAB3"
+                    radius="3px"
+                    border="1px solid #029E82"
+                    hoverBorder="1px solid #00DAB3"
+                    padding="15px 50px"
+                    raised={false}
+                    grow={false}
+                    width="100%"
+                  >
+                    Learn more
+                  </Button>
+                }
+              />
+            </Col>
           </Row>
         </Container>
       </Wrapper>

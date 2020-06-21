@@ -16,6 +16,10 @@
   margin-top: 75px;
 }
 
+.kanvas_product {
+  margin-top: 50px;
+}
+
 @media screen and (max-width: 767px) {
   .why_image {
     padding-right: 0px;

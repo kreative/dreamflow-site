@@ -47,7 +47,7 @@ class ProductCard extends Component {
 
           .header {
             margin-top: -10px;
-            font-weight: bold;
+            font-weight: normal;
             font-size: 2em;
           }
 
@@ -63,7 +63,7 @@ class ProductCard extends Component {
             color: #343434;
             font-size: 1.4em;
             font-family: "RadioGrotesk", serif;
-            line-height: 1.1em;
+            line-height: 1.3em;
           }
 
           .button-container {
