@@ -41,13 +41,15 @@ const BlogPostsPage = ({ posts }) => {
       <Navbar />
       <Wrapper bg="white" paddingTop="200px" paddingBottom="200px">
         {posts.map((post) => (
-          <div className="post_wrapper">
+          <div className="post_wrapper" key={post.slug}>
             <BlogPostCard
               label={post.label}
               title={post.title}
               author={post.author}
               date={post.easyPublishingDate}
               description={post.description}
+              slug={post.slug}
+              raiseOnHover={true}
             />
           </div>
         ))}
@@ -55,7 +57,14 @@ const BlogPostsPage = ({ posts }) => {
       <Footer />
       <style jsx>{`
         .post_wrapper {
-          margin-bottom: 25px;
+          margin-bottom: 50px;
+          padding: 0px 12%;
+        }
+
+        @media screen and (max-width: 767px) {
+          .post_wrapper {
+            padding: 0px;
+          }
         }
       `}</style>
     </div>
@@ -73,14 +82,17 @@ export const getStaticProps = async () => {
     const parsedMarkdown = matter(markdownWithData);
     const metadata = parsedMarkdown.data;
     const pd = moment(metadata.publish_date, "MM-DD-YYYY");
-    metadata.easyPublishingDate = `${pd.month()} ${pd.date()}. ${pd.year()}`;
+    metadata.easyPublishingDate = pd.format("dddd, MMMM Do, YYYY");
+    metadata.slug = files[i].replace(".md", "");
+
+    posts.push(metadata);
   }
 
   const sortedPosts = posts.sort((a, b) => {
     const date1 = new Date(a.publish_date);
     const date2 = new Date(b.publish_date);
 
-    return date1 - date2;
+    return date2 - date1;
   });
 
   return {
