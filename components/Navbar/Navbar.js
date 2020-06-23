@@ -118,18 +118,6 @@ class DreamflowNavbar extends Component {
                   <Link href="/">
                     <a className="link">Home</a>
                   </Link>
-                  <Link href="/pageflow">
-                    <a className="link">Pageflow</a>
-                  </Link>
-                  <Link href="/toprank">
-                    <a className="link">TopRank</a>
-                  </Link>
-                  <Link href="/kopy">
-                    <a className="link">Kopy</a>
-                  </Link>
-                  <Link href="/kanvas">
-                    <a className="link">Kanvas</a>
-                  </Link>
                   <Link href="/contact">
                     <a className="link">Contact</a>
                   </Link>
@@ -137,7 +125,18 @@ class DreamflowNavbar extends Component {
                     <a className="link">FAQs</a>
                   </Link>
                   <Link href="/get-started">
-                    <a className="get-started-link link">Get Started</a>
+                    <a className="link">Get Started</a>
+                  </Link>
+                  <Link href="/pageflow">
+                    <a className="pageflow-link link">Pageflow</a>
+                  </Link>
+                  <Link href="/toprank">
+                    <a className="toprank-link link">TopRank</a>
+                  </Link>
+                  <Link href="/kopy">
+                    <a className="kopy-link link">Kopy</a>
+                  </Link>                  <Link href="/kanvas">
+                    <a className="kanvas-link link">Kanvas</a>
                   </Link>
                 </div>
               </Wrapper>
@@ -217,8 +216,36 @@ class DreamflowNavbar extends Component {
             color: #338eee;
           }
 
-          .get-started-link {
-            color: #93c8ff;
+          .pageflow-link {
+            color: #7651E0;
+          }
+
+          .pageflow-link:hover {
+            color: #6135DE;
+          }
+
+          .toprank-link {
+            color: #53AF7A;
+          }
+          
+          .toprank-link:hover {
+            color: #176A3A;
+          }
+
+          .kopy-link {
+            color: #338EEE;
+          }
+
+          .kopy-link:hover {
+            color: #1C5592
+          }
+
+          .kanvas-link {
+            color: #00DAB3;
+          }
+
+          .kanvas-link:hover {
+            color: #029E82;
           }
 
           @media screen and (max-width: 767px) {

@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import Link from "next/link";
 import Wrapper from "../Wrapper/Wrapper";
 import LineLabel from "../LineLabel/LineLabel";
 import Button from "../Button/Button";
@@ -72,10 +73,14 @@ class Footer extends Component {
                 <Col sm={6}>
                   <div className="Base__Right">
                     <span>
-                      <a href="#">Privacy Policy</a>
+                      <Link href="/policies/privacy-policy">
+                        <a>Privacy Policy</a>
+                      </Link>
                     </span>
                     <span>
-                      <a href="#">Terms & Conditions</a>
+                      <Link href="/policies/terms-and-conditions">
+                        <a>Terms & Conditions</a>
+                      </Link>
                     </span>
                   </div>
                 </Col>
