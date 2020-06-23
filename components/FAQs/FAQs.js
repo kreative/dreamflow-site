@@ -49,6 +49,7 @@ class FAQ extends Component {
 
           .answer {
             margin-left: 30px;
+            color: ${this.props.answerColor}; 
           }
         `}</style>
       </div>

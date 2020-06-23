@@ -46,9 +46,15 @@ const FAQsPage = () => {
       <Wrapper bg="white" paddingTop="50px" paddingBottom="100px">
         <div className={styles.faqs_wrapper}>
           <h3 className={styles.label}>General</h3>
-          <FAQs faqs={generalFAQs} />
+          <FAQs
+            faqs={generalFAQs}
+            answerColor="#53504E"
+          />
           <h3 className={styles.label}>Pageflow</h3>
-          <FAQs faqs={pageflowFAQs} />
+          <FAQs
+            faqs={pageflowFAQs}
+            answerColor="#7651E0"
+          />
         </div>
       </Wrapper>
       <Footer />
