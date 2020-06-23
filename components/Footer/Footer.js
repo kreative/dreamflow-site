@@ -26,7 +26,7 @@ class Footer extends Component {
           <Wrapper bg="rgba(0,0,0,0)" paddingBottom="20px" paddingTop="20px">
             <p>
               Have questions? Call our support team 24/7 at{" "}
-              <a href="tel:#">(480) 505-5050</a>
+              <a href="tel:5106735179">(510) 673-5179</a>
             </p>
           </Wrapper>
         </div>
