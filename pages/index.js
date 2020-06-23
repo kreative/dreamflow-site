@@ -40,12 +40,19 @@ export default function Home() {
         ></script>
         <meta content="width=device-width, initial-scale=1" name="viewport" />
       </Head>
-      <Navbar />
-      <Wrapper bg="#F6F6F4" paddingTop="400px" paddingBottom="100px">
+      <Navbar scrollColor="rgba(255,255,255,0.5)" />
+      <div className={styles.hero}>
+        <video autoPlay muted loop className={styles.hero_video}>
+          <source
+            src="https://kmg-site-assets.kaycdn.com/hazmat-cleaning.mp4"
+            type="video/mp4"
+          />
+        </video>
         <h1 style={{ textAlign: "center" }}>
-          Supercharge your marketing and business with Dreamflow.
+          We are on a mission to clean up the digital marketing industry with
+          quality service and fair pricing.
         </h1>
-      </Wrapper>
+      </div>
       <Wrapper bg="white" paddingTop="150px" paddingBottom="150px">
         <Container style={{ padding: "0px" }} fluid>
           <Row gutterWidth={0}>

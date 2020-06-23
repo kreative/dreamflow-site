@@ -45,7 +45,7 @@ export default function Contact() {
                 <div className={styles.contact_detail}>
                   <p className={styles.contact_label}>Email us</p>
                   <a href="mailto:kmp@kreative.im">
-                    <p className={styles.contact_info}>kmp@kreative.im</p>
+                    <p className={styles.contact_info}>dreamflow@kreative.im</p>
                   </a>
                 </div>
                 <div className={styles.contact_detail}>

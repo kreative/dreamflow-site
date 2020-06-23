@@ -1,9 +1,34 @@
+.hero {
+  position: relative;
+  height: 100vh;
+  width: 100%;
+  overflow: hidden;
+  color: white;
+  padding: 15%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero_video {
+  min-width: 100%;
+  min-height: 100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+}
+
+.hero h1 {
+  z-index: 500;
+}
+
 .image {
   width: 100%;
 }
 
 .highlight {
-  background-color: #FAFF1C;
+  background-color: #faff1c;
 }
 
 .explainer {
