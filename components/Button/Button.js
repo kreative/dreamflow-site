@@ -34,7 +34,7 @@ class FantasiaButton extends Component {
             cursor: pointer;
             -moz-box-sizing: border-box;
             -webkit-box-sizing: border-box;
-            font-family: "RadioGrotesk", serif;
+            font-family: "Karla", serif;
             font-weight: normal;
             font-size: 1.1em;
             margin: ${this.props.margin};

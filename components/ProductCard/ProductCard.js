@@ -54,7 +54,7 @@ class ProductCard extends Component {
           .description {
             margin-top: 10px;
             font-weight: normal;
-            font-family: "RadioGrotesk", serif;
+            font-family: "Karla", serif;
             color: #666666;
             font-size: 1.2em;
           }
@@ -62,7 +62,7 @@ class ProductCard extends Component {
           .text {
             color: #343434;
             font-size: 1.4em;
-            font-family: "RadioGrotesk", serif;
+            font-family: "Karla", serif;
             line-height: 1.3em;
           }
 

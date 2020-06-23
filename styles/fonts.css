@@ -1,28 +1,4 @@
-@font-face {
-    font-family: 'RadioGrotesk';
-    src: url('/fonts/RadioGrotesk/RadioGrotesk-Regular.eot');
-    src: url('/fonts/RadioGrotesk/RadioGrotesk-Regular.eot?#iefix') format('embedded-opentype'),
-         url('/fonts/RadioGrotesk/RadioGrotesk-Regular.svg#RadioGrotesk-Regular') format('svg'),
-         url('/fonts/RadioGrotesk/RadioGrotesk-Regular.ttf') format('truetype'),
-         url('/fonts/RadioGrotesk/RadioGrotesk-Regular.woff') format('woff'),
-         url('/fonts/RadioGrotesk/RadioGrotesk-Regular.woff2') format('woff2');
-    font-weight: normal;
-    font-style: normal;
-    font-display: auto;
-}
-
-@font-face {
-    font-family: 'RadioGrotesk';
-    src: url('/fonts/RadioGrotesk/Bold/RadioGrotesk-Bold.eot');
-    src: url('/fonts/RadioGrotesk/Bold/RadioGrotesk-Bold.eot?#iefix') format('embedded-opentype'),
-         url('/fonts/RadioGrotesk/Bold/RadioGrotesk-Bold.svg#RadioGrotesk-Bold') format('svg'),
-         url('/fonts/RadioGrotesk/Bold/RadioGrotesk-Bold.ttf') format('truetype'),
-         url('/fonts/RadioGrotesk/Bold/RadioGrotesk-Bold.woff') format('woff'),
-         url('/fonts/RadioGrotesk/Bold/RadioGrotesk-Bold.woff2') format('woff2');
-    font-weight: bold;
-    font-style: normal;
-    font-display: auto;
-}
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap');
 
 @font-face {
     font-family: 'Romana';

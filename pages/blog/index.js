@@ -1,3 +1,7 @@
+import fs from "fs";
+import path from "path";
+import matter from "gray-matter";
+import moment from "moment";
 import Head from "next/head";
 import Wrapper from "../../components/Wrapper/Wrapper";
 import Navbar from "../../components/Navbar/Navbar";
@@ -35,19 +39,54 @@ const BlogPostsPage = ({ posts }) => {
         <meta content="width=device-width, initial-scale=1" name="viewport" />
       </Head>
       <Navbar />
-      <Wrapper bg="" paddingTop="" paddingBottom="">
-
+      <Wrapper bg="white" paddingTop="200px" paddingBottom="200px">
+        {posts.map((post) => (
+          <div className="post_wrapper">
+            <BlogPostCard
+              label={post.label}
+              title={post.title}
+              author={post.author}
+              date={post.easyPublishingDate}
+              description={post.description}
+            />
+          </div>
+        ))}
       </Wrapper>
       <Footer />
+      <style jsx>{`
+        .post_wrapper {
+          margin-bottom: 25px;
+        }
+      `}</style>
     </div>
   );
 };
 
 export const getStaticProps = async () => {
-  const res = await fetch("http://dreamflow-cms.kreativekws.com/api/posts?version=short");
-  const data = await res.json();
+  const files = fs.readdirSync("posts");
+  let posts = [];
+
+  for (let i = 0; i < files.length; i++) {
+    const markdownWithData = fs
+      .readFileSync(path.join("posts", files[i]))
+      .toString();
+    const parsedMarkdown = matter(markdownWithData);
+    const metadata = parsedMarkdown.data;
+    const pd = moment(metadata.publish_date, "MM-DD-YYYY");
+    metadata.easyPublishingDate = `${pd.month()} ${pd.date()}. ${pd.year()}`;
+  }
+
+  const sortedPosts = posts.sort((a, b) => {
+    const date1 = new Date(a.publish_date);
+    const date2 = new Date(b.publish_date);
+
+    return date1 - date2;
+  });
+
   return {
-    props: { posts: data.data.posts },
+    props: {
+      posts: sortedPosts,
+    },
   };
 };
 

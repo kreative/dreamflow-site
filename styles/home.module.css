@@ -8,7 +8,7 @@
 
 .explainer {
   font-size: 1.8em;
-  font-family: "RadioGrotesk", serif;
+  font-family: "Karla", serif;
   padding-top: 25px;
 }
 
@@ -43,8 +43,9 @@
 }
 
 .problem_reason_text {
-  font-size: 1.4em;
-  font-family: "RadioGrotesk", serif;
+  font-size: 1.3em;
+  font-family: "Karla", serif;
+  font-weight: bold;
 }
 
 @media screen and (max-width: 991px) {
