@@ -12,11 +12,11 @@ class FantasiaButton extends Component {
 
     return (
       <div>
+        <Link href={this.props.href || "#"}>
         <button type={this.props.type} className={buttonClass}>
-          <Link href={this.props.href || "#"}>
             <a>{this.props.children}</a>
-          </Link>
         </button>
+        </Link>
         <style jsx>{`
           a {
             color: ${this.props.textColor};
