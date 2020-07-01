@@ -385,14 +385,14 @@ export default function Home() {
                 bg="white"
                 align="center"
                 border="1.5px solid #E3E3E3"
-                logo="https://kmg-site-assets.kaycdn.com/kopy-color.webp"
-                logoWidth="80%"
-                alt="Kreative Kopy logo in Navy Blue"
+                logo="https://kmg-site-assets.kaycdn.com/pencil-color-logo.webp"
+                logoWidth="90%"
+                alt="Kreative Pencil logo in Navy Blue"
                 description="Copywriting"
                 text="Affordable and attention grabbing copywriting for your blog posts or webpages."
                 button={
                   <Button
-                    href="/kopy"
+                    href="/pencil"
                     fill="#1C5592"
                     textColor="white"
                     hoverColor="#338EEE"

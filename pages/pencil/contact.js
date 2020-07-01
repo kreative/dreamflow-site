@@ -5,13 +5,13 @@ import Footer from "../../components/Footer/Footer";
 import LineLabel from "../../components/LineLabel/LineLabel";
 import ContactCard from "../../components/ContactCard/ContactCard";
 import { Container, Row, Col } from "react-grid-system";
-import styles from "../../styles/kopy/contact.module.css";
+import styles from "../../styles/pencil/contact.module.css";
 
-export default function ContactKopy() {
+export default function ContactPencil() {
   return (
     <div>
       <Head>
-        <title>Get in touch | Kopy | Dreamflow</title>
+        <title>Get in touch | Pencil | Dreamflow</title>
         <link rel="apple-touch-icon" sizes="180x180" href="/favicons/general/apple-touch-icon.png"></link>
         <link rel="icon" type="image/png" sizes="32x32" href="/favicons/general/favicon-32x32.png"></link>
         <link rel="icon" type="image/png" sizes="16x16" href="/favicons/general/favicon-16x16.png"></link>
@@ -37,7 +37,7 @@ export default function ContactKopy() {
             </Col>
             <Col md={6} lg={4}>
               <div className={styles.contactcard_wrapper}>
-                <ContactCard buttonText="Contact Kopy" name="contact-kopy" />
+                <ContactCard buttonText="Contact Pencil" name="contact-Pencil" />
               </div>
             </Col>
           </Row>

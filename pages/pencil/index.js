@@ -9,13 +9,13 @@ import Wave from "../../components/Wave/Wave";
 import ProductCard from "../../components/ProductCard/ProductCard";
 import { Container, Row, Col } from "react-grid-system";
 import { faPencilAlt, faEnvelopeOpenText, faEnvelope } from "@fortawesome/free-solid-svg-icons";
-import styles from "../../styles/kopy/home.module.css";
+import styles from "../../styles/pencil/home.module.css";
 
-export default function Kopy() {
+export default function Pencil() {
   return (
     <div>
       <Head>
-        <title>Kopy | Kreative Dreamflow</title>
+        <title>Pencil | Kreative Dreamflow</title>
         <link
           rel="apple-touch-icon"
           sizes="180x180"
@@ -47,7 +47,7 @@ export default function Kopy() {
           <Container style={{ padding: "0px" }} fluid>
             <Row gutterWidth={0}>
               <Col md={9}>
-                <LineLabel color="black">WELCOME TO Kopy</LineLabel>
+                <LineLabel color="black">WELCOME TO Pencil</LineLabel>
                 <h1>Affordable copywriting you can count on</h1>
               </Col>
               <Col sm={3}></Col>
@@ -84,14 +84,14 @@ export default function Kopy() {
                 flexDirection: "column",
               }}
             >
-              <LineLabel color="blac">WHY KOPY?</LineLabel>
+              <LineLabel color="blac">WHY Pencil?</LineLabel>
               <h2>
                 Stop wasting your time trying to come up with the perfect word.
-                Let Kopy do that for you.
+                Let Pencil do that for you.
               </h2>
               <p>
                 Get back to doing what you do best - providing fantasic products
-                and services to your customers. When you use Kopy, you can say
+                and services to your customers. When you use Pencil, you can say
                 goodbye to countless hours staring at a blank screen, and say
                 hello to compelling copywriting that sells.
               </p>
@@ -106,17 +106,17 @@ export default function Kopy() {
               textAlign: "center",
             }}
           >
-            <h2>Kopy Products</h2>
+            <h2>Pencil Products</h2>
           </div>
           <Container style={{ padding: "0px" }} fluid>
             <Row gutterWidth={25}>
-              <Col md={6} className={styles.kopy_product}>
+              <Col md={6} className={styles.Pencil_product}>
                 <ProductCard
                   bg="white"
                   border="1.5px solid #E3E3E3"
-                  header="Kopy Blog Posts"
+                  header="Pencil Blog Posts"
                   text={`Extensive blog post writing service for whatever topic your heart desires. 
-                        Blog posts come with revisions and are professionally written by the Kopy team.`}
+                        Blog posts come with revisions and are professionally written by the Pencil team.`}
                   button={
                     <Button
                       fill="#1C5592"
@@ -135,14 +135,14 @@ export default function Kopy() {
                   }
                 />
               </Col>
-              <Col md={6} className={styles.kopy_product}>
+              <Col md={6} className={styles.Pencil_product}>
                 <ProductCard
                   bg="white"
                   border="1.5px solid #E3E3E3"
-                  header="Kopy Webpages"
+                  header="Pencil Webpages"
                   text={`Transform your website into a powerful sales tool,
-                        overnight with Kopy Webpages. Our team uses proven sales 
-                        copy techniques to enhance your copy. Kopy Webpages is
+                        overnight with Pencil Webpages. Our team uses proven sales 
+                        copy techniques to enhance your copy. Pencil Webpages is
                         perfect for landing pages and sales oriented business
                         pages.`}
                   button={
@@ -177,9 +177,9 @@ export default function Kopy() {
       </Wave>
       <Wrapper bg="#338EEE" paddingBottom="100px" paddingTop="200px">
         <div className="process-header">
-          <LineLabel color="white">THE KOPY PROCESS</LineLabel>
+          <LineLabel color="white">THE Pencil PROCESS</LineLabel>
           <h2 style={{ color: "white" }}>
-            Kopy takes care of everything. You just tell us what to write.
+            Pencil takes care of everything. You just tell us what to write.
           </h2>
         </div>
         <Container style={{ padding: "0px" }} fluid>
@@ -190,7 +190,7 @@ export default function Kopy() {
                 iconColor="white"
                 headerColor="white"
                 textColor="white"
-                header="You send an inquiry outlining what you need from Kopy"
+                header="You send an inquiry outlining what you need from Pencil"
                 align="left"
                 iconAlign="flex-start"
                 size="3x"
@@ -243,10 +243,10 @@ export default function Kopy() {
               }}
             >
               <LineLabel color="black">TAKE ACTION</LineLabel>
-              <h2>Up your copywriting game today with Kopy</h2>
+              <h2>Up your copywriting game today with Pencil</h2>
               <div style={{ marginTop: "35px" }}>
                 <Button
-                  href="/kopy/contact"
+                  href="/Pencil/contact"
                   fill="black"
                   textColor="white"
                   radius="3px"
@@ -255,7 +255,7 @@ export default function Kopy() {
                   raised={true}
                   grow={true}
                 >
-                  Get started with Kopy
+                  Get started with Pencil
                 </Button>
               </div>
             </Col>
