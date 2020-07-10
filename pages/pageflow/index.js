@@ -425,7 +425,7 @@ export default function PageflowHome() {
               <div className={styles.pledge_badge_wrapper}>
                 <img
                   className={styles.pledge_badge}
-                  src="https://kmg-site-assets.kaycdn.com/the-pageflow-pledge-badge.webp"
+                  src="https://kmg-site-assets.kaycdn.com/the-pageflow-pledge.png"
                   alt="The Pageflow Pledge Badge in Black"
                 />
               </div>
