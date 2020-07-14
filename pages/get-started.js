@@ -10,9 +10,23 @@ export default function GetStarted() {
     <div>
       <Head>
         <title>Get Started | Kreative Dreamflow</title>
-        <link rel="apple-touch-icon" sizes="180x180" href="/favicons/general/apple-touch-icon.png"></link>
-        <link rel="icon" type="image/png" sizes="32x32" href="/favicons/general/favicon-32x32.png"></link>
-        <link rel="icon" type="image/png" sizes="16x16" href="/favicons/general/favicon-16x16.png"></link>
+        <link
+          rel="apple-touch-icon"
+          sizes="180x180"
+          href="/favicons/general/apple-touch-icon.png"
+        ></link>
+        <link
+          rel="icon"
+          type="image/png"
+          sizes="32x32"
+          href="/favicons/general/favicon-32x32.png"
+        ></link>
+        <link
+          rel="icon"
+          type="image/png"
+          sizes="16x16"
+          href="/favicons/general/favicon-16x16.png"
+        ></link>
         <link rel="manifest" href="/favicons/general/site.webmanifest"></link>
         <script
           type="text/javascript"
@@ -135,7 +149,7 @@ export default function GetStarted() {
                 </Col>
               </Row>
               <Row gutterWidth={25}>
-                <Col  md={4} lg={6}>
+                <Col md={4} lg={6}>
                   <h2 className="title">Project Details</h2>
                 </Col>
                 <Col md={8} lg={6}>
@@ -268,7 +282,7 @@ export default function GetStarted() {
                         required
                       ></textarea>
                     </div>
-                    <div style={{paddingTop:"25px"}}>
+                    <div style={{ paddingTop: "25px" }}>
                       <Button
                         type="submit"
                         fill="#001AFF"
