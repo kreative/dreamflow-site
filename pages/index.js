@@ -5,6 +5,7 @@ import Wrapper from "../components/Wrapper/Wrapper";
 import Button from "../components/Button/Button";
 import LineLabel from "../components/LineLabel/LineLabel";
 import ProductCard from "../components/ProductCard/ProductCard";
+import ApproachCard from "../components/ApproachCard/ApproachCard";
 import { Container, Row, Col } from "react-grid-system";
 import { faTimes, faArrowDown } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -19,41 +20,35 @@ export default function Home() {
           rel="apple-touch-icon"
           sizes="180x180"
           href="/favicons/general/apple-touch-icon.png"
-        ></link>
+        />
         <link
           rel="icon"
           type="image/png"
           sizes="32x32"
           href="/favicons/general/favicon-32x32.png"
-        ></link>
+        />
         <link
           rel="icon"
           type="image/png"
           sizes="16x16"
           href="/favicons/general/favicon-16x16.png"
-        ></link>
-        <link rel="manifest" href="/favicons/general/site.webmanifest"></link>
+        />
+        <link rel="manifest" href="/favicons/general/site.webmanifest"/>
         <script
           type="text/javascript"
           src="https://kit.fontawesome.com/abadd7b058.js"
           crossOrigin="anonymous"
-        ></script>
+        />
         <meta content="width=device-width, initial-scale=1" name="viewport" />
       </Head>
       <Navbar scrollColor="rgba(255,255,255,0.5)" />
-      <div className={styles.hero}>
-        <video autoPlay muted loop className={styles.hero_video}>
-          <source
-            src="https://kmg-site-assets.kaycdn.com/hazmat-cleaning.mp4"
-            type="video/mp4"
-          />
-        </video>
-        <h1 style={{ textAlign: "center" }}>
-          We are on a mission to clean up the digital marketing industry with
+      <Wrapper bg="#FFECD0" paddingTop="60vh" paddingBottom={"10vh"}>
+        <h1 className={styles.hero_text}>
+          We are on a mission to transform the digital marketing industry with
           quality service and fair pricing.
         </h1>
-      </div>
-      <Wrapper bg="white" paddingTop="150px" paddingBottom="150px">
+      </Wrapper>
+      <Wrapper bg="white" paddingTop="250px" paddingBottom="250px">
         <Container style={{ padding: "0px" }} fluid>
           <Row gutterWidth={0}>
             <Col
@@ -194,116 +189,148 @@ export default function Home() {
           </Row>
         </Container>
       </Wrapper>
-      <Wrapper bg="white" paddingTop="150px" paddingBottom="150px">
-        <Container style={{ padding: "0px" }} fluid>
-          <Row gutterWidth={0}>
-            <Col
-              lg={4}
-              style={{
-                justifyContent: "center",
-                display: "flex",
-                flexDirection: "column",
-              }}
-            >
-              <div className={styles.problem_image_wrapper}>
-                <video className={styles.image} autoPlay loop muted playsInline>
-                  <source
-                    src="https://kmg-site-assets.kaycdn.com/burning-money.webm"
-                    type="video/webm"
-                  />
-                  <source
-                    src="https://kmg-site-assets.kaycdn.com/burning-money.mp4"
-                    type="video/mp4"
-                  />
-                </video>
-              </div>
+      <Wrapper bg="white" paddingBottom="250px" paddingTop="250px">
+        <div style={{marginBottom: "75px"}}>
+          <LineLabel color={"black"}>OUR APPROACH</LineLabel>
+          <h2>The Kreative Dreamflow Partner Experience&trade;</h2>
+          <p>
+            The business environment & landscape shifts rapidlly everday, making it harder
+            and harder for businesses to stay ahead of the curve. Kreative Dreamflow’s
+            expertise and tools by your side will help your business better compete with the
+            competition.
+          </p>
+        </div>
+        <div>
+          <Container style={{padding:"0px"}}>
+            <Row gutterWidth={15}>
+              <Col sm={4} style={{marginBottom: "25px"}}>
+                <ApproachCard
+                  image={"https://kmg-site-assets.kaycdn.com/money_coins_ikon@4x.png"}
+                  imageAlt={"Money Coins Kreative Ikon"}
+                  name={<span>Migrating Risks<br />and Better ROI</span>}
+                  description={`
+                    Our reasearch shows that getting a
+                    positive return on investment is a
+                    top priority for businesses. Our
+                    approach focuses on using data
+                    and small batch testing to reduce
+                    costs, speedier response and drive
+                    our decision making while keeping
+                    big picture in mind. This allows you
+                    to easily predict the project size/
+                    budget, realize the importance of
+                    the project for your organization,
+                    and allocate your resources in an
+                    effective way.
+                  `}
+                  bgColor={"#F6F6F4"}
+                  headerColor={"black"}
+                  textColor={"#53504E"}
+                />
+              </Col>
+              <Col sm={4} style={{marginBottom: "25px"}}>
+                <ApproachCard
+                  image={"https://kmg-site-assets.kaycdn.com/Magnifying_Glass_Ikon@4x.png"}
+                  imageAlt={"Magnifying Glass Ikon"}
+                  name={<span>Focused Segment <br /> Marketing</span>}
+                  description={`
+                    When you sell to everyone, you sell
+                    to no one, and our research has
+                    shown that more focused
+                    personalized approach to various
+                    market segments bring better
+                    results. We work with your
+                    leadership team to break down
+                    your market into specialized
+                    customer segments which helps in
+                    targeted marketing, better result
+                    tracking and improved ROI.
+                    Customers feel connected with
+                    you and build loyalty.
+                  `}
+                  bgColor={"#F6F6F4"}
+                  headerColor={"black"}
+                  textColor={"#53504E"}
+                />
+              </Col>
+              <Col sm={4} style={{marginBottom: "25px"}}>
+                <ApproachCard
+                  image={"https://kmg-site-assets.kaycdn.com/Space_Shuttle_Ikon@4x.png"}
+                  imageAlt={"Space Shuttle Ikon"}
+                  name={<span>Enhanced Brand <br /> Value</span>}
+                  description={`
+                    We work in partnership with our
+                    clients rather in silos with constant
+                    feedback and communication. The
+                    Kreative Dreamflow Partner
+                    Experience, based on frequent
+                    communication helps bring
+                    innovation to the front. This
+                    amplifies your brand message
+                    through effective website design,
+                    campaign, and inclusive channel
+                    marketing. Our approach of brand
+                    and customer first helps build
+                    brand loyalty.
+                  `}
+                  bgColor={"#F6F6F4"}
+                  headerColor={"black"}
+                  textColor={"#53504E"}
+                />
+              </Col>
+            </Row>
+          </Container>
+        </div>
+      </Wrapper>
+      <Wrapper bg="#FFF2DF" paddingBottom="200px" paddingTop="200px">
+        <div style={{ textAlign: "center" }}>
+          <h1 className={styles.testimonial_text}>
+            "Kreative Dreamflow did a fantastic job understanding our market and our competition to deliver a
+            website that was <span className={styles.highlight}>better designed, faster, and more customer-centric.
+            </span>{" "} They even integrated an email collection feature to help us stay in touch with customers
+            year round, something we hadn't thought of until their team brought it up to us!"
+          </h1>
+          <p>Frank Rossi, B4TheLeague</p>
+        </div>
+      </Wrapper>
+      <Wrapper bg={"white"} paddingBottom={"250px"} paddingTop={"250px"}>
+        <div style={{paddingBottom: "75px"}}>
+          <LineLabel color={"black"}>DISTINGUISHING FACTORS</LineLabel>
+          <h2>Work better with The Dreamflow Way&trade;</h2>
+        </div>
+        <Container style={{padding: "0px"}}>
+          <Row gutterWidth={25}>
+            <Col sm={4} style={{marginBottom: "25px"}}>
+              <h3 style={{fontWeight: "bold"}}>Brand & Research First</h3>
+              <p className={styles.factor_desc}>
+                Research based data, brand based
+                design and customer focused UX is our
+                bread and butter. This approach brings
+                innovation & brand value to the forefront.
+              </p>
             </Col>
-            <Col
-              lg={8}
-              style={{
-                justifyContent: "center",
-                display: "flex",
-                flexDirection: "column",
-              }}
-            >
-              <div className={styles.understanding_content}>
-                <LineLabel color="black">DON'T STRESS</LineLabel>
-                <h2>
-                  We get it. Online marketing can feel like burning money.
-                </h2>
-                <p>We here it all the time from our clients...</p>
-
-                <Container style={{ padding: "0px" }} fluid>
-                  <Row gutterWidth={10} className={styles.reason}>
-                    <Col xs={1} style={{ textAlign: "center" }}>
-                      <FontAwesomeIcon icon={faTimes} size="sm" />
-                    </Col>
-                    <Col xs={11}>
-                      <span className={styles.problem_reason_text}>
-                        You scrape together a DIY website, looking to save
-                        money, but no one is finding your website online. And
-                        when people do, no one is downloading your free offers,
-                        let alone booking a meeting with you.
-                      </span>
-                    </Col>
-                  </Row>
-                  <Row gutterWidth={10} className={styles.reason}>
-                    <Col xs={1} style={{ textAlign: "center" }}>
-                      <FontAwesomeIcon icon={faTimes} size="sm" />
-                    </Col>
-                    <Col xs={11}>
-                      <span className={styles.problem_reason_text}>
-                        You spend hours every week searching Google for answers
-                        to tech problems, only to pay some new developer to fix
-                        them.
-                      </span>
-                    </Col>
-                  </Row>
-                  <Row gutterWidth={10} className={styles.reason}>
-                    <Col xs={1} style={{ textAlign: "center" }}>
-                      <FontAwesomeIcon icon={faTimes} size="sm" />
-                    </Col>
-                    <Col xs={11}>
-                      <span className={styles.problem_reason_text}>
-                        You want to implement new features, like ecommerce,
-                        online bookings, popup offers, email newsletter
-                        signups... but don't have the time to do it yourself.
-                      </span>
-                    </Col>
-                  </Row>
-                  <Row gutterWidth={10} className={styles.reason}>
-                    <Col xs={1} style={{ textAlign: "center" }}>
-                      <FontAwesomeIcon icon={faTimes} size="sm" />
-                    </Col>
-                    <Col xs={11}>
-                      <span className={styles.problem_reason_text}>
-                        You decide to finally look for an outside agency to
-                        help, but quit your search when you hear their prices.
-                      </span>
-                    </Col>
-                  </Row>
-                </Container>
-              </div>
+            <Col sm={4} style={{marginBottom: "25px"}}>
+              <h3 style={{fontWeight: "bold"}}>Inclusive Partnership</h3>
+              <p className={styles.factor_desc}>
+                We work hand-in-glove with our clients
+                during every stage of our engagement.
+                We strive for openess and inclusiveness
+                in our working together.
+              </p>
+            </Col>
+            <Col sm={4} style={{marginBottom: "25px"}}>
+              <h3 style={{fontWeight: "bold"}}>Rapid Go-To-Market</h3>
+              <p className={styles.factor_desc}>
+                Markets are moving quicker than ever,
+                and so do we. Our segmented approach
+                and frequent updates enables “rapid goto
+                market” response.
+              </p>
             </Col>
           </Row>
         </Container>
       </Wrapper>
-      <Wrapper bg="#004893" paddingBottom="100px" paddingTop="100px">
-        <div style={{ textAlign: "center", color: "white" }}>
-          <LineLabel color="white">HINT HINT:</LineLabel>
-          <p className={styles.explainer}>
-            It's not your fault, running a business is hard enough. Trying to
-            conquer online marketing on top of that is a recipe for disaster.
-          </p>
-          <FontAwesomeIcon icon={faArrowDown} size="3x" />
-          <h3>
-            You just need a solution that knows how to naviagte the digital
-            marketing world.
-          </h3>
-          <h3>Dreamflow is that solution.</h3>
-        </div>
-      </Wrapper>
-      <Wrapper bg="#F8F5F2" paddingBottom="200px" paddingTop="200px">
+      <Wrapper bg="#E7F2FD" paddingBottom="200px" paddingTop="200px">
         <div style={{ textAlign: "center" }}>
           <h1 className={styles.testimonial_text}>
             "The team over at Dreamflow wasted no time in working with us and
@@ -319,7 +346,7 @@ export default function Home() {
       </Wrapper>
       <Wrapper bg="white" paddingTop="150px" paddingBottom="150px">
         <div className={styles.header} style={{ paddingBottom: "35px" }}>
-          <h2 style={{ textAlign: "center" }}>Dreamflow Products</h2>
+          <h2 style={{ textAlign: "center" }}>Dreamflow Services</h2>
         </div>
         <Container style={{ padding: "0px" }} fluid>
           <Row gutterWidth={25}>
@@ -329,10 +356,10 @@ export default function Home() {
                 align="center"
                 border="1.5px solid #E3E3E3"
                 raised={true}
-                logo="https://kmg-site-assets.kaycdn.com/toprank-color.png"
+                logo="https://kmg-site-assets.kaycdn.com/toprank-logo-new.png"
                 alt="Kreative TopRank logo in Green"
                 description="Search engine optimization"
-                text="With TopRank, we garuntee higher search rankings for your website or your money back."
+                text="The topRank package helps achieve higher search rankings for your website."
                 button={
                   <Button
                     href="/toprank"
@@ -360,7 +387,7 @@ export default function Home() {
                 logo="https://kmg-site-assets.kaycdn.com/pageflow-color.png"
                 alt="Kreative Pageflow logo in Purple"
                 description="Website design"
-                text="Our sales focused approach turns a potential website cost into an investment that makes you money."
+                text="Our sales & brand focused approach enables the client to better compete in the market."
                 button={
                   <Button
                     href="/pageflow"
@@ -418,7 +445,7 @@ export default function Home() {
                 logoWidth="100%"
                 alt="Kreative Kanvas logo in Neon Green"
                 description="Graphic Design"
-                text="Have a full time design team on standby, without breaking the bank."
+                text="Full-service design team ready to help with branding and intuitive UX at nominal additional charges."
                 button={
                   <Button
                     href="/kanvas"

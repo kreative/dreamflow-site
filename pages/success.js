@@ -2,7 +2,6 @@ import Head from "next/head";
 import Navbar from "../components/Navbar/Navbar";
 import Wrapper from "../components/Wrapper/Wrapper";
 import Footer from "../components/Footer/Footer";
-import Button from "../components/Button/Button";
 
 const SuccessPage = () => {
   return (

@@ -38,7 +38,7 @@ class Footer extends Component {
                 <Col sm={6}>
                   <img
                     className="logo"
-                    src="https://kmg-site-assets.kaycdn.com/kreative-dreamflow-black.png"
+                    src="https://kmg-site-assets.kaycdn.com/dreamflow-logo-black-new.png"
                     alt="Kreative Dreamflow logo in all black"
                   />
                   <Button

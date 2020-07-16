@@ -370,7 +370,7 @@ const EcoAbodeCaseStudy = () => {
         </Container>
       </Wrapper>
       <Wrapper bg="white" paddingBottom="200px" paddingTop="200px">
-        <LineLabel color="#32746D">Products Used</LineLabel>
+        <LineLabel color="#32746D">Services Used</LineLabel>
         <h2 style={{ paddingBottom: "50px" }}>
           Our vast selection of products allowed Eco Abode to get everything
           they needed with one partner, Dreamflow.
@@ -383,7 +383,7 @@ const EcoAbodeCaseStudy = () => {
                 align="center"
                 border="1.5px solid #E3E3E3"
                 raised={true}
-                logo="https://kmg-site-assets.kaycdn.com/toprank-color.webp"
+                logo="https://kmg-site-assets.kaycdn.com/toprank-logo-new.png"
                 alt="Kreative TopRank logo in Green"
                 description="Search engine optimization"
                 text="Eco Abode used TopRank to optimize their newly built website for higher search rankings."

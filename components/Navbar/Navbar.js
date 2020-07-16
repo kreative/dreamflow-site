@@ -37,7 +37,7 @@ class DreamflowNavbar extends Component {
                   <a href="/">
                     <img
                       className="logo"
-                      src="https://kmg-site-assets.kaycdn.com/kreative-dreamflow-black.png"
+                      src="https://kmg-site-assets.kaycdn.com/dreamflow-logo-black-new.png"
                       alt="Kreative Dreamflow Logo in all black"
                     />
                   </a>

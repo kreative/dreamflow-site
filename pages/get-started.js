@@ -14,25 +14,25 @@ export default function GetStarted() {
           rel="apple-touch-icon"
           sizes="180x180"
           href="/favicons/general/apple-touch-icon.png"
-        ></link>
+        />
         <link
           rel="icon"
           type="image/png"
           sizes="32x32"
           href="/favicons/general/favicon-32x32.png"
-        ></link>
+        />
         <link
           rel="icon"
           type="image/png"
           sizes="16x16"
           href="/favicons/general/favicon-16x16.png"
-        ></link>
-        <link rel="manifest" href="/favicons/general/site.webmanifest"></link>
+        />
+        <link rel="manifest" href="/favicons/general/site.webmanifest"/>
         <script
           type="text/javascript"
           src="https://kit.fontawesome.com/abadd7b058.js"
           crossOrigin="anonymous"
-        ></script>
+        />
         <meta content="width=device-width, initial-scale=1" name="viewport" />
       </Head>
       <Navbar />
@@ -143,7 +143,7 @@ export default function GetStarted() {
                         placeholder="Our business does ..."
                         rows="5"
                         required
-                      ></textarea>
+                      />
                     </div>
                   </div>
                 </Col>
@@ -228,7 +228,7 @@ export default function GetStarted() {
                         placeholder="We are looking for ..."
                         rows="5"
                         required
-                      ></textarea>
+                      />
                     </div>
                     <p className="f-label2">What is your estimated budget?</p>
                     <div className="f-checkbox-group">
@@ -280,7 +280,7 @@ export default function GetStarted() {
                         placeholder="Notes ..."
                         rows="5"
                         required
-                      ></textarea>
+                      />
                     </div>
                     <div style={{ paddingTop: "25px" }}>
                       <Button
@@ -332,7 +332,7 @@ export default function GetStarted() {
 
         .f-label {
           display: inline-block;
-          font-family: "Bifocals", serif;
+          font-family: "BasierCircle", sans-serif;
           font-size: 1.2em;
           margin-bottom: 10px;
           padding-left: 3px;
@@ -362,7 +362,7 @@ export default function GetStarted() {
 
         .f-checkbox-group label {
           font-size: 1.2em;
-          font-family: "Bifocals", serif;
+          font-family: "BasierCircle", sans-serif;
           cursor: pointer;
         }
 

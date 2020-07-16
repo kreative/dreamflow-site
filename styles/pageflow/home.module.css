@@ -43,8 +43,9 @@
 
 .testimonial_text {
   line-height: 1.2em;
-  font-size: 4em;
-  font-weight: normal;
+  font-size: 3.5em;
+  font-weight: bold;
+  font-style: italic;
 }
 
 .testimonial_customer {

@@ -1,25 +1,6 @@
-.hero {
-  position: relative;
-  height: 100vh;
-  width: 100%;
-  overflow: hidden;
-  color: white;
-  padding: 15%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.hero_video {
-  min-width: 100%;
-  min-height: 100%;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translateX(-50%) translateY(-50%);
-}
-
-.hero h1 {
+.hero_text {
+  text-align: left;
+  font-size: 3.2em;
   z-index: 500;
 }
 
@@ -28,7 +9,7 @@
 }
 
 .highlight {
-  background-color: #faff1c;
+  background-color: #fff382;
 }
 
 .explainer {
@@ -71,6 +52,10 @@
   font-size: 1.3em;
   font-family: "Karla", serif;
   font-weight: bold;
+}
+
+.testimonial_text {
+  font-style: italic;
 }
 
 @media screen and (max-width: 991px) {
