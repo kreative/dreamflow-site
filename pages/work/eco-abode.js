@@ -372,7 +372,7 @@ const EcoAbodeCaseStudy = () => {
       <Wrapper bg="white" paddingBottom="200px" paddingTop="200px">
         <LineLabel color="#32746D">Services Used</LineLabel>
         <h2 style={{ paddingBottom: "50px" }}>
-          Our vast selection of products allowed Eco Abode to get everything
+          Our vast selection of services allowed Eco Abode to get everything
           they needed with one partner, Dreamflow.
         </h2>
         <Container style={{ padding: "0px" }} fluid>
@@ -386,7 +386,7 @@ const EcoAbodeCaseStudy = () => {
                 logo="https://kmg-site-assets.kaycdn.com/toprank-logo-new.png"
                 alt="Kreative TopRank logo in Green"
                 description="Search engine optimization"
-                text="Eco Abode used TopRank to optimize their newly built website for higher search rankings."
+                text="The topRank package helps achieve higher search rankings for your website."
                 button={
                   <Button
                     href="/toprank"
@@ -411,10 +411,10 @@ const EcoAbodeCaseStudy = () => {
                 bg="white"
                 align="center"
                 border="1.5px solid #E3E3E3"
-                logo="https://kmg-site-assets.kaycdn.com/pageflow-color.webp"
+                logo="https://kmg-site-assets.kaycdn.com/pageflow-color.png"
                 alt="Kreative Pageflow logo in Purple"
                 description="Website design"
-                text="Pageflow was the main service used by Eco Abode to launch their new website and brand."
+                text="Our sales & brand focused approach enables the client to better compete in the market."
                 button={
                   <Button
                     href="/pageflow"
@@ -439,14 +439,14 @@ const EcoAbodeCaseStudy = () => {
                 bg="white"
                 align="center"
                 border="1.5px solid #E3E3E3"
-                logo="https://kmg-site-assets.kaycdn.com/kopy-color.webp"
+                logo="https://kmg-site-assets.kaycdn.com/pencil-color.png"
                 logoWidth="80%"
                 alt="Kreative Kopy logo in Navy Blue"
                 description="Copywriting"
-                text="Eco Abode used Kopy to get professional, sales-driven copywriting for their newly built website without having to do it themselves"
+                text="Affordable and attention grabbing copywriting for your blog posts or webpages."
                 button={
                   <Button
-                    href="/kopy"
+                    href="/pencil"
                     fill="#1C5592"
                     textColor="white"
                     hoverColor="#338EEE"
@@ -458,7 +458,7 @@ const EcoAbodeCaseStudy = () => {
                     grow={false}
                     width="100%"
                   >
-                    See Kopy
+                    Learn more
                   </Button>
                 }
               />
@@ -468,11 +468,11 @@ const EcoAbodeCaseStudy = () => {
                 bg="white"
                 align="center"
                 border="1.5px solid #E3E3E3"
-                logo="https://kmg-site-assets.kaycdn.com/kreative-kanvas-logo-color.webp"
+                logo="https://kmg-site-assets.kaycdn.com/kreative-kanvas-color.png"
                 logoWidth="100%"
                 alt="Kreative Kanvas logo in Neon Green"
                 description="Graphic Design"
-                text="Have a full time design team on standby, without breaking the bank."
+                text="Full-service design team ready to help with branding and intuitive UX at nominal additional charges."
                 button={
                   <Button
                     href="/kanvas"
@@ -490,6 +490,35 @@ const EcoAbodeCaseStudy = () => {
                     Learn more
                   </Button>
                 }
+              />
+            </Col>
+            <Col sm={6} md={4} xxl={3} style={{ marginBottom: "25px" }}>
+              <ProductCard
+                  bg="white"
+                  align="center"
+                  border="1.5px solid #E3E3E3"
+                  logo="https://kmg-site-assets.kaycdn.com/kreative-channels-logo.png"
+                  logoWidth="100%"
+                  alt="Kreative Channels logo in Light Blue"
+                  description="Omnipresence Marketing"
+                  text="Full service marketing service to put your brand in front of consumers, wherever they are."
+                  button={
+                    <Button
+                        href="/channels"
+                        fill="#3BA1FF"
+                        textColor="white"
+                        hoverColor="#A0D2FF"
+                        radius="3px"
+                        border="1px solid #3BA1FF"
+                        hoverBorder="1px solid #A0D2FF"
+                        padding="15px 50px"
+                        raised={false}
+                        grow={false}
+                        width="100%"
+                    >
+                      Learn more
+                    </Button>
+                  }
               />
             </Col>
           </Row>

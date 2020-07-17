@@ -19,25 +19,25 @@ export default function Kanvas() {
           rel="apple-touch-icon"
           sizes="180x180"
           href="/favicons/general/apple-touch-icon.png"
-        ></link>
+        />
         <link
           rel="icon"
           type="image/png"
           sizes="32x32"
           href="/favicons/general/favicon-32x32.png"
-        ></link>
+        />
         <link
           rel="icon"
           type="image/png"
           sizes="16x16"
           href="/favicons/general/favicon-16x16.png"
-        ></link>
-        <link rel="manifest" href="/favicons/general/site.webmanifest"></link>
+        />
+        <link rel="manifest" href="/favicons/general/site.webmanifest"/>
         <script
           type="text/javascript"
           src="https://kit.fontawesome.com/abadd7b058.js"
           crossOrigin="anonymous"
-        ></script>
+        />
         <meta content="width=device-width, initial-scale=1" name="viewport" />
       </Head>
       <Navbar />
@@ -45,7 +45,7 @@ export default function Kanvas() {
         <Container style={{ padding: "0px" }} fluid>
           <Row gutterWidth={0}>
             <Col md={9}>
-              <LineLabel color="black">WELCOME TO KANVAS</LineLabel>
+              <LineLabel color="black">KREATIVE KANVAS</LineLabel>
               <h1>Affordable graphic design, on demand.</h1>
             </Col>
           </Row>
@@ -97,7 +97,7 @@ export default function Kanvas() {
           d="M421.9,6.5c22.6-2.5,51.5,0.4,75.5,5.3c23.6,4.9,70.9,23.5,100.5,35.7c75.8,32.2,133.7,44.5,192.6,49.7
         c23.6,2.1,48.7,3.5,103.4-2.5c54.7-6,106.2-25.6,106.2-25.6V0H0v30.3c0,0,72,32.6,158.4,30.5c39.2-0.7,92.8-6.7,134-22.4
         c21.2-8.1,52.2-18.2,79.7-24.2C399.3,7.9,411.6,7.5,421.9,6.5z"
-        ></path>
+        />
       </Wave>
       <div className="products-section">
         <Wrapper bg="rgba(0,0,0,0)" paddingTop="150px" paddingBottom="150px">
@@ -106,7 +106,7 @@ export default function Kanvas() {
               textAlign: "center",
             }}
           >
-            <h2>Kanvas Products</h2>
+            <h2>Kreative Kanvas Services</h2>
           </div>
           <Container style={{ padding: "0px" }} fluid>
             <Row gutterWidth={25}>
@@ -119,6 +119,7 @@ export default function Kanvas() {
                   button={
                     <Button
                       fill="#029E82"
+                      href={"/get-started"}
                       textColor="white"
                       hoverColor="#00DAB3"
                       radius="3px"
@@ -143,6 +144,7 @@ export default function Kanvas() {
                   button={
                     <Button
                       fill="#029E82"
+                      href={"/get-started"}
                       textColor="white"
                       hoverColor="#00DAB3"
                       radius="3px"
@@ -184,7 +186,7 @@ export default function Kanvas() {
           <h2>Don't waste your money hiring your own designers</h2>
           <div style={{ marginTop: "35px" }}>
             <Button
-              href="/kanvas/contact"
+              href="/get-started"
               fill="black"
               textColor="white"
               radius="3px"

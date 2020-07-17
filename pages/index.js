@@ -465,6 +465,35 @@ export default function Home() {
                 }
               />
             </Col>
+            <Col sm={6} md={4} xxl={3} style={{ marginBottom: "25px" }}>
+              <ProductCard
+                  bg="white"
+                  align="center"
+                  border="1.5px solid #E3E3E3"
+                  logo="https://kmg-site-assets.kaycdn.com/kreative-channels-logo.png"
+                  logoWidth="100%"
+                  alt="Kreative Channels logo in Light Blue"
+                  description="Omnipresence Marketing"
+                  text="Full service marketing service to put your brand in front of consumers, wherever they are."
+                  button={
+                    <Button
+                        href="/channels"
+                        fill="#3BA1FF"
+                        textColor="white"
+                        hoverColor="#A0D2FF"
+                        radius="3px"
+                        border="1px solid #3BA1FF"
+                        hoverBorder="1px solid #A0D2FF"
+                        padding="15px 50px"
+                        raised={false}
+                        grow={false}
+                        width="100%"
+                    >
+                      Learn more
+                    </Button>
+                  }
+              />
+            </Col>
           </Row>
         </Container>
       </Wrapper>

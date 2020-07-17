@@ -23,25 +23,25 @@ export default function PageflowHome() {
           rel="apple-touch-icon"
           sizes="180x180"
           href="/favicons/pageflow/apple-touch-icon.png"
-        ></link>
+        />
         <link
           rel="icon"
           type="image/png"
           sizes="32x32"
           href="/favicons/pageflow/favicon-32x32.png"
-        ></link>
+        />
         <link
           rel="icon"
           type="image/png"
           sizes="16x16"
           href="/favicons/pageflow/favicon-16x16.png"
-        ></link>
-        <link rel="manifest" href="/favicons/pageflow/site.webmanifest"></link>
+        />
+        <link rel="manifest" href="/favicons/pageflow/site.webmanifest"/>
         <script
           type="text/javascript"
           src="https://kit.fontawesome.com/abadd7b058.js"
           crossOrigin="anonymous"
-        ></script>
+        />
         <meta content="width=device-width, initial-scale=1" name="viewport" />
       </Head>
       <Navbar />
@@ -56,7 +56,7 @@ export default function PageflowHome() {
                 flexDirection: "column",
               }}
             >
-              <LineLabel color="black">PAGEFLOW</LineLabel>
+              <LineLabel color="black">KREATIVE PAGEFLOW</LineLabel>
               <h1 style={{ paddingBottom: "20px" }}>
                 Customers aren't just going to fall into your lap
               </h1>

@@ -23,25 +23,25 @@ export default function TopRank() {
           rel="apple-touch-icon"
           sizes="180x180"
           href="/favicons/general/apple-touch-icon.png"
-        ></link>
+        />
         <link
           rel="icon"
           type="image/png"
           sizes="32x32"
           href="/favicons/general/favicon-32x32.png"
-        ></link>
+        />
         <link
           rel="icon"
           type="image/png"
           sizes="16x16"
           href="/favicons/general/favicon-16x16.png"
-        ></link>
+        />
         <link rel="manifest" href="/favicons/general/site.webmanifest"></link>
         <script
           type="text/javascript"
           src="https://kit.fontawesome.com/abadd7b058.js"
           crossOrigin="anonymous"
-        ></script>
+        />
         <meta content="width=device-width, initial-scale=1" name="viewport" />
       </Head>
       <Navbar />
@@ -50,7 +50,7 @@ export default function TopRank() {
           <Container style={{ padding: "0px" }} fluid>
             <Row gutterWidth={0}>
               <Col md={9}>
-                <LineLabel color="black">WELCOME TO TOPRANK</LineLabel>
+                <LineLabel color="black">KREATIVE TOPRANK</LineLabel>
                 <h1>Higher search engine rankings, or your money back.</h1>
               </Col>
             </Row>
@@ -109,7 +109,7 @@ export default function TopRank() {
           d="M421.9,6.5c22.6-2.5,51.5,0.4,75.5,5.3c23.6,4.9,70.9,23.5,100.5,35.7c75.8,32.2,133.7,44.5,192.6,49.7
         c23.6,2.1,48.7,3.5,103.4-2.5c54.7-6,106.2-25.6,106.2-25.6V0H0v30.3c0,0,72,32.6,158.4,30.5c39.2-0.7,92.8-6.7,134-22.4
         c21.2-8.1,52.2-18.2,79.7-24.2C399.3,7.9,411.6,7.5,421.9,6.5z"
-        ></path>
+        />
       </Wave>
       <Wrapper bg="#7FE8AB" paddingBottom="150px" paddingTop="250px">
         <div className="process-header">
@@ -164,7 +164,7 @@ export default function TopRank() {
           d="M421.9,6.5c22.6-2.5,51.5,0.4,75.5,5.3c23.6,4.9,70.9,23.5,100.5,35.7c75.8,32.2,133.7,44.5,192.6,49.7
         c23.6,2.1,48.7,3.5,103.4-2.5c54.7-6,106.2-25.6,106.2-25.6V0H0v30.3c0,0,72,32.6,158.4,30.5c39.2-0.7,92.8-6.7,134-22.4
         c21.2-8.1,52.2-18.2,79.7-24.2C399.3,7.9,411.6,7.5,421.9,6.5z"
-        ></path>
+        />
       </Wave>
       <Wrapper bg="white" paddingTop="250px" paddingBottom="150px">
         <Container style={{ padding: "0px" }} fluid>
@@ -181,7 +181,7 @@ export default function TopRank() {
               <h2>Don't waste more money paying for traffic</h2>
               <div style={{ marginTop: "35px" }}>
                 <Button
-                  href="/toprank/contact"
+                  href="/get-started"
                   fill="black"
                   textColor="white"
                   radius="3px"

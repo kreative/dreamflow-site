@@ -188,11 +188,11 @@ export default function GetStarted() {
                       <div className="f-checkbox">
                         <input
                           type="checkbox"
-                          id="kopy"
-                          name="kopy"
-                          value="kopy"
+                          id="pencil"
+                          name="pencil"
+                          value="pencil"
                         />
-                        <label htmlFor="kopy">Kopy</label>
+                        <label htmlFor="kopy">Pencil</label>
                       </div>
                       <div className="f-checkbox">
                         <input
@@ -206,11 +206,20 @@ export default function GetStarted() {
                       <div className="f-checkbox">
                         <input
                           type="checkbox"
-                          id="postage"
-                          name="postage"
-                          value="postage"
+                          id="channels"
+                          name="channels"
+                          value="channels"
                         />
-                        <label htmlFor="postage">Postage</label>
+                        <label htmlFor="postage">Channels</label>
+                      </div>
+                      <div className="f-checkbox">
+                        <input
+                          type="checkbox"
+                          id="litehost"
+                          name="litehost"
+                          value="litehost"
+                        />
+                        <label htmlFor="litehost">LiteHost</label>
                       </div>
                     </div>
                     <div className="f-field">
