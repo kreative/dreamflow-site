@@ -44,15 +44,8 @@ export default function Pencil() {
       <Navbar />
       <div className="splash" style={{ backgroundColor: "#D1E8FF" }}>
         <Wrapper bg="rgba(0,0,0,0)" paddingTop="300px" paddingBottom="100px">
-          <Container style={{ padding: "0px" }} fluid>
-            <Row gutterWidth={0}>
-              <Col md={9}>
-                <LineLabel color="black">KREATIVE PENCIL</LineLabel>
-                <h1>Affordable copywriting you can count on</h1>
-              </Col>
-              <Col sm={3}></Col>
-            </Row>
-          </Container>
+          <LineLabel color="black">KREATIVE PENCIL</LineLabel>
+          <h1>Affordable copywriting your brand can count on</h1>
         </Wrapper>
       </div>
       <Wrapper bg="white" paddingBottom="150px" paddingTop="150px">

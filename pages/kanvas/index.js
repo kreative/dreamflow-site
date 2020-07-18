@@ -42,14 +42,8 @@ export default function Kanvas() {
       </Head>
       <Navbar />
       <Wrapper bg="#A7FAEB" paddingTop="300px" paddingBottom="100px">
-        <Container style={{ padding: "0px" }} fluid>
-          <Row gutterWidth={0}>
-            <Col md={9}>
-              <LineLabel color="black">KREATIVE KANVAS</LineLabel>
-              <h1>Affordable graphic design, on demand.</h1>
-            </Col>
-          </Row>
-        </Container>
+        <LineLabel color="black">KREATIVE KANVAS</LineLabel>
+        <h1>Affordable graphic design for whatever you need, without breaking the bank.</h1>
       </Wrapper>
       <Wrapper bg="#F2FFFD" paddingBottom="150px" paddingTop="150px">
         <Container style={{ padding: "0px" }} fluid>

@@ -47,14 +47,8 @@ export default function TopRank() {
       <Navbar />
       <div className="splash" style={{ backgroundColor: "#E5FFF0" }}>
         <Wrapper bg="rgba(0,0,0,0)" paddingTop="300px" paddingBottom="100px">
-          <Container style={{ padding: "0px" }} fluid>
-            <Row gutterWidth={0}>
-              <Col md={9}>
-                <LineLabel color="black">KREATIVE TOPRANK</LineLabel>
-                <h1>Higher search engine rankings, or your money back.</h1>
-              </Col>
-            </Row>
-          </Container>
+          <LineLabel color="black">KREATIVE TOPRANK</LineLabel>
+          <h1>Achieve higher search engine rankings with The Kreative Dreamflow Partner Experience&trade;</h1>
         </Wrapper>
       </div>
       <Wrapper bg="white" paddingBottom="150px" paddingTop="150px">
