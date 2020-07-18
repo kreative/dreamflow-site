@@ -4,9 +4,8 @@ import Navbar from "../../components/Navbar/Navbar";
 import Footer from "../../components/Footer/Footer";
 import LineLabel from "../../components/LineLabel/LineLabel";
 import Button from "../../components/Button/Button";
-import Wave from "../../components/Wave/Wave";
 import {Container, Row, Col} from "react-grid-system";
-import styles from "../../styles/pageflow/home.module.css";
+import styles from "../../styles/channels/home.module.css";
 
 export default function ChannelsHome() {
   return (
@@ -161,77 +160,56 @@ export default function ChannelsHome() {
         </Container>
       </Wrapper>
       <Wrapper bg="white" paddingTop="250px" paddingBottom="150px">
-        <div>
-          <LineLabel color="black">HOW IT WORKS</LineLabel>
-          <h2>You're a part of every step, without having to do the work</h2>
-          <p>
-            We’ve perfected the Pageflow Design and Development Process
-            (DevDesign) to only require a few hours of your time each week, so
-            you can get back to running your business.
-          </p>
-        </div>
-      </Wrapper>
-      <Wave color="white">
-        <path
-          className="wave-fill"
-          d="M421.9,6.5c22.6-2.5,51.5,0.4,75.5,5.3c23.6,4.9,70.9,23.5,100.5,35.7c75.8,32.2,133.7,44.5,192.6,49.7
-        c23.6,2.1,48.7,3.5,103.4-2.5c54.7-6,106.2-25.6,106.2-25.6V0H0v30.3c0,0,72,32.6,158.4,30.5c39.2-0.7,92.8-6.7,134-22.4
-        c21.2-8.1,52.2-18.2,79.7-24.2C399.3,7.9,411.6,7.5,421.9,6.5z"
-        />
-      </Wave>
-      <Wrapper bg="#6135DE" paddingBottom="150px" paddingTop="250px">
-        <Container style={{padding: "0px"}}>
-          <Row gutterWidth={0}>
-            <Col
-              md={6}
-              style={{
-                justifyContent: "center",
-                display: "flex",
-                flexDirection: "column",
-              }}
-            >
-              <video className={styles.image2} autoPlay loop muted playsInline>
-                <source
-                  src="https://kmg-site-assets.kaycdn.com/new-plant-growing.webm"
-                  type="video/webm"
-                />
-                <source
-                  src="https://kmg-site-assets.kaycdn.com/new-plant-growing.mp4"
-                  type="video/mp4"
-                />
-              </video>
+        <Container style={{ padding:"0px" }}>
+          <Row nogutter>
+            <Col sm={6}>
+              <img
+                src={"https://kmg-site-assets.kaycdn.com/go-team.gif"}
+                className={styles.image2}
+                alt={"Awesome Go Team GIF"}
+              />
             </Col>
             <Col
-              md={6}
+              sm={6}
               style={{
                 justifyContent: "center",
                 display: "flex",
                 flexDirection: "column",
               }}
             >
-              <div style={{color: "white"}}>
-                <h1 className={styles.testimonial_text}>
-                  "Even though we worked with their Chicago team remotely, they
-                  never kept us out of the loop and always responded when we
-                  reached out. They turned our website cost into an investment."
-                </h1>
-                <p className={styles.testimonial_customer}>
-                  Byron Stanger, Founder at Phoenix Media
-                </p>
-              </div>
+              <LineLabel color="black">STAY IN THE LOOP</LineLabel>
+              <h2>Your team and vision are a part of every decision</h2>
+              <p>
+                We stay true to The Kreative Dreamflow Partner Experience&trade; by keeping your key decision makers informed about campaigns, channels, new research and more. With Kreative Channels, it's like just like having an in-house marketing team, but without the heavy costs.
+              </p>
+              <Button
+                href="/get-started"
+                fill="black"
+                textColor="white"
+                radius="3px"
+                border="1px solid black"
+                padding="15px 50px"
+                raised={false}
+                grow={true}
+              >
+                Get Started
+              </Button>
             </Col>
           </Row>
         </Container>
       </Wrapper>
-      <Wave color="#6135DE">
-        <path
-          d="M421.9,6.5c22.6-2.5,51.5,0.4,75.5,5.3c23.6,4.9,70.9,23.5,100.5,35.7c75.8,32.2,133.7,44.5,192.6,49.7
-        c23.6,2.1,48.7,3.5,103.4-2.5c54.7-6,106.2-25.6,106.2-25.6V0H0v30.3c0,0,72,32.6,158.4,30.5c39.2-0.7,92.8-6.7,134-22.4
-        c21.2-8.1,52.2-18.2,79.7-24.2C399.3,7.9,411.6,7.5,421.9,6.5z"
-        />
-      </Wave>
+      <Wrapper bg="#0075FF" paddingBottom="200px" paddingTop="200px">
+        <div style={{color: "white", textAlign: "center"}}>
+          <h1 className={styles.testimonial_text}>
+            "Since Kreative Dreamflow did a fantastic job with our website, we decided to work with their Channels service and extend our reach across as many platforms as we can!"
+          </h1>
+          <p className={styles.testimonial_customer}>
+            Pankaj Gupta, Eco Abode
+          </p>
+        </div>
+      </Wrapper>
       <Wrapper bg="white" paddingBottom="150px" paddingTop="250px">
-        <LineLabel color="black">WORK WITH PAGEFLOW</LineLabel>
+        <LineLabel color="black">WORK WITH CHANNELS</LineLabel>
         <h2 style={{fontWeight: "bold", paddingBottom: "25px"}}>
           It's simple, easy, and free to get started
         </h2>
