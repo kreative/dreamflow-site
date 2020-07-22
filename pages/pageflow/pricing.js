@@ -17,25 +17,25 @@ export default function PageflowPricing() {
           rel="apple-touch-icon"
           sizes="180x180"
           href="/favicons/pageflow/apple-touch-icon.png"
-        ></link>
+        />
         <link
           rel="icon"
           type="image/png"
           sizes="32x32"
           href="/favicons/pageflow/favicon-32x32.png"
-        ></link>
+        />
         <link
           rel="icon"
           type="image/png"
           sizes="16x16"
           href="/favicons/pageflow/favicon-16x16.png"
-        ></link>
-        <link rel="manifest" href="/favicons/pageflow/site.webmanifest"></link>
+        />
+        <link rel="manifest" href="/favicons/pageflow/site.webmanifest"/>
         <script
           type="text/javascript"
           src="https://kit.fontawesome.com/abadd7b058.js"
           crossOrigin="anonymous"
-        ></script>
+        />
         <meta content="width=device-width, initial-scale=1" name="viewport" />
       </Head>
       <Navbar />
@@ -73,14 +73,14 @@ export default function PageflowPricing() {
         </Container>
       </Wrapper>
       <Wrapper bg="white" paddingBottom="50px" paddingTop="50px">
-        <AlertBlock
-          bg="#F6F6F4"
-          headerColor="black"
-          labelColor="black"
-          label="SIGNUP BONUS !!!"
-          header="New customers get a free logo, business card design, and 100 premium business cards​"
-          align="center"
-        />
+        {/*<AlertBlock*/}
+        {/*  bg="#F6F6F4"*/}
+        {/*  headerColor="black"*/}
+        {/*  labelColor="black"*/}
+        {/*  label="SIGNUP BONUS !!!"*/}
+        {/*  header="New customers get a free logo, business card design, and 100 premium business cards​"*/}
+        {/*  align="center"*/}
+        {/*/>*/}
       </Wrapper>
       <Wrapper bg="white" paddingBottom="100px" paddingTop="0px">
         <Container style={{ padding: "0px" }} fluid>
@@ -90,7 +90,7 @@ export default function PageflowPricing() {
                 primary={false}
                 color="#7651E0"
                 name="Coffee Room"
-                price="$4999"
+                price="Contact Us"
                 buttonText="Get Started"
                 buttonTextColor="#7651E0"
                 buttonRadius="3px"
@@ -99,7 +99,7 @@ export default function PageflowPricing() {
                 image="https://kmg-site-assets.kaycdn.com/coffee_cup_ikon.jpg"
                 imageAlt="Coffe Cup Ikon by Kreative Fantasia Design"
                 includedItems={[
-                  "5 Pageflow Pages",
+                  "7 Pageflow Pages",
                   "Mobile Responsive Site",
                   "Site Security & SSL",
                   "Web Analytics Setup",
@@ -120,7 +120,7 @@ export default function PageflowPricing() {
                 primary={true}
                 color="#7651E0"
                 name="Deluxe"
-                price="$1999"
+                price="starting at $1999"
                 buttonText="Get Started"
                 buttonTextColor="white"
                 buttonRadius="3px"
@@ -134,11 +134,11 @@ export default function PageflowPricing() {
                   "Site Security & SSL",
                   "Web Analytics Setup",
                   "SEO Setup through TopRank",
+                ]}
+                missingItems={[
                   "Content Management System",
                   "Dynamic Forms",
                   "Copywriting through Kopy",
-                ]}
-                missingItems={[
                   "Multilingual",
                   "Payment Gateway Integration",
                   "Custom Function Development",
@@ -151,7 +151,7 @@ export default function PageflowPricing() {
                 primary={false}
                 color="#7651E0"
                 name="Deluxe"
-                price="$997"
+                price="starting at $997"
                 buttonText="Get Started"
                 buttonTextColor="#7651E0"
                 buttonRadius="3px"
@@ -160,12 +160,12 @@ export default function PageflowPricing() {
                 image="https://kmg-site-assets.kaycdn.com/art_tools_ikon.jpg"
                 imageAlt="Art Tools Ikon by Kreative Fantasia Design"
                 includedItems={[
-                  "5 Pageflow Pages",
+                  "3 Pageflow Pages",
                   "Mobile Responsive Site",
                   "Site Security & SSL",
-                  "Web Analytics Setup",
                 ]}
                 missingItems={[
+                  "Web Analytics Setup",
                   "SEO Setup through TopRank",
                   "Content Management System",
                   "Dynamic Forms",
