@@ -11,7 +11,7 @@ export default function ContactChannels() {
     return (
         <div>
             <Head>
-                <title>Get in touch | Kanvas | Dreamflow</title>
+                <title>Get in touch | Channels | Dreamflow</title>
                 <link rel="apple-touch-icon" sizes="180x180" href="/favicons/general/apple-touch-icon.png"/>
                 <link rel="icon" type="image/png" sizes="32x32" href="/favicons/general/favicon-32x32.png"/>
                 <link rel="icon" type="image/png" sizes="16x16" href="/favicons/general/favicon-16x16.png"/>
