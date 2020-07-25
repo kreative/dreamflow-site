@@ -142,6 +142,9 @@ class DreamflowNavbar extends Component {
                   <Link href="/channels">
                     <a className="link">Channels</a>
                   </Link>
+                  <Link href="/sitecare">
+                    <a className="link">SiteCare</a>
+                  </Link>
                 </div>
               </Wrapper>
             </div>

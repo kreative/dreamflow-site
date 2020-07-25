@@ -42,12 +42,14 @@ export default function Home() {
         <meta content="width=device-width, initial-scale=1" name="viewport" />
       </Head>
       <Navbar scrollColor="rgba(255,255,255,0.5)" />
-      <Wrapper bg="#FFECD0" paddingTop="60vh" paddingBottom={"10vh"}>
-        <h1 className={styles.hero_text}>
-          We are on a mission to transform the digital marketing industry with
-          quality service and fair pricing.
-        </h1>
-      </Wrapper>
+      <div className={styles.hero}>
+        <Wrapper bg={"rgba(0,0,0,0)"}>
+          <h1 className={styles.hero_text}>
+            We are on a mission to transform the digital marketing industry with
+            quality service and fair pricing so your business can take off
+          </h1>
+        </Wrapper>
+      </div>
       <Wrapper bg="white" paddingTop="250px" paddingBottom="250px">
         <Container style={{ padding: "0px" }} fluid>
           <Row gutterWidth={0}>
@@ -492,6 +494,35 @@ export default function Home() {
                       Learn more
                     </Button>
                   }
+              />
+            </Col>
+            <Col sm={6} md={4} xxl={3} style={{ marginBottom: "25px" }}>
+              <ProductCard
+                bg="white"
+                align="center"
+                border="1.5px solid #E3E3E3"
+                logo="https://kmg-site-assets.kaycdn.com/sitecare-logo-color@4x.png"
+                logoWidth="90%"
+                alt="Kreative SiteCare logo in Color"
+                description="Worry-free Site Maintenance"
+                text="Easy to understand plans for site fixes and upgrades to take the stress off your team."
+                button={
+                  <Button
+                    href="/sitecare"
+                    fill="#FB01E6"
+                    textColor="white"
+                    hoverColor="#FF73F3"
+                    radius="3px"
+                    border="1px solid #FB01E6"
+                    hoverBorder="1px solid #FF73F3"
+                    padding="15px 50px"
+                    raised={false}
+                    grow={false}
+                    width="100%"
+                  >
+                    Learn more
+                  </Button>
+                }
               />
             </Col>
           </Row>

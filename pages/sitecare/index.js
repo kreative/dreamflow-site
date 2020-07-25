@@ -5,13 +5,13 @@ import Footer from "../../components/Footer/Footer";
 import LineLabel from "../../components/LineLabel/LineLabel";
 import Button from "../../components/Button/Button";
 import {Container, Row, Col} from "react-grid-system";
-import styles from "../../styles/channels/home.module.css";
+import styles from "../../styles/sitecare/home.module.css";
 
-export default function ChannelsHome() {
+export default function SiteCareHome() {
   return (
     <div>
       <Head>
-        <title>Channels | Kreative Dreamflow</title>
+        <title>SiteCare | Kreative Dreamflow</title>
         <link
           rel="apple-touch-icon"
           sizes="180x180"
@@ -38,7 +38,7 @@ export default function ChannelsHome() {
         <meta content="width=device-width, initial-scale=1" name="viewport"/>
       </Head>
       <Navbar/>
-      <Wrapper bg="#3BA1FF" paddingBottom="100px" paddingTop="200px">
+      <Wrapper bg="#FFBDF9" paddingBottom="100px" paddingTop="200px">
         <Container style={{padding: "0px"}}>
           <Row gutterWidth={0}>
             <Col
@@ -49,13 +49,13 @@ export default function ChannelsHome() {
                 flexDirection: "column",
               }}
             >
-              <LineLabel color="black">KREATIVE CHANNELS</LineLabel>
+              <LineLabel color="black">KREATIVE SITECARE</LineLabel>
               <h1 style={{paddingBottom: "20px"}}>
-                Your customers are everywhere, and you should be too.
+                You've got a business to run. Let us worry about your website maintenance.
               </h1>
               <p>
-                Kreative Channels is here to help. With our full service marketing services to put your brand in front
-                of consumers, wherever they are.
+                With Kreative SiteCare's site maintenance plans by your side, you can get back to what's important:
+                building meaningful experiences for your customers.
               </p>
               <Button
                 href="/get-started"
@@ -79,7 +79,7 @@ export default function ChannelsHome() {
               }}
             >
               <img
-                src={"https://kmg-site-assets.kaycdn.com/earth.gif"}
+                src={"https://kmg-site-assets.kaycdn.com/popeye-repairs.gif"}
                 className={styles.image1}
                 alt={"Earth rotating GIF"}
               />
@@ -92,22 +92,27 @@ export default function ChannelsHome() {
           <LineLabel color="black">THE PROBLEM</LineLabel>
           <Row gutterWidth={0} style={{marginTop: "20px"}}>
             <Col md={6}>
-              <h2>It's not enough to
-                <span style={{fontStyle: "italic"}}> just </span>
-                have a website​</h2>
+              <h2>
+                Maintaining your website is imporant, but takes up too much valuable time
+              ​</h2>
             </Col>
             <Col md={6}>
               <p className={styles.padded_text}>
-                As more and more digital mediums grow, like podcasts, YouTube, social media, blogs, news publications, etc, so does the amount of work needed to keep up and stay ahead of the competition. We understand how difficult it can be to keep track of trends, conduct user and market research, and create effective content for every single platform.
+                Almost every website needs fixing, upgrades, content changes, or just support. Without any of these,
+                your customers maybe forced to use an old, unsecure, and difficult website hurting your brand and your
+                wallet. And trying to take care of your website on your own can take up time that can be better spent
+                on your business and customers.
                 <br/>
                 <br/>
-                But with Kreative Channels by your side, you gain a full service team by your side to take care of the hard work for you. We work directly with your leadership team to identify the most productive and profitable marketing channels and layout campaigns to help you find the perfect custoemrs on them.
+                However, with Kreative SiteCare, all of those worries disappear. You can a partner you can trust, that
+                will take care of your website, and in turn take care of your customers. Don't lose another customer or
+                sale because of a problem on your website!
               </p>
             </Col>
           </Row>
         </Container>
       </Wrapper>
-      <Wrapper bg="#AFECFF" paddingTop="150px" paddingBottom="150px">
+      <Wrapper bg="#FFA3A3" paddingTop="150px" paddingBottom="150px">
         <Container style={{padding: "0px"}} fluid>
           <Row gutterWidth={0}>
             <Col
@@ -119,12 +124,14 @@ export default function ChannelsHome() {
               }}
             >
               <div className={styles.solution_content}>
-                <LineLabel color="black">BE EVERYWHERE</LineLabel>
+                <LineLabel color="white">BE EVERYWHERE</LineLabel>
                 <h2>
-                  Omnipresence doesn't have to be a burden on your business anymore
+                  SiteCare comes with each Pageflow website by default.
                 </h2>
                 <p>
-                  Kreative Channels make it easy to reach your customers, wherever they are. And with our unique delivery model, The Kreative Dreamflow Partner Experience&trade;, working with Kreative Channels is quick, focused, and a net positive experience.
+                  SiteCare makes it effortless to keep your website in tip-top shape and each website project through
+                  our Kreative Pageflow service comes with SiteCare hours by default, with the flexibility to add more
+                  in the future. Nobody else makes site maintenance this easy.
                 </p>
                 <Button
                   href="/pageflow/pricing"
@@ -150,7 +157,7 @@ export default function ChannelsHome() {
             >
               <div className={styles.solution_image_wrapper}>
                 <img
-                  src={"https://kmg-site-assets.kaycdn.com/easy-button-cropped.gif"}
+                  src={"https://kmg-site-assets.kaycdn.com/painless.gif"}
                   className={styles.image}
                   alt={"Easy button being pressed GIF"}
                 />
@@ -159,57 +166,9 @@ export default function ChannelsHome() {
           </Row>
         </Container>
       </Wrapper>
-      <Wrapper bg="white" paddingTop="250px" paddingBottom="150px">
-        <Container style={{ padding:"0px" }}>
-          <Row nogutter>
-            <Col sm={6}>
-              <img
-                src={"https://kmg-site-assets.kaycdn.com/go-team.gif"}
-                className={styles.image2}
-                alt={"Awesome Go Team GIF"}
-              />
-            </Col>
-            <Col
-              sm={6}
-              style={{
-                justifyContent: "center",
-                display: "flex",
-                flexDirection: "column",
-              }}
-            >
-              <LineLabel color="black">STAY IN THE LOOP</LineLabel>
-              <h2>Your team and vision are a part of every decision</h2>
-              <p>
-                We stay true to The Kreative Dreamflow Partner Experience&trade; by keeping your key decision makers informed about campaigns, channels, new research and more. With Kreative Channels, it's like just like having an in-house marketing team, but without the heavy costs.
-              </p>
-              <Button
-                href="/get-started"
-                fill="black"
-                textColor="white"
-                radius="3px"
-                border="1px solid black"
-                padding="15px 50px"
-                raised={false}
-                grow={true}
-              >
-                Get Started
-              </Button>
-            </Col>
-          </Row>
-        </Container>
-      </Wrapper>
-      <Wrapper bg="#0075FF" paddingBottom="200px" paddingTop="200px">
-        <div style={{color: "white", textAlign: "center"}}>
-          <h1 className={styles.testimonial_text}>
-            "Since Kreative Dreamflow did a fantastic job with our website, we decided to work with their Channels service and extend our reach across as many platforms as we can!"
-          </h1>
-          <p className={styles.testimonial_customer}>
-            Pankaj Gupta, Eco Abode
-          </p>
-        </div>
-      </Wrapper>
+
       <Wrapper bg="white" paddingBottom="150px" paddingTop="250px">
-        <LineLabel color="black">WORK WITH CHANNELS</LineLabel>
+        <LineLabel color="black">GET SITECARE</LineLabel>
         <h2 style={{fontWeight: "bold", paddingBottom: "25px"}}>
           It's simple, easy, and free to get started
         </h2>

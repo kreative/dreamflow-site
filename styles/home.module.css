@@ -1,7 +1,16 @@
+.hero {
+  padding-top: 70vh;
+  padding-bottom: 10vh;
+  background-image: url("https://kmg-site-assets.kaycdn.com/transform-cropper.gif");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
 .hero_text {
   text-align: left;
   font-size: 3.2em;
   z-index: 500;
+  color: white;
 }
 
 .image {
