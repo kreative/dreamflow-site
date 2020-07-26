@@ -7,20 +7,18 @@ class CaseStudyCard extends React.Component {
   render() {
     return (
       <div>
-        <div className="card hvr-shrink">
+        <div className="card hvr-sink">
           <h3 className="title">{this.props.title}</h3>
           <div className="readMoreCont">
             <Link href={this.props.link}>
               <a className="readMore">
                 <span>Read more </span>
-                <FontAwesomeIcon icon={faArrowRight} />
+                <FontAwesomeIcon icon={faArrowRight} size={"sm"} />
               </a>
             </Link>
           </div>
         </div>
         <style jsx>{`
-          /* Our CSS */
-
           .card {
             margin: 50px 0px;
             padding: 350px 250px 100px 50px;
@@ -38,7 +36,7 @@ class CaseStudyCard extends React.Component {
           }
 
           .title {
-            font-family: "Karla", sans-serif;
+            font-family: "BasierCircle", sans-serif;
             font-weight: bold;
             color: ${this.props.textColor};
           }
@@ -54,11 +52,13 @@ class CaseStudyCard extends React.Component {
 
           .readMore span {
             margin-right: 10px;
+            font-family: "BasierCircle", sans-serif;
+            font-weight: 600;
           }
 
           /* Third Party CSS */
 
-          .hvr-shrink {
+          .hvr-sink {
             display: inline-block;
             vertical-align: middle;
             -webkit-transform: perspective(1px) translateZ(0);
@@ -68,13 +68,12 @@ class CaseStudyCard extends React.Component {
             transition-duration: 0.3s;
             -webkit-transition-property: transform;
             transition-property: transform;
+            -webkit-transition-timing-function: ease-out;
+            transition-timing-function: ease-out;
           }
-
-          .hvr-shrink:hover,
-          .hvr-shrink:focus,
-          .hvr-shrink:active {
-            -webkit-transform: scale(0.9);
-            transform: scale(0.9);
+          .hvr-sink:hover, .hvr-sink:focus, .hvr-sink:active {
+            -webkit-transform: translateY(8px);
+            transform: translateY(8px);
           }
         `}</style>
       </div>

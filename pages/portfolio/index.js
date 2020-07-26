@@ -16,35 +16,34 @@ const WorkPage = () => {
           rel="apple-touch-icon"
           sizes="180x180"
           href="/favicons/general/apple-touch-icon.png"
-        ></link>
+        />
         <link
           rel="icon"
           type="image/png"
           sizes="32x32"
           href="/favicons/general/favicon-32x32.png"
-        ></link>
+        />
         <link
           rel="icon"
           type="image/png"
           sizes="16x16"
           href="/favicons/general/favicon-16x16.png"
-        ></link>
-        <link rel="manifest" href="/favicons/general/site.webmanifest"></link>
+        />
+        <link rel="manifest" href="/favicons/general/site.webmanifest"/>
         <script
           type="text/javascript"
           src="https://kit.fontawesome.com/abadd7b058.js"
           crossOrigin="anonymous"
-        ></script>
+        />
         <meta content="width=device-width, initial-scale=1" name="viewport" />
       </Head>
       <Navbar />
-      <Wrapper bg="#FFECD0" paddingTop="250px" paddingBottom="50px">
+      <Wrapper bg="#FFECD0" paddingTop="30vh" paddingBottom="10vh">
         <LineLabel color="black">OUR WORK</LineLabel>
-				<h1>Discover what we've done for our clients</h1>
+        <h1>Discover what we've done for our clients</h1>
       </Wrapper>
-			<Wrapper bg="white" paddingTop="150px" paddingBottom="150px">
+      <Wrapper bg="white" paddingTop="100px" paddingBottom="50px">
         <div>
-          <h2>Website Design Case Studies</h2>
           <CaseStudyCard
             title="A rental property management company creating the easiest experience for new home owners"
             textColor="white"
@@ -53,10 +52,11 @@ const WorkPage = () => {
             link="/work/eco-abode"
           />
         </div>
-        <h2 className={styles.title}>Logo Gallery</h2>
+      </Wrapper>
+      <Wrapper bg={"white"} paddingTop={"50px"} paddingBottom={"100px"}>
         <DreamflowGallery />
-			</Wrapper>
-			<Footer />
+      </Wrapper>
+      <Footer />
     </div>
   );
 };
