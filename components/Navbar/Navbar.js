@@ -119,10 +119,10 @@ class DreamflowNavbar extends Component {
                     <a className="link">Home</a>
                   </Link>
                   <Link href="/contact">
-                    <a className="link">Contact</a>
+                    <a className="link">Contact Us</a>
                   </Link>
-                  <Link href="/faqs">
-                    <a className="link">FAQs</a>
+                  <Link href="/services">
+                    <a className="link">Services</a>
                   </Link>
                   <Link href="/portfolio">
                     <a className="link">Portfolio</a>
@@ -130,23 +130,8 @@ class DreamflowNavbar extends Component {
                   <Link href="/get-started">
                     <a className="link">Get Started</a>
                   </Link>
-                  <Link href="/pageflow">
-                    <a className="link">Pageflow</a>
-                  </Link>
-                  <Link href="/toprank">
-                    <a className="link">TopRank</a>
-                  </Link>
-                  <Link href="/pencil">
-                    <a className="link">Pencil</a>
-                  </Link>
-                  <Link href="/kanvas">
-                    <a className="link">Kanvas</a>
-                  </Link>
-                  <Link href="/channels">
-                    <a className="link">Channels</a>
-                  </Link>
-                  <Link href="/sitecare">
-                    <a className="link">SiteCare</a>
+                  <Link href="/faqs">
+                    <a className="link">FAQs</a>
                   </Link>
                 </div>
               </Wrapper>
