@@ -124,6 +124,9 @@ class DreamflowNavbar extends Component {
                   <Link href="/faqs">
                     <a className="link">FAQs</a>
                   </Link>
+                  <Link href="/portfolio">
+                    <a className="link">Portfolio</a>
+                  </Link>
                   <Link href="/get-started">
                     <a className="link">Get Started</a>
                   </Link>
