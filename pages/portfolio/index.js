@@ -42,7 +42,7 @@ const WorkPage = () => {
         <LineLabel color="black">OUR WORK</LineLabel>
         <h1>Discover what we've done for our clients</h1>
       </Wrapper>
-      <Wrapper bg="white" paddingTop="100px" paddingBottom="50px">
+      <Wrapper bg="white" paddingTop="50px" paddingBottom="50px">
         <div>
           <CaseStudyCard
             title="A rental property management company creating the easiest experience for new home owners"
