@@ -39,7 +39,7 @@ const WorkPage = () => {
       </Head>
       <Navbar />
       <Wrapper bg="#FFECD0" paddingTop="30vh" paddingBottom="10vh">
-        <LineLabel color="black">OUR WORK</LineLabel>
+        <LineLabel color="black">DREAMFLOW PORTFOLIO</LineLabel>
         <h1>Discover what we've done for our clients</h1>
       </Wrapper>
       <Wrapper bg="white" paddingTop="50px" paddingBottom="50px">
