@@ -1,18 +1,18 @@
 import Head from "next/head";
-import Wrapper from "../../components/Wrapper/Wrapper";
-import Navbar from "../../components/Navbar/Navbar";
-import Footer from "../../components/Footer/Footer";
-import Button from "../../components/Button/Button";
-import LineLabel from "../../components/LineLabel/LineLabel";
-import IconBox from "../../components/IconBox/IconBox";
-import Wave from "../../components/Wave/Wave";
+import Wrapper from "../../../components/Wrapper/Wrapper";
+import Navbar from "../../../components/Navbar/Navbar";
+import Footer from "../../../components/Footer/Footer";
+import Button from "../../../components/Button/Button";
+import LineLabel from "../../../components/LineLabel/LineLabel";
+import IconBox from "../../../components/IconBox/IconBox";
+import Wave from "../../../components/Wave/Wave";
 import { Container, Row, Col } from "react-grid-system";
 import {
   faComment,
   faLaptopCode,
   faMedal,
 } from "@fortawesome/free-solid-svg-icons";
-import styles from "../../styles/toprank/home.module.css";
+import styles from "../../../styles/toprank/home.module.css";
 
 export default function TopRank() {
   return (
@@ -44,7 +44,10 @@ export default function TopRank() {
         />
         <meta content="width=device-width, initial-scale=1" name="viewport" />
       </Head>
-      <Navbar />
+      <Navbar
+        logo={"https://kmg-site-assets.kaycdn.com/toprank-logo-new.png"}
+        logoAlt={"Kreative TopRank logo in color"}
+      />
       <div className="splash" style={{ backgroundColor: "#E5FFF0" }}>
         <Wrapper bg="rgba(0,0,0,0)" paddingTop="300px" paddingBottom="100px">
           <LineLabel color="black">KREATIVE TOPRANK</LineLabel>

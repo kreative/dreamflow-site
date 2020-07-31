@@ -1,11 +1,11 @@
 import Head from "next/head";
-import Wrapper from "../../components/Wrapper/Wrapper";
-import Navbar from "../../components/Navbar/Navbar";
-import Footer from "../../components/Footer/Footer";
-import Button from "../../components/Button/Button";
-import LineLabel from "../../components/LineLabel/LineLabel";
+import Wrapper from "../../../components/Wrapper/Wrapper";
+import Navbar from "../../../components/Navbar/Navbar";
+import Footer from "../../../components/Footer/Footer";
+import Button from "../../../components/Button/Button";
+import LineLabel from "../../../components/LineLabel/LineLabel";
 import { Container, Row, Col } from "react-grid-system";
-import styles from "../../styles/kanvas/home.module.css";
+import styles from "../../../styles/kanvas/home.module.css";
 
 export default function Kanvas() {
   return (

@@ -1,15 +1,15 @@
 import Head from "next/head";
-import Wrapper from "../../components/Wrapper/Wrapper";
-import Navbar from "../../components/Navbar/Navbar";
-import Footer from "../../components/Footer/Footer";
-import Button from "../../components/Button/Button";
-import LineLabel from "../../components/LineLabel/LineLabel";
-import IconBox from "../../components/IconBox/IconBox";
-import Wave from "../../components/Wave/Wave";
-import ProductCard from "../../components/ProductCard/ProductCard";
+import Wrapper from "../../../components/Wrapper/Wrapper";
+import Navbar from "../../../components/Navbar/Navbar";
+import Footer from "../../../components/Footer/Footer";
+import Button from "../../../components/Button/Button";
+import LineLabel from "../../../components/LineLabel/LineLabel";
+import IconBox from "../../../components/IconBox/IconBox";
+import Wave from "../../../components/Wave/Wave";
+import ProductCard from "../../../components/ProductCard/ProductCard";
 import { Container, Row, Col } from "react-grid-system";
 import { faPencilAlt, faEnvelopeOpenText, faEnvelope } from "@fortawesome/free-solid-svg-icons";
-import styles from "../../styles/pencil/home.module.css";
+import styles from "../../../styles/pencil/home.module.css";
 
 export default function Pencil() {
   return (
@@ -41,7 +41,10 @@ export default function Pencil() {
         />
         <meta content="width=device-width, initial-scale=1" name="viewport" />
       </Head>
-      <Navbar />
+      <Navbar
+        logo={"https://kmg-site-assets.kaycdn.com/pencil-color.png"}
+        logoAlt={"Kreative Pencil logo in color"}
+      />
       <div className="splash" style={{ backgroundColor: "#D1E8FF" }}>
         <Wrapper bg="rgba(0,0,0,0)" paddingTop="300px" paddingBottom="100px">
           <LineLabel color="black">KREATIVE PENCIL</LineLabel>

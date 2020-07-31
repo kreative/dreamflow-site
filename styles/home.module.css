@@ -108,6 +108,10 @@
 }
 
 @media screen and (max-width: 576px) {
+  .hero_text {
+    font-size: 2.8em;
+  }
+
   .problem_image_wrapper,
   .solution_image_wrapper {
     padding-right: 0px;

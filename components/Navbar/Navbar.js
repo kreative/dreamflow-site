@@ -6,6 +6,8 @@ import { Container, Row, Col } from "react-grid-system";
 class DreamflowNavbar extends Component {
   state = {
     navBackground: this.props.scrollColor,
+    logo: this.props.logo || "https://kmg-site-assets.kaycdn.com/dreamflow-logo-black-new.png",
+    logoAlt: this.props.logoAlt || "Kreative Dreamflow Logo in all black"
   };
 
   componentDidMount() {
@@ -37,8 +39,8 @@ class DreamflowNavbar extends Component {
                   <a href="/">
                     <img
                       className="logo"
-                      src="https://kmg-site-assets.kaycdn.com/dreamflow-logo-black-new.png"
-                      alt="Kreative Dreamflow Logo in all black"
+                      src={this.state.logo}
+                      alt={this.state.logoAlt}
                     />
                   </a>
                 </Col>
@@ -210,43 +212,14 @@ class DreamflowNavbar extends Component {
             font-size: 3em;
             color: black;
             display: block;
+            font-weight: normal;
+            font-style: italic;
+            letter-spacing: -0.03em;
           }
 
           .link:hover {
             text-decoration: underline;
             color: #338eee;
-          }
-
-          .pageflow-link {
-            color: #7651E0;
-          }
-
-          .pageflow-link:hover {
-            color: #6135DE;
-          }
-
-          .toprank-link {
-            color: #53AF7A;
-          }
-          
-          .toprank-link:hover {
-            color: #176A3A;
-          }
-
-          .kopy-link {
-            color: #338EEE;
-          }
-
-          .kopy-link:hover {
-            color: #1C5592
-          }
-
-          .kanvas-link {
-            color: #00DAB3;
-          }
-
-          .kanvas-link:hover {
-            color: #029E82;
           }
 
           @media screen and (max-width: 767px) {

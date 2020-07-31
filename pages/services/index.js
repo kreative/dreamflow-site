@@ -1,14 +1,14 @@
 import Head from "next/head";
-import Navbar from "../components/Navbar/Navbar";
-import Footer from "../components/Footer/Footer";
-import Wrapper from "../components/Wrapper/Wrapper";
-import LineLabel from "../components/LineLabel/LineLabel";
-import ProductCard from "../components/ProductCard/ProductCard";
-import styles from "../styles/services.module.css";
-import Button from "../components/Button/Button";
+import Navbar from "../../components/Navbar/Navbar";
+import Footer from "../../components/Footer/Footer";
+import Wrapper from "../../components/Wrapper/Wrapper";
+import LineLabel from "../../components/LineLabel/LineLabel";
+import ProductCard from "../../components/ProductCard/ProductCard";
+import styles from "../../styles/services.module.css";
+import Button from "../../components/Button/Button";
 import { Col, Container, Row } from "react-grid-system";
 
-const Services = () => {
+const Index = () => {
   return (
     <div>
       <Head>
@@ -229,4 +229,4 @@ const Services = () => {
   );
 };
 
-export default Services;
+export default Index;

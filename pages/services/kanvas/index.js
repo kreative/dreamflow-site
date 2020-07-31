@@ -1,14 +1,14 @@
 import Head from "next/head";
-import Wrapper from "../../components/Wrapper/Wrapper";
-import Navbar from "../../components/Navbar/Navbar";
-import Footer from "../../components/Footer/Footer";
-import Button from "../../components/Button/Button";
-import LineLabel from "../../components/LineLabel/LineLabel";
+import Wrapper from "../../../components/Wrapper/Wrapper";
+import Navbar from "../../../components/Navbar/Navbar";
+import Footer from "../../../components/Footer/Footer";
+import Button from "../../../components/Button/Button";
+import LineLabel from "../../../components/LineLabel/LineLabel";
 import { ParallaxBanner, ParallaxProvider } from "react-scroll-parallax";
-import Wave from "../../components/Wave/Wave";
-import ProductCard from "../../components/ProductCard/ProductCard";
+import Wave from "../../../components/Wave/Wave";
+import ProductCard from "../../../components/ProductCard/ProductCard";
 import { Container, Row, Col } from "react-grid-system";
-import styles from "../../styles/kanvas/home.module.css";
+import styles from "../../../styles/kanvas/home.module.css";
 
 export default function Kanvas() {
   return (
@@ -40,12 +40,15 @@ export default function Kanvas() {
         />
         <meta content="width=device-width, initial-scale=1" name="viewport" />
       </Head>
-      <Navbar />
-      <Wrapper bg="#A7FAEB" paddingTop="300px" paddingBottom="100px">
+      <Navbar
+        logo={"https://kmg-site-assets.kaycdn.com/kreative-kanvas-color.png"}
+        logoAlt={"Kreative Kanvas logo in color"}
+      />
+      <Wrapper bg="#F2FFFD" paddingTop="300px" paddingBottom="100px">
         <LineLabel color="black">KREATIVE KANVAS</LineLabel>
         <h1>Affordable graphic design for whatever you need, without breaking the bank.</h1>
       </Wrapper>
-      <Wrapper bg="#F2FFFD" paddingBottom="150px" paddingTop="150px">
+      <Wrapper bg="#A7FAEB" paddingBottom="150px" paddingTop="150px">
         <Container style={{ padding: "0px" }} fluid>
           <Row gutterWidth={0}>
             <Col md={6}>
