@@ -45,8 +45,8 @@ export default function Home() {
       <div className={styles.hero}>
         <Wrapper bg={"rgba(0,0,0,0)"}>
           <h1 className={styles.hero_text}>
-            We are on a mission to transform the digital marketing industry with
-            quality service and fair pricing so your business can take off
+            We're here to transform the marketing industry with
+            quality service and fair pricing so you can crush the competition
           </h1>
         </Wrapper>
       </div>

@@ -1,9 +1,13 @@
 .hero {
-  padding-top: 70vh;
   padding-bottom: 10vh;
-  background-image: url("https://kmg-site-assets.kaycdn.com/transform-cropper.gif");
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  background-image: url("https://kmg-site-assets.kaycdn.com/crush-the-competition.gif");
   background-size: cover;
   background-repeat: no-repeat;
+  background-position: center;
 }
 
 .hero_text {
