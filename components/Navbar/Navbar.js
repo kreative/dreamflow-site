@@ -127,6 +127,12 @@ class DreamflowNavbar extends Component {
                   <Link href="/portfolio">
                     <a className="link">Portfolio</a>
                   </Link>
+                  <Link href="/blog">
+                    <a className="link">Blog</a>
+                  </Link>
+                  <Link href="/why-dreamflow">
+                    <a className="link">Why Dreamflow?</a>
+                  </Link>
                   <Link href="/get-started">
                     <a className="link">Get Started</a>
                   </Link>
@@ -198,7 +204,7 @@ class DreamflowNavbar extends Component {
           }
 
           .link {
-            font-family: "Romana", serif;
+            font-family: "BasierCircle", sans-serif;
             padding-bottom: 1em;
             text-decoration: none;
             font-size: 3em;
