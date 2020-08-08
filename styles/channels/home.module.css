@@ -102,7 +102,7 @@
 
 @media screen and (max-width: 576px) {
     .solution_image_wrapper {
-        padding-right: 0px;
+    padding-right: 0px;
         text-align: center;
     }
 
@@ -126,5 +126,9 @@
 
     .pledge_content {
         text-align: center;
+    }
+
+    .testimonial_text {
+        font-size: 2em;
     }
 }

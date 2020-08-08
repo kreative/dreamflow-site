@@ -35,7 +35,7 @@ const BlogPostsPage = ({ posts }) => {
         <script
           type="text/javascript"
           src="https://kit.fontawesome.com/abadd7b058.js"
-          crossorigin="anonymous"
+          crossOrigin="anonymous"
         />
         <meta content="width=device-width, initial-scale=1" name="viewport" />
       </Head>

@@ -35,3 +35,17 @@ p {
 .ui {
     font-family: 'BasierCircle' !important;
 }
+
+@media screen and (max-width: 576px) {
+    h1 {
+        font-size: 2.7em;
+    }
+
+    h2 {
+        font-size: 2.2em;
+    }
+
+    h3 {
+        font-size: 1.8em;
+    }
+}

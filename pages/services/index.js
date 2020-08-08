@@ -60,7 +60,7 @@ const Index = () => {
                 text="The topRank package helps achieve higher search rankings for your website."
                 button={
                   <Button
-                    href="/toprank"
+                    href="/services/toprank"
                     fill="#176A3A"
                     textColor="white"
                     hoverColor="#53AF7A"
@@ -88,7 +88,7 @@ const Index = () => {
                 text="Our sales & brand focused approach enables the client to better compete in the market."
                 button={
                   <Button
-                    href="/pageflow"
+                    href="/services/pageflow"
                     fill="#6135DE"
                     textColor="white"
                     hoverColor="#7651E0"
@@ -117,7 +117,7 @@ const Index = () => {
                 text="Affordable and attention grabbing copywriting for your blog posts or webpages."
                 button={
                   <Button
-                    href="/pencil"
+                    href="/services/pencil"
                     fill="#1C5592"
                     textColor="white"
                     hoverColor="#338EEE"
@@ -146,7 +146,7 @@ const Index = () => {
                 text="Full-service design team ready to help with branding and intuitive UX at nominal additional charges."
                 button={
                   <Button
-                    href="/kanvas"
+                    href="/services/kanvas"
                     fill="#029E82"
                     textColor="white"
                     hoverColor="#00DAB3"
@@ -175,7 +175,7 @@ const Index = () => {
                 text="Full service marketing service to put your brand in front of consumers, wherever they are."
                 button={
                   <Button
-                    href="/channels"
+                    href="/services/channels"
                     fill="#3BA1FF"
                     textColor="white"
                     hoverColor="#A0D2FF"
@@ -204,7 +204,7 @@ const Index = () => {
                 text="Easy to understand plans for site fixes and upgrades to take the stress off your team."
                 button={
                   <Button
-                    href="/sitecare"
+                    href="/services/sitecare"
                     fill="#FB01E6"
                     textColor="white"
                     hoverColor="#FF73F3"

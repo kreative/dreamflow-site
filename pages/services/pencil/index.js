@@ -96,7 +96,7 @@ export default function Pencil() {
         </Container>
       </Wrapper>
       <div className="products-section">
-        <Wrapper bg="rgba(0,0,0,0)" paddingTop="150px" paddingBottom="150px">
+        <Wrapper bg="#E7F2FD" paddingTop="150px" paddingBottom="150px">
           <div
             style={{
               textAlign: "center",
@@ -165,7 +165,7 @@ export default function Pencil() {
           </Container>
         </Wrapper>
       </div>
-      <Wave color="white">
+      <Wave color="#E7F2FD">
         <path
           className="wave-fill"
           d="M421.9,6.5c22.6-2.5,51.5,0.4,75.5,5.3c23.6,4.9,70.9,23.5,100.5,35.7c75.8,32.2,133.7,44.5,192.6,49.7

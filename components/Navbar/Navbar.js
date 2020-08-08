@@ -236,6 +236,10 @@ class DreamflowNavbar extends Component {
             .toggle {
               width: 25px;
             }
+            
+            .link {
+              font-size: 2.2em;
+            }
           }
         `}</style>
       </div>

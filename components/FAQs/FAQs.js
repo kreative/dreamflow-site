@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import { Accordion, Icon } from "semantic-ui-react";
+import styles from "./faqs.module.css";
 
 class FAQ extends Component {
   state = {
@@ -20,38 +21,21 @@ class FAQ extends Component {
       <div>
         <Accordion>
           {this.props.faqs.map((faq, index) => (
-            <div className="section">
+            <div className={styles.section}>
               <Accordion.Title
                 active={activeIndex === index}
                 index={index}
                 onClick={this.handleClick}
               >
                 <Icon name="dropdown" />
-                <span className="question">{faq.question}</span>
+                <span className={styles.question}>{faq.question}</span>
               </Accordion.Title>
               <Accordion.Content active={activeIndex === index}>
-                <p className="answer">{faq.answer}</p>
+                <p style={{color: this.props.answerColor}} className={styles.answer}>{faq.answer}</p>
               </Accordion.Content>
             </div>
           ))}
         </Accordion>
-        <style jsx>{`
-          .section {
-            margin-bottom: 30px;
-          }
-
-          .question {
-            font-size: 1.7em;
-            font-weight: normal;
-            font-family: "Karla", serif;
-            margin-left: 10px;
-          }
-
-          .answer {
-            margin-left: 30px;
-            color: ${this.props.answerColor}; 
-          }
-        `}</style>
       </div>
     );
   }

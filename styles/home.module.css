@@ -131,4 +131,8 @@
   .solution_content {
     padding: 50px 50px 100px 50px;
   }
+
+  .testimonial_text {
+    font-size: 2em;
+  }
 }
