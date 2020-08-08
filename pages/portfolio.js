@@ -1,11 +1,11 @@
 import Head from "next/head";
-import Navbar from "../../components/Navbar/Navbar";
-import Footer from "../../components/Footer/Footer";
-import Wrapper from "../../components/Wrapper/Wrapper";
-import LineLabel from "../../components/LineLabel/LineLabel";
-import CaseStudyCard from "../../components/CaseStudyCard/CaseStudyCard";
-import DreamflowGallery from "../../components/DreamflowGallery/DreamflowGallery";
-import styles from "../../styles/work/home.module.css";
+import Navbar from "../components/Navbar/Navbar";
+import Footer from "../components/Footer/Footer";
+import Wrapper from "../components/Wrapper/Wrapper";
+import LineLabel from "../components/LineLabel/LineLabel";
+import CaseStudyCard from "../components/CaseStudyCard/CaseStudyCard";
+import DreamflowGallery from "../components/DreamflowGallery/DreamflowGallery";
+import styles from "../styles/work/home.module.css";
 
 const WorkPage = () => {
   return (
