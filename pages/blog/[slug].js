@@ -13,6 +13,30 @@ const BlogPost = ({ contents, data }) => {
   return (
     <div>
       <Head>
+        <link
+          rel="apple-touch-icon"
+          sizes="180x180"
+          href="/favicons/general/apple-touch-icon.png"
+        />
+        <link
+          rel="icon"
+          type="image/png"
+          sizes="32x32"
+          href="/favicons/general/favicon-32x32.png"
+        />
+        <link
+          rel="icon"
+          type="image/png"
+          sizes="16x16"
+          href="/favicons/general/favicon-16x16.png"
+        />
+        <link rel="manifest" href="/favicons/general/site.webmanifest"/>
+        <script
+          type="text/javascript"
+          src="https://kit.fontawesome.com/abadd7b058.js"
+          crossOrigin="anonymous"
+        />
+        <meta content="width=device-width, initial-scale=1" name="viewport"/>
         <title>{data.title} | Blog | Kreative Dreamflow</title>
       </Head>
       <Navbar />
