@@ -2,16 +2,13 @@ import Head from "next/head";
 import Navbar from "../components/Navbar/Navbar";
 import Footer from "../components/Footer/Footer";
 import Wrapper from "../components/Wrapper/Wrapper";
-import LineLabel from "../components/LineLabel/LineLabel";
-import CaseStudyCard from "../components/CaseStudyCard/CaseStudyCard";
 import DreamflowGallery from "../components/DreamflowGallery/DreamflowGallery";
-import styles from "../styles/work/home.module.css";
 
-const WorkPage = () => {
+const PortfolioPage = () => {
   return (
     <div>
       <Head>
-        <title>Work | Kreative Dreamflow</title>
+        <title>Portfolio | Kreative Dreamflow</title>
         <link
           rel="apple-touch-icon"
           sizes="180x180"
@@ -39,19 +36,7 @@ const WorkPage = () => {
       </Head>
       <Navbar />
       <Wrapper bg="#FFECD0" paddingTop="30vh" paddingBottom="10vh">
-        <LineLabel color="black">DREAMFLOW PORTFOLIO</LineLabel>
-        <h1>Discover what we've done for our clients</h1>
-      </Wrapper>
-      <Wrapper bg="white" paddingTop="50px" paddingBottom="50px">
-        <div>
-          <CaseStudyCard
-            title="A rental property management company creating the easiest experience for new home owners"
-            textColor="white"
-            bgImage="https://kmg-site-assets.kaycdn.com/clients/eco-abode/Frame22.png"
-            bgColor="black"
-            link="/work/eco-abode"
-          />
-        </div>
+        <h1>Dreamflow Portfolio</h1>
       </Wrapper>
       <Wrapper bg={"white"} paddingTop={"50px"} paddingBottom={"100px"}>
         <DreamflowGallery />
@@ -61,4 +46,4 @@ const WorkPage = () => {
   );
 };
 
-export default WorkPage;
+export default PortfolioPage;
