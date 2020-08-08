@@ -1,4 +1,6 @@
 User-agent: *
 Allow: /
+Disallow: /success
+Disallow: /policies/
 
 Sitemap: https://www.kreativedreamflow.com/sitemap.xml
