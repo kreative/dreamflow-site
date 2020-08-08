@@ -1,9 +1,9 @@
 import Head from "next/head";
-import Navbar from "../components/Navbar/Navbar";
-import Footer from "../components/Footer/Footer";
-import Wrapper from "../components/Wrapper/Wrapper";
-import LineLabel from "../components/LineLabel/LineLabel";
-import CaseStudyCard from "../components/CaseStudyCard/CaseStudyCard";
+import Navbar from "../../components/Navbar/Navbar";
+import Footer from "../../components/Footer/Footer";
+import Wrapper from "../../components/Wrapper/Wrapper";
+import LineLabel from "../../components/LineLabel/LineLabel";
+import CaseStudyCard from "../../components/CaseStudyCard/CaseStudyCard";
 
 const CaseStudiesPage = () => {
   return (
