@@ -43,6 +43,7 @@ export default function TopRank() {
           crossOrigin="anonymous"
         />
         <meta content="width=device-width, initial-scale=1" name="viewport" />
+        <meta name={"description"} content={"Skyrocket your search engine rankings with Kreative TopRank, our search engine optimization (SEO) service, and start getting your business more clients for less."} />
       </Head>
       <Navbar
         logo={"https://kmg-site-assets.kaycdn.com/toprank-logo-new.png"}

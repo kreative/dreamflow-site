@@ -37,6 +37,7 @@ const BlogPost = ({ contents, data }) => {
           crossOrigin="anonymous"
         />
         <meta content="width=device-width, initial-scale=1" name="viewport"/>
+        <meta name={"description"} content={data.meta}
         <title>{data.title} | Blog | Kreative Dreamflow</title>
       </Head>
       <Navbar />

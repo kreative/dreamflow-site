@@ -33,6 +33,7 @@ const PortfolioPage = () => {
           crossOrigin="anonymous"
         />
         <meta content="width=device-width, initial-scale=1" name="viewport" />
+        <meta name={"description"} content={"Get motivated for your new website or branding project with our inspiring prototypes and product designs developed by Kreative Dreamflow"} />
       </Head>
       <Navbar />
       <Wrapper bg="#FFECD0" paddingTop="30vh" paddingBottom="10vh">

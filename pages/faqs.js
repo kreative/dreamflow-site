@@ -38,6 +38,7 @@ const FAQsPage = () => {
           crossOrigin="anonymous"
         />
         <meta content="width=device-width, initial-scale=1" name="viewport" />
+        <meta name={"description"} content={"Get answers to frequently asked questions about Kreative Dreamflow marketing services"} />
       </Head>
       <Navabr />
       <Wrapper bg="#FFECD0" paddingTop="250px" paddingBottom="50px">

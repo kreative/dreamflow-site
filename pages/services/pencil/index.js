@@ -40,6 +40,7 @@ export default function Pencil() {
           crossOrigin="anonymous"
         />
         <meta content="width=device-width, initial-scale=1" name="viewport" />
+        <meta name={"description"} content={"Build your brand and sell more with affordable and attention grabbing copywriting for your blog posts or webpages through Kreative Pencil, a copywriting solution you can count on."} />
       </Head>
       <Navbar
         logo={"https://kmg-site-assets.kaycdn.com/pencil-color.png"}
@@ -48,7 +49,7 @@ export default function Pencil() {
       <div className="splash" style={{ backgroundColor: "#D1E8FF" }}>
         <Wrapper bg="rgba(0,0,0,0)" paddingTop="300px" paddingBottom="100px">
           <LineLabel color="black">KREATIVE PENCIL</LineLabel>
-          <h1>Affordable copywriting your brand can count on</h1>
+          <h1>Affordable copywriting your business can count on</h1>
         </Wrapper>
       </div>
       <Wrapper bg="white" paddingBottom="150px" paddingTop="150px">

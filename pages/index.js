@@ -40,6 +40,7 @@ export default function Home() {
           crossOrigin="anonymous"
         />
         <meta content="width=device-width, initial-scale=1" name="viewport" />
+        <meta name={"description"} content={"We're here to transform the marketing industry with quality service and fair pricing so you can crush the competition"} />
       </Head>
       <Navbar scrollColor="rgba(255,255,255,0.5)" />
       <div className={styles.hero}>

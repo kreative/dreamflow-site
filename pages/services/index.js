@@ -37,6 +37,7 @@ const Index = () => {
           crossOrigin="anonymous"
         />
         <meta content="width=device-width, initial-scale=1" name="viewport" />
+        <meta name={"description"} content={"Reach the exact marketing goal you have for your business with Kreative Dreamflow's suite of marketing and web services."} />
       </Head>
 
       <Navbar />

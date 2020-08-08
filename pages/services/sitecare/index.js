@@ -36,6 +36,7 @@ export default function SiteCareHome() {
           crossOrigin="anonymous"
         />
         <meta content="width=device-width, initial-scale=1" name="viewport"/>
+        <meta name={"description"} content={"Let us take the stress of managing a website off your team with our easy to understand site maintenance plans for site fixes and upgrades, Kreative SiteCare."} />
       </Head>
       <Navbar
         logo={"https://kmg-site-assets.kaycdn.com/sitecare-logo-color@4x.png"}

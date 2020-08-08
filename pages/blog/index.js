@@ -38,6 +38,7 @@ const BlogPostsPage = ({ posts }) => {
           crossOrigin="anonymous"
         />
         <meta content="width=device-width, initial-scale=1" name="viewport" />
+        <meta name={"description"} content={"Discover useful resources, evergreen content, and helpful tips and tricks to improve your business marketing with Kreative Dreamflow's free blog."} />
       </Head>
       <Navbar />
       <Wrapper bg="white" paddingTop="200px" paddingBottom="200px">

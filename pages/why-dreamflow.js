@@ -36,6 +36,7 @@ export default function WhyDreamflow() {
           crossOrigin="anonymous"
         />
         <meta content="width=device-width, initial-scale=1" name="viewport" />
+        <meta name={"description"} content={"Make your marketing dreams come true with Kreative Dreamflow's suite of services. Submit your project inquiry to get started now!"} />
       </Head>
       <Navbar scrollColor={"rgba(255,255,255,0.4)"} />
       <div className={styles.hero}>

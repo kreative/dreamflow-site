@@ -43,6 +43,7 @@ export default function PageflowHome() {
           crossOrigin="anonymous"
         />
         <meta content="width=device-width, initial-scale=1" name="viewport" />
+        <meta name={"description"} content={"Better compete in the marketplace and unlock more opportunities with Kreative Pageflow, our sales and brand focused website design and development service."} />
       </Head>
       <Navbar
         logo={"https://kmg-site-assets.kaycdn.com/pageflow-color.png"}

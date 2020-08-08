@@ -24,31 +24,32 @@ const EcoAbodeCaseStudy = () => {
   return (
     <div>
       <Head>
-        <title>Eco Abode | Work | Kreative Dreamflow</title>
+        <title>Eco Abode | Case Studies | Kreative Dreamflow</title>
         <link
           rel="apple-touch-icon"
           sizes="180x180"
           href="/favicons/general/apple-touch-icon.png"
-        ></link>
+        />
         <link
           rel="icon"
           type="image/png"
           sizes="32x32"
           href="/favicons/general/favicon-32x32.png"
-        ></link>
+        />
         <link
           rel="icon"
           type="image/png"
           sizes="16x16"
           href="/favicons/general/favicon-16x16.png"
-        ></link>
-        <link rel="manifest" href="/favicons/general/site.webmanifest"></link>
+        />
+        <link rel="manifest" href="/favicons/general/site.webmanifest" />
         <script
           type="text/javascript"
           src="https://kit.fontawesome.com/abadd7b058.js"
           crossorigin="anonymous"
-        ></script>
+        />
         <meta content="width=device-width, initial-scale=1" name="viewport" />
+        <meta name={"description"} content={"Take a look at how Kreative Dreamflow helped, Eco Abode, a local rental property management company get new customers with a new website and brand identity."} />
       </Head>
       <Navbar />
       <Wrapper bg="white" paddingTop="200px" paddingBottom="100px">

@@ -34,6 +34,7 @@ const CaseStudiesPage = () => {
           crossOrigin="anonymous"
         />
         <meta content="width=device-width, initial-scale=1" name="viewport" />
+        <meta name={"description"} cotnent={"Learn more about how Kreative Dreamflow can help your business reach its goals with our collection of case studies from past clients."} />
       </Head>
       <Navbar />
       <Wrapper bg="#FFECD0" paddingTop="30vh" paddingBottom="10vh">

@@ -39,6 +39,7 @@ export default function Kanvas() {
           crossOrigin="anonymous"
         />
         <meta content="width=device-width, initial-scale=1" name="viewport" />
+        <meta name={"description"} content={"Conquer beautiful design for your business with Kreative Kanvas, a full-service design team ready to help with branding and intuitive UX at fair prices."} />
       </Head>
       <Navbar
         logo={"https://kmg-site-assets.kaycdn.com/kreative-kanvas-color.png"}

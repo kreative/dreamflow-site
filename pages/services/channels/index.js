@@ -36,6 +36,7 @@ export default function ChannelsHome() {
           crossOrigin="anonymous"
         />
         <meta content="width=device-width, initial-scale=1" name="viewport"/>
+        <meta name={"description"} content={"Make your business omnipresent with Kreative Channels, our full service marketing services to put your brand in front of consumers, wherever they are."} />
       </Head>
       <Navbar
         logo={"https://kmg-site-assets.kaycdn.com/kreative-channels-logo.png"}

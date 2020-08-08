@@ -9,6 +9,7 @@ label: "MARKETING"
 color: "blue"
 title_color: "white"
 description_color: "lightgrey"
+meta: "something also"
 ---
 
 ## Moturaque alitibus nubibus

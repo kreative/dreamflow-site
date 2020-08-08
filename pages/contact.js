@@ -21,6 +21,7 @@ export default function Contact() {
           crossOrigin="anonymous"
         />
         <meta content="width=device-width, initial-scale=1" name="viewport" />
+        <meta name={"description"} content={"View our hours or drop us a line and one of our customer success manager will get back to you."} />
       </Head>
       <Navbar />
       <Wrapper bg="white" paddingTop="150px" paddingBottom="200px">

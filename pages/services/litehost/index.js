@@ -36,6 +36,7 @@ export default function Kanvas() {
           crossOrigin="anonymous"
         />
         <meta content="width=device-width, initial-scale=1" name="viewport" />
+        <meta name={"description"} content={"Keep your business within reach of your customers with Kreative LiteHost, our worry free, managed hosting plans for your digital presence with incredible speeds."} />
       </Head>
       <Navbar />
       <Wrapper bg="#FFD83B" paddingTop="50vh" paddingBottom="10vh">
