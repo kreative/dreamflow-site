@@ -37,12 +37,20 @@ const PortfolioPage = () => {
       </Head>
       <Navbar />
       <Wrapper bg="#FFECD0" paddingTop="30vh" paddingBottom="10vh">
-        <h1>Dreamflow Portfolio</h1>
+        <h1 style={{textAlign: "center"}}>Dreamflow Portfolio</h1>
       </Wrapper>
-      <Wrapper bg={"white"} paddingTop={"50px"} paddingBottom={"100px"}>
+      <div className={"_wrapper"}>
         <DreamflowGallery />
-      </Wrapper>
+      </div>
       <Footer />
+      <style jsx>{`
+        ._wrapper {
+          padding-right: 2%;
+          padding-left: 2%;
+          padding-top: 50px;
+          padding-bottom: 50px;
+        }
+      `}</style>
     </div>
   );
 };

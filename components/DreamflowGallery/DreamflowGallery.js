@@ -5,7 +5,7 @@ class DreamflowGallery extends React.Component {
   render() {
     return (
       <div>
-        <Container style={{padding:"0px"}}>
+        <Container style={{padding:"0px", maxWidth: "100%"}}>
           <Row gutterWidth={50}>
             <Col sm={6}>
               <img src={"https://kmg-site-assets.kaycdn.com/portfolio/split_landing.jpg"} />
