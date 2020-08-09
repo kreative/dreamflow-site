@@ -51,8 +51,8 @@ export default function Contact() {
                 </div>
                 <div className={styles.contact_detail}>
                   <p className={styles.contact_label}>Call us</p>
-                  <a href="tel:5106735179">
-                    <p className={styles.contact_info}>(510)-673-5179</p>
+                  <a href="tel:8475950793">
+                    <p className={styles.contact_info}>(847) 595-0793</p>
                   </a>
                 </div>
                 <div className={styles.faq}>
