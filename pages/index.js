@@ -365,7 +365,7 @@ export default function Home() {
                 text="The topRank package helps achieve higher search rankings for your website."
                 button={
                   <Button
-                    href="/toprank"
+                    href="/services/toprank"
                     fill="#176A3A"
                     textColor="white"
                     hoverColor="#53AF7A"
@@ -393,7 +393,7 @@ export default function Home() {
                 text="Our sales & brand focused approach enables the client to better compete in the market."
                 button={
                   <Button
-                    href="/pageflow"
+                    href="/services/pageflow"
                     fill="#6135DE"
                     textColor="white"
                     hoverColor="#7651E0"
@@ -422,7 +422,7 @@ export default function Home() {
                 text="Affordable and attention grabbing copywriting for your blog posts or webpages."
                 button={
                   <Button
-                    href="/pencil"
+                    href="/services/pencil"
                     fill="#1C5592"
                     textColor="white"
                     hoverColor="#338EEE"
@@ -451,7 +451,7 @@ export default function Home() {
                 text="Full-service design team ready to help with branding and intuitive UX at nominal additional charges."
                 button={
                   <Button
-                    href="/kanvas"
+                    href="/services/kanvas"
                     fill="#029E82"
                     textColor="white"
                     hoverColor="#00DAB3"
@@ -480,7 +480,7 @@ export default function Home() {
                   text="Full service marketing service to put your brand in front of consumers, wherever they are."
                   button={
                     <Button
-                        href="/channels"
+                        href="/services/channels"
                         fill="#3BA1FF"
                         textColor="white"
                         hoverColor="#A0D2FF"
@@ -503,19 +503,48 @@ export default function Home() {
                 align="center"
                 border="1.5px solid #E3E3E3"
                 logo="https://kmg-site-assets.kaycdn.com/sitecare-logo-color@4x.png"
-                logoWidth="90%"
+                logoWidth="97%"
                 alt="Kreative SiteCare logo in Color"
                 description="Worry-free Site Maintenance"
                 text="Easy to understand plans for site fixes and upgrades to take the stress off your team."
                 button={
                   <Button
-                    href="/sitecare"
+                    href="/services/sitecare"
                     fill="#FB01E6"
                     textColor="white"
                     hoverColor="#FF73F3"
                     radius="3px"
                     border="1px solid #FB01E6"
                     hoverBorder="1px solid #FF73F3"
+                    padding="15px 50px"
+                    raised={false}
+                    grow={false}
+                    width="100%"
+                  >
+                    Learn more
+                  </Button>
+                }
+              />
+            </Col>
+            <Col sm={6} md={4} xxl={3} style={{ marginBottom: "25px" }}>
+              <ProductCard
+                bg="white"
+                align="center"
+                border="1.5px solid #E3E3E3"
+                logo="https://kmg-site-assets.kaycdn.com/litehost-logo-color@4x.png"
+                logoWidth="97%"
+                alt="Kreative LiteHost logo in Color"
+                description="Blazing fast web hosting"
+                text="Worry free, managed hosting plans for your digital presence with incredible speeds."
+                button={
+                  <Button
+                    href="/services/litehost"
+                    fill="#FFD83B"
+                    textColor="white"
+                    hoverColor="#FFE681"
+                    radius="3px"
+                    border="1px solid #FFD83B"
+                    hoverBorder="1px solid #FFE681"
                     padding="15px 50px"
                     raised={false}
                     grow={false}
