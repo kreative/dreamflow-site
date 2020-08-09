@@ -41,6 +41,9 @@ const BlogPostsPage = ({ posts }) => {
         <meta name={"description"} content={"Discover useful resources, evergreen content, and helpful tips and tricks to improve your business marketing with Kreative Dreamflow's free blog."} />
       </Head>
       <Navbar />
+      <Wrapper bg="#FFECD0" paddingTop="250px" paddingBottom="50px">
+        <h1>The Dreamflow Blog</h1>
+      </Wrapper>
       <Wrapper bg="white" paddingTop="200px" paddingBottom="200px">
         {posts.map((post) => (
           <div className="post_wrapper" key={post.slug}>
