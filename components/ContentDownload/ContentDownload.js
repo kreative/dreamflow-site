@@ -11,6 +11,7 @@ class ContentDownload extends React.Component {
             alt={this.props.coverAlt}
             className={"cover"}
           />
+          <h4 className={"send_text"}>Where should we send it to?</h4>
           <form className="f-form" name="download-form">
             <div className="f-field">
               <input
@@ -40,10 +41,20 @@ class ContentDownload extends React.Component {
           </p>
         </div>
         <style jsx>{`
+          .cover {
+            padding-bottom: 10px;
+          }
+          
+          .send_text {
+            font-size: 1.3em;
+            font-weight: normal;
+          }
+          
           .download_section {
             padding: 25px;
             border: 1.5px solid #F6F6F4;
             border-radius: 10px;
+            text-align: center;
           }
           
           .f-form {
@@ -78,7 +89,6 @@ class ContentDownload extends React.Component {
             color: grey;
             font-size: 0.9em;
             font-style: italic;
-            text-align: center;
             padding-top: 15px;
           }
         `}</style>
