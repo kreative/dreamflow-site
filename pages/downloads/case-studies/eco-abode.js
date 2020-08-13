@@ -47,8 +47,8 @@ const EcoAbodeCaseStudyDownload = () => {
           <Row gutterWidth={50}>
             <Col sm={4}>
               <ContentDownload
-                cover={""}
-                coverAlt={""}
+                cover={"https://kmg-site-assets.kaycdn.com/clients/eco-abode/ecoabode-casestudy-cover@2x.png"}
+                coverAlt={"Cover for Eco Abode Official Case Study by Kreative Dreamflow"}
                 btnColor={"#104F55"}
               />
             </Col>

@@ -43,6 +43,10 @@ class ContentDownload extends React.Component {
         <style jsx>{`
           .cover {
             padding-bottom: 10px;
+            width: 100%;
+            -webkit-box-shadow: 0px 2px 22px -1px rgba(186,186,186,0.34);
+            -moz-box-shadow: 0px 2px 22px -1px rgba(186,186,186,0.34);
+            box-shadow: 0px 2px 22px -1px rgba(186,186,186,0.34);
           }
           
           .send_text {
