@@ -37,7 +37,7 @@ class ContentDownload extends React.Component {
             </Button>
           </form>
           <p className={"disclaimer_text"}>
-            We promise never to send you ...
+            We know how annoying spam emails can be (we get them all the time), so we promise never to send you spam or any unwanted messages without your permissions.
           </p>
         </div>
         <style jsx>{`

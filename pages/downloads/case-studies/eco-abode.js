@@ -40,29 +40,36 @@ const EcoAbodeCaseStudyDownload = () => {
       <Navbar />
       <Wrapper bg={"#BBE2DE"} paddingTop={"30vh"} paddingBottom={"10vh"}>
         <LineLabel color={"black"}>DOWNLOAD CASE STUDY</LineLabel>
-        <h2>Eco Abode Case Study</h2>
+        <h2>Official Eco Abode Case Study by Kreative Dreamflow</h2>
       </Wrapper>
       <Wrapper bg={"white"} paddingTop={"75px"} paddingBottom={"100px"}>
         <Container style={{padding:"0px"}}>
           <Row gutterWidth={50}>
-            <Col sm={4}>
+            <Col md={5}>
               <ContentDownload
                 cover={"https://kmg-site-assets.kaycdn.com/clients/eco-abode/ecoabode-casestudy-cover@2x.png"}
                 coverAlt={"Cover for Eco Abode Official Case Study by Kreative Dreamflow"}
                 btnColor={"#104F55"}
               />
             </Col>
-            <Col sm={1} />
-            <Col sm={6}>
+            <Col md={7} style={{paddingTop: "50px"}}>
               <div className={"text_content"}>
-                <h3>Don't miss out on...</h3>
-                <p>
-                  Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.
-                </p>
-                <br />
-                <p>
-                  The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are also reproduced in their exact original form, accompanied by English versions from the 1914 translation by H. Rackham.
-                </p>
+                <LineLabel color={"black"}>FREE DOWNLOAD</LineLabel>
+                <h3 style={{paddingBottom: "15px"}}>A behind the scenes look at the Kreative Dreamflow process at work.</h3>
+                <div
+                  style={{
+                    lineHeight: "10px",
+                    fontSize: "1.1em"
+                  }}
+                >
+                  <p>
+                    Eco Abode is a rental property management business started in 2019. When starting, they were focused on client experience and generating leads in their community; a website was the last thing on their mind. They put together a small, one-page website to get started with nothing more than a contact page. However, when the COVID19 pandemic hit, they realized they needed to shift their marketing strategy online and build a new website that can correctly represent their brand and help generate new customers.
+                  </p>
+                  <br />
+                  <p>
+                    After doing some research on their own and talking to other marketing agencies in the area, they landed on Kreative Dreamflow for our customer-centric design, transparent pricing, and affordable rates. In this official case study you will take a peek behind the curtains of our process on building a new and improved brand and website for Eco Abode.
+                  </p>
+                </div>
               </div>
             </Col>
           </Row>
