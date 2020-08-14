@@ -54,7 +54,7 @@ class Footer extends Component {
                     Start a project
                   </Button>
                 </Col>
-                <Col sm={3}></Col>
+                <Col sm={3}/>
               </Row>
             </Container>
           </Wrapper>
