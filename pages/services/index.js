@@ -222,7 +222,7 @@ const Index = () => {
                 }
               />
             </Col>
-            <Col sm={6} md={4} xxl={3} style={{ marginBottom: "25px" }}>
+            <Col sm={6} xxl={4} style={{ marginBottom: "25px" }}>
               <ProductCard
                 bg="white"
                 align="center"
