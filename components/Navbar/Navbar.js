@@ -32,7 +32,28 @@ class DreamflowNavbar extends Component {
     return (
       <div>
         <div className="Navbar__Wrapper">
-          <Wrapper bg="rgab(0,0,0,0)" paddingTop="15px" paddingBottom="15px">
+          <Wrapper bg={"rgba(0,0,0,0)"} paddingTop={"10px"} paddingBottom={"0px"}>
+            <Container style={{ padding: "0px" }} fluid>
+              <Row nogutter>
+                <Col sm={6} />
+                <Col sm={6}>
+                  <div style={{ textAlign: "right" }}>
+                    <a
+                      href={"tel:5106735179"}
+                      style={{
+                        textDecoration: "none",
+                        color: "black",
+                        fontSize: "0.9em"
+                      }}
+                    >
+                      Call us: (510) 673-5179
+                    </a>
+                  </div>
+                </Col>
+              </Row>
+            </Container>
+          </Wrapper>
+          <Wrapper bg="rgab(0,0,0,0)" paddingTop="0px" paddingBottom="15px">
             <Container style={{ padding: "0px" }} fluid>
               <Row nogutter>
                 <Col>
