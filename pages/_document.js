@@ -13,8 +13,8 @@ export default class DreamflowDocument extends Document {
               'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
               })(window,document,'script','dataLayer','GTM-58HJ6FL');
             `,
-          }}></script>
-          <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&display=swap" rel="stylesheet"></link>
+          }}/>
+          <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&display=swap" rel="stylesheet"/>
         </Head>
         <body>
           <noscript dangerouslySetInnerHTML={{
@@ -22,7 +22,7 @@ export default class DreamflowDocument extends Document {
               <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-58HJ6FL"
               height="0" width="0" style="display:none;visibility:hidden"></iframe>
             `,
-          }}></noscript>
+          }}/>
           <Main />
           <NextScript />
         </body>

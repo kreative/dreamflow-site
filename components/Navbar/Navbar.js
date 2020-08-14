@@ -1,6 +1,7 @@
 import Link from "next/link";
 import React, { Component } from "react";
 import Wrapper from "../Wrapper/Wrapper";
+import HowdyBar from "../HowdyBar/HowdyBar";
 import { Container, Row, Col } from "react-grid-system";
 
 class DreamflowNavbar extends Component {
@@ -32,6 +33,7 @@ class DreamflowNavbar extends Component {
     return (
       <div>
         <div className="Navbar__Wrapper">
+          <HowdyBar />
           <Wrapper bg={"rgba(0,0,0,0)"} paddingTop={"10px"} paddingBottom={"0px"}>
             <Container style={{ padding: "0px" }} fluid>
               <Row nogutter>
