@@ -128,7 +128,7 @@ export default function SiteCareHome() {
               }}
             >
               <div className={styles.solution_content}>
-                <LineLabel color="white">BE EVERYWHERE</LineLabel>
+                <LineLabel color="white">THE SOLUTION</LineLabel>
                 <h2>
                   SiteCare comes with each Pageflow website by default.
                 </h2>
