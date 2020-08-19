@@ -293,7 +293,7 @@ export default function Home() {
             </span>{" "} They even integrated an email collection feature to help us stay in touch with customers
             year round, something we hadn't thought of until their team brought it up to us!"
           </h1>
-          <p>Frank Rossi, B4TheLeague</p>
+          <p>Venkat Ramireddy, Arvy Foods</p>
         </div>
       </Wrapper>
       <Wrapper bg={"white"} paddingBottom={"250px"} paddingTop={"250px"}>
