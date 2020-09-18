@@ -32,7 +32,7 @@ class FantasiaPricingCard extends Component {
             border={
               this.props.primary ? "none" : `1px solid ${this.props.color}`
             }
-            link={this.props.buttonLink}
+            href={this.props.buttonLink}
             textColor={this.props.buttonTextColor}
             radius={this.props.buttonRadius}
             padding={this.props.buttonPadding}

@@ -107,8 +107,8 @@ export default function PageflowPricing() {
                   "Site Security & SSL",
                   "Web Analytics Setup",
                   "SEO Setup through TopRank",
-                  "Content Management System",
                   "Dynamic Forms",
+                  "Content Management System",
                   "Copywriting through Kopy",
                   "Multilingual",
                   "Payment Gateway Integration",
@@ -137,10 +137,10 @@ export default function PageflowPricing() {
                   "Site Security & SSL",
                   "Web Analytics Setup",
                   "SEO Setup through TopRank",
+                  "Dynamic Forms",
                 ]}
                 missingItems={[
                   "Content Management System",
-                  "Dynamic Forms",
                   "Copywriting through Kopy",
                   "Multilingual",
                   "Payment Gateway Integration",
@@ -153,7 +153,7 @@ export default function PageflowPricing() {
               <PricingCard
                 primary={false}
                 color="#7651E0"
-                name="Deluxe"
+                name="Artist"
                 price="starting at $997"
                 buttonText="Get Started"
                 buttonTextColor="#7651E0"
@@ -170,8 +170,8 @@ export default function PageflowPricing() {
                 missingItems={[
                   "Web Analytics Setup",
                   "SEO Setup through TopRank",
-                  "Content Management System",
                   "Dynamic Forms",
+                  "Content Management System",
                   "Copywriting through Kopy",
                   "Multilingual",
                   "Payment Gateway Integration",
@@ -241,10 +241,10 @@ export default function PageflowPricing() {
               </h2>
               <p style={{ color: "white" }}>
                 We offer payment plans that help break down your costs between
-                three, six, twelve months.
+                three or siz months.
               </p>
               <Button
-                href="/get-starte"
+                href="/get-started"
                 fill="rgba(255, 255, 255, 0.17)"
                 textColor="white"
                 radius="3px"
