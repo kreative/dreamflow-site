@@ -65,6 +65,7 @@
   .solution_image_wrapper {
     text-align: right;
     padding-right: 50px;
+    margin-top: -80px;
   }
 
   .solution_image_wrapper img {
@@ -74,10 +75,6 @@
   .solution_content {
     margin-right: 0px;
     padding: 100px;
-  }
-
-  .solution_image_wrapper {
-    margin-top: -80px;
   }
 }
 

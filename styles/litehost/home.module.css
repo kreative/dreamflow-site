@@ -1,0 +1,78 @@
+.image1, .image {
+  width: 100%;
+}
+
+.why_image {
+  width: 100%;
+  padding-right: 50px;
+}
+
+.cta_image_wrapper {
+  text-align: right;
+}
+
+.cta_image {
+  width: 100%;
+  padding-left: 25px;
+}
+
+.solution_image_wrapper {
+  z-index: 10;
+}
+
+.solution_content {
+  margin-right: -100px;
+  padding: 100px 175px 100px 100px;
+  background-color: #FFD83B;
+  border-radius: 3px;
+}
+
+.features {
+  padding-top: 25px;
+  margin: 0 auto;
+}
+
+.feature_text {
+  padding-top: 20px;
+}
+
+.feature_image {
+  padding-top: 25px;
+  width: 60%;
+}
+
+@media screen and (max-width: 991px) {
+  .solution_image_wrapper {
+    text-align: right;
+    padding-right: 50px;
+    margin-top: -80px;
+  }
+
+  .solution_image_wrapper img {
+    width: 45%;
+  }
+
+  .solution_content {
+    margin-right: 0px;
+    padding: 100px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+
+}
+
+@media screen and (max-width: 575px) {
+  .solution_image_wrapper {
+    padding-right: 0px;
+    text-align: center;
+  }
+
+  .solution_image_wrapper img {
+    width: 80%;
+  }
+
+  .solution_content {
+    padding: 50px 50px 100px 50px;
+  }
+}

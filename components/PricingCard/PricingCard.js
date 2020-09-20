@@ -18,6 +18,7 @@ class FantasiaPricingCard extends Component {
             <img src={this.props.image} alt={this.props.imageAlt} />
             <h2>{this.props.name}</h2>
             <p className="price">{this.props.price}</p>
+            <p className={"sub_price"}>{this.props.subPrice}</p>
           </div>
           <div className="items">
             {this.props.includedItems.map((item) => (
@@ -73,6 +74,14 @@ class FantasiaPricingCard extends Component {
             font-weight: bold;
             font-size: 1.6em;
             color: black;
+          }
+          
+          .sub_price {
+            font-weight: normal;
+            font-style: italic;
+            font-size: 1em;
+            color: #949494;
+            margin-top: -10px;
           }
 
           .raised {
