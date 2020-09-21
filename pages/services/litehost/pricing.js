@@ -108,7 +108,7 @@ export default function LitehostPricing() {
                 image="https://kmg-site-assets.kaycdn.com/coffee_cup_ikon.jpg"
                 imageAlt="Coffe Cup Ikon by Kreative Fantasia Design"
                 includedItems={[
-                  "2 Websites",
+                  "3 Websites",
                   "Daily Backups",
                   "Free SSL",
                   "Free CDN",
