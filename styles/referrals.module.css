@@ -1,0 +1,41 @@
+.splash_content {
+    color: white;
+    text-align: center;
+}
+
+.splash_content h1 {
+    font-size: 6em;
+}
+
+.color2 {
+    color: #949494;
+}
+
+.right_text {
+    text-align: right;
+    padding-bottom: 50px;
+}
+
+.step_image {
+    width: 50%;
+    text-align: left;
+    padding-bottom: 15px;
+}
+
+@media screen and (max-width: 576px) {
+    .splash_content h1 {
+        font-size: 4em;
+    }
+
+    .indented_p {
+        padding-left: 0px;
+    }
+
+    .step_content {
+        padding-bottom: 50px;
+    }
+
+    .right_text {
+        text-align: left;
+    }
+}

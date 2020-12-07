@@ -55,7 +55,7 @@ class DreamflowNavbar extends Component {
               </Row>
             </Container>
           </Wrapper>
-          <Wrapper bg="rgab(0,0,0,0)" paddingTop="0px" paddingBottom="15px">
+          <Wrapper bg="rgba(0,0,0,0)" paddingTop="0px" paddingBottom="15px">
             <Container style={{ padding: "0px" }} fluid>
               <Row nogutter>
                 <Col>
@@ -105,7 +105,7 @@ class DreamflowNavbar extends Component {
           </Wrapper>
         </div>
         <div className="overlay" id="__overlay">
-          <Wrapper bg="rgab(0,0,0,0)" paddingTop="15px" paddingBottom="15px">
+          <Wrapper bg="rgba(0,0,0,0)" paddingTop="15px" paddingBottom="15px">
             <Container style={{ padding: "0px", color: "white" }} fluid>
               <Row nogutter>
                 <Col></Col>
@@ -160,6 +160,9 @@ class DreamflowNavbar extends Component {
                   </Link>
                   <Link href="/why-dreamflow">
                     <a className="link">Why Dreamflow?</a>
+                  </Link>
+                  <Link href="/refer-a-friend">
+                    <a className="link">Refer a Friend</a>
                   </Link>
                   <Link href="/get-started">
                     <a className="link">Get Started</a>

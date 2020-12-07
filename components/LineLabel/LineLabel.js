@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 
-class FantasiaLineLabel extends Component {
+class LineLabel extends Component {
     render() {
         return (
             <div className="linelabel">
@@ -24,4 +24,4 @@ class FantasiaLineLabel extends Component {
     };
 }
 
-export default FantasiaLineLabel;
+export default LineLabel;

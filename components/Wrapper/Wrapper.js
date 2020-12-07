@@ -1,6 +1,6 @@
 import React, { Component, Children } from "react";
 
-class FantasiaWrapper extends Component {
+class Wrapper extends Component {
   render() {
     return (
       <div className="wrapper">
@@ -33,4 +33,4 @@ class FantasiaWrapper extends Component {
   }
 }
 
-export default FantasiaWrapper;
+export default Wrapper;
