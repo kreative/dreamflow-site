@@ -48,7 +48,7 @@ const CaseStudiesPage = () => {
             textColor="white"
             bgImage="https://kmg-site-assets.kaycdn.com/clients/eco-abode/Frame22.png"
             bgColor="black"
-            link="/work/eco-abode"
+            link="/case-studies/eco-abode"
           />
         </div>
       </Wrapper>
