@@ -13,7 +13,7 @@ class HowdyBar extends React.Component {
           <Link href={"/free-consultation"}>
             <p className={styles.text}>
               <span style={{marginRight:"10px"}}>
-                Want to grow your traffic? Get a 30 minute consult for FREE
+                Want to grow your business online? Get a 30 minute consult for FREE
               </span>
               <FontAwesomeIcon icon={faArrowRight} />
             </p>
