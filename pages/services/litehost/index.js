@@ -82,7 +82,7 @@ export default function Litehost() {
               <h2>Hosting your own website, landing pages, or database can be a real pain​</h2>
               <p>With marketing campaigns moving online and more and more customers shopping online, your business can't afford any downtime. If your website isn't on 24/7, it could be costing you real money.</p>
               <Button
-                href="/services/litehost/pricing"
+                href="/get-started"
                 fill="#F2C200"
                 textColor="white"
                 radius="3px"
@@ -91,7 +91,7 @@ export default function Litehost() {
                 raised={false}
                 grow={true}
               >
-                View Pricing
+                Get started
               </Button>
             </Col>
             <Col md={6}>
@@ -124,7 +124,7 @@ export default function Litehost() {
                   We provide mission critical features at unbeatable prices.
                 </p>
                 <Button
-                  href="/services/litehost/pricing"
+                  href="/get-started"
                   fill="white"
                   textColor="black"
                   radius="3px"
@@ -133,7 +133,7 @@ export default function Litehost() {
                   raised={false}
                   grow={true}
                 >
-                  View Pricing
+                  Get started
                 </Button>
               </div>
             </Col>
