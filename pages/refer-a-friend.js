@@ -5,6 +5,7 @@ import Wrapper from "../components/Wrapper/Wrapper";
 import LineLabel from "../components/LineLabel/LineLabel";
 import styles from "../styles/referrals.module.css";
 import { Container, Row, Col } from "react-grid-system";
+import Button from "../components/Button/Button";
 
 const ReferAFriend = () => {
   return (
@@ -39,12 +40,17 @@ const ReferAFriend = () => {
       </Head>
       <Navbar />
       <div className={styles.splash_bg}>
-        <Wrapper bg={"rgba(0,0,0,0)"} paddingTop={"200px"} paddingBottom={"200px"}>
+        <Wrapper bg={"rgba(0,0,0,0)"} paddingTop={"250px"} paddingBottom={"200px"}>
           <div className={styles.splash_content}>
             <h1><span className={styles.color2}>Changing an industry for good can't be done alone.</span> Help spread access to quality service and fair pricing with the Dreamflow Refer-a-Friend Program.</h1>
           </div>
         </Wrapper>
       </div>
+      {/*<Wrapper bg={"rgba(0,0,0,0)"} paddingTop={"0px"} paddingBottom={"50px"}>*/}
+      {/*  <div className={styles.glass_container}>*/}
+      {/*    <h2>Join the movement</h2>*/}
+      {/*  </div>*/}
+      {/*</Wrapper>*/}
       <Wrapper bg={"white"} paddingTop={"250px"} paddingBottom={"250px"}>
         <div className={styles.right_text}>
           <LineLabel color={"black"}>How it works</LineLabel>
@@ -54,7 +60,7 @@ const ReferAFriend = () => {
           <Row nogutter className={styles.step_content}>
             <Col md={4}>
               <img
-                src={""}
+                src={"https://kmg-site-assets.kaycdn.com/chat-ikon.png"}
                 alt={""}
                 className={styles.step_image}
               />
@@ -65,7 +71,7 @@ const ReferAFriend = () => {
             <Col md={4}></Col>
             <Col md={4}>
               <img
-                src={""}
+                src={"https://kmg-site-assets.kaycdn.com/giving-money-ikon.png"}
                 alt={""}
                 className={styles.step_image}
               />
@@ -76,7 +82,7 @@ const ReferAFriend = () => {
             <Col md={8}></Col>
             <Col md={4}>
               <img
-                src={""}
+                src={"https://kmg-site-assets.kaycdn.com/rocket-ikon.png"}
                 alt={""}
                 className={styles.step_image}
               />
@@ -84,6 +90,23 @@ const ReferAFriend = () => {
             </Col>
           </Row>
         </Container>
+      </Wrapper>
+      <Wrapper bg={"#111111"} paddingTop={"150px"} paddingBottom={"150px"}>
+        <div style={{ textAlign: "center" }}>
+          <h2 style={{ color: "white", paddingBottom: "20px" }} >Ready to get started? Drop us a line.</h2>
+          <Button
+            href="/contact-us"
+            fill="white"
+            textColor="black"
+            radius="3px"
+            border="1px solid white"
+            padding="15px 50px"
+            raised={false}
+            grow={true}
+          >
+            Get Started
+          </Button>
+        </div>
       </Wrapper>
       <Footer />
     </div>

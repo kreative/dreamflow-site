@@ -10,11 +10,13 @@
 }
 
 .splash_content h1 {
-    font-size: 6em;
+    font-size: 5em;
 }
 
 .color2 {
     color: rgba(255,255,255,0.7);
+    font-weight: 500;
+    font-style: italic;
 }
 
 .right_text {
@@ -23,9 +25,22 @@
 }
 
 .step_image {
-    width: 50%;
+    width: 30%;
     text-align: left;
     padding-bottom: 15px;
+}
+
+.glass_container {
+    padding: 100px;
+    margin-top: -200px;
+    border-radius: 10px;
+    text-align: left;
+    color: white;
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(40px);
+    border: solid 2px transparent;
+    background-clip: padding-box;
+    box-shadow: 10px 10px 10px rgba(46, 54, 68, 0.03);
 }
 
 @media screen and (max-width: 576px) {
