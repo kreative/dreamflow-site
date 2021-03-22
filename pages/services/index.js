@@ -222,35 +222,6 @@ const Index = () => {
                 }
               />
             </Col>
-            <Col sm={6} xxl={4} style={{ marginBottom: "25px" }}>
-              <ProductCard
-                bg="white"
-                align="center"
-                border="1.5px solid #E3E3E3"
-                logo="https://kmg-site-assets.kaycdn.com/litehost-logo-color@4x.png"
-                logoWidth="97%"
-                alt="Kreative LiteHost logo in Color"
-                description="Blazing fast web hosting"
-                text="Worry free, managed hosting plans for your digital presence with incredible speeds."
-                button={
-                  <Button
-                    href="/services/litehost"
-                    fill="#FFD83B"
-                    textColor="white"
-                    hoverColor="#FFE681"
-                    radius="3px"
-                    border="1px solid #FFD83B"
-                    hoverBorder="1px solid #FFE681"
-                    padding="15px 50px"
-                    raised={false}
-                    grow={false}
-                    width="100%"
-                  >
-                    Learn more
-                  </Button>
-                }
-              />
-            </Col>
           </Row>
         </Container>
       </Wrapper>

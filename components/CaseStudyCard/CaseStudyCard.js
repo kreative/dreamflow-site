@@ -23,7 +23,7 @@ class CaseStudyCard extends React.Component {
             margin: 50px 0px;
             padding: 350px 250px 100px 50px;
             border-radius: 10px;
-            background-image: url(${this.props.bgImage});
+            background-image: ${this.props.bgImage};
             background-size: cover;
             background-position: center;
             background-color: ${this.props.bgColor};

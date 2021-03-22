@@ -1,16 +1,11 @@
-.splash_bg {
-    background: radial-gradient(#1D60E1, #7651E0);
-    /*background: radial-gradient(ellipse at top, #1D60E1, #C8B5FD),*/
-    /*radial-gradient(ellipse at bottom, #7651E0, transparent);*/
-}
-
 .splash_content {
     color: white;
-    text-align: center;
+    text-align: left;
 }
 
 .splash_content h1 {
-    font-size: 5em;
+    font-size: 7em;
+    line-height: 1.4em;
 }
 
 .color2 {
@@ -41,6 +36,10 @@
     border: solid 2px transparent;
     background-clip: padding-box;
     box-shadow: 10px 10px 10px rgba(46, 54, 68, 0.03);
+}
+
+.pp_logo {
+    width: 100%;
 }
 
 @media screen and (max-width: 576px) {

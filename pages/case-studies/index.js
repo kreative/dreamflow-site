@@ -46,9 +46,20 @@ const CaseStudiesPage = () => {
           <CaseStudyCard
             title="A rental property management company creating the easiest experience for new home owners"
             textColor="white"
-            bgImage="https://kmg-site-assets.kaycdn.com/clients/eco-abode/Frame22.png"
+            bgImage="url('https://kmg-site-assets.kaycdn.com/clients/eco-abode/Frame22.png')"
             bgColor="black"
             link="/case-studies/eco-abode"
+          />
+        </div>
+      </Wrapper>
+      <Wrapper bg="white" paddingTop="0px" paddingBottom="50px">
+        <div>
+          <CaseStudyCard
+            title="An HR consultancy with over 30 years of experience that doesn’t break the bank"
+            textColor="white"
+            bgImage="linear-gradient(to bottom, #F6C37D, #4276EF)"
+            bgColor="black"
+            link="/case-studies/valens"
           />
         </div>
       </Wrapper>

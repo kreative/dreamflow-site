@@ -161,8 +161,8 @@ class DreamflowNavbar extends Component {
                   <Link href="/why-dreamflow">
                     <a className="link">Why Dreamflow?</a>
                   </Link>
-                  <Link href="/refer-a-friend">
-                    <a className="link">Refer a Friend</a>
+                  <Link href="/partner-program">
+                    <a className="link">Partner Program</a>
                   </Link>
                   <Link href="/get-started">
                     <a className="link">Get Started</a>

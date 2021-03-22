@@ -3,11 +3,11 @@ import Navbar from "../components/Navbar/Navbar";
 import Footer from "../components/Footer/Footer";
 import Wrapper from "../components/Wrapper/Wrapper";
 import LineLabel from "../components/LineLabel/LineLabel";
-import styles from "../styles/referrals.module.css";
+import styles from "../styles/partner_program.module.css";
 import { Container, Row, Col } from "react-grid-system";
 import Button from "../components/Button/Button";
 
-const ReferAFriend = () => {
+const PartnerProgram = () => {
   return (
     <div>
       <Head>
@@ -38,19 +38,23 @@ const ReferAFriend = () => {
         <meta content="width=device-width, initial-scale=1" name="viewport" />
         <meta name={"description"} content={""} />
       </Head>
-      <Navbar />
-      <div className={styles.splash_bg}>
+      <Navbar/>
+
+      <div>
         <Wrapper bg={"rgba(0,0,0,0)"} paddingTop={"250px"} paddingBottom={"200px"}>
-          <div className={styles.splash_content}>
-            <h1><span className={styles.color2}>Changing an industry for good can't be done alone.</span> Help spread access to quality service and fair pricing with the Dreamflow Refer-a-Friend Program.</h1>
-          </div>
+          <img
+            src={""}
+            alt={"Kreative Dreamflow"}
+            className={styles.df_logo}
+          />
+          <img
+            src={"https://kmg-site-assets.kaycdn.com/Dreamflow%20Partner%20Program%20-%20No%20Logo.png"}
+            alt={"Kreative Dreamflow Partner Program Logo"}
+            className={styles.pp_logo}
+          />
         </Wrapper>
       </div>
-      {/*<Wrapper bg={"rgba(0,0,0,0)"} paddingTop={"0px"} paddingBottom={"50px"}>*/}
-      {/*  <div className={styles.glass_container}>*/}
-      {/*    <h2>Join the movement</h2>*/}
-      {/*  </div>*/}
-      {/*</Wrapper>*/}
+
       <Wrapper bg={"white"} paddingTop={"250px"} paddingBottom={"250px"}>
         <div className={styles.right_text}>
           <LineLabel color={"black"}>How it works</LineLabel>
@@ -113,4 +117,4 @@ const ReferAFriend = () => {
   );
 }
 
-export default ReferAFriend;
+export default PartnerProgram;
