@@ -14,11 +14,12 @@ class Footer extends Component {
         <div className="Footer__CTA">
           <Wrapper bg="white" paddingTop="150px" paddingBottom="150px">
             <div style={{ textAlign: "center" }}>
-              <LineLabel color="black">WORK WITH DREAMFLOW</LineLabel>
+              <LineLabel color="black">SEE IF YOU QUALIFY</LineLabel>
               <h1 className="CTA__Text">
                 Give your business an unfair advantage{" "}
                 <FontAwesomeIcon icon={faArrowRight} />
               </h1>
+              <p>We have 3 open spots left for new clients, apply now to see if you qualify to work with Kreative Dreamflow. We can't work with everyone and spots fill up faster than you'd think, so click the link above and apply now!</p>
             </div>
           </Wrapper>
         </div>

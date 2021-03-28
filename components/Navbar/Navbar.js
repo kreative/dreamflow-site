@@ -235,14 +235,13 @@ class DreamflowNavbar extends Component {
           }
 
           .link {
-            font-family: "BasierCircle", sans-serif;
+            font-family: "DM Sans", sans-serif;
             padding-bottom: 1em;
             text-decoration: none;
             font-size: 3em;
             color: black;
             display: block;
             font-weight: normal;
-            font-style: italic;
             letter-spacing: -0.03em;
           }
 

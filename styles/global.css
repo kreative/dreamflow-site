@@ -1,5 +1,5 @@
 h1 {
-    font-family: 'BasierCircle', serif;
+    font-family: 'Romana', serif;
     font-size: 3em;
     font-weight: bold;
     padding: 0;
@@ -7,33 +7,33 @@ h1 {
 }
 
 h2 {
-    font-family: 'BasierCircle', serif;
+    font-family: 'Romana', serif;
     font-size: 2.7em;
     font-weight: 700;
     letter-spacing: -0.03em;
 }
 
 h3 {
-    font-family: 'BasierCircle', serif;
+    font-family: 'Romana', serif;
     font-size: 2em;
     font-weight: 700;
     letter-spacing: -0.03em;
 }
 
 h4, h5, h6 {
-    font-family: 'BasierCircle', serif;
+    font-family: 'Romana', serif;
     font-weight: 600;
     letter-spacing: -0.03em;
 }
 
 p {
-    font-family: 'BasierCircle', sans-serif;
+    font-family: 'DM Sans', sans-serif;
     font-size: 1.3em;
     letter-spacing: -0.03em;
 }
 
 .ui {
-    font-family: 'BasierCircle' !important;
+    font-family: 'DM Sans' !important;
 }
 
 @media screen and (max-width: 576px) {
